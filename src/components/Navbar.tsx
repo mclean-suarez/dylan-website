@@ -7,6 +7,7 @@ const navLinks = [
   { label: 'Program', href: '/program' },
   { label: 'For Clients', href: '/aow' },
   { label: 'Proof', href: '/proof' },
+  { label: 'About', href: '/about' },
   { label: 'FAQ', href: '/faq' },
 ]
 
@@ -41,47 +42,58 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-24">
           <Link
             to="/"
-            className={`hover:opacity-80 transition-opacity ${onDark ? 'text-white' : 'text-stone-900'}`}
+            className={`hover:opacity-80 transition-opacity flex-shrink-0 ${onDark ? 'text-white' : 'text-stone-900'}`}
           >
             <AdOnAILogo />
           </Link>
 
-          <div className="hidden md:flex items-center gap-10">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`text-base font-medium transition-colors ${
-                  location.pathname === link.href
-                    ? onDark ? 'text-white' : 'text-stone-900'
-                    : onDark ? 'text-white/60 hover:text-white' : 'text-stone-500 hover:text-stone-900'
+          {/* Desktop nav — three-zone: logo | links | actions */}
+          <div className="hidden lg:flex items-center">
+            {/* Nav links */}
+            <div className="flex items-center gap-6 xl:gap-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`text-sm font-medium transition-colors whitespace-nowrap ${
+                    location.pathname === link.href
+                      ? onDark ? 'text-white' : 'text-stone-900'
+                      : onDark ? 'text-white/60 hover:text-white' : 'text-stone-500 hover:text-stone-900'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Divider */}
+            <div className={`w-px h-5 mx-6 xl:mx-8 ${onDark ? 'bg-white/15' : 'bg-stone-200'}`} />
+
+            {/* Actions */}
+            <div className="flex items-center gap-5">
+              <a
+                href="#"
+                className={`text-sm font-medium transition-colors whitespace-nowrap ${
+                  onDark
+                    ? 'text-white/60 hover:text-white'
+                    : 'text-stone-500 hover:text-stone-900'
                 }`}
               >
-                {link.label}
+                Launch Terminal
+              </a>
+              <Link
+                to="/contact"
+                className={onDark ? 'btn-primary-on-dark text-sm py-2.5 px-5' : 'btn-primary text-sm py-2.5 px-5'}
+              >
+                Book a Strategy Call
+                <ArrowRight className="w-4 h-4" />
               </Link>
-            ))}
-            <a
-              href="#"
-              className={`text-base font-medium transition-colors ${
-                onDark
-                  ? 'text-white/60 hover:text-white'
-                  : 'text-stone-500 hover:text-stone-900'
-              }`}
-            >
-              Launch Terminal
-            </a>
-            <Link
-              to="/contact"
-              className={onDark ? 'btn-primary-on-dark text-base py-3 px-7' : 'btn-primary text-base py-3 px-7'}
-            >
-              Book a Strategy Call
-              <ArrowRight className="w-5 h-5" />
-            </Link>
+            </div>
           </div>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-3 transition-colors ${
+            className={`lg:hidden p-3 transition-colors ${
               onDark ? 'text-white/60 hover:text-white' : 'text-stone-500 hover:text-stone-900'
             }`}
             aria-label="Toggle menu"
@@ -91,7 +103,7 @@ export default function Navbar() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden border-t border-stone-200 pb-8 animate-fade-in">
+          <div className="lg:hidden border-t border-stone-200 pb-8 animate-fade-in">
             <div className="flex flex-col gap-1 pt-5">
               {navLinks.map((link) => (
                 <Link

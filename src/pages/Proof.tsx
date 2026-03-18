@@ -48,7 +48,7 @@ export default function Proof() {
   const { ref: metricsRef, isVisible: metricsVisible } = useScrollAnimation()
   const { ref: practiceRef, isVisible: practiceVisible } = useScrollAnimation()
   const { ref: principlesRef, isVisible: principlesVisible } = useScrollAnimation()
-  const { ref: casesRef, isVisible: casesVisible } = useScrollAnimation()
+
 
   return (
     <>
@@ -148,20 +148,10 @@ export default function Proof() {
         </div>
       </section>
 
-      {/* Case studies placeholder */}
-      <section ref={casesRef} className="section-padding">
+      {/* CTA */}
+      <section className="section-padding">
         <div className="section-container">
-          <div className={`max-w-3xl mx-auto text-center transition-all duration-500 ${casesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Coming Soon</p>
-            <div className="w-10 h-0.5 bg-brand-700 mx-auto mb-6" />
-            <h2 className="text-2xl font-bold text-stone-900 tracking-tight leading-tight mb-4">
-              Client Case Studies
-            </h2>
-            <p className="text-sm text-stone-500 leading-relaxed mb-8 max-w-xl mx-auto">
-              We&apos;re currently documenting detailed case studies from our first
-              wave of enrolled clients. In the meantime, book a call and we&apos;ll
-              walk you through real examples and results.
-            </p>
+          <div className="max-w-3xl mx-auto text-center">
             <Link to="/contact" className="btn-primary text-sm">
               Book a Strategy Call
               <ArrowRight className="w-4 h-4" />

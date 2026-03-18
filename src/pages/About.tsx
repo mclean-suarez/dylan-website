@@ -10,9 +10,60 @@ export default function About() {
     <>
       <PageHeader
         label="About"
-        title="The Company Behind the Program"
-        subtitle="Ad On AI is a specialist division of Ad On Group, an Australian business ecosystem operating since 2008. We built the enablement program inside live operations before offering it externally."
+        title="The Team Behind the Program"
+        subtitle="Ad On AI is a specialist division of Ad On Group, an Australian business services provider operating since 2008. We built the enablement program inside Ad On Group to train and enable our internal staff in AI before offering it externally as a result of the success the internal version of the program saw."
       />
+
+      {/* Our Team */}
+      <section ref={teamRef} className="section-padding border-b border-stone-200">
+        <div className="section-container">
+          <div className={`max-w-3xl mb-12 transition-all duration-500 ${teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">
+              Our Team
+            </p>
+            <div className="w-10 h-0.5 bg-brand-700 mb-6" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight leading-tight mb-4">
+              Operations People.{' '}
+              <span className="text-stone-400">Not Consultants.</span>
+            </h2>
+            <p className="text-sm text-stone-500 leading-relaxed max-w-xl">
+              The Ad On AI team comes from inside Ad On Group. People who
+              built and ran AI workflows in live business operations before
+              teaching others to do the same.
+            </p>
+          </div>
+
+          <div className={`grid grid-cols-1 gap-px bg-stone-200 border border-stone-200 max-w-2xl transition-all duration-500 delay-100 ${teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+            {/* Dylan Bailey */}
+            <div
+              className={`bg-white p-6 sm:p-8 transition-all duration-500 ${teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+              style={{ transitionDelay: '160ms' }}
+            >
+              <div className="border-t-2 border-brand-700 pt-5 mb-5">
+                <div className="w-16 h-16 flex items-center justify-center bg-brand-700">
+                  <span className="font-mono text-lg font-bold text-white tracking-tight">DB</span>
+                </div>
+              </div>
+              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Dylan Bailey</h3>
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Facilitator</p>
+            </div>
+
+            {/* Beau Robards */}
+            <div
+              className={`bg-white p-6 sm:p-8 transition-all duration-500 ${teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+              style={{ transitionDelay: '240ms' }}
+            >
+              <div className="border-t-2 border-stone-900 pt-5 mb-5">
+                <div className="w-16 h-16 flex items-center justify-center bg-stone-900">
+                  <span className="font-mono text-lg font-bold text-white tracking-tight">BR</span>
+                </div>
+              </div>
+              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Beau Robards</h3>
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Facilitator</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Our Why */}
       <section ref={whyRef} className="section-padding border-b border-stone-200">
@@ -33,10 +84,10 @@ export default function About() {
                 The Problem
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed">
-                Most businesses know AI matters. Few have a practical way to
-                make it work inside their teams. The gap is not access to
-                tools. It is structured enablement, accountability, and
-                follow-through.
+                Most businesses know AI can help. Far fewer have a practical
+                way to get their people using it properly in day-to-day work.
+                The issue is not access to tools. It is training, support,
+                and follow-through.
               </p>
             </div>
             <div className="bg-white p-6 sm:p-8">
@@ -44,10 +95,10 @@ export default function About() {
                 Our Response
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed">
-                We built a managed enablement program that teaches people to
-                use AI in their actual work, checks that they understood it,
-                and reports progress back to the business. Practical.
-                Measurable. Ongoing.
+                We built a structured AI training program that helps people
+                use AI in their actual role, supports them as they apply it,
+                and shows the business what is changing over time. Practical.
+                Accountable. Built for real work.
               </p>
             </div>
           </div>
@@ -55,7 +106,7 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section ref={storyRef} className="section-padding border-b border-stone-200 bg-stone-100/50">
+      <section ref={storyRef} className="section-padding bg-stone-100/50">
         <div className="section-container">
           <div className={`max-w-3xl mb-12 transition-all duration-500 ${storyVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">
@@ -73,7 +124,7 @@ export default function About() {
               {
                 year: '2008',
                 label: 'Foundation',
-                text: 'Ad On Group established on the Gold Coast. Workforce, operations, and client services across Australia, Philippines, and South Africa.',
+                text: 'Ad On Group established on the Gold Coast. Digital marketing, outsourcing and operations across Australia, Philippines, and South Africa.',
               },
               {
                 year: '2022',
@@ -81,7 +132,7 @@ export default function About() {
                 text: 'AI workflows introduced across Ad On Group operations. Content, SEO, admin, and client services. Real teams, real adoption, real results.',
               },
               {
-                year: '2025',
+                year: '2026',
                 label: 'Ad On AI',
                 text: 'The enablement program that emerged from three years of internal deployment is offered externally. Structured, accountable, and built to scale.',
               },
@@ -120,41 +171,6 @@ export default function About() {
             </div>
           </div>
 
-        </div>
-      </section>
-
-      {/* Our Team */}
-      <section ref={teamRef} className="section-padding">
-        <div className="section-container">
-          <div className={`max-w-3xl mb-12 transition-all duration-500 ${teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">
-              Our Team
-            </p>
-            <div className="w-10 h-0.5 bg-brand-700 mb-6" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight leading-tight mb-4">
-              Operations People.{' '}
-              <span className="text-stone-400">Not Consultants.</span>
-            </h2>
-            <p className="text-sm text-stone-500 leading-relaxed max-w-xl">
-              The Ad On AI team comes from inside Ad On Group. People who
-              built and ran AI workflows in live business operations before
-              teaching others to do the same.
-            </p>
-          </div>
-
-          <div className={`border border-stone-200 p-6 sm:p-8 max-w-2xl transition-all duration-500 delay-100 ${teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <div className="flex items-center gap-4 mb-5">
-              <span className="w-1.5 h-1.5 bg-brand-700 rounded-full" />
-              <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em]">
-                Team profiles coming soon
-              </span>
-            </div>
-            <p className="text-sm text-stone-500 leading-relaxed">
-              Detailed team profiles are being prepared and will be published
-              here when available. In the meantime, the best way to learn about
-              the people behind the program is to book a strategy call.
-            </p>
-          </div>
         </div>
       </section>
     </>

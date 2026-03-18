@@ -84,16 +84,10 @@ export default function DualOutcomesDiagram() {
               style={{ transitionDelay: '200ms' }}
             >
               {/* Track header */}
-              <div className="px-6 pt-6 pb-5 border-b border-stone-100 flex items-start gap-4">
-                <span className="font-mono text-3xl font-bold text-stone-100 leading-none select-none">A</span>
-                <div>
-                  <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] block mb-1">
-                    Track A
-                  </span>
-                  <h3 className="text-base font-bold text-stone-900">
-                    Your Business
-                  </h3>
-                </div>
+              <div className="px-6 pt-6 pb-5 border-b border-stone-100">
+                <h3 className="text-base font-bold text-stone-900">
+                  Your Business
+                </h3>
               </div>
 
               {/* Outcome rows */}
@@ -127,16 +121,10 @@ export default function DualOutcomesDiagram() {
               style={{ transitionDelay: '300ms' }}
             >
               {/* Track header */}
-              <div className="px-6 pt-6 pb-5 border-b border-stone-100 flex items-start gap-4">
-                <span className="font-mono text-3xl font-bold text-stone-100 leading-none select-none">B</span>
-                <div>
-                  <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] block mb-1">
-                    Track B
-                  </span>
-                  <h3 className="text-base font-bold text-stone-900">
-                    Your Person
-                  </h3>
-                </div>
+              <div className="px-6 pt-6 pb-5 border-b border-stone-100">
+                <h3 className="text-base font-bold text-stone-900">
+                  Your Person
+                </h3>
               </div>
 
               {/* Outcome rows */}

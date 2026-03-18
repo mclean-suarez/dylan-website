@@ -11,7 +11,7 @@ export default function BrandStatement() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}
         >
-          Structured enablement for stronger, more capable teams.
+          Practical AI training for more productive teams.
         </p>
       </div>
     </section>

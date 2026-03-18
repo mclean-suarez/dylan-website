@@ -6,7 +6,7 @@ const pillars = [
   {
     number: '01',
     title: '3-Month General Introductory Program',
-    subtitle: 'Structured foundation',
+    subtitle: 'The starting point for every person',
   },
   {
     number: '02',
@@ -16,7 +16,7 @@ const pillars = [
   {
     number: '03',
     title: 'Hands-On Support When Needed',
-    subtitle: 'Practical assistance, not just education',
+    subtitle: 'We step in when your person gets stuck',
   },
 ]
 
@@ -33,7 +33,7 @@ export default function OfferSection() {
             What Ad On AI Is
           </h2>
           <p className="text-sm text-stone-700 leading-relaxed max-w-xl font-medium">
-            Structured AI enablement for your staff. Education, accountability, progress reporting, and hands-on support.
+            We teach your people how to use AI to boost their productivity. They learn it, apply it in their actual work, and you get a monthly report showing what changed.
           </p>
         </div>
 

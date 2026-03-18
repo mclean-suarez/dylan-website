@@ -15,11 +15,11 @@ const faqs = [
   },
   {
     question: 'What is the General Introductory Program?',
-    answer: 'The General Introductory Program is a 3-month structured program that all participants begin with. Month 1 covers Introduction and Onboarding. Month 2 covers Prompting. Month 3 covers Applying AI to My Workflows. After completing all three months, participants sit an Entrance Exam to progress to role-specific streams.',
+    answer: 'The General Introductory Program is a 3-month structured program that all participants begin with. Month 1 covers Introduction and Onboarding. Month 2 covers Prompting. Month 3 covers Applying AI to My Workflows. After completing all three months, participants complete a Readiness Check to progress to role-specific training.',
   },
   {
     question: 'What happens after the General Introductory Program?',
-    answer: 'After completing the 3-month General Introductory Program, participants sit an Entrance Exam. Passing the exam is required to progress into a role-specific stream such as Admin, Marketing, Finance, or All-Rounder. Streams are selected based on the participant\u2019s responsibilities and the outcomes you want to improve.',
+    answer: 'After completing the 3-month General Introductory Program, participants complete a Readiness Check. Passing is required to progress into role-specific training such as Admin, Marketing, Finance, or All-Rounder. The training track is selected based on the participant\u2019s responsibilities and the outcomes you want to improve.',
   },
   {
     question: 'What are the self-paced modules?',

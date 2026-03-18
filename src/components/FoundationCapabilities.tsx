@@ -2,11 +2,11 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const capabilities = [
   { number: '01', title: 'Understand where AI is useful' },
-  { number: '02', title: 'Use approved tools appropriately' },
-  { number: '03', title: 'Produce usable day-to-day outputs' },
+  { number: '02', title: 'Competent in a range of AI tools' },
+  { number: '03', title: 'Get useful results from AI in their daily tasks' },
   { number: '04', title: 'Prompt with more control and consistency' },
-  { number: '05', title: 'Apply AI inside real workflows' },
-  { number: '06', title: 'Show practical operational benefit' },
+  { number: '05', title: 'Apply AI inside their own workflow' },
+  { number: '06', title: 'Demonstrate measurable productivity improvement' },
 ]
 
 export default function FoundationCapabilities() {
@@ -22,11 +22,11 @@ export default function FoundationCapabilities() {
           }`}
         >
           <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">
-            Foundation Capabilities
+            After the Program
           </p>
           <div className="w-10 h-0.5 bg-brand-700 mb-6" />
           <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
-            What Participants Can Do After the General Program
+            What Your Person Can Do After the General Program
           </h2>
         </div>
 
@@ -65,7 +65,7 @@ export default function FoundationCapabilities() {
         >
           <div className="h-px flex-1 bg-stone-200" />
           <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em] flex-shrink-0">
-            Ready to progress into a role stream
+            Ready to progress into role-specific training
           </span>
           <div className="h-px flex-1 bg-stone-200" />
         </div>

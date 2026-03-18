@@ -4,7 +4,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
  * ParticipantJourneyDiagram — Swiss Modernism 2.0 Dual-Track Diagram
  *
  * Two parallel tracks:
- * 1. Primary track: staged progression (Fit & Setup → General Program → Exam → Role Stream)
+ * 1. Primary track: staged progression (Fit & Setup → General Program → Readiness Check → Role-Specific Training)
  * 2. Secondary track: spanning band showing that application and measurement
  *    run continuously from the General Program onwards.
  *
@@ -15,8 +15,8 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 const stages = [
   { number: '01', label: 'Fit & Setup' },
   { number: '02', label: 'General Program' },
-  { number: '03', label: 'Entrance Exam' },
-  { number: '04', label: 'Role Stream' },
+  { number: '03', label: 'Readiness Check' },
+  { number: '04', label: 'Role-Specific Training' },
   { number: '05', label: 'Ongoing Enablement' },
 ]
 
@@ -33,7 +33,7 @@ export default function ParticipantJourneyDiagram() {
           }`}
         >
           <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">
-            Participant Journey
+            How the Program Works
           </p>
           <div className="w-10 h-0.5 bg-brand-700 mb-6" />
           <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
@@ -108,15 +108,15 @@ export default function ParticipantJourneyDiagram() {
                     </div>
                     <div className="hidden sm:flex items-center gap-4">
                       <span className="font-mono text-[9px] text-stone-400 uppercase tracking-[0.1em]">
-                        Demonstrated monthly
+                        Shown each month
                       </span>
                       <div className="w-px h-3 bg-stone-200" />
                       <span className="font-mono text-[9px] text-stone-400 uppercase tracking-[0.1em]">
-                        Measured via progress report
+                        Reported to you
                       </span>
                       <div className="w-px h-3 bg-stone-200" />
                       <span className="font-mono text-[9px] text-stone-400 uppercase tracking-[0.1em]">
-                        Productivity gains compound
+                        Output improves over time
                       </span>
                     </div>
                     <div className="flex items-center gap-2">

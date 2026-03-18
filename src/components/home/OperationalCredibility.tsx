@@ -70,8 +70,8 @@ export default function OperationalCredibility() {
             </div>
           </div>
 
-          {/* Right column — stats + secondary photo */}
-          <div className="lg:col-span-5 grid grid-rows-[auto_1fr] gap-px bg-white/[0.06]">
+          {/* Right column — stats + secondary photos */}
+          <div className="lg:col-span-5 grid grid-rows-[auto_1fr_1fr] gap-px bg-white/[0.06]">
             {/* Stats grid */}
             <div
               className={`grid grid-cols-2 gap-px bg-white/[0.06] transition-all duration-700 ${
@@ -107,7 +107,7 @@ export default function OperationalCredibility() {
               }`}
               style={{ transitionDelay: '300ms' }}
             >
-              <div className="aspect-[16/10] lg:aspect-auto lg:h-full relative">
+              <div className="aspect-[16/9] lg:aspect-auto lg:h-full relative">
                 <img
                   src="/images/offices/philippines-office.jpg"
                   alt="Ad On Group delivery office, Philippines"
@@ -120,6 +120,31 @@ export default function OperationalCredibility() {
                   </p>
                   <p className="text-sm text-white/70 font-medium">
                     Cagayan De Oro, Philippines
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tertiary photo — South Africa remote team */}
+            <div
+              className={`relative overflow-hidden bg-navy-950 transition-all duration-700 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+              }`}
+              style={{ transitionDelay: '400ms' }}
+            >
+              <div className="aspect-[16/9] lg:aspect-auto lg:h-full relative">
+                <img
+                  src="/images/offices/south-africa.jpg"
+                  alt="Cape Town, South Africa — remote delivery team"
+                  className="w-full h-full object-cover object-center grayscale brightness-75 contrast-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
+                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6">
+                  <p className="font-mono text-[9px] text-white/30 uppercase tracking-[0.15em] mb-1">
+                    Remote Delivery Team
+                  </p>
+                  <p className="text-sm text-white/70 font-medium">
+                    South Africa
                   </p>
                 </div>
               </div>

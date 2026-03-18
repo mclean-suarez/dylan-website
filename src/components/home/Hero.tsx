@@ -36,7 +36,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="text-lg text-white/50 leading-relaxed max-w-xl mb-10 animate-fade-in-up animate-delay-100">
-            Practical. Measured. Accountable. A structured program with built-in accountability, visible progress, and application that sticks.
+            Your team learns to use AI inside their real workflow, creating real productivity gains for your business. Most AI training gets forgotten — not this.
           </p>
 
           {/* CTAs */}
@@ -53,10 +53,10 @@ export default function Hero() {
           {/* Trust signals */}
           <div className="animate-fade-in-up animate-delay-300">
             <p className="font-mono text-[10px] text-white/25 uppercase tracking-[0.15em] mb-3">
-              Structured enablement model
+              What you get
             </p>
             <p className="text-sm text-white/40">
-              1hr live call &middot; Weekly self-paced sessions &middot; Knowledge checks &middot; Hands-on support &middot; Progress reporting
+              AI applied in real workflows &middot; Monthly report on how your people implemented AI &middot; Personalised AI adoption support when needed
             </p>
           </div>
         </div>

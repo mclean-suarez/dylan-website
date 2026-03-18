@@ -29,8 +29,8 @@ const enablementModules = [
   {
     number: 'E',
     label: 'Assessment',
-    title: 'Entrance Exam',
-    body: 'Confirms the participant can apply AI competently. Required before progressing into a role stream.',
+    title: 'Readiness Check',
+    body: 'Confirms your person can apply AI competently. Required before progressing into role-specific training.',
   },
 ]
 
@@ -58,9 +58,9 @@ const streams = [
 ]
 
 const scopeIn = [
-  'Prompt templates and AI-assisted drafting workflows',
-  'Light automations for reporting, admin, or data processing',
-  'AI playbooks tailored to specific roles and tasks',
+  'Faster ways to handle repetitive work',
+  'Hands-on help applying AI to real tasks your people do',
+  'Repeatable AI workflows your team can actually use',
 ]
 
 const supportSystem = [
@@ -131,7 +131,7 @@ export default function Program() {
                   </span>
                 </div>
                 <h3 className="text-sm font-bold text-stone-900 leading-snug mb-2">{mod.title}</h3>
-                <p className="text-xs text-stone-500 leading-relaxed line-clamp-2">{mod.body}</p>
+                <p className="text-xs text-stone-500 leading-relaxed">{mod.body}</p>
               </div>
             ))}
           </div>
@@ -140,7 +140,7 @@ export default function Program() {
           <div className={`mt-6 flex items-center gap-3 transition-all duration-500 delay-400 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <div className="h-px flex-1 bg-stone-300" />
             <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em] flex-shrink-0">
-              Foundation → Exam → Role Stream
+              Foundation → Readiness Check → Role-Specific Training
             </span>
             <div className="h-px flex-1 bg-stone-300" />
           </div>
@@ -154,10 +154,10 @@ export default function Program() {
       <section ref={streamsRef} className="section-padding border-b border-stone-200">
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${streamsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Role Streams</p>
+            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Training by Role</p>
             <div className="w-10 h-0.5 bg-brand-700 mb-6" />
             <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
-              Role Streams
+              Role-Specific Training
             </h2>
           </div>
 
@@ -175,7 +175,7 @@ export default function Program() {
                     <stream.icon className="w-4 h-4 text-brand-700" />
                   </div>
                 </div>
-                <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-1 block">Stream</span>
+                <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-1 block">Role</span>
                 <h3 className="text-lg font-bold text-stone-900 mb-4">{stream.name}</h3>
                 <ul className="space-y-2">
                   {stream.bullets.map((bullet) => (

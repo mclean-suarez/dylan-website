@@ -9,7 +9,7 @@ const blocks = [
   {
     anchor: '02',
     headline: 'AI incorporated into every role',
-    detail: 'Prompts, agentic task completion, automation',
+    detail: 'Prompts, AI-assisted tasks, automation',
   },
   {
     anchor: '03',

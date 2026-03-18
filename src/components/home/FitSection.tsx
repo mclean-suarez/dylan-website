@@ -9,12 +9,12 @@ const criteria = [
   },
   {
     icon: Users,
-    title: 'Using or Considering Outsourced Staff',
+    title: 'Using Outsourced Staff',
     detail: 'Onshore, offshore, or blended',
   },
   {
     icon: TrendingUp,
-    title: 'Want More From Existing Headcount',
+    title: 'Want More From Your Existing Team',
     detail: 'Productivity, not hiring',
   },
 ]
@@ -51,6 +51,14 @@ export default function FitSection() {
               <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">{item.detail}</p>
             </div>
           ))}
+        </div>
+
+        <div className={`mt-6 flex items-center gap-3 transition-all duration-500 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+          <div className="h-px flex-1 bg-stone-200" />
+          <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">
+            Ready to move beyond dabbling with AI
+          </span>
+          <div className="h-px flex-1 bg-stone-200" />
         </div>
       </div>
     </section>
