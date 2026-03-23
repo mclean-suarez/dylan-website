@@ -9,10 +9,10 @@ const forYourBusiness = [
 ]
 
 const forYourPerson = [
-  { icon: BookOpen, title: '2 Hour Live Face-To-Face Training' },
-  { icon: FileText, title: 'Self-Paced Modules' },
-  { icon: ClipboardCheck, title: 'Skills and Knowledge Check' },
-  { icon: Wrench, title: 'Hands-On Support & Implementation' },
+  { icon: BookOpen, title: '1 Hour Live Enablement Call' },
+  { icon: FileText, title: 'Three Weekly Self-Paced Sessions' },
+  { icon: ClipboardCheck, title: 'Monthly Knowledge Check' },
+  { icon: Wrench, title: 'Hands-On Support When Needed' },
 ]
 
 export default function ProblemsSection() {

@@ -5,18 +5,18 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 const pillars = [
   {
     number: '01',
-    title: 'General Introduction to AI',
+    title: '3-Month General Introductory Program',
     subtitle: 'The starting point for every person',
   },
   {
     number: '02',
-    title: 'Monthly Modules with Monitored Outcomes',
-    subtitle: 'Live call, customised modules, skills check, implementation to their daily work, progress report sent to you',
+    title: 'Monthly Cycle with Built-In Accountability',
+    subtitle: 'Live call, modules, knowledge check, progress report',
   },
   {
     number: '03',
-    title: 'Supporting Your Person Implementing AI',
-    subtitle: 'We help your staff implement AI into their daily tasks',
+    title: 'Hands-On Support When Needed',
+    subtitle: 'We step in when your person gets stuck',
   },
 ]
 
@@ -30,7 +30,7 @@ export default function OfferSection() {
           <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">The Program</p>
           <div className="w-10 h-0.5 bg-brand-700 mb-6" />
           <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight leading-tight mb-4">
-            What Is Ad On AI
+            What Ad On AI Is
           </h2>
           <p className="text-sm text-stone-700 leading-relaxed max-w-xl font-medium">
             We teach your people how to use AI to boost their productivity. They learn it, apply it in their actual work, and you get a monthly report showing what changed.
@@ -45,7 +45,7 @@ export default function OfferSection() {
               style={{ transitionDelay: `${(i + 1) * 100}ms` }}
             >
               <div className={`border-t-2 ${i === 0 ? 'border-brand-700' : 'border-stone-900'} pt-5 mb-4`}>
-                <span className="font-mono text-2xl font-bold text-stone-900 tracking-tight">{pillar.number}</span>
+                <span className="font-mono text-2xl font-bold text-stone-200 tracking-tight">{pillar.number}</span>
               </div>
               <h3 className="text-sm font-bold text-stone-900 leading-snug mb-1.5">{pillar.title}</h3>
               <p className="text-xs text-stone-400">{pillar.subtitle}</p>
