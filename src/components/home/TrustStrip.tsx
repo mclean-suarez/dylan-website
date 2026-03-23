@@ -4,7 +4,6 @@ const credentials = [
   'Australian-Owned',
   'Est. 2008',
   'Real Operations Background',
-  'Accountability Built In',
   'Measured by Outcomes',
 ]
 
@@ -23,7 +22,7 @@ export default function TrustStrip() {
           <span className="hidden sm:block w-px h-3 bg-stone-300 mx-2" />
           <div className="flex flex-wrap items-center justify-center gap-x-1 gap-y-1">
             {credentials.map((item, i) => (
-              <span key={item} className="text-xs text-stone-400">
+              <span key={item} className="text-sm text-stone-400">
                 {item}{i < credentials.length - 1 && <span className="text-stone-300 mx-2">&middot;</span>}
               </span>
             ))}

@@ -7,7 +7,6 @@ import HowItWorks from '../components/home/HowItWorks'
 import DualOutcomesDiagram from '../components/DualOutcomesDiagram'
 import OperationalCredibility from '../components/home/OperationalCredibility'
 import ToolsStrip from '../components/home/ToolsStrip'
-import FitSection from '../components/home/FitSection'
 import CTASection from '../components/home/CTASection'
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
       <DualOutcomesDiagram />
       <OperationalCredibility />
       <ToolsStrip />
-      <FitSection />
       <CTASection />
     </>
   )

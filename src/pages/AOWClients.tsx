@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, Layers, TrendingUp, Shield, Eye, Clock } from 'lucide-react'
+import { ArrowRight, Check, Users, Layers, TrendingUp, Shield, Eye, Clock } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import ProductivityLiftCalculator from '../components/home/ProductivityLiftCalculator'
 import ProblemsSection from '../components/home/ProblemsSection'
