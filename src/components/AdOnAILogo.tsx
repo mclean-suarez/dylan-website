@@ -34,8 +34,9 @@ export default function AdOnAILogo({ variant = 'full', className = '' }: AdOnAIL
         aria-hidden="true"
         className="h-10 w-auto sm:h-12"
       />
-      <span className="text-[22px] sm:text-2xl font-bold tracking-[0.14em] whitespace-nowrap select-none">
-        AD ON AI
+      <span className="whitespace-nowrap select-none tracking-[0.12em]">
+        <span className="text-[26px] sm:text-[30px] font-extrabold">AD</span>
+        <span className="text-[20px] sm:text-[22px] font-bold ml-[0.12em]">ON AI</span>
       </span>
     </div>
   )

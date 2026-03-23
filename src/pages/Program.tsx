@@ -3,7 +3,7 @@ import { ArrowRight, Check, ClipboardList, Megaphone, Calculator, Layers } from 
 import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import ToolboxSection from '../components/ToolboxSection'
-import ParticipantJourneyDiagram from '../components/ParticipantJourneyDiagram'
+
 import FoundationCapabilities from '../components/FoundationCapabilities'
 import MonthlyCycleDiagram from '../components/MonthlyCycleDiagram'
 
@@ -35,26 +35,10 @@ const enablementModules = [
 ]
 
 const streams = [
-  {
-    name: 'Admin',
-    icon: ClipboardList,
-    bullets: ['Quicker turnaround on routine operational work', 'Better process consistency across daily execution'],
-  },
-  {
-    name: 'Marketing',
-    icon: Megaphone,
-    bullets: ['Quicker drafting across recurring marketing tasks', 'More consistent quality across customer-facing output'],
-  },
-  {
-    name: 'Finance',
-    icon: Calculator,
-    bullets: ['Faster processing across repetitive finance tasks', 'Greater accuracy and consistency in day-to-day support'],
-  },
-  {
-    name: 'All-Rounder',
-    icon: Layers,
-    bullets: ['Greater versatility across admin, marketing, and finance work', 'Consistent execution as priorities shift week to week'],
-  },
+  { name: 'Admin', icon: ClipboardList },
+  { name: 'Marketing', icon: Megaphone },
+  { name: 'Finance', icon: Calculator },
+  { name: 'All-Rounder', icon: Layers },
 ]
 
 const scopeIn = [
@@ -79,17 +63,14 @@ export default function Program() {
       <PageHeader
         label="The Program"
         title="Structured AI Enablement for Your People"
-        subtitle="A structured AI enablement program starting with a 3-month General Introductory Program. Monthly knowledge checks, progress reporting, and hands-on support when participants need it."
+        subtitle="A structured AI enablement program starting with a General Introduction to AI. Monthly knowledge &amp; skills checks, progress reporting, and hands-on implementation support when participants need it."
       />
-
-      {/* Participant journey diagram */}
-      <ParticipantJourneyDiagram />
 
       {/* Monthly cycle — orbital loop diagram */}
       <MonthlyCycleDiagram />
 
       {/* Enablement modules — with pathway progression */}
-      <section ref={modulesRef} className="section-padding border-b border-stone-200 bg-stone-100/50">
+      <section ref={modulesRef} className="section-padding bg-stone-100/50">
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Enablement Modules</p>
@@ -151,7 +132,7 @@ export default function Program() {
       <FoundationCapabilities />
 
       {/* Role streams */}
-      <section ref={streamsRef} className="section-padding border-b border-stone-200">
+      <section ref={streamsRef} className="section-padding">
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${streamsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Training by Role</p>
@@ -175,16 +156,7 @@ export default function Program() {
                     <stream.icon className="w-4 h-4 text-brand-700" />
                   </div>
                 </div>
-                <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-1 block">Role</span>
-                <h3 className="text-lg font-bold text-stone-900 mb-4">{stream.name}</h3>
-                <ul className="space-y-2">
-                  {stream.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-brand-700 flex-shrink-0 mt-1.5" />
-                      <span className="text-xs text-stone-600 leading-relaxed">{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+                <h3 className="text-lg font-bold text-stone-900">{stream.name}</h3>
               </div>
             ))}
           </div>
@@ -195,7 +167,7 @@ export default function Program() {
       <ToolboxSection />
 
       {/* Scope — support types with system diagram */}
-      <section ref={scopeRef} className="section-padding border-t border-stone-200">
+      <section ref={scopeRef} className="section-padding">
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${scopeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Scope</p>

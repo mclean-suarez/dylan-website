@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="section-container relative z-10 pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-2xl">
           {/* Label */}
-          <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-6 animate-fade-in">
+          <p className="font-mono text-lg sm:text-xl lg:text-2xl text-brand-400 uppercase tracking-[0.15em] mb-6 animate-fade-in">
             AI Training & Enablement
           </p>
 
@@ -31,12 +31,12 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold text-white tracking-tight leading-[1.08] mb-6 animate-fade-in-up">
-            Structured AI enablement for your people.
+            AI Training and Enablement for Your People
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg text-white/50 leading-relaxed max-w-xl mb-10 animate-fade-in-up animate-delay-100">
-            Your team learns to use AI inside their real workflow, creating real productivity gains for your business. Most AI training gets forgotten — not this.
+            Your team learns to use AI inside their daily tasks, creating real productivity gains for your business. Most AI training gets forgotten — not this.
           </p>
 
           {/* CTAs */}
@@ -50,15 +50,6 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Trust signals */}
-          <div className="animate-fade-in-up animate-delay-300">
-            <p className="font-mono text-[10px] text-white/25 uppercase tracking-[0.15em] mb-3">
-              What you get
-            </p>
-            <p className="text-sm text-white/40">
-              AI applied in real workflows &middot; Monthly report on how your people implemented AI &middot; Personalised AI adoption support when needed
-            </p>
-          </div>
         </div>
       </div>
     </section>
