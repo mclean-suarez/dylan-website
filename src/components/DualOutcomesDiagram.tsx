@@ -10,15 +10,17 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
  */
 
 const businessOutcomes = [
-  { label: 'Visibility', desc: 'Clear reporting on what was learned and applied' },
-  { label: 'Productivity', desc: 'More output from the same team and hours' },
-  { label: 'Consistency', desc: 'Fewer errors, less rework, cleaner handoffs' },
+  { label: 'Productivity', desc: 'Your person gets more done in the same hours' },
+  { label: 'Quality', desc: 'Higher standard of work with fewer mistakes' },
+  { label: 'Progress Report', desc: 'Monthly report showing what they learned and applied' },
+  { label: 'Staying Current', desc: 'Your business keeps up with new AI tools and methods as they emerge' },
 ]
 
 const personOutcomes = [
   { label: 'Enablement', desc: 'Structured learning matched to their role' },
   { label: 'Practical Skill', desc: 'AI usage that applies to real daily tasks' },
   { label: 'Confidence', desc: 'Support when they need it, not left to figure it out' },
+  { label: 'Real Tools', desc: 'Hands-on experience with the AI tools used in their actual work' },
 ]
 
 export default function DualOutcomesDiagram() {

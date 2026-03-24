@@ -5,8 +5,8 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 const pillars = [
   {
     number: '01',
-    title: 'General Introduction to AI',
-    subtitle: 'The starting point for every person',
+    title: 'AI Training Matched to Their Role',
+    subtitle: 'Your person learns AI skills & tools specific to what they actually do every day',
   },
   {
     number: '02',

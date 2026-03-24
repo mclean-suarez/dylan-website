@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, Layers, TrendingUp, Shield, Eye, Clock } from 'lucide-react'
+import { ArrowRight, Users, Layers, TrendingUp, Shield, Wrench, Clock, BarChart3 } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import ProductivityLiftCalculator from '../components/home/ProductivityLiftCalculator'
 import ProblemsSection from '../components/home/ProblemsSection'
@@ -9,32 +9,32 @@ const benefits = [
   {
     icon: TrendingUp,
     title: 'More Output Per Person',
-    description: 'Your Ad On Workforce team members learn AI techniques specific to their role, producing more work in the same hours without adding headcount.',
+    description: 'Your Ad On Workforce team members learn AI techniques matched to their role, producing more work in the same hours.',
   },
   {
     icon: Layers,
-    title: 'Better Quality, Less Rework',
-    description: 'Structured prompts, templates, and workflow improvements reduce errors, improve consistency, and cut the rework that eats your margin.',
+    title: 'Higher Quality Work, Done Faster',
+    description: 'Your person learns to use AI to produce cleaner, more consistent output in less time \u2014 better results without working longer hours.',
   },
   {
-    icon: Eye,
-    title: 'Full Visibility via Progress Report',
-    description: 'Each month you receive a clear Progress Report showing what was learned, what was applied, and how participants are progressing. No guesswork about value.',
+    icon: Wrench,
+    title: 'AI Applied to Their Actual Work',
+    description: 'Your person doesn\u2019t just learn about AI \u2014 they implement it into the tasks they do every day, with hands-on help when they need it.',
   },
   {
-    icon: Shield,
-    title: 'Built-In Accountability',
-    description: 'Monthly knowledge checks and demonstrated workflow application mean learning is verified and applied, not just consumed.',
-  },
-  {
-    icon: Users,
-    title: 'Optional Call Attendance',
-    description: 'Your representative can attend the monthly live enablement call to stay across the process and see how participants are progressing.',
+    icon: BarChart3,
+    title: 'Monthly Progress Report',
+    description: 'Each month you receive a clear report showing what was learned, what was applied, and how your person is progressing.',
   },
   {
     icon: Clock,
-    title: 'Seamless Integration',
-    description: 'We\u2019re part of the same ecosystem. Ad On AI layers directly onto your existing Ad On Workforce arrangement with no separate vendor management.',
+    title: 'Less Time Lost to Low-Value Tasks',
+    description: 'AI handles the grunt work so your person spends more of their hours on the tasks that actually move your business forward.',
+  },
+  {
+    icon: Users,
+    title: 'Your Team Keeps Up as AI Changes',
+    description: 'AI tools evolve fast. Your person stays current through ongoing training instead of falling behind after a one-off course.',
   },
 ]
 
@@ -42,33 +42,33 @@ const workflowColumns = [
   {
     title: 'General Admin',
     items: [
-      'Inbox handling and email follow-up',
-      'Scheduling and diary coordination',
-      'Document and file management',
+      'Processing and responding to client emails faster',
+      'Automating repetitive data entry and record-keeping',
+      'Automating scheduling and diary coordination',
     ],
   },
   {
     title: 'Finance',
     items: [
-      'Accounts payable and receivable processing',
-      'Debtor follow-up and credit control',
-      'Financial reporting packs',
+      'Faster accounts payable and receivable processing',
+      'Automated debtor follow-up and payment chasing',
+      'Reconciling accounts and catching errors faster',
     ],
   },
   {
     title: 'Marketing',
     items: [
-      'Email funnel management',
-      'Social media scheduling and content ops',
-      'Design collateral and asset generation',
+      'Producing more content without adding hours',
+      'Faster campaign setup and scheduling',
+      'Creating high quality design assets at speed',
     ],
   },
 ]
 
 const attachSteps = [
-  { number: '01', title: 'Your Ad On Workforce Team', accent: false },
-  { number: '+', title: 'Ad On AI Enablement', accent: true },
-  { number: '=', title: 'Higher Output, Measured', accent: false },
+  { number: '01', title: 'Your Ad On Workforce Person', accent: false },
+  { number: '+', title: 'New AI Skills', accent: true },
+  { number: '=', title: 'More Work Gets Done For Your Business', accent: false },
 ]
 
 export default function AOWClients() {
@@ -81,7 +81,7 @@ export default function AOWClients() {
       <PageHeader
         label="For Ad On Workforce Clients"
         title="AI Training and Enablement for Your Ad On Workforce Staff"
-        subtitle="Already using Ad On Workforce? Ad On AI adds structured AI enablement, accountability, and hands-on support to your existing arrangement."
+        subtitle="Already using Ad On Workforce? Ad On AI gives your person hands-on support to implement AI into their daily tasks to make them more productive for you."
       />
 
       {/* Enablement image strip */}
@@ -106,27 +106,27 @@ export default function AOWClients() {
       <ProblemsSection />
 
       {/* Benefits */}
-      <section ref={benefitsRef} className="section-padding border-b border-stone-200">
+      <section ref={benefitsRef} className="bg-navy-950 section-padding">
         <div className="section-container">
           <div className={`mb-12 transition-all duration-500 ${benefitsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Why Add AI Enablement</p>
-            <div className="w-10 h-0.5 bg-brand-700 mb-6" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight leading-tight">
+            <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-4">Why Add AI Enablement</p>
+            <div className="w-10 h-0.5 bg-brand-400 mb-6" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight">
               Why This Makes Your Ad On Workforce Team More Valuable
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-stone-200 border border-stone-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
             {benefits.map((benefit, i) => (
               <div
                 key={benefit.title}
-                className={`bg-white p-6 flex items-start gap-4 transition-all duration-500 ${benefitsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+                className={`bg-navy-950 p-6 flex items-start gap-4 transition-all duration-500 ${benefitsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
                 style={{ transitionDelay: `${(i + 1) * 80}ms` }}
               >
-                <benefit.icon className="w-5 h-5 text-brand-700 flex-shrink-0 mt-0.5" />
+                <benefit.icon className="w-5 h-5 text-brand-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-sm font-semibold text-stone-900 mb-1.5">{benefit.title}</h3>
-                  <p className="text-sm text-stone-500 leading-relaxed">{benefit.description}</p>
+                  <h3 className="text-sm font-semibold text-white mb-1.5">{benefit.title}</h3>
+                  <p className="text-sm text-white/50 leading-relaxed">{benefit.description}</p>
                 </div>
               </div>
             ))}
@@ -135,7 +135,7 @@ export default function AOWClients() {
       </section>
 
       {/* How it attaches — visual system map */}
-      <section ref={howRef} className="section-padding border-b border-stone-200">
+      <section ref={howRef} className="section-padding">
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${howVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">How It Fits</p>
@@ -211,7 +211,7 @@ export default function AOWClients() {
             <div className="mt-8 flex items-center gap-3">
               <div className="h-px flex-1 bg-stone-300" />
               <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em] flex-shrink-0">
-                Same team. Same structure. Meaningfully more output.
+                Same person. New skills. More work gets done.
               </span>
               <div className="h-px flex-1 bg-stone-300" />
             </div>
@@ -220,31 +220,31 @@ export default function AOWClients() {
       </section>
 
       {/* Best-fit workflows */}
-      <section ref={rolesRef} className="section-padding">
+      <section ref={rolesRef} className="bg-navy-950 section-padding">
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${rolesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Best-Fit Workflows</p>
-            <div className="w-10 h-0.5 bg-brand-700 mb-6" />
-            <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
-              Where Embedded Support Sees the Biggest Lift
+            <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-4">Where AI Makes a Difference</p>
+            <div className="w-10 h-0.5 bg-brand-400 mb-6" />
+            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight">
+              The Daily Tasks Where AI Has the Most Impact
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-stone-200 border border-stone-200 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 border border-white/10 mb-8">
             {workflowColumns.map((col, i) => (
               <div
                 key={col.title}
-                className={`bg-white p-6 transition-all duration-500 ${rolesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+                className={`bg-navy-950 p-6 transition-all duration-500 ${rolesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
                 style={{ transitionDelay: `${(i + 1) * 80}ms` }}
               >
-                <div className={`border-t-2 ${i === 0 ? 'border-brand-700' : 'border-stone-900'} pt-4 mb-5`}>
-                  <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400">{col.title}</h3>
+                <div className={`border-t-2 ${i === 0 ? 'border-brand-700' : 'border-white/20'} pt-4 mb-5`}>
+                  <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40">{col.title}</h3>
                 </div>
                 <div className="space-y-3">
                   {col.items.map((item) => (
                     <div key={item} className="flex items-start gap-2.5">
                       <span className="w-1.5 h-1.5 bg-brand-700 flex-shrink-0 mt-1.5" />
-                      <span className="text-sm text-stone-700 leading-snug">{item}</span>
+                      <span className="text-sm text-white/60 leading-snug">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -255,9 +255,9 @@ export default function AOWClients() {
           <div className={`transition-all duration-500 delay-300 ${rolesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 text-sm font-medium text-brand-700 hover:text-brand-800 transition-colors group"
+              className="inline-flex items-center gap-2 text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors group"
             >
-              Map your embedded workflows
+              Book a Strategy Call
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

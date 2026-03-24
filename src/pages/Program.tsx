@@ -42,15 +42,9 @@ const streams = [
 ]
 
 const scopeIn = [
-  'Faster ways to handle repetitive work',
-  'Hands-on help applying AI to real tasks your people do',
-  'Repeatable AI workflows your team can actually use',
-]
-
-const supportSystem = [
-  { number: '01', label: 'Identify' },
-  { number: '02', label: 'Assist' },
-  { number: '03', label: 'Apply' },
+  'Using AI to speed up the tasks they already do every day',
+  'Getting unstuck when AI isn\u2019t giving them the right results',
+  'Building AI into their actual role, not just learning about it',
 ]
 
 export default function Program() {
@@ -181,7 +175,7 @@ export default function Program() {
             {/* Left: support types */}
             <div className="border border-stone-200 border-l-2 border-l-brand-700 p-6 md:p-8">
               <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-5">
-                Types of hands-on support provided
+                What your person gets help with
               </h3>
               <div className="space-y-4">
                 {scopeIn.map((item) => (
@@ -193,34 +187,14 @@ export default function Program() {
               </div>
             </div>
 
-            {/* Right: support system diagram */}
+            {/* Right: how support works */}
             <div className="flex items-center">
-              <div className="w-full">
+              <div className="w-full border border-stone-200 border-l-2 border-l-stone-900 p-6 md:p-8">
                 <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-5">
-                  How support works
+                  How it works
                 </h3>
-                <div className="relative">
-                  {/* Connector line */}
-                  <div className="hidden sm:block absolute top-5 left-[16%] right-[16%] h-px bg-stone-200" />
-                  <div className="grid grid-cols-3 gap-4 sm:gap-0">
-                    {supportSystem.map((step, i) => (
-                      <div key={step.number} className="text-center">
-                        <div className="flex justify-center mb-3">
-                          <div className={`w-10 h-10 flex items-center justify-center relative z-10 ${
-                            i === supportSystem.length - 1 ? 'bg-brand-700' : 'bg-stone-900'
-                          }`}>
-                            <span className="font-mono text-[10px] font-bold text-white">{step.number}</span>
-                          </div>
-                        </div>
-                        <span className="font-mono text-[10px] text-stone-600 uppercase tracking-[0.12em]">
-                          {step.label}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <p className="text-[10px] text-stone-400 mt-5 text-center">
-                  Participant needs help → Ad On AI steps in → Applied in workflow
+                <p className="text-sm text-stone-700 leading-relaxed">
+                  When your person needs help using AI in their work, we step in directly with real, hands-on support from someone who knows the tools.
                 </p>
               </div>
             </div>
