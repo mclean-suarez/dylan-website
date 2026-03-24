@@ -7,7 +7,7 @@ const metrics = [
   { stat: '4 Years', label: 'Building and using AI inside a real business' },
   { stat: '50+ Staff', label: 'Trained on AI inside Ad On Group before offering it externally' },
   { stat: 'Real Business', label: 'Built inside Ad On Group operations, not by some online \u2018guru\u2019' },
-  { stat: 'Over $300,000', label: 'Annualised savings from AI workflow automation and software rationalisation' },
+  { stat: 'Over $300,000', label: 'Annualised savings from AI workflow automation, time saved, and software unsubscribed from' },
 ]
 
 const principles = [
