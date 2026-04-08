@@ -6,7 +6,23 @@ export default function CTASection() {
   const { ref, isVisible } = useScrollAnimation()
 
   return (
-    <section ref={ref} className="bg-navy-950">
+    <section ref={ref} className="bg-navy-950 relative">
+      <div className="absolute inset-0 flex items-center justify-end pointer-events-none hidden md:flex">
+      <img
+        src="/src/images/phone.png" // adjust path
+        alt="Hero"
+        className="
+          w-[300px] h-auto opacity-100
+          md:w-[300px] md:opacity-100
+          lg:w-[300px] lg:opacity-100
+          xl:w-[300px]
+          translate-x-8 md:translate-x-0
+          lg:-translate-x-[75rem]
+          translate-y-[12rem]
+          select-none
+        "
+      />
+    </div>
       <div className="section-container">
         <div
           className={`py-20 md:py-28 text-center transition-all duration-500 ${
@@ -28,7 +44,7 @@ export default function CTASection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link to="/contact" className="btn-primary-on-dark text-sm">
-              Book a Strategy Call
+              Book a Call
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link to="/program" className="btn-secondary-on-dark text-sm">

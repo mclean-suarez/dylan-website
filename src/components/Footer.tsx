@@ -4,15 +4,13 @@ import AdOnAILogo from './AdOnAILogo'
 
 const siteLinks = [
   { label: 'Program', href: '/program' },
-  { label: 'For Clients', href: '/aow' },
-  { label: 'Proof', href: '/proof' },
+  { label: 'Meet The Team', href: '/about' },
   { label: 'FAQ', href: '/faq' },
 ]
 
 const usefulLinks = [
-  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Launch Terminal', href: '#' },
+  { label: 'Launch Academy', href: 'https://terminal-v4-production.up.railway.app' },
 ]
 
 const ecosystemLinks = [
@@ -68,9 +66,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {usefulLinks.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-white/50 hover:text-white transition-colors">
-                    {link.label}
-                  </Link>
+                  {link.href.startsWith('http') ? (
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm text-white/50 hover:text-white transition-colors">
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link to={link.href} className="text-sm text-white/50 hover:text-white transition-colors">
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

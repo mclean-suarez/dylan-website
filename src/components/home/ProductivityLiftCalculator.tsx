@@ -322,7 +322,7 @@ export default function ProductivityLiftCalculator() {
                 to="/contact"
                 className="btn-primary w-full text-sm"
               >
-                Book a Strategy Call
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
               </Link>
 

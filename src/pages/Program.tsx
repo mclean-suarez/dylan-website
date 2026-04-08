@@ -1,9 +1,8 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Check, ClipboardList, Megaphone, Calculator, Layers } from 'lucide-react'
+import { ArrowRight, Check } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import ToolboxSection from '../components/ToolboxSection'
-
 import FoundationCapabilities from '../components/FoundationCapabilities'
 import MonthlyCycleDiagram from '../components/MonthlyCycleDiagram'
 
@@ -35,10 +34,10 @@ const enablementModules = [
 ]
 
 const streams = [
-  { name: 'Admin', icon: ClipboardList },
-  { name: 'Marketing', icon: Megaphone },
-  { name: 'Finance', icon: Calculator },
-  { name: 'All-Rounder', icon: Layers },
+  { name: 'Admin', icon: 'src/images/admin.png' },
+  { name: 'Marketing', icon: 'src/images/marketing.png' },
+  { name: 'Finance', icon: 'src/images/finance.png' },
+  { name: 'All-Rounder', icon: 'src/images/all-rounder.png' },
 ]
 
 const scopeIn = [
@@ -48,10 +47,11 @@ const scopeIn = [
 ]
 
 export default function Program() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const { ref: modulesRef, isVisible: modulesVisible } = useScrollAnimation()
   const { ref: scopeRef, isVisible: scopeVisible } = useScrollAnimation()
   const { ref: streamsRef, isVisible: streamsVisible } = useScrollAnimation()
-
+  
   return (
     <>
       <PageHeader
@@ -64,7 +64,24 @@ export default function Program() {
       <MonthlyCycleDiagram />
 
       {/* Enablement modules — with pathway progression */}
-      <section ref={modulesRef} className="section-padding bg-stone-100/50">
+      {/* Enablement modules — with cumulative hover */}
+      <section ref={modulesRef} className="section-padding bg-stone-100/50 relative">
+          <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
+            <img
+              src="/src/images/adonailogo.webp" // adjust path
+              alt="Hero"
+              className="
+                w-[400px] h-auto opacity-100
+                md:w-[400px] md:opacity-100
+                lg:w-[400px] lg:opacity-100
+                xl:w-[400px]
+                translate-x-8 md:translate-x-0
+                lg:-translate-x-[13rem]
+                translate-y-[7rem]
+                select-none
+              "
+            />
+        </div>
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Enablement Modules</p>
@@ -77,14 +94,20 @@ export default function Program() {
           {/* Pathway progression indicator — desktop */}
           <div className={`hidden lg:block mb-8 transition-all duration-500 delay-100 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <div className="relative">
-              <div className="absolute top-3 left-[12%] right-[12%] h-px bg-stone-300" />
+              <div className="absolute top-3 left-[12%] right-[12%] h-px transition-colors duration-300 bg-stone-300" />
               <div className="grid grid-cols-4 gap-0">
                 {enablementModules.map((mod, i) => (
                   <div key={mod.title} className="flex justify-center">
-                    <div className={`w-6 h-6 flex items-center justify-center relative z-10 ${
-                      i === enablementModules.length - 1 ? 'bg-brand-700' : 'bg-stone-900'
-                    }`}>
-                      <span className="font-mono text-[9px] font-bold text-white">{mod.number}</span>
+                    <div
+                      className={`w-6 h-6 flex items-center justify-center relative z-10 rounded-full transition-all duration-300
+                        ${hoveredIndex !== null && i <= hoveredIndex ? 'bg-brand-700 scale-110' : 'bg-stone-900'}
+                      `}
+                    >
+                      <span className={`font-mono text-[9px] font-bold transition-colors duration-300 ${
+                        hoveredIndex !== null && i <= hoveredIndex ? 'text-white' : 'text-white/50'
+                      }`}>
+                        {mod.number}
+                      </span>
                     </div>
                   </div>
                 ))}
@@ -93,19 +116,34 @@ export default function Program() {
           </div>
 
           {/* Module cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-stone-200 border border-stone-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {enablementModules.map((mod, i) => (
               <div
                 key={mod.title}
-                className={`bg-white p-6 transition-all duration-500 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+                onMouseEnter={() => setHoveredIndex(i)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={`bg-white p-6 border border-stone-200 transition-all duration-300 rounded-[20px] shadow-[0_4px_4px_0_rgba(66,99,235,0.5)]
+                  transform ${hoveredIndex !== null && i <= hoveredIndex ? 'scale-105 shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]' : ''}
+                  ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}
+                `}
                 style={{ transitionDelay: `${(i + 1) * 100}ms` }}
               >
-                <div className={`border-t-2 ${i === enablementModules.length - 1 ? 'border-brand-700' : 'border-stone-900'} pt-4 mb-3`}>
-                  <span className="font-mono text-[10px] font-bold text-stone-400 uppercase tracking-[0.15em]">
+                {/* Top line */}
+                <div className={`border-t-2 pt-4 mb-3 transition-colors duration-300 ${
+                  hoveredIndex !== null && i <= hoveredIndex ? 'border-brand-700' : 'border-stone-900'
+                }`}>
+                  <span className={`font-mono text-[10px] font-bold uppercase tracking-[0.15em] transition-colors duration-300 ${
+                    hoveredIndex !== null && i <= hoveredIndex ? 'text-brand-700' : 'text-stone-400'
+                  }`}>
                     {mod.label}
                   </span>
                 </div>
-                <h3 className="text-sm font-bold text-stone-900 leading-snug mb-2">{mod.title}</h3>
+
+                <h3 className="text-sm font-bold leading-snug mb-2 transition-colors duration-300 ${
+                  hoveredIndex !== null && i <= hoveredIndex ? 'text-brand-700' : 'text-stone-900'
+                }">
+                  {mod.title}
+                </h3>
                 <p className="text-xs text-stone-500 leading-relaxed">{mod.body}</p>
               </div>
             ))}
@@ -126,7 +164,23 @@ export default function Program() {
       <FoundationCapabilities />
 
       {/* Role streams */}
-      <section ref={streamsRef} className="section-padding">
+      <section ref={streamsRef} className="section-padding bg-stone-100/50 relative">
+        <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
+            <img
+              src="/src/images/watermark.webp" // adjust path
+              alt="Hero"
+              className="
+                w-[100%] h-auto opacity-100
+                md:w-[100%] md:opacity-100
+                lg:w-[100% lg:opacity-100
+                xl:w-[100%]
+                translate-x-8 md:translate-x-0
+                lg:-translate-x-[10rem]
+                translate-y-[9rem]
+                select-none
+              "
+            />
+        </div>
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${streamsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Training by Role</p>
@@ -136,18 +190,18 @@ export default function Program() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-px bg-stone-200 border border-stone-200">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
             {streams.map((stream, i) => (
               <div
                 key={stream.name}
-                className={`bg-white p-6 transition-all duration-500 ${
+                className={`bg-white p-6 transition-all duration-500 border border-stone-200 rounded-[20px] shadow-[0_4px_4px_0_rgba(66,99,235,0.5)] ${
                   streamsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
-                }`}
+                } hover:scale-105 hover:shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]`}
                 style={{ transitionDelay: `${(i + 1) * 80}ms` }}
               >
-                <div className={`border-t-2 ${i === 0 ? 'border-brand-700' : 'border-stone-900'} pt-4 mb-4`}>
-                  <div className="w-10 h-10 flex items-center justify-center border border-stone-200 mb-3">
-                    <stream.icon className="w-4 h-4 text-brand-700" />
+                <div>
+                  <div className="w-20 h-20 flex items-center justify-center mb-3">
+                    <img src={stream.icon} alt={stream.name} className="w-20 h-20 object-contain" />
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-stone-900">{stream.name}</h3>
@@ -157,31 +211,49 @@ export default function Program() {
         </div>
       </section>
 
-      {/* AI Toolbox */}
-      <ToolboxSection />
-
       {/* Scope — support types with system diagram */}
-      <section ref={scopeRef} className="section-padding">
+      <section ref={scopeRef} className="section-padding bg-navy-950 relative overflow-hidden">
+        <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
+            <img
+              src="/src/images/adonailogo.webp" // adjust path
+              alt="Hero"
+              className="
+                w-[400px] h-auto opacity-100
+                md:w-[400px] md:opacity-100
+                lg:w-[400px] lg:opacity-100
+                xl:w-[400px]
+                translate-x-8 md:translate-x-0
+                lg:-translate-x-[13rem]
+                translate-y-[7rem]
+                select-none
+              "
+            />
+        </div>
         <div className="section-container">
           <div className={`mb-10 transition-all duration-500 ${scopeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Scope</p>
-            <div className="w-10 h-0.5 bg-brand-700 mb-6" />
-            <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
+            <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-4">Scope</p>
+            <div className="w-10 h-0.5 bg-brand-400 mb-6" />
+            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight">
               What Is Included
             </h2>
           </div>
 
           <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-10 transition-all duration-500 delay-100 ${scopeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             {/* Left: support types */}
+<<<<<<< Updated upstream
             <div className="border border-stone-200 border-l-2 border-l-brand-700 p-6 md:p-8">
               <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-5">
+=======
+            <div className="border border-white/10 border-l-2 border-l-brand-500 p-6 md:p-8 bg-white/5 rounded-[10px] backdrop-blur-sm">
+              <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40 mb-5">
+>>>>>>> Stashed changes
                 What your person gets help with
               </h3>
               <div className="space-y-4">
                 {scopeIn.map((item) => (
                   <div key={item} className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-brand-700 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-stone-700 leading-snug">{item}</span>
+                    <Check className="w-4 h-4 text-brand-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white/80 leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
@@ -189,11 +261,19 @@ export default function Program() {
 
             {/* Right: how support works */}
             <div className="flex items-center">
+<<<<<<< Updated upstream
               <div className="w-full border border-stone-200 border-l-2 border-l-stone-900 p-6 md:p-8">
                 <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-5">
                   How it works
                 </h3>
                 <p className="text-sm text-stone-700 leading-relaxed">
+=======
+              <div className="w-full border border-white/10 border-l-2 border-l-white/30 p-6 md:p-8 bg-white/5 rounded-[10px] backdrop-blur-sm">
+                <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40 mb-5">
+                  How it works
+                </h3>
+                <p className="text-sm text-white/80 leading-relaxed">
+>>>>>>> Stashed changes
                   When your person needs help using AI in their work, we step in directly with real, hands-on support from someone who knows the tools.
                 </p>
               </div>
@@ -201,8 +281,8 @@ export default function Program() {
           </div>
 
           <div className={`transition-all duration-500 delay-300 ${scopeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <Link to="/contact" className="btn-primary text-sm">
-              Book a Strategy Call
+            <Link to="/contact" className="btn-primary-on-dark text-sm">
+              Book a Call
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

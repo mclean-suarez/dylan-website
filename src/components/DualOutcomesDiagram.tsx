@@ -27,7 +27,23 @@ export default function DualOutcomesDiagram() {
   const { ref, isVisible } = useScrollAnimation()
 
   return (
-    <section ref={ref} className="section-padding border-b border-stone-200">
+    <section ref={ref} className="section-padding border-b border-stone-200 relative">
+      <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
+        <img
+          src="/src/images/watermark.webp" // adjust path
+          alt="Hero"
+          className="
+            w-[100%] h-auto opacity-100
+            md:w-[100%] md:opacity-100
+            lg:w-[100% lg:opacity-100
+            xl:w-[100%]
+            translate-x-8 md:translate-x-0
+            lg:-translate-x-4
+            translate-y-[5rem]
+            select-none
+          "
+        />
+    </div>
       <div className="section-container">
         {/* Section header */}
         <div
@@ -52,7 +68,7 @@ export default function DualOutcomesDiagram() {
           }`}
         >
           {/* Central program core — high-salience spine */}
-          <div className="relative border border-stone-200 bg-stone-900 px-6 py-5 mb-0">
+          <div className="relative border border-stone-200 bg-stone-900 px-6 py-5 mb-0 rounded-t-[20px]">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <div className="w-3 h-3 bg-brand-700" />
@@ -63,7 +79,7 @@ export default function DualOutcomesDiagram() {
               <div className="hidden sm:flex items-center gap-6">
                 {['Live Call', 'Modules', 'Knowledge Check', 'Support', 'Report'].map((item, i) => (
                   <span key={item} className="flex items-center gap-2">
-                    {i > 0 && <div className="w-px h-3 bg-stone-600" />}
+                    {i > 0 && <div className="w-px h-3 " />}
                     <span className="font-mono text-[8px] text-stone-400 uppercase tracking-[0.1em]">
                       {item}
                     </span>
@@ -72,15 +88,15 @@ export default function DualOutcomesDiagram() {
               </div>
             </div>
             {/* Diverging lines — desktop only */}
-            <div className="hidden md:block absolute -bottom-6 left-[25%] w-px h-6 bg-stone-300" />
-            <div className="hidden md:block absolute -bottom-6 right-[25%] w-px h-6 bg-stone-300" />
+            <div className="hidden md:block absolute -bottom-6 left-[25%] w-px h-6 bg-white" />
+            <div className="hidden md:block absolute -bottom-6 right-[25%] w-px h-6 bg-white" />
           </div>
 
           {/* Two-branch grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-stone-200 border-x border-b border-stone-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px border-x border-b border-stone-200 shadow-[0_4px_4px_0_rgba(66,99,235,0.5)] rounded-b-[20px]">
             {/* Business side */}
             <div
-              className={`bg-white transition-all duration-500 ${
+              className={`bg-white transition-all duration-500 rounded-b-[20px] ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
               }`}
               style={{ transitionDelay: '200ms' }}
@@ -97,7 +113,7 @@ export default function DualOutcomesDiagram() {
                 {businessOutcomes.map((item, i) => (
                   <div
                     key={item.label}
-                    className={`px-6 py-4 flex items-start gap-3 border-l-2 border-l-brand-700 ${
+                    className={`px-6 py-4 flex items-start gap-3 ${
                       i < businessOutcomes.length - 1 ? 'border-b border-b-stone-100' : ''
                     }`}
                   >
@@ -117,7 +133,7 @@ export default function DualOutcomesDiagram() {
 
             {/* Person side */}
             <div
-              className={`bg-white transition-all duration-500 ${
+              className={`bg-white transition-all duration-500 rounded-b-[20px] ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
               }`}
               style={{ transitionDelay: '300ms' }}
@@ -134,7 +150,7 @@ export default function DualOutcomesDiagram() {
                 {personOutcomes.map((item, i) => (
                   <div
                     key={item.label}
-                    className={`px-6 py-4 flex items-start gap-3 border-l-2 border-l-stone-900 ${
+                    className={`px-6 py-4 flex items-start gap-3  ${
                       i < personOutcomes.length - 1 ? 'border-b border-b-stone-100' : ''
                     }`}
                   >

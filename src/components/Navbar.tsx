@@ -5,9 +5,7 @@ import AdOnAILogo from './AdOnAILogo'
 
 const navLinks = [
   { label: 'Program', href: '/program' },
-  { label: 'For Clients', href: '/aow' },
-  { label: 'Proof', href: '/proof' },
-  { label: 'About', href: '/about' },
+  { label: 'Meet The Team', href: '/about' },
   { label: 'FAQ', href: '/faq' },
 ]
 
@@ -72,20 +70,22 @@ export default function Navbar() {
             {/* Actions */}
             <div className="flex items-center gap-5">
               <a
-                href="#"
+                href="https://terminal-v4-production.up.railway.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`text-sm font-medium transition-colors whitespace-nowrap ${
                   onDark
                     ? 'text-white/60 hover:text-white'
                     : 'text-stone-500 hover:text-stone-900'
                 }`}
               >
-                Launch Terminal
+                Launch Academy
               </a>
               <Link
                 to="/contact"
-                className={onDark ? 'btn-primary-on-dark text-sm py-2.5 px-5' : 'btn-primary text-sm py-2.5 px-5'}
+                className={onDark ? 'btn-primary-on-dark text-sm py-2.5 px-5' : 'btn-primary text-sm py-2.5 px-5 rounded-[10px]'}
               >
-                Book a Strategy Call
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -119,14 +119,16 @@ export default function Navbar() {
                 </Link>
               ))}
               <a
-                href="#"
+                href="https://terminal-v4-production.up.railway.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-4 text-base font-medium text-stone-500 hover:text-stone-900 hover:bg-stone-100 transition-colors"
               >
-                Launch Terminal
+                Launch Academy
               </a>
               <div className="pt-4 px-4">
-                <Link to="/contact" className="btn-primary text-base py-3 w-full">
-                  Book a Strategy Call
+                <Link to="/contact" className="btn-primary text-base py-3 w-full rounded-[10px]">
+                  Book a Call
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>

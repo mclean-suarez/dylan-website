@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
-import HeroArtifact from './HeroArtifact'
 
 export default function Hero() {
   return (
     <section className="bg-navy-950 relative overflow-hidden">
       {/* Artifact — positioned behind text on mobile, beside on desktop */}
-      <div className="absolute inset-0 flex items-center justify-end pointer-events-none">
+      {/* <div className="absolute inset-0 flex items-center justify-end pointer-events-none">
         <HeroArtifact className="
           w-[480px] h-auto opacity-40
           md:w-[540px] md:opacity-50
@@ -16,8 +15,25 @@ export default function Hero() {
           lg:-translate-x-4
           select-none
         " />
-      </div>
+      </div> */}
+      
 
+    <div className="absolute inset-0 flex items-center justify-end pointer-events-none">
+      <img
+        src="/src/images/watermark.webp" // adjust path
+        alt="Hero"
+        className="
+          w-[100%] h-auto opacity-100
+          md:w-[100%] md:opacity-100
+          lg:w-[100% lg:opacity-100
+          xl:w-[100%]
+          translate-x-8 md:translate-x-0
+          lg:-translate-x-4
+          translate-y-[5rem]
+          select-none
+        "
+      />
+    </div>
       {/* Content */}
       <div className="section-container relative z-10 pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-2xl">
@@ -42,7 +58,7 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-14 animate-fade-in-up animate-delay-200">
             <Link to="/contact" className="btn-primary-on-dark text-sm">
-              Book a Strategy Call
+              Book a Call
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link to="/program" className="btn-secondary-on-dark text-sm">
