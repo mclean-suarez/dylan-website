@@ -16,12 +16,12 @@ interface WorkflowArea {
 }
 
 const WORKFLOW_AREAS: WorkflowArea[] = [
-  { id: 'reporting',   label: 'Reporting & updates',       defaultHoursPerPerson: 2.0, liftFactor: 0.30 },
-  { id: 'crm',         label: 'CRM & admin processing',    defaultHoursPerPerson: 1.5, liftFactor: 0.35 },
-  { id: 'comms',       label: 'Client communication',      defaultHoursPerPerson: 2.0, liftFactor: 0.25 },
-  { id: 'data',        label: 'Data entry & records',      defaultHoursPerPerson: 2.5, liftFactor: 0.40 },
-  { id: 'scheduling',  label: 'Scheduling & coordination', defaultHoursPerPerson: 1.5, liftFactor: 0.30 },
-  { id: 'drafting',    label: 'Drafting & documentation',  defaultHoursPerPerson: 1.0, liftFactor: 0.35 },
+  { id: 'content',     label: 'Content & design production',          defaultHoursPerPerson: 2.5, liftFactor: 0.35 },
+  { id: 'campaigns',   label: 'Marketing campaign setup & execution', defaultHoursPerPerson: 2.0, liftFactor: 0.30 },
+  { id: 'accounts',    label: 'Accounts & payment processing',        defaultHoursPerPerson: 2.0, liftFactor: 0.35 },
+  { id: 'invoicing',   label: 'Invoicing & debtor follow-up',         defaultHoursPerPerson: 1.5, liftFactor: 0.30 },
+  { id: 'emails',      label: 'Client emails & responses',            defaultHoursPerPerson: 2.0, liftFactor: 0.25 },
+  { id: 'data',        label: 'Data entry & record-keeping',          defaultHoursPerPerson: 1.5, liftFactor: 0.35 },
 ]
 
 // ---------------------------------------------------------------------------
@@ -322,7 +322,7 @@ export default function ProductivityLiftCalculator() {
                 to="/contact"
                 className="btn-primary w-full text-sm"
               >
-                Book a Strategy Call
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
               </Link>
 

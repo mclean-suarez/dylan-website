@@ -4,44 +4,44 @@ import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const metrics = [
-  { stat: 'Over $300,000', label: 'Annualised savings from AI workflow automation and software rationalisation' },
-  { stat: 'Up to 8x', label: 'Output increases observed across enabled teams' },
-  { stat: '3 Years', label: 'Applied AI inside Ad On Group operations' },
-  { stat: 'Anti-Hype', label: 'We focus on reliable, simple systems that work every day' },
+  { stat: '4 Years', label: 'Building and using AI inside a real business' },
+  { stat: '50+ Staff', label: 'Trained on AI inside Ad On Group before offering it externally' },
+  { stat: 'Real Business', label: 'Built inside Ad On Group operations, not by some online \u2018guru\u2019' },
+  { stat: 'Over $300,000', label: 'Annualised savings from AI workflow automation, time saved, and software unsubscribed from' },
 ]
 
 const principles = [
   {
-    title: 'Accountability Is the Differentiator',
-    description: 'Most AI training ends at the session. Ours includes monthly knowledge checks, demonstrated workflow application, and progress reports. Learning is verified, applied, and reported.',
+    title: 'Your Person Actually Uses AI After the Training',
+    description: 'Most AI training gets forgotten. Ours includes monthly skills checks and hands-on support so your person keeps applying what they learned \u2014 not just during the program, but after.',
   },
   {
-    title: 'We Focus on Bottom-Line Outcomes',
-    description: 'Every engagement is measured by its commercial impact: productivity gained, time saved, costs reduced. Not features shipped or demos delivered.',
+    title: 'You See What Changed Every Month',
+    description: 'You get a monthly progress report showing what your person learned, what they applied, and how their output is improving. No guesswork.',
   },
   {
-    title: 'We Don\u2019t Overpromise AI',
-    description: 'We\u2019re anti-hype and reality-based. AI is a tool, not magic. We use it where it works and we\u2019re honest about where it doesn\u2019t.',
+    title: 'Matched to Their Actual Role',
+    description: 'We don\u2019t teach generic AI. Your person learns to use AI on the tasks they already do every day \u2014 whether that\u2019s marketing, accounts, or admin.',
   },
   {
-    title: 'Simple, Reliable Systems',
-    description: 'We design implementations that are reliable, simple, and fit how businesses actually operate. Not impressive demos that break in production.',
+    title: 'We Trained Our Own People First',
+    description: 'This program was built inside Ad On Group over four years. We used it on our own staff across marketing, accounts, and admin before offering it to anyone else.',
   },
   {
-    title: 'Real Operational Experience',
-    description: 'Our methods come from building and running AI solutions inside a live operational environment. Not from theory, labs, or conference talks.',
+    title: 'Hands-On Help, Not Just Content',
+    description: 'When your person gets stuck trying to use AI in their work, we step in and help them. This isn\u2019t a course you watch \u2014 it\u2019s a program with real support.',
   },
   {
-    title: 'Part of the Ad On Ecosystem',
-    description: 'We understand business operations from the inside because we\u2019re part of the same business group that delivers them through Ad On Workforce.',
+    title: 'Your People Get More Done in the Same Hours',
+    description: 'AI speeds up the work your person is already doing. The same tasks, done faster and to a higher standard \u2014 so every hour you\u2019re paying for goes further.',
   },
 ]
 
 const inPractice = [
-  'Reporting workflows compressed from multiple days to under one hour through templated, AI-assisted processes',
-  'Content production scaled output significantly while maintaining quality controls through human-in-the-loop workflows',
-  'CRM rebuilt on a lower-cost platform without losing operational capability, reducing software costs and improving adoption',
-  'Admin and data processing tasks automated to reduce manual handling, freeing staff for higher-value work',
+  'Reporting that used to take days was done in under an hour',
+  'Marketing output increased significantly without adding headcount',
+  'Accounts processing and follow-up became faster and more consistent',
+  'Admin staff started handling more work in fewer hours',
 ]
 
 export default function Proof() {
@@ -55,23 +55,23 @@ export default function Proof() {
       <PageHeader
         label="Proof & Credibility"
         title="Built on Real Operational Experience"
-        subtitle="Three years of AI implementation inside a live business environment. Measurable results. No hype."
+        subtitle="Four years of AI implementation inside a live business environment. We trained our own people first. Now we train yours."
       />
 
       {/* Metrics */}
-      <section ref={metricsRef} className="section-padding border-b border-stone-200">
+      <section ref={metricsRef} className="bg-navy-950 section-padding">
         <div className="section-container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {metrics.map((metric, i) => (
               <div
                 key={metric.label}
-                className={`border-t-2 border-stone-900 pt-4 pb-6 ${
+                className={`border-t-2 border-white/20 pt-4 pb-6 ${
                   i < metrics.length - 1 ? 'pr-6 lg:pr-8' : ''
                 } transition-all duration-500 ${metricsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
                 style={{ transitionDelay: `${(i + 1) * 80}ms` }}
               >
-                <div className="font-mono text-2xl sm:text-3xl font-bold text-stone-900 mb-2">{metric.stat}</div>
-                <p className="text-xs text-stone-500 leading-snug">{metric.label}</p>
+                <div className="font-mono text-2xl sm:text-3xl font-bold text-white mb-2">{metric.stat}</div>
+                <p className="text-xs text-white/50 leading-snug">{metric.label}</p>
               </div>
             ))}
           </div>
@@ -79,7 +79,7 @@ export default function Proof() {
       </section>
 
       {/* In practice */}
-      <section ref={practiceRef} className="section-padding border-b border-stone-200 bg-stone-100/50">
+      <section ref={practiceRef} className="section-padding bg-stone-100/50">
         <div className="section-container">
           <div className={`max-w-3xl transition-all duration-500 ${practiceVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">In Practice</p>
@@ -88,10 +88,9 @@ export default function Proof() {
               What This Looked Like Inside Ad On Group
             </h2>
             <p className="text-sm text-stone-500 leading-relaxed mb-8 max-w-xl">
-              Ad On AI grew out of three years building and deploying AI workflows inside
-              Ad On Group. Not experiments. Reliable, simple systems adopted by real teams:
-              content, SEO, admin, and client operations. The savings come from time
-              recovered and software costs eliminated.
+              We didn't start by selling AI training. We started by training our own
+              staff. Over four years, we built and tested the program inside Ad On Group
+              — across marketing, accounts, and admin teams. Here's what changed.
             </p>
           </div>
 
@@ -121,12 +120,12 @@ export default function Proof() {
       </section>
 
       {/* Our approach */}
-      <section ref={principlesRef} className="section-padding border-b border-stone-200">
+      <section ref={principlesRef} className="bg-navy-950 section-padding">
         <div className="section-container">
           <div className={`max-w-3xl mb-12 transition-all duration-500 ${principlesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Our Approach</p>
-            <div className="w-10 h-0.5 bg-brand-700 mb-6" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight leading-tight">
+            <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-4">Our Approach</p>
+            <div className="w-10 h-0.5 bg-brand-400 mb-6" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight">
               What Makes Ad On AI Different
             </h2>
           </div>
@@ -136,12 +135,12 @@ export default function Proof() {
               <div
                 key={principle.title}
                 className={`grid grid-cols-1 md:grid-cols-[260px_1fr] gap-3 md:gap-8 py-7 transition-all duration-500 ${
-                  i < principles.length - 1 ? 'border-b border-stone-200' : ''
+                  i < principles.length - 1 ? 'border-b border-white/10' : ''
                 } ${principlesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
                 style={{ transitionDelay: `${(i + 1) * 80}ms` }}
               >
-                <h3 className="text-base font-semibold text-stone-900">{principle.title}</h3>
-                <p className="text-sm text-stone-500 leading-relaxed">{principle.description}</p>
+                <h3 className="text-base font-semibold text-white">{principle.title}</h3>
+                <p className="text-sm text-white/50 leading-relaxed">{principle.description}</p>
               </div>
             ))}
           </div>

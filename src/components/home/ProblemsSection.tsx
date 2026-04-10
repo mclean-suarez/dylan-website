@@ -1,18 +1,18 @@
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
-import { Eye, BarChart3, Users, BookOpen, Wrench, ClipboardCheck, FileText, Target } from 'lucide-react'
+import { TrendingUp, Briefcase, Clock, BarChart3, Target, Wrench, Hammer, Shield } from 'lucide-react'
 
 const forYourBusiness = [
-  { icon: BarChart3, title: 'Monthly Progress Report' },
-  { icon: Eye, title: 'Full Visibility Into Adoption' },
-  { icon: Users, title: 'Open Call Access' },
-  { icon: Target, title: 'Measurable Productivity Gains' },
+  { icon: TrendingUp, title: 'More Output From the Same Team' },
+  { icon: Briefcase, title: 'AI Applied to Daily Work, Not Just Learned' },
+  { icon: Clock, title: 'Your Person Gets More Done in the Same Hours' },
+  { icon: BarChart3, title: 'Monthly Progress Report Sent to You' },
 ]
 
 const forYourPerson = [
-  { icon: BookOpen, title: '2 Hour Live Face-To-Face Training' },
-  { icon: FileText, title: 'Self-Paced Modules' },
-  { icon: ClipboardCheck, title: 'Skills and Knowledge Check' },
-  { icon: Wrench, title: 'Hands-On Support & Implementation' },
+  { icon: Target, title: 'AI Skills Matched to Their Role' },
+  { icon: Wrench, title: 'Hands-On Help When They Get Stuck' },
+  { icon: Hammer, title: 'AI for Their Real Tasks, Not Theory' },
+  { icon: Shield, title: 'Confidence to Use AI Independently' },
 ]
 
 export default function ProblemsSection() {
@@ -27,8 +27,8 @@ export default function ProblemsSection() {
           </p>
           <div className="w-10 h-0.5 bg-brand-700 mb-6" />
           <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight leading-tight">
-            You Get Accountability.{' '}
-            <span className="text-stone-400">Your Person Gets Support.</span>
+            Your Person Gets New AI Skills.{' '}
+            <span className="text-stone-400">You Get More Productive Staff.</span>
           </h2>
         </div>
 

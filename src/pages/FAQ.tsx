@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ChevronDown, ArrowRight } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import adOnAiLogo from '../images/adonailogo.webp'
 
 const faqs = [
   {
@@ -19,7 +20,7 @@ const faqs = [
   },
   {
     question: 'What happens after the General Introductory Program?',
-    answer: 'After completing the 3-month General Introductory Program, participants complete a Readiness Check. Passing is required to progress into role-specific training such as Admin, Marketing, Finance, or All-Rounder. The training track is selected based on the participant\u2019s responsibilities and the outcomes you want to improve.',
+    answer: 'After completing the 3-month General Introductory Program, participants complete a Readiness Check. Passing is required to progress into role-specific training such as Admin, Marketing, Finance, or EA/VA. The training track is selected based on the participant\u2019s responsibilities and the outcomes you want to improve.',
   },
   {
     question: 'What are the self-paced modules?',
@@ -75,13 +76,13 @@ function FAQItem({ question, answer, isOpen, onToggle }: {
         onClick={onToggle}
         className="w-full flex items-start justify-between gap-4 py-6 text-left group"
       >
-        <span className="text-base font-semibold text-stone-900 group-hover:text-brand-700 transition-colors">
+        <span className="text-base font-semibold text-white group-hover:text-brand-700 transition-colors">
           {question}
         </span>
         <ChevronDown className={`w-5 h-5 text-stone-400 flex-shrink-0 mt-0.5 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
       <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 pb-6' : 'max-h-0'}`}>
-        <p className="text-sm text-stone-500 leading-relaxed pr-12">{answer}</p>
+        <p className="text-sm text-white leading-relaxed pr-12">{answer}</p>
       </div>
     </div>
   )
@@ -99,7 +100,23 @@ export default function FAQ() {
         subtitle="Everything you need to know about the Ad On AI managed enablement program and how it fits your business."
       />
 
-      <section ref={ref} className="section-padding">
+      <section ref={ref} className="section-padding bg-[#0A0C1A] relative overflow-hidden">
+        <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
+            <img
+              src={adOnAiLogo}
+              alt="Hero"
+              className="
+                w-[400px] h-auto opacity-100
+                md:w-[400px] md:opacity-100
+                lg:w-[400px] lg:opacity-100
+                xl:w-[400px]
+                translate-x-8 md:translate-x-0
+                lg:-translate-x-[13rem]
+                translate-y-[34rem]
+                select-none
+              "
+            />
+        </div>
         <div className="section-container">
           <div className={`max-w-3xl mx-auto transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             {faqs.map((faq, i) => (
@@ -117,7 +134,7 @@ export default function FAQ() {
                 Have a question that isn&apos;t answered here?
               </p>
               <Link to="/contact" className="btn-primary text-sm">
-                Book a Strategy Call
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

@@ -6,7 +6,7 @@ import type { ToolEntry } from '../data/toolbox'
 const toolGroups = buildToolGroups(toolLogoMap)
 
 const DARK_CHIP =
-  'inline-flex items-center gap-2 px-3 py-1.5 border border-white/15 text-xs text-white/60 transition-colors duration-150 hover:text-white/80 hover:border-white/25 cursor-default select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-400/60 focus-visible:outline-offset-2'
+  'inline-flex items-center gap-2 px-3 py-1.5 border border-white/15 text-xs text-white/60 transition-colors duration-150 hover:text-white/80 hover:border-[#5C7CFA] cursor-default select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-400/60 focus-visible:outline-offset-2'
 
 function DarkToolChip({ tool }: { tool: ToolEntry }) {
   if (tool.logo) {

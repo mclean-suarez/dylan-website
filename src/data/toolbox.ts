@@ -5,7 +5,7 @@
 /** A tool entry that may optionally carry a logo. */
 export interface ToolEntry {
   displayName: string
-  /** Imported SVG path. When undefined the chip renders as text-only. */
+  /** Logo path — imported SVG or external URL. When undefined the chip renders as text-only. */
   logo?: string
 }
 
@@ -14,71 +14,158 @@ export interface ToolGroup {
   tools: ToolEntry[]
 }
 
-/** Logo map: displayName → imported SVG asset path */
+/** Logo map: displayName → logo path or URL */
 export type LogoMap = Record<string, string>
 
 /** Raw tool-group definitions (display names only). */
 const RAW_GROUPS: { heading: string; names: string[] }[] = [
   {
-    heading: 'General Productivity and AI Assistance',
+    heading: 'AI Assistants',
     names: [
+      'ChatGPT',
+      'Claude',
       'Google Gemini for Workspace',
       'Microsoft 365 Copilot',
-      'Claude',
-      'ChatGPT',
-      'Otter.ai',
+      'Perplexity',
+      'NotebookLM',
       'Poe',
+      'Grok',
+      'Glean',
+      'You.com',
+      'Pi',
+      'Google AI Studio',
     ],
   },
   {
-    heading: 'Writing, Editing, and Communicating',
+    heading: 'Meetings & Notes',
     names: [
+      'Otter.ai',
+      'Fireflies.ai',
+      'Fathom',
+      'Read AI',
+      'Granola',
+      'Sembly AI',
+      'Zoom AI Companion',
+      'Motion',
+      'Loom AI',
+      'Scribe',
+      'Reclaim.ai',
+    ],
+  },
+  {
+    heading: 'Writing & Communication',
+    names: [
+      'Notion AI',
       'Grammarly',
       'Wordtune',
       'QuillBot',
-      'Jasper',
-      'Copy.ai',
       'Writer.com',
-      'Notion AI',
       'Sudowrite',
+      'Superhuman',
     ],
   },
   {
-    heading: 'Design and Creative Assets',
+    heading: 'Marketing & SEO',
+    names: [
+      'Jasper',
+      'Copy.ai',
+      'Gamma',
+      'Beautiful.ai',
+      'Tome',
+      'Surfer',
+      'Frase',
+      'Clearscope',
+      'Anyword',
+      'Semrush ContentShake AI',
+      'Ahrefs AI Content',
+      'Typeface',
+    ],
+  },
+  {
+    heading: 'Sales & CRM',
+    names: [
+      'HubSpot AI',
+      'Salesforce Einstein',
+      'Clay',
+      'Apollo AI',
+      'Gong',
+      'Intercom Fin',
+      'Zendesk AI',
+    ],
+  },
+  {
+    heading: 'Automation',
+    names: [
+      'Zapier',
+      'Make',
+      'n8n',
+      'Relay.app',
+      'Bardeen',
+      'Lindy',
+      'Gumloop',
+      'Pipedream',
+      'Relevance AI',
+      'Airtable AI',
+      'Coda AI',
+      'ClickUp Brain',
+    ],
+  },
+  {
+    heading: 'Design & Creative',
     names: [
       'Canva',
       'Microsoft Designer',
       'Adobe Firefly',
       'Midjourney',
       'DALL\u00B7E',
-      'Figma (AI/plugins)',
+      'Figma AI',
       'Framer',
-      'Google AI Studio',
-      'Google DeepMind',
       'Stitch',
       'Piktochart',
+      'Leonardo AI',
+      'Ideogram',
     ],
   },
   {
-    heading: 'Coding, Development and Autonomous Operations',
+    heading: 'Video & Audio',
+    names: [
+      'Runway',
+      'HeyGen',
+      'Synthesia',
+      'ElevenLabs',
+      'Descript',
+      'Riverside',
+      'OpusClip',
+      'Captions',
+      'Pictory',
+    ],
+  },
+  {
+    heading: 'Coding & Development',
     names: [
       'Claude Code',
       'Cursor',
+      'GitHub Copilot',
+      'OpenAI Codex',
       'Jules',
+      'Windsurf',
+      'v0',
+      'Firebase Studio',
+      'Retool AI',
+      'Bolt',
+      'Lovable',
+      'Replit',
       'Base44',
       'Manus',
       'Opal',
-      'Grok',
-      'Windsurf',
-      'Bolt',
-      'Loveable',
-      'Replit',
     ],
   },
   {
-    heading: 'Finance / Accounting / Spend',
+    heading: 'Finance Systems',
     names: [
       'QuickBooks (Intuit Assist)',
+      'Xero',
+      'MYOB',
       'Bill.com',
       'Ramp',
       'Brex',
@@ -88,33 +175,40 @@ const RAW_GROUPS: { heading: string; names: string[] }[] = [
       'ChatFin',
       'Vena',
       'Etani.ai',
+      'Airwallex',
+      'Vic.ai',
+      'FloQast',
+      'Numeric',
+      'Cube',
+      'Pigment AI',
+      'Puzzle',
+      'Pennylane',
     ],
   },
   {
-    heading: 'Admin and Data Entry',
+    heading: 'Document Processing',
     names: [
       'Rossum',
       'Affinda',
       'Airparser',
-      'Veryfi OCR (Zapier app)',
+      'Veryfi OCR',
       'DigiParser',
       'Parsio',
       'Email Parser by Zapier',
       'Nanonets OCR',
       'Google Cloud Document AI',
       'Amazon Textract',
-      'UiPath (Integration Service + RPA)',
-      'Microsoft Power Automate + AI Builder',
+      'UiPath',
       'ABBYY Vantage',
       'Hyperscience',
-      'Kofax (IDP / RPA)',
+      'Kofax',
     ],
   },
 ]
 
 /**
  * Build the full ordered tool-group list.
- * Pass a logoMap to attach logos: keys are display names (or partial matches).
+ * Pass a logoMap to attach logos: keys are display names.
  */
 export function buildToolGroups(logoMap: LogoMap = {}): ToolGroup[] {
   return RAW_GROUPS.map((raw) => ({

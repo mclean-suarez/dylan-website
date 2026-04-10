@@ -1,4 +1,5 @@
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import circleImage from '../../images/circle.png'
 
 const steps = [
   { number: '01', title: 'Live Face-To-Face Training', time: '2 hrs / month' },
@@ -12,45 +13,72 @@ export default function HowItWorks() {
   const { ref, isVisible } = useScrollAnimation()
 
   return (
-    <section ref={ref} className="bg-navy-950 section-padding">
+    <section ref={ref} className="bg-white section-padding">
       <div className="section-container">
-        <div className={`mb-10 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-          <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-4">Monthly Cycle</p>
-          <div className="w-10 h-0.5 bg-brand-400 mb-6" />
-          <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight">
-            How the Program Works Each Month
-          </h2>
-        </div>
 
-        {/* Desktop: horizontal timeline — hero element */}
-        <div className="hidden lg:block">
-          <div className="relative">
-            <div className="absolute top-7 left-[10%] right-[10%] h-px bg-white/15" />
-            <div className="grid grid-cols-5 gap-0">
-              {steps.map((step, i) => (
-                <div
-                  key={step.number}
-                  className={`relative text-center transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
-                  style={{ transitionDelay: `${(i + 1) * 100}ms` }}
-                >
-                  <div className="flex justify-center mb-5">
-                    <div className={`w-14 h-14 flex items-center justify-center relative z-10 ${
-                      i === 0 ? 'bg-brand-700' : 'bg-white/10 border border-white/15'
-                    }`}>
-                      <span className="font-mono text-base font-bold text-white">{step.number}</span>
-                    </div>
+        {/* Desktop: vertical timeline with image */}
+        <div className="hidden lg:flex gap-20 items-start">
+          {/* Left column: image */}
+          <div className="flex-shrink-0 w-1/2">
+            <img
+              src={circleImage}
+              alt="Timeline Illustration"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+
+          {/* Right column: vertical timeline */}
+          <div className="flex-1 relative">
+            <div className={`mb-10 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+              <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-4">Monthly Cycle</p>
+              <div className="w-10 h-0.5 bg-brand-400 mb-6" />
+              <h2 className="text-xl sm:text-2xl font-bold text-[#2D3A4A] tracking-tight leading-tight">
+                How the Program Works Each Month
+              </h2>
+            </div>
+            {steps.map((step, i) => (
+              <div
+                key={step.number}
+                className={`group flex gap-5 transition-all duration-300 hover:scale-[1.03] ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+                }`}
+                style={{ transitionDelay: `${(i + 1) * 100}ms` }}
+              >
+                {/* Timeline line + circle */}
+                <div className="flex flex-col items-center relative">
+                  <div
+                    className={`
+                      w-12 h-12 flex items-center justify-center flex-shrink-0
+                      transition-all duration-300
+                      bg-[#2D3A4A] border border-white/15
+                      group-hover:bg-brand-700 group-hover:border-brand-700
+                    `}
+                  >
+                    <span className="font-mono text-base font-bold text-white">
+                      {step.number}
+                    </span>
                   </div>
-                  <h3 className="text-sm font-semibold text-white mb-1">{step.title}</h3>
+
+                  {i < steps.length - 1 && (
+                    <div className="w-px flex-1 bg-white/15 my-1" />
+                  )}
+                </div>
+
+                {/* Step text */}
+                <div className="pb-6 transition-all duration-300">
+                  <h3 className="text-sm font-semibold text-[#2D3A4A] mb-0.5 group-hover:text-brand-700 transition-colors">
+                    {step.title}
+                  </h3>
                   <span className="font-mono text-[10px] text-brand-400 uppercase tracking-[0.12em]">
                     {step.time}
                   </span>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Mobile/tablet: vertical timeline */}
+        {/* Mobile/tablet: vertical timeline (unchanged) */}
         <div className="lg:hidden">
           {steps.map((step, i) => (
             <div
@@ -78,6 +106,6 @@ export default function HowItWorks() {
           ))}
         </div>
       </div>
-    </section>
+</section>
   )
 }

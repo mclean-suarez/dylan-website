@@ -1,7 +1,8 @@
 import { useState, type FormEvent } from 'react'
-import { ArrowRight, Phone, Mail, MapPin, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
+import { ArrowRight, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import watermarkImage from '../images/watermark.webp'
 
 const WEB3FORMS_URL = 'https://api.web3forms.com/submit'
 const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined
@@ -128,8 +129,8 @@ export default function Contact() {
       <>
         <PageHeader
           label="Get Started"
-          title="Book a Strategy Call"
-          subtitle="Tell us about your business and your team. We will walk you through the program, assess your current workflows, and show you exactly how structured AI enablement fits your operation."
+          title="Book a Call"
+          subtitle="Tell us about your business and we'll show you how the program works for your team."
         />
         <section ref={ref} className="section-padding">
           <div className="section-container">
@@ -158,14 +159,29 @@ export default function Contact() {
     <>
       <PageHeader
         label="Get Started"
-        title="Book a Strategy Call"
-        subtitle="Tell us about your business and your team. We will walk you through the program, assess your current workflows, and show you exactly how structured AI enablement fits your operation."
+        title="Book a Call"
+        subtitle="Tell us about your business and we'll show you how the program works for your team."
       />
 
-      <section ref={ref} className="section-padding">
-        <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            {/* Form */}
+      <section ref={ref} className="section-padding bg-[#2D3A4A] relative">
+        <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
+            <img
+              src={watermarkImage}
+              alt="Hero"
+              className="
+                w-[100%] h-auto opacity-100
+                md:w-[100%] md:opacity-100
+                lg:w-[100% lg:opacity-100
+                xl:w-[100%]
+                translate-x-8 md:translate-x-0
+                lg:-translate-x-[0rem]
+                translate-y-[3rem]
+                select-none
+              "
+            />
+        </div>
+        <div className="section-container flex justify-center">
+          <div className="max-w-xl">
             <div className={`transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
               <div className="border border-stone-200 bg-white p-6 md:p-8">
                 <h3 className="text-lg font-bold text-stone-900 mb-1">Get Started</h3>
@@ -264,7 +280,7 @@ export default function Contact() {
                       <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
                       <p className="text-sm text-amber-800 leading-snug">
                         The contact form is currently being set up. Please email us directly at{' '}
-                        <a href="mailto:hello@adonai.com.au" className="underline hover:text-amber-900 transition-colors">hello@adonai.com.au</a>{' '}
+                        <a href="mailto:info@adongroup.com.au" className="underline hover:text-amber-900 transition-colors">info@adongroup.com.au</a>{' '}
                         in the meantime.
                       </p>
                     </div>
@@ -281,7 +297,7 @@ export default function Contact() {
                       </>
                     ) : (
                       <>
-                        Book My Strategy Call
+                        Book My Call
                         <ArrowRight className="w-4 h-4" />
                       </>
                     )}
@@ -290,51 +306,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Info side */}
-            <div className={`transition-all duration-500 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-xl font-bold text-stone-900 mb-3">What Happens Next</h3>
-                  <div className="space-y-4 text-sm text-stone-500 leading-relaxed">
-                    <div className="flex items-start gap-3">
-                      <span className="font-mono text-xs font-bold text-brand-700 flex-shrink-0 mt-0.5">01</span>
-                      <p>We&apos;ll review your enquiry and come back to you within one business day.</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="font-mono text-xs font-bold text-brand-700 flex-shrink-0 mt-0.5">02</span>
-                      <p>We&apos;ll arrange a 30-minute strategy call to understand your team, your current workflows, and where AI enablement could create the most practical value.</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="font-mono text-xs font-bold text-brand-700 flex-shrink-0 mt-0.5">03</span>
-                      <p>If there&apos;s a fit, we&apos;ll recommend a rollout approach — including who to start with, where to focus first, and how the program should be structured around your business.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3 text-sm text-stone-500">
-                    <Phone className="w-4 h-4 text-brand-700" />
-                    <span>30-minute strategy call</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm text-stone-500">
-                    <Mail className="w-4 h-4 text-brand-700" />
-                    <span>hello@adonai.com.au</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm text-stone-500">
-                    <MapPin className="w-4 h-4 text-brand-700" />
-                    <span>Gold Coast, Australia</span>
-                  </div>
-                </div>
-
-                <div className="border border-stone-200 p-5">
-                  <p className="text-xs text-stone-500 leading-relaxed">
-                    Ad On AI is a specialist AI enablement division within the{' '}
-                    <span className="text-stone-700 font-medium">Ad On Group</span> ecosystem,
-                    shaped by real operational experience across Australian business services.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

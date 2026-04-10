@@ -8,7 +8,7 @@
  * Text colour inherits from parent via currentColor on the wordmark.
  */
 
-import logoSrc from '../assets/adonai-logo-optimized.svg'
+import logoSrc from '../assets/newlogo.png'
 
 interface AdOnAILogoProps {
   variant?: 'full' | 'mark'
