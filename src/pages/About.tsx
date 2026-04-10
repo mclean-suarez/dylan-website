@@ -1,5 +1,7 @@
 import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import adOnAiLogo from '../images/adonailogo.webp'
+import watermarkImage from '../images/watermark.webp'
 
 export default function About() {
   const { ref: whyRef, isVisible: whyVisible } = useScrollAnimation()
@@ -18,7 +20,7 @@ export default function About() {
       <section ref={teamRef} className="section-padding border-b border-stone-200 bg-[#0A0C1A] relative overflow-hidden">
         <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
             <img
-              src="/src/images/adonailogo.webp" // adjust path
+              src={adOnAiLogo}
               alt="Hero"
               className="
                 w-[400px] h-auto opacity-100
@@ -199,7 +201,7 @@ export default function About() {
       <section ref={storyRef} className="section-padding bg-stone-100/50 relative">
       <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
             <img
-              src="/src/images/watermark.webp" // adjust path
+              src={watermarkImage}
               alt="Hero"
               className="
                 w-[100%] h-auto opacity-100

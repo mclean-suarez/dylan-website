@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import adOnAiLogo from '../../images/adonailogo.webp'
 
 const pillars = [
   {
@@ -30,7 +31,7 @@ export default function OfferSection() {
       {/* Watermark background */}
     <div className="absolute inset-0 flex items-center justify-end pointer-events-none hidden md:flex">
       <img
-        src="/src/images/adonailogo.webp" // adjust path
+        src={adOnAiLogo}
         alt="Hero"
         className="
           w-[400px] h-auto opacity-100

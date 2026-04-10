@@ -1,4 +1,5 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import watermarkImage from '../images/watermark.webp'
 
 /**
  * DualOutcomesDiagram — Swiss Modernism 2.0 Dual-Track Framework
@@ -30,7 +31,7 @@ export default function DualOutcomesDiagram() {
     <section ref={ref} className="section-padding border-b border-stone-200 bg-[#0A0C1A] relative">
       <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
         <img
-          src="/src/images/watermark.webp" // adjust path
+          src={watermarkImage}
           alt="Hero"
           className="
             w-[100%] h-auto opacity-100

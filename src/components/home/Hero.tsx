@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
+import watermarkImage from '../../images/watermark.webp'
 
 export default function Hero() {
   return (
     <section className="bg-navy-950 relative overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-end pointer-events-none">
         <img
-          src="/src/images/watermark.webp" // adjust path
+          src={watermarkImage}
           alt="Hero"
           className="
             w-[100%] h-auto opacity-100

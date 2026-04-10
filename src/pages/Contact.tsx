@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react'
 import { ArrowRight, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import watermarkImage from '../images/watermark.webp'
 
 const WEB3FORMS_URL = 'https://api.web3forms.com/submit'
 const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined
@@ -165,7 +166,7 @@ export default function Contact() {
       <section ref={ref} className="section-padding bg-[#2D3A4A] relative">
         <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
             <img
-              src="/src/images/watermark.webp" // adjust path
+              src={watermarkImage}
               alt="Hero"
               className="
                 w-[100%] h-auto opacity-100
@@ -279,7 +280,7 @@ export default function Contact() {
                       <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
                       <p className="text-sm text-amber-800 leading-snug">
                         The contact form is currently being set up. Please email us directly at{' '}
-                        <a href="mailto:hello@adonai.com.au" className="underline hover:text-amber-900 transition-colors">hello@adonai.com.au</a>{' '}
+                        <a href="mailto:info@adongroup.com.au" className="underline hover:text-amber-900 transition-colors">info@adongroup.com.au</a>{' '}
                         in the meantime.
                       </p>
                     </div>

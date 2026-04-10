@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ChevronDown, ArrowRight } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import adOnAiLogo from '../images/adonailogo.webp'
 
 const faqs = [
   {
@@ -102,7 +103,7 @@ export default function FAQ() {
       <section ref={ref} className="section-padding bg-[#0A0C1A] relative overflow-hidden">
         <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
             <img
-              src="/src/images/adonailogo.webp" // adjust path
+              src={adOnAiLogo}
               alt="Hero"
               className="
                 w-[400px] h-auto opacity-100

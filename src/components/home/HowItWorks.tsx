@@ -1,4 +1,5 @@
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import circleImage from '../../images/circle.png'
 
 const steps = [
   { number: '01', title: 'Live Face-To-Face Training', time: '2 hrs / month' },
@@ -20,7 +21,7 @@ export default function HowItWorks() {
           {/* Left column: image */}
           <div className="flex-shrink-0 w-1/2">
             <img
-              src="/src/images/circle.png" // replace with your image
+              src={circleImage}
               alt="Timeline Illustration"
               className="w-full h-auto rounded-lg"
             />

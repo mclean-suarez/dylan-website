@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Phone } from 'lucide-react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import phoneImage from '../../images/phone.png'
 
 export default function CTASection() {
   const { ref, isVisible } = useScrollAnimation()
@@ -9,7 +10,7 @@ export default function CTASection() {
     <section ref={ref} className="bg-navy-950 relative">
       <div className="absolute inset-0 flex items-center justify-end pointer-events-none hidden md:flex">
       <img
-        src="/src/images/phone.png" // adjust path
+        src={phoneImage}
         alt="Hero"
         className="
           w-[300px] h-auto opacity-100

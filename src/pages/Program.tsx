@@ -5,6 +5,12 @@ import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FoundationCapabilities from '../components/FoundationCapabilities'
 import MonthlyCycleDiagram from '../components/MonthlyCycleDiagram'
+import adOnAiLogo from '../images/adonailogo.webp'
+import watermarkImage from '../images/watermark.webp'
+import adminIcon from '../images/admin.png'
+import marketingIcon from '../images/marketing.png'
+import financeIcon from '../images/finance.png'
+import allRounderIcon from '../images/all-rounder.png'
 
 const enablementModules = [
   {
@@ -84,10 +90,10 @@ const programProofPoints = [
 ]
 
 const streams = [
-  { name: 'Admin', icon: 'src/images/admin.png' },
-  { name: 'Marketing', icon: 'src/images/marketing.png' },
-  { name: 'Finance', icon: 'src/images/finance.png' },
-  { name: 'EA/VA', icon: 'src/images/all-rounder.png' },
+  { name: 'Admin', icon: adminIcon },
+  { name: 'Marketing', icon: marketingIcon },
+  { name: 'Finance', icon: financeIcon },
+  { name: 'EA/VA', icon: allRounderIcon },
 ]
 
 const scopeIn = [
@@ -121,7 +127,7 @@ export default function Program() {
       <section ref={modulesRef} className="section-padding bg-stone-100/50 relative">
           <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
             <img
-              src="/src/images/adonailogo.webp" // adjust path
+              src={adOnAiLogo}
               alt="Hero"
               className="
                 w-[400px] h-auto opacity-100
@@ -297,7 +303,7 @@ export default function Program() {
       <section ref={streamsRef} className="section-padding bg-stone-100/50 relative">
         <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
             <img
-              src="/src/images/watermark.webp" // adjust path
+              src={watermarkImage}
               alt="Hero"
               className="
                 w-[100%] h-auto opacity-100
@@ -345,7 +351,7 @@ export default function Program() {
       <section ref={scopeRef} className="section-padding bg-navy-950 relative overflow-hidden">
         <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
             <img
-              src="/src/images/adonailogo.webp" // adjust path
+              src={adOnAiLogo}
               alt="Hero"
               className="
                 w-[400px] h-auto opacity-100

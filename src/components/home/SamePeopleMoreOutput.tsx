@@ -1,4 +1,7 @@
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import personIcon from '../../images/person.png'
+import aiIcon from '../../images/ai.png'
+import outputIcon from '../../images/output.png'
 
 /* Watermark-style SVG icons — geometric, muted, large-scale backdrops */
 // const PersonIcon = () => (
@@ -30,9 +33,9 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 // Replace SVG icons with image paths
 const icons = [
-  'src/images/person.png', // first image
-  'src/images/ai.png',     // second image
-  'src/images/output.png',  // third image
+  personIcon,
+  aiIcon,
+  outputIcon,
 ]
 
 // const icons = [PersonIcon, AiIcon, ChartIcon]
