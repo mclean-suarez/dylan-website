@@ -33,12 +33,12 @@ export default function BestFitWorkflows() {
   const { ref, isVisible } = useScrollAnimation()
 
   return (
-    <section ref={ref} className="bg-navy-950 section-padding">
+    <section ref={ref} className="bg-stone-100/50 section-padding">
       <div className="section-container">
         <div className={`mb-10 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-          <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-4">Where AI Makes a Difference</p>
-          <div className="w-10 h-0.5 bg-brand-400 mb-6" />
-          <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight">
+          <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Where AI Makes a Difference</p>
+          <div className="w-10 h-0.5 bg-brand-700 mb-6" />
+          <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
             The Daily Tasks Where AI Has the Most Impact
           </h2>
         </div>
@@ -47,13 +47,13 @@ export default function BestFitWorkflows() {
           {workflowColumns.map((col, i) => (
             <div
               key={col.title}
-              className={`group bg-navy-950 p-6 transition-all duration-500 border border-white/10 rounded-[20px] transform hover:scale-105 hover:border-brand-700
+              className={`group bg-white p-6 transition-all duration-500 border border-stone-200 rounded-[20px] shadow-[0_4px_4px_0_rgba(66,99,235,0.5)] transform hover:scale-105 hover:border-brand-700
                           ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
               style={{ transitionDelay: `${(i + 1) * 80}ms` }}
             >
               {/* Top border line reacts to box hover using group-hover */}
-              <div className="border-t-2 pt-4 mb-5 border-white/20 group-hover:border-brand-700">
-                <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40">
+              <div className="border-t-2 pt-4 mb-5 border-stone-900 group-hover:border-brand-700">
+                <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400">
                   {col.title}
                 </h3>
               </div>
@@ -62,7 +62,7 @@ export default function BestFitWorkflows() {
                 {col.items.map((item) => (
                   <div key={item} className="flex items-start gap-2.5">
                     <span className="w-1.5 h-1.5 bg-brand-700 flex-shrink-0 mt-1.5" />
-                    <span className="text-sm text-white/60 leading-snug">{item}</span>
+                    <span className="text-sm text-stone-600 leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
@@ -73,7 +73,7 @@ export default function BestFitWorkflows() {
         <div className={`transition-all duration-500 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors group"
+            className="inline-flex items-center gap-2 text-sm font-medium text-brand-700 hover:text-brand-800 transition-colors group"
           >
             Book a Call
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

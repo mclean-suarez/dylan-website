@@ -33,11 +33,61 @@ const enablementModules = [
   },
 ]
 
+const productScreens = [
+  {
+    src: '/images/program/content-example.png',
+    alt: 'Ad On AI Academy Terminal module content example',
+    label: 'Module Content',
+    title: 'Engaging lessons that apply to their real tasks',
+    body: "We use a range of learning methods within the Academy terminal to keep learning fun, informative and grounded in your person's role, including case studies, tutorials & demonstrations, videos, diagrams, Padlets and guided practical tasks.",
+  },
+  {
+    src: '/images/program/learning-library.png',
+    alt: 'Ad On AI Academy Terminal learning library',
+    label: 'Learning Library',
+    title: "Staggered monthly content to ensure your person doesn't get left behind",
+    body: "Every month aims to upgrade your person's AI skills, building on the progress they made in the last. We support them through our live calls & academy modules, guiding them from basic to advanced use.",
+  },
+  {
+    src: '/images/program/ai-tools-library.png',
+    alt: 'Ad On AI Academy Terminal AI tools library',
+    label: 'AI Tools Library',
+    title: 'AI tools carefully curated by our team to match their real tasks',
+    body: 'Our team filters out all the overhyped and less useful AI tools, ensuring your person spends their time mastering only the most innovative, impressive & appropriate to their role AI tools.',
+  },
+  {
+    src: '/images/program/implementation-lab-example.png',
+    alt: 'Ad On AI Academy Terminal implementation lab example',
+    label: 'Implementation Lab',
+    title: 'Assistance that steps out their new AI-powered tasks for them',
+    body: "The lab is an AI feature which steps in to give your person a detailed & appropriate 'How to' guide with exact steps to enable them to implement AI into a specific task of theirs when they get stuck.",
+    imageClassName: 'object-top',
+  },
+]
+
+const programProofPoints = [
+  {
+    label: 'Staged Progression from Novice to Advanced AI User',
+    body: "Designed to deliver progressive improvements to your staff member's AI skills every month, emulating the learning process our team went through ourselves.",
+    accentClassName: 'border-l-brand-700',
+  },
+  {
+    label: 'Built Around Their Tasks',
+    body: 'All content is curated to help participants supercharge their own tasks with AI, not generic tips & tricks that won\'t apply to your staff like most "AI Experts" offer',
+    accentClassName: 'border-l-stone-900',
+  },
+  {
+    label: "Progress You'll Notice Before Seeing the Report",
+    body: "Every month participants are supported to implement AI into a new task, meaning you'll notice their productivity before you even see our monthly progress report.",
+    accentClassName: 'border-l-brand-700',
+  },
+]
+
 const streams = [
   { name: 'Admin', icon: 'src/images/admin.png' },
   { name: 'Marketing', icon: 'src/images/marketing.png' },
   { name: 'Finance', icon: 'src/images/finance.png' },
-  { name: 'All-Rounder', icon: 'src/images/all-rounder.png' },
+  { name: 'EA/VA', icon: 'src/images/all-rounder.png' },
 ]
 
 const scopeIn = [
@@ -58,6 +108,9 @@ export default function Program() {
         label="The Program"
         title="Structured AI Enablement for Your People"
         subtitle="A structured AI enablement program starting with a General Introduction to AI. Monthly knowledge &amp; skills checks, progress reporting, and hands-on implementation support when participants need it."
+        artSrc="/images/brand/aistar.png"
+        artAlt="Ad On AI star mark"
+        artClassName="max-h-[280px] w-auto ml-auto"
       />
 
       {/* Monthly cycle — orbital loop diagram */}
@@ -91,6 +144,54 @@ export default function Program() {
             </h2>
           </div>
 
+          <div className={`grid grid-cols-1 xl:grid-cols-[0.88fr_1.12fr] gap-5 mb-10 transition-all duration-500 delay-75 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+            <div className="bg-white p-6 sm:p-8 border border-stone-200 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]">
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-4">
+                Inside The Program
+              </p>
+              <h3 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight mb-4">
+                A custom-built learning app, not PDFs or webinars
+              </h3>
+              <p className="text-sm text-stone-500 leading-relaxed mb-6">
+                Ad On AI is not a webinar series, a folder of training videos, or powerpoint presentations. Participants move through a custom built app called the Academy Terminal with guided modules & extensive resources, a comprehensive learning library updated to be relevant to the always-changing AI landscape, curated AI tools, and an Implementation Lab built to help them customise their AI usage to be relevant to their work. All of this is backed up by our monthly live calls, where we guide participants through the content and offer live support in implementing AI in their daily tasks.
+              </p>
+              <div className={`border border-stone-200 border-l-2 ${programProofPoints[1].accentClassName} rounded-[12px] bg-stone-50/80 p-4`}>
+                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-2">{programProofPoints[1].label}</p>
+                <p className="text-sm text-stone-700 leading-relaxed">
+                  {programProofPoints[1].body}
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 sm:p-5 border border-stone-200 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]">
+              <div className="relative overflow-hidden border-[3px] border-[#4263EB] rounded-[15px] h-[250px] sm:h-[320px] xl:h-[340px] bg-white mb-4">
+                <img
+                  src="/images/program/landing-page-of-terminal.png"
+                  alt="Ad On AI Academy Terminal landing page"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-stone-900/80 to-transparent px-6 py-5">
+                  <p className="font-mono text-[10px] text-white/50 uppercase tracking-[0.15em] mb-1">
+                    Academy Terminal
+                  </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[programProofPoints[0], programProofPoints[2]].map((point) => (
+                  <div
+                    key={point.label}
+                    className={`border border-stone-200 border-l-2 ${point.accentClassName} rounded-[12px] bg-stone-50/80 p-4`}
+                  >
+                    <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-2">{point.label}</p>
+                    <p className="text-sm text-stone-700 leading-relaxed">
+                      {point.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Pathway progression indicator — desktop */}
           <div className={`hidden lg:block mb-8 transition-all duration-500 delay-100 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <div className="relative">
@@ -113,6 +214,35 @@ export default function Program() {
                 ))}
               </div>
             </div>
+          </div>
+
+          <div className={`grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 transition-all duration-500 delay-150 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+            {productScreens.map((screen, i) => (
+              <div
+                key={screen.src}
+                className={`bg-white p-4 sm:p-5 border border-stone-200 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-[1.02] ${
+                  modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+                }`}
+                style={{ transitionDelay: `${(i + 1) * 80}ms` }}
+              >
+                <div className="relative overflow-hidden border-[3px] border-[#4263EB] rounded-[15px] mb-5">
+                  <img
+                    src={screen.src}
+                    alt={screen.alt}
+                    className={`w-full h-64 sm:h-72 object-cover ${screen.imageClassName ?? 'object-center'}`}
+                  />
+                </div>
+                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-2">
+                  {screen.label}
+                </p>
+                <h3 className="text-base font-bold text-stone-900 leading-snug mb-2">
+                  {screen.title}
+                </h3>
+                <p className="text-sm text-stone-500 leading-relaxed">
+                  {screen.body}
+                </p>
+              </div>
+            ))}
           </div>
 
           {/* Module cards */}
@@ -240,13 +370,8 @@ export default function Program() {
 
           <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-10 transition-all duration-500 delay-100 ${scopeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             {/* Left: support types */}
-<<<<<<< Updated upstream
-            <div className="border border-stone-200 border-l-2 border-l-brand-700 p-6 md:p-8">
-              <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-5">
-=======
             <div className="border border-white/10 border-l-2 border-l-brand-500 p-6 md:p-8 bg-white/5 rounded-[10px] backdrop-blur-sm">
               <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40 mb-5">
->>>>>>> Stashed changes
                 What your person gets help with
               </h3>
               <div className="space-y-4">
@@ -261,19 +386,11 @@ export default function Program() {
 
             {/* Right: how support works */}
             <div className="flex items-center">
-<<<<<<< Updated upstream
-              <div className="w-full border border-stone-200 border-l-2 border-l-stone-900 p-6 md:p-8">
-                <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-5">
-                  How it works
-                </h3>
-                <p className="text-sm text-stone-700 leading-relaxed">
-=======
               <div className="w-full border border-white/10 border-l-2 border-l-white/30 p-6 md:p-8 bg-white/5 rounded-[10px] backdrop-blur-sm">
                 <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40 mb-5">
                   How it works
                 </h3>
                 <p className="text-sm text-white/80 leading-relaxed">
->>>>>>> Stashed changes
                   When your person needs help using AI in their work, we step in directly with real, hands-on support from someone who knows the tools.
                 </p>
               </div>

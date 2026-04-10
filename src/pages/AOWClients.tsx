@@ -1,9 +1,5 @@
 import { Link } from 'react-router-dom'
-<<<<<<< Updated upstream
-import { ArrowRight, Users, Layers, TrendingUp, Shield, Wrench, Clock, BarChart3 } from 'lucide-react'
-=======
 import { ArrowRight, Users, Layers, TrendingUp, Wrench, Clock, BarChart3 } from 'lucide-react'
->>>>>>> Stashed changes
 import PageHeader from '../components/PageHeader'
 import ProductivityLiftCalculator from '../components/home/ProductivityLiftCalculator'
 import ProblemsSection from '../components/home/ProblemsSection'

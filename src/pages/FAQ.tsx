@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: 'What happens after the General Introductory Program?',
-    answer: 'After completing the 3-month General Introductory Program, participants complete a Readiness Check. Passing is required to progress into role-specific training such as Admin, Marketing, Finance, or All-Rounder. The training track is selected based on the participant\u2019s responsibilities and the outcomes you want to improve.',
+    answer: 'After completing the 3-month General Introductory Program, participants complete a Readiness Check. Passing is required to progress into role-specific training such as Admin, Marketing, Finance, or EA/VA. The training track is selected based on the participant\u2019s responsibilities and the outcomes you want to improve.',
   },
   {
     question: 'What are the self-paced modules?',

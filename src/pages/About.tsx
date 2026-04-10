@@ -50,7 +50,7 @@ export default function About() {
           </div>
 
           <div
-            className={`grid grid-cols-1 sm:grid-cols-2 gap-5 transition-all duration-500 delay-100 ${
+            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 transition-all duration-500 delay-100 ${
               teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
             }`}
           >
@@ -80,6 +80,76 @@ export default function About() {
               </div>
               <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Beau Robards</h3>
               <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Facilitator</p>
+            </div>
+
+            {/* Taryn Boxer */}
+            <div
+              className={`bg-white p-6 sm:p-8 relative border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-105`}
+              style={{ transitionDelay: '320ms' }}
+            >
+              <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
+                <div className="w-16 h-16 flex items-center justify-center bg-brand-700">
+                  <span className="font-mono text-lg font-bold text-white tracking-tight">TB</span>
+                </div>
+              </div>
+              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Taryn Boxer</h3>
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Operations Manager</p>
+            </div>
+
+            {/* Ben Ragless */}
+            <div
+              className={`bg-white p-6 sm:p-8 relative border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-105`}
+              style={{ transitionDelay: '400ms' }}
+            >
+              <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
+                <div className="w-16 h-16 flex items-center justify-center bg-stone-900">
+                  <span className="font-mono text-lg font-bold text-white tracking-tight">BR</span>
+                </div>
+              </div>
+              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Ben Ragless</h3>
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Business Development Representative</p>
+            </div>
+
+            {/* James Molloy */}
+            <div
+              className={`bg-white p-6 sm:p-8 relative border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-105`}
+              style={{ transitionDelay: '480ms' }}
+            >
+              <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
+                <div className="w-16 h-16 flex items-center justify-center bg-brand-700">
+                  <span className="font-mono text-lg font-bold text-white tracking-tight">JM</span>
+                </div>
+              </div>
+              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">James Molloy</h3>
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Business Development Representative</p>
+            </div>
+
+            {/* Leah Barnes */}
+            <div
+              className={`bg-white p-6 sm:p-8 relative border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-105`}
+              style={{ transitionDelay: '560ms' }}
+            >
+              <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
+                <div className="w-16 h-16 flex items-center justify-center bg-stone-900">
+                  <span className="font-mono text-lg font-bold text-white tracking-tight">LB</span>
+                </div>
+              </div>
+              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Leah Barnes</h3>
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Training Coordinator</p>
+            </div>
+
+            {/* Tracy Malone */}
+            <div
+              className={`bg-white p-6 sm:p-8 relative border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-105`}
+              style={{ transitionDelay: '640ms' }}
+            >
+              <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
+                <div className="w-16 h-16 flex items-center justify-center bg-brand-700">
+                  <span className="font-mono text-lg font-bold text-white tracking-tight">TM</span>
+                </div>
+              </div>
+              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Tracy Malone</h3>
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Training Coordinator</p>
             </div>
           </div>
         </div>
@@ -115,10 +185,10 @@ export default function About() {
                 Our Response
               </h3>
               <p className="text-sm text-white leading-relaxed">
-                We built a structured AI training program that helps people
-                use AI in their actual role, supports them as they apply it,
-                and shows the business what is changing over time. Practical.
-                Accountable. Built for real work.
+                We help your people use AI properly in their real work, not
+                just learn about it. They build practical skill, apply it in
+                the job they already do, and get support when they hit a
+                roadblock. You see what is changing month by month.
               </p>
             </div>
           </div>
@@ -150,8 +220,8 @@ export default function About() {
             </p>
             <div className="w-10 h-0.5 bg-brand-700 mb-6" />
             <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight leading-tight mb-4">
-              Built Inside a Business.{' '}
-              <span className="text-stone-400">Not a Lab.</span>
+              Built From Operational Experience.{' '}
+              <span className="text-stone-400">Not By an Online "Guru".</span>
             </h2>
           </div>
 
@@ -195,7 +265,7 @@ export default function About() {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-stone-900/80 to-transparent p-6 ">
                 <span className="font-mono text-[10px] text-white/50 uppercase tracking-[0.15em]">
-                  Delivery Office — Cagayan De Oro, Philippines
+                  Delivery Office — Philippines
                 </span>
               </div>
             </div>

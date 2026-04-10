@@ -58,7 +58,7 @@ export default function OperationalCredibility() {
                   Headquarters
                 </p>
                 <p className="text-sm text-white/70 font-medium">
-                  Gold Coast, Australia
+                  Australia
                 </p>
               </div>
               {/* Coordinate notation */}
@@ -119,7 +119,7 @@ export default function OperationalCredibility() {
                     Delivery Office
                   </p>
                   <p className="text-sm text-white/70 font-medium">
-                    Cagayan De Oro, Philippines
+                    Philippines
                   </p>
                 </div>
               </div>

@@ -27,7 +27,7 @@ export default function DualOutcomesDiagram() {
   const { ref, isVisible } = useScrollAnimation()
 
   return (
-    <section ref={ref} className="section-padding border-b border-stone-200 relative">
+    <section ref={ref} className="section-padding border-b border-stone-200 bg-[#0A0C1A] relative">
       <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
         <img
           src="/src/images/watermark.webp" // adjust path
@@ -51,13 +51,13 @@ export default function DualOutcomesDiagram() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}
         >
-          <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">
+          <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.15em] mb-4">
             Dual Value
           </p>
-          <div className="w-10 h-0.5 bg-brand-700 mb-6" />
-          <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
+          <div className="w-10 h-0.5 bg-brand-400 mb-6" />
+          <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight">
             What Your Business Gets.{' '}
-            <span className="text-stone-400">What Your Person Gets.</span>
+            <span className="text-white/40">What Your Person Gets.</span>
           </h2>
         </div>
 
@@ -171,11 +171,11 @@ export default function DualOutcomesDiagram() {
 
           {/* Bottom attribution line */}
           <div className="mt-6 flex items-center gap-3">
-            <div className="h-px flex-1 bg-stone-300" />
-            <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] flex-shrink-0">
+            <div className="h-px flex-1 bg-white/15" />
+            <span className="font-mono text-[10px] text-white/40 uppercase tracking-[0.15em] flex-shrink-0">
               Same program. Measured from both sides.
             </span>
-            <div className="h-px flex-1 bg-stone-300" />
+            <div className="h-px flex-1 bg-white/15" />
           </div>
         </div>
       </div>
