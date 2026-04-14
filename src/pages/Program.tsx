@@ -33,9 +33,9 @@ const enablementModules = [
   },
   {
     number: 'E',
-    label: 'Assessment',
-    title: 'Readiness Check',
-    body: 'Confirms your person can apply AI competently. Required before progressing into role-specific training.',
+    label: 'Role-Specific Training',
+    title: 'Mastering the Latest AI Tools for Their Role',
+    body: 'After month 3, your person progresses beyond foundational skills and into mastering the latest and greatest AI tools released for their role.',
   },
 ]
 
@@ -48,7 +48,7 @@ const productScreens = [
     body: "We use a range of learning methods within the Academy terminal to keep learning fun, informative and grounded in your person's role, including case studies, tutorials & demonstrations, videos, diagrams, Padlets and guided practical tasks.",
   },
   {
-    src: '/images/program/learning-library.png',
+    src: '/images/program/learning-library2.png',
     alt: 'Ad On AI Academy Terminal learning library',
     label: 'Learning Library',
     title: "Staggered monthly content to ensure your person doesn't get left behind",
@@ -172,7 +172,7 @@ export default function Program() {
             <div className="bg-white p-4 sm:p-5 border border-stone-200 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]">
               <div className="relative overflow-hidden border-[3px] border-[#4263EB] rounded-[15px] h-[250px] sm:h-[320px] xl:h-[340px] bg-white mb-4">
                 <img
-                  src="/images/program/landing-page-of-terminal.png"
+                  src="/images/program/learning-library2.png"
                   alt="Ad On AI Academy Terminal landing page"
                   className="w-full h-full object-cover object-top"
                 />
@@ -289,7 +289,7 @@ export default function Program() {
           <div className={`mt-6 flex items-center gap-3 transition-all duration-500 delay-400 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <div className="h-px flex-1 bg-stone-300" />
             <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em] flex-shrink-0">
-              Foundation → Readiness Check → Role-Specific Training
+              Start Strong → Apply In Role → Master Role-Specific AI
             </span>
             <div className="h-px flex-1 bg-stone-300" />
           </div>

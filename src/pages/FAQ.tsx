@@ -8,19 +8,19 @@ import adOnAiLogo from '../images/adonailogo.webp'
 const faqs = [
   {
     question: 'What exactly is Ad On AI?',
-    answer: 'Ad On AI is a structured AI training and enablement program for staff in your business. All participants start with a 3-month General Introductory Program. Each month includes a one-hour live enablement call, three hours of self-paced modules, a knowledge check, and a Progress Report. When participants are struggling to apply what they have learned, the Ad On AI team provides hands-on support.',
+    answer: 'Ad On AI is a managed AI training and enablement program for staff in your business. Participants build capability through a structured monthly cycle that includes a live enablement call, self-paced modules, practical application in their role, a knowledge check, and a Progress Report. As their capability grows, the training evolves into more advanced and role-specific AI tools, workflows, and use cases.',
   },
   {
     question: 'How is the monthly cadence structured?',
     answer: 'Each month follows a complete enablement cycle: one live enablement call (one hour), three weekly self-paced sessions through an online enablement terminal, a knowledge check where participants explain what they learned and how they applied AI, a Progress Report delivered to you, and hands-on support from the Ad On AI team when participants need it.',
   },
   {
-    question: 'What is the General Introductory Program?',
-    answer: 'The General Introductory Program is a 3-month structured program that all participants begin with. Month 1 covers Introduction and Onboarding. Month 2 covers Prompting. Month 3 covers Applying AI to My Workflows. After completing all three months, participants complete a Readiness Check to progress to role-specific training.',
+    question: 'What do participants start with?',
+    answer: 'Participants begin with a structured foundation in using AI well at work. This covers safe use, onboarding, prompting, and applying AI to real workflows so they can build confidence before moving into more advanced role-specific training. From there, the program continues to evolve with their role, responsibilities, and the latest useful AI tools.',
   },
   {
-    question: 'What happens after the General Introductory Program?',
-    answer: 'After completing the 3-month General Introductory Program, participants complete a Readiness Check. Passing is required to progress into role-specific training such as Admin, Marketing, Finance, or EA/VA. The training track is selected based on the participant\u2019s responsibilities and the outcomes you want to improve.',
+    question: 'What is role-specific training?',
+    answer: 'Role-specific training is where your person moves beyond the foundations of using AI well and begins mastering the latest and greatest AI tools, workflows, and practical use cases most relevant to their role. The training focus is shaped by their responsibilities and the outcomes you want to improve, and it continues evolving as new tools and opportunities emerge.',
   },
   {
     question: 'What are the self-paced modules?',
