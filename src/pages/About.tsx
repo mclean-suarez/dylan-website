@@ -188,9 +188,10 @@ export default function About() {
               </h3>
               <p className="text-sm text-white leading-relaxed">
                 We help your people use AI properly in their real work, not
-                just learn about it. They build practical skill, apply it in
-                the job they already do, and get support when they hit a
-                roadblock. You see what is changing month by month.
+                just learn about it. They build practical AI skills, apply
+                them in the job they already do, and get support when they hit
+                a roadblock. You'll see the difference in their productivity
+                before you even read our report.
               </p>
             </div>
           </div>
