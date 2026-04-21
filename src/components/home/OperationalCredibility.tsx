@@ -36,34 +36,30 @@ export default function OperationalCredibility() {
         </div>
 
         {/* Photo grid + stats composition */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-px bg-white/[0.06]">
+        <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] gap-8 lg:gap-10 items-start">
           {/* Main photo — Gold Coast HQ */}
           <div
-            className={`lg:col-span-7 relative overflow-hidden bg-navy-950 transition-all duration-700 group ${
+            className={`transition-all duration-700 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
             }`}
             style={{ transitionDelay: '100ms' }}
           >
-            <div className="aspect-[16/10] lg:aspect-auto lg:h-full relative">
-              <img
-                src="/images/offices/gold-coast-hq.png"
-                alt="Ad On Group headquarters, Gold Coast, Australia"
-                className="w-full h-full object-cover grayscale brightness-75 contrast-110 transition-all duration-500 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100"
-              />
-              {/* Editorial overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
-              {/* Location label */}
-              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6">
-                <p className="font-mono text-[9px] text-white/30 uppercase tracking-[0.15em] mb-1">
-                  Headquarters
-                </p>
-                <p className="text-sm text-white/70 font-medium">
-                  Australia
-                </p>
+            <div className="mx-auto max-w-[640px]">
+              <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#4263EB] bg-white/5 shadow-[0_16px_40px_rgba(66,99,235,0.22)]">
+                <img
+                  src="/images/offices/gold-coast-hq.png"
+                  alt="Ad On Group headquarters, Gold Coast, Australia"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.03]"
+                />
               </div>
-              {/* Coordinate notation */}
-              <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
-                <p className="font-mono text-[9px] text-white/20 uppercase tracking-[0.12em]">
+              <div className="mt-5 flex flex-col gap-2 text-center sm:flex-row sm:items-start sm:justify-between sm:text-left">
+                <div>
+                  <p className="font-mono text-[9px] text-white/30 uppercase tracking-[0.15em] mb-1">
+                    Headquarters
+                  </p>
+                  <p className="text-sm text-white/70 font-medium">Australia</p>
+                </div>
+                <p className="font-mono text-[9px] text-white/20 uppercase tracking-[0.12em] sm:pt-1">
                   −28.00° / 153.43°
                 </p>
               </div>
@@ -71,7 +67,7 @@ export default function OperationalCredibility() {
           </div>
 
           {/* Right column — stats + secondary photos */}
-          <div className="lg:col-span-5 grid grid-rows-[auto_1fr_1fr] gap-px bg-[#0A0C1A]">
+          <div className="space-y-6 lg:space-y-7">
             {/* Stats grid */}
             <div
               className={`grid grid-cols-2 gap-px bg-white/[0.06] transition-all duration-700 ${
@@ -100,52 +96,56 @@ export default function OperationalCredibility() {
               ))}
             </div>
 
-            {/* Secondary photo — Philippines office */}
-            <div
-                className={`lg:col-span-7 relative overflow-hidden bg-navy-950 transition-all duration-700 group ${
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {/* Secondary photo — Philippines office */}
+              <div
+                className={`transition-all duration-700 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
                 }`}
-                style={{ transitionDelay: '100ms' }}
+                style={{ transitionDelay: '280ms' }}
               >
-              <div className="aspect-[16/9] lg:aspect-auto lg:h-full relative">
-                <img
-                  src="/images/offices/philippines-office.jpg"
-                  alt="Ad On Group delivery office, Philippines"
-                  className="w-full h-full object-cover grayscale brightness-75 contrast-110 transition-all duration-500 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
-                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6">
-                  <p className="font-mono text-[9px] text-white/30 uppercase tracking-[0.15em] mb-1">
-                    Delivery Office
-                  </p>
-                  <p className="text-sm text-white/70 font-medium">
-                    Philippines
-                  </p>
+                <div className="mx-auto max-w-[250px]">
+                  <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#4263EB] bg-white/5 shadow-[0_14px_32px_rgba(66,99,235,0.2)]">
+                    <img
+                      src="/images/offices/philippines-office.jpg"
+                      alt="Ad On Group delivery office, Philippines"
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.04]"
+                    />
+                  </div>
+                  <div className="mt-4 text-center">
+                    <p className="font-mono text-[9px] text-white/30 uppercase tracking-[0.15em] mb-1">
+                      Delivery Office
+                    </p>
+                    <p className="text-sm text-white/70 font-medium">
+                      Philippines
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Tertiary photo — South Africa remote team */}
-            <div
-                className={`lg:col-span-7 relative overflow-hidden bg-navy-950 transition-all duration-700 group ${
+              {/* Tertiary photo — South Africa remote team */}
+              <div
+                className={`transition-all duration-700 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
                 }`}
-                style={{ transitionDelay: '100ms' }}
+                style={{ transitionDelay: '360ms' }}
               >
-              <div className="aspect-[16/9] lg:aspect-auto lg:h-full relative">
-                <img
-                  src="/images/offices/south-africa.jpg"
-                  alt="Cape Town, South Africa — remote delivery team"
-                  className="w-full h-full object-cover grayscale brightness-75 contrast-110 transition-all duration-500 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
-                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6">
-                  <p className="font-mono text-[9px] text-white/30 uppercase tracking-[0.15em] mb-1">
-                    Remote Delivery Team
-                  </p>
-                  <p className="text-sm text-white/70 font-medium">
-                    South Africa
-                  </p>
+                <div className="mx-auto max-w-[250px]">
+                  <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#4263EB] bg-white/5 shadow-[0_14px_32px_rgba(66,99,235,0.2)]">
+                    <img
+                      src="/images/offices/south-africa.jpg"
+                      alt="Cape Town, South Africa — remote delivery team"
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.04]"
+                    />
+                  </div>
+                  <div className="mt-4 text-center">
+                    <p className="font-mono text-[9px] text-white/30 uppercase tracking-[0.15em] mb-1">
+                      Remote Delivery Team
+                    </p>
+                    <p className="text-sm text-white/70 font-medium">
+                      South Africa
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function OperationalCredibility() {
 
         {/* Bottom attribution bar */}
         <div
-          className={`mt-px bg-navy-950 border-t border-white/[0.06] py-4 px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 transition-all duration-500 delay-500 ${
+          className={`mt-8 bg-navy-950 border-t border-white/[0.06] py-4 px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 transition-all duration-500 delay-500 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
