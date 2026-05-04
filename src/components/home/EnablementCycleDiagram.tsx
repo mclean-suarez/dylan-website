@@ -55,7 +55,7 @@ export default function EnablementCycleDiagram({ className = '' }: { className?:
         LEARN
       </text>
       <text x={200} y={55} fill={textMid} fontSize={6.5} fontFamily="system-ui, sans-serif" textAnchor="middle">
-        Live call + modules
+        Guided sessions + modules
       </text>
       {/* Stage number */}
       <text x={164} y={16} fill={textLight} fontSize={7} fontFamily="'Space Mono', monospace" fontWeight="700">01</text>

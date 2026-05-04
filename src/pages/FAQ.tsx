@@ -8,11 +8,11 @@ import adOnAiLogo from '../images/adonailogo.webp'
 const faqs = [
   {
     question: 'What exactly is Ad On AI?',
-    answer: 'Ad On AI is a managed AI training and enablement program for staff in your business. Participants build capability through a structured monthly cycle that includes a live enablement call, self-paced modules, practical application in their role, a knowledge check, and a Progress Report. As their capability grows, the training evolves into more advanced and role-specific AI tools, workflows, and use cases.',
+    answer: 'Ad On AI is a managed AI training and enablement program for staff in your business. Participants build capability through a structured monthly cycle that combines guided enablement, self-paced modules, practical application in their role, a knowledge check, and a Progress Report. As their capability grows, the training evolves into more advanced and role-specific AI tools, workflows, and use cases.',
   },
   {
     question: 'How is the monthly cadence structured?',
-    answer: 'Each month follows a complete enablement cycle: one live enablement call (one hour), three weekly self-paced sessions through an online enablement terminal, a knowledge check where participants explain what they learned and how they applied AI, a Progress Report delivered to you, and hands-on support from the Ad On AI team when participants need it.',
+    answer: 'Each month follows a complete enablement cycle built around guided learning, self-paced sessions through an online enablement terminal, a knowledge check where participants explain what they learned and how they applied AI, a Progress Report delivered to you, and hands-on support from the Ad On AI team when participants need it. Depending on the month and the participant, guided learning can include live calls, facilitated sessions, and practical implementation support.',
   },
   {
     question: 'What do participants start with?',
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: 'Can our representative attend the enablement calls?',
-    answer: 'Yes. Client representatives are welcome to attend the monthly live enablement call to observe the process, stay across participant progress, and provide context about priorities or upcoming workflow changes.',
+    answer: 'Yes. When live enablement calls or facilitated sessions are scheduled, client representatives are welcome to attend to observe the process, stay across participant progress, and provide context about priorities or upcoming workflow changes.',
   },
   {
     question: 'What is the Progress Report?',
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     question: 'Is this a training program or a webinar?',
-    answer: 'No. Ad On AI is not a generic training program, not a webinar, and not pre-recorded content. The live enablement calls are interactive and hands-on. The self-paced modules are delivered through a purpose-built enablement terminal. Everything is structured around practical application, not passive learning.',
+    answer: 'Ad On AI is a managed enablement program, not just a standalone webinar or a library of pre-recorded content. It combines facilitated sessions, self-paced modules delivered through a purpose-built enablement terminal, and practical application support. Everything is structured around real implementation, not passive learning.',
   },
   {
     question: 'Do we need to be using Ad On Workforce?',

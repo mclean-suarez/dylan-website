@@ -52,7 +52,7 @@ const productScreens = [
     alt: 'Ad On AI Academy Terminal learning library',
     label: 'Learning Library',
     title: "Staggered monthly content to ensure your person doesn't get left behind",
-    body: "Every month aims to upgrade your person's AI skills, building on the progress they made in the last. We support them through our live calls & academy modules, guiding them from basic to advanced use.",
+    body: "Every month aims to upgrade your person's AI skills, building on the progress they made in the last. We support them through a mix of live sessions, academy modules, and guided resources, helping them progress from basic to advanced use.",
   },
   {
     src: '/images/program/ai-tools-library.png',
@@ -156,10 +156,10 @@ export default function Program() {
                 Inside The Program
               </p>
               <h3 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight mb-4">
-                A custom-built learning app, not PDFs or webinars
+                A custom-built learning app with guided support
               </h3>
               <p className="text-sm text-stone-500 leading-relaxed mb-6">
-                Ad On AI is not a webinar series, a folder of training videos, or powerpoint presentations. Participants move through a custom built app called the Academy Terminal with guided modules & extensive resources, a comprehensive learning library updated to be relevant to the always-changing AI landscape, curated AI tools, and an Implementation Lab built to help them customise their AI usage to be relevant to their work. All of this is backed up by our monthly live calls, where we guide participants through the content and offer live support in implementing AI in their daily tasks.
+                Ad On AI combines a custom built app called the Academy Terminal with guided modules & extensive resources, a comprehensive learning library updated to stay relevant to the always-changing AI landscape, curated AI tools, and an Implementation Lab built to help participants customise their AI usage to their work. Depending on the participant and the stage of the program, support can include live calls, guided sessions, and practical help implementing AI into daily tasks.
               </p>
               <div className={`border border-stone-200 border-l-2 ${programProofPoints[1].accentClassName} rounded-[12px] bg-stone-50/80 p-4`}>
                 <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-2">{programProofPoints[1].label}</p>
