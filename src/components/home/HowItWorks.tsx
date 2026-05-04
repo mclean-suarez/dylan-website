@@ -2,7 +2,7 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import circleImage from '../../images/circle.png'
 
 const steps = [
-  { number: '01', title: 'Live Face-To-Face Training', time: '2 hrs / month' },
+  { number: '01', title: 'Guided Live Sessions', time: '2 hrs / month' },
   { number: '02', title: 'Self-Paced Modules', time: '2 hrs / month' },
   { number: '03', title: 'Skills and Knowledge Check', time: 'End of month' },
   { number: '04', title: 'Progress Report', time: 'Delivered to you' },

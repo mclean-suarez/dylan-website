@@ -12,7 +12,7 @@ const pillars = [
   {
     number: '02',
     title: 'Monthly Modules with Monitored Outcomes',
-    subtitle: 'Live call, customised modules, skills check, implementation to their daily work, progress report sent to you',
+    subtitle: 'Guided sessions, customised modules, skills check, implementation to their daily work, progress report sent to you',
   },
   {
     number: '03',

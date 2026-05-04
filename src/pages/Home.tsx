@@ -1,6 +1,5 @@
 import Hero from '../components/home/Hero'
 import TrustStrip from '../components/home/TrustStrip'
-import BrandStatement from '../components/home/BrandStatement'
 import OfferSection from '../components/home/OfferSection'
 import SamePeopleMoreOutput from '../components/home/SamePeopleMoreOutput'
 import HowItWorks from '../components/home/HowItWorks'
@@ -15,7 +14,6 @@ export default function Home() {
     <>
       <Hero />
       <TrustStrip />
-      <BrandStatement />
 
       <OfferSection />
       <SamePeopleMoreOutput />

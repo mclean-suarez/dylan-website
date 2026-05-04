@@ -4,8 +4,8 @@ import EnablementCycleDiagram from './EnablementCycleDiagram'
 const loopSteps = [
   {
     label: 'Learn',
-    title: 'Live Call + Weekly Self-Paced Sessions',
-    description: 'A one-hour monthly live call plus three one-hour weekly sessions of structured self-paced content.',
+    title: 'Guided Sessions + Self-Paced Content',
+    description: 'A one-hour monthly live call/webinar plus three one-hour weekly sessions of structured self-paced content.',
   },
   {
     label: 'Prove',

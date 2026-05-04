@@ -78,7 +78,7 @@ export default function DualOutcomesDiagram() {
                 </span>
               </div>
               <div className="hidden sm:flex items-center gap-6">
-                {['Live Call', 'Modules', 'Knowledge Check', 'Support', 'Report'].map((item, i) => (
+                {['Guided Session', 'Modules', 'Knowledge Check', 'Support', 'Report'].map((item, i) => (
                   <span key={item} className="flex items-center gap-2">
                     {i > 0 && <div className="w-px h-3 " />}
                     <span className="font-mono text-[8px] text-stone-400 uppercase tracking-[0.1em]">
