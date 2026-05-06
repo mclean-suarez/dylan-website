@@ -148,7 +148,6 @@ const learningRoadmap = [
       {
         label: 'Week 7',
         title: 'Expanding Beyond Claude: The AI Tools Worth Knowing',
-        liveCall: true,
         points: [
           'Identify general-purpose AI tools that complement Claude across everyday work tasks.',
           'Select and apply role-specific AI tools that meaningfully reduce time spent on high-volume or technical work.',
@@ -195,7 +194,6 @@ const learningRoadmap = [
       {
         label: 'Week 11',
         title: 'Finishing, Refining and Submitting Your Automation Workflow',
-        liveCall: true,
         points: [
           'Complete an end-to-end automation workflow that runs reliably on real data and produces usable outputs without significant rework.',
           'Document the workflow in plain language so it can be understood, repeated, and handed off to someone else.',
