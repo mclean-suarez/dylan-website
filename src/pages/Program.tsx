@@ -75,88 +75,159 @@ const learningRoadmap = [
   {
     number: '01',
     label: 'Month 1',
-    title: 'Foundations',
-    subtitle: 'Getting comfortable with AI and producing real outputs.',
+    tag: 'Foundations',
+    title: 'Getting comfortable with AI and producing real outputs.',
+    subtitle: 'From understanding what AI is to using it confidently in daily work, with role-specific outputs from week one.',
     weeks: [
       {
         label: 'Week 1',
         title: 'What AI Is and How It Actually Works',
-        body: 'Understand how AI and large language models work, where they are useful, and how they apply to the participant\'s real role and daily tasks.',
+        liveCall: true,
+        points: [
+          'Explain how AI and Large Language Models process information and generate responses.',
+          'Identify practical AI applications relevant to their specific role and daily tasks.',
+          'Construct and send their first prompt using Claude and critically evaluate the output.',
+        ],
       },
       {
         label: 'Week 2',
         title: 'Getting Started With AI and Getting Better Results',
-        body: 'Learn how to structure prompts, use real work materials for context, and improve outputs through follow-up and review.',
+        points: [
+          'Structure prompts that consistently produce accurate, role-specific outputs from the first attempt.',
+          'Leverage real work materials and documents to generate outputs that reflect actual business context.',
+          'Refine and improve AI responses through iterative follow-up and structured self-review techniques.',
+        ],
       },
       {
         label: 'Week 3',
         title: 'What Else AI Can Do and How to Apply It Across Your Work',
-        body: 'Explore AI beyond basic chat, including structured reasoning, connected tools, and role-relevant workplace applications.',
+        liveCall: true,
+        points: [
+          'Identify AI capabilities beyond basic chat, including connected tools, workflow automation, and structured reasoning.',
+          'Set up and use a real connector to enable AI to work with live personal data such as emails.',
+          'Design and propose a practical, role-relevant assessment task that demonstrates genuine AI application at work.',
+        ],
       },
       {
         label: 'Week 4',
         title: 'Building and Finding AI Workflows',
-        body: 'Start building simple AI workflows for repeatable tasks and identify where AI can replace slower manual work.',
+        points: [
+          'Design and execute a multi-step AI workflow applied to a real, repeatable task in their role.',
+          'Identify where AI workflows can replace manual, time-consuming processes across their day-to-day work.',
+          'Document and hand off an AI workflow so others in their team can replicate it consistently.',
+        ],
       },
     ],
   },
   {
     number: '02',
     label: 'Month 2',
-    title: 'Expanding the Toolkit',
-    subtitle: 'Advanced techniques and connecting multiple AI tools.',
+    tag: 'Expanding the Toolkit',
+    title: 'Advanced techniques and connecting multiple AI tools.',
+    subtitle: 'Beyond Claude alone, into multi-tool workflows that match real workplace standards and deliver finished, usable artefacts.',
     weeks: [
       {
         label: 'Week 5',
         title: 'Advanced Prompting Techniques for Better Results',
-        body: 'Improve output quality with stronger prompting, better instructions, and multi-step prompt sequences for more complex work.',
+        liveCall: true,
+        points: [
+          'Diagnose and fix common AI output problems using targeted follow-up prompts rather than starting over.',
+          'Use meta-prompting and reference material to produce outputs that match real workplace standards and personal style.',
+          'Break complex tasks into chained prompt sequences to achieve consistently higher quality results across multi-stage work.',
+        ],
       },
       {
         label: 'Week 6',
         title: 'Expanding Your Toolkit: Connectors, Outputs and Skills',
-        body: 'Use connectors, outputs, and reusable skills to help AI work across real data sources and produce more finished artefacts.',
+        points: [
+          'Connect and combine role-relevant tools to enable Claude to work across real data sources in a single conversation.',
+          'Request and produce finished, usable artefacts such as documents, trackers, and interactive tools instead of plain text outputs.',
+          'Apply Claude Skills to extend what AI can do within specific recurring tasks and workflows.',
+        ],
       },
       {
         label: 'Week 7',
-        title: 'The AI Tools Worth Knowing',
-        body: 'Expand beyond a single tool and begin using role-relevant AI tools that reduce time spent on high-volume or technical work.',
+        title: 'Expanding Beyond Claude: The AI Tools Worth Knowing',
+        liveCall: true,
+        points: [
+          'Identify general-purpose AI tools that complement Claude across everyday work tasks.',
+          'Select and apply role-specific AI tools that meaningfully reduce time spent on high-volume or technical work.',
+          'Produce a real output using at least one new AI tool relevant to their role.',
+        ],
       },
       {
         label: 'Week 8',
-        title: 'Building a Connected AI Toolkit',
-        body: 'Connect multiple AI tools into a practical system where the output of one supports the next.',
+        title: 'Building a Connected AI Toolkit That Works as a System',
+        points: [
+          'Connect two or more AI tools in a single workflow where the output of one feeds directly into the next.',
+          'Apply role-specific tool pairings to complete a real work task faster than using any single tool alone.',
+          'Use Claude as the central layer in a multi-tool workflow to prepare inputs, process outputs, and produce finished deliverables.',
+        ],
       },
     ],
   },
   {
     number: '03',
     label: 'Month 3',
-    title: 'Automation',
-    subtitle: 'Building real automations that run reliably without you.',
+    tag: 'Automation',
+    title: 'Building real automations that run reliably without you.',
+    subtitle: 'From identifying what to automate, to building, refining, and embedding the automation habit into daily work.',
     weeks: [
       {
         label: 'Week 9',
         title: 'Understanding Automation and Identifying What to Build',
-        body: 'Identify which tasks are worth automating, which are not, and where automation can create the biggest value in the participant\'s role.',
+        liveCall: true,
+        points: [
+          'Evaluate tasks in their role against clear criteria to determine which are genuine automation candidates.',
+          'Distinguish between tasks worth automating and those better handled manually using a cost-benefit rationale.',
+          'Draft a structured automation proposal for a real workflow, ready to build and submit in the following module.',
+        ],
       },
       {
         label: 'Week 10',
         title: 'Building and Testing Your First Automation Workflow',
-        body: 'Build and test a first automation workflow using real role-based data, with clear checkpoints for human review where needed.',
+        points: [
+          'Build a working draft automation workflow using real data from their role, tested and refined through multiple iterations.',
+          'Map the full workflow from input to output, identifying where human review is required before results are used.',
+          'Document a reusable prompt template that can be run consistently without starting from scratch each time.',
+        ],
       },
       {
         label: 'Week 11',
-        title: 'Finishing, Refining and Submitting Your Workflow',
-        body: 'Refine, document, and complete an end-to-end workflow that runs reliably and can be repeated or handed off.',
+        title: 'Finishing, Refining and Submitting Your Automation Workflow',
+        liveCall: true,
+        points: [
+          'Complete an end-to-end automation workflow that runs reliably on real data and produces usable outputs without significant rework.',
+          'Document the workflow in plain language so it can be understood, repeated, and handed off to someone else.',
+          'Submit a completed workflow with proof it works and a reflection on what was learned through the build process.',
+        ],
       },
       {
         label: 'Week 12',
         title: 'Developing the Automation Habit and Thinking With AI',
-        body: 'Build the habit of spotting automation opportunities and using AI as a thinking partner to test ideas, challenge assumptions, and define the next workflow to build.',
+        points: [
+          'Recognise automation opportunities in daily work by identifying common patterns such as repetition, manual data transfer, and rule-based decisions.',
+          'Apply AI as a critical thinking partner to challenge assumptions, stress-test decisions, and uncover blind spots before committing to a course of action.',
+          'Reflect on three months of AI learning and define a clear next automation to build.',
+        ],
       },
     ],
   },
 ]
+
+const ongoingRoadmap = {
+  label: 'Month 4 and beyond',
+  tag: 'Ongoing Program',
+  number: '04',
+  title: 'Role-specific training tailored to the real work each staff member actually does.',
+  subtitle:
+    'From month 4 onwards, the program moves into role-specific applications with continued live support, reporting, and implementation tailored to each participant’s work.',
+  highlights: [
+    'Learners are divided according to their role, such as marketing, administrative, accounts, or EA/VA support.',
+    'The training focus continues evolving with the tools, workflows, and AI opportunities most relevant to that role.',
+    'Ongoing support keeps participants implementing AI into their real responsibilities, not just learning about it.',
+  ],
+}
 
 const programProofPoints = [
   {
@@ -201,7 +272,7 @@ export default function Program() {
       <PageHeader
         label="The Program"
         title="Structured AI Enablement for Your People"
-        subtitle="A structured AI enablement program starting with a General Introduction to AI. Monthly knowledge &amp; skills checks, progress reporting, and hands-on implementation support when participants need it."
+        subtitle="A structured AI enablement program starting with foundational skills, and subsequent guided progression towards advanced use. Monthly knowledge &amp; skills checks, progress reporting, and hands-on implementation support when participants need it."
         artSrc="/images/brand/aistar.png"
         artAlt="Ad On AI star mark"
         artClassName="max-h-[280px] w-auto ml-auto"
@@ -412,53 +483,82 @@ export default function Program() {
               The First 3 Months of Learning
             </h2>
             <p className="text-sm text-white/50 leading-relaxed max-w-2xl">
-              The first 12 weeks are structured to build practical AI capability through real work, not abstract theory. Each week builds on the last and ends with applied output, so participants are learning skills they can actually use in their role.
+              The first 12 weeks build core AI capability through three monthly phases grounded in real work. Each week builds on the last and ends with applied output. After week 12, the program continues with role-specific training, where learners are divided according to their role and all learning content is administered to their specific role.
             </p>
           </div>
 
-          <div className={`grid grid-cols-1 xl:grid-cols-3 gap-5 mb-8 transition-all duration-500 delay-100 ${roadmapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+          <div className={`space-y-12 sm:space-y-14 mb-8 transition-all duration-500 delay-100 ${roadmapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             {learningRoadmap.map((month, monthIndex) => (
               <div
                 key={month.label}
-                className={`bg-white/5 border border-white/10 rounded-[24px] p-6 sm:p-7 shadow-[0_8px_20px_rgba(9,12,26,0.18)] backdrop-blur-sm transition-all duration-500 ${
+                className={`transition-all duration-500 ${
                   roadmapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
                 }`}
                 style={{ transitionDelay: `${(monthIndex + 1) * 90}ms` }}
               >
-                <div className="border-t-2 border-brand-500 pt-4 mb-5">
-                  <div className="flex items-center justify-between gap-4 mb-2">
-                    <span className="font-mono text-[10px] text-brand-400 uppercase tracking-[0.15em]">
+                <div className="grid grid-cols-1 xl:grid-cols-[220px_minmax(0,1fr)] gap-8 xl:gap-10 items-start">
+                  <div className="xl:sticky xl:top-28">
+                    <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.18em] mb-3">
                       {month.label}
-                    </span>
-                    <span className="font-mono text-xl font-bold text-white/10 tracking-tight">
+                    </p>
+                    <div className="inline-flex items-center rounded-full border border-brand-500/20 bg-brand-500/5 px-4 py-1.5 mb-5">
+                      <span className="font-mono text-[10px] text-brand-400 uppercase tracking-[0.22em]">
+                        {month.tag}
+                      </span>
+                    </div>
+                    <div className="font-mono text-[5rem] sm:text-[5.75rem] leading-none font-bold text-brand-400/95 tracking-tight">
                       {month.number}
-                    </span>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold text-white leading-tight mb-2">
-                    {month.title}
-                  </h3>
-                  <p className="text-sm text-white/55 leading-relaxed">
-                    {month.subtitle}
-                  </p>
-                </div>
 
-                <div className="space-y-0">
-                  {month.weeks.map((week, weekIndex) => (
-                    <div
-                      key={week.label}
-                      className={`py-4 ${weekIndex < month.weeks.length - 1 ? 'border-b border-white/10' : ''}`}
-                    >
-                      <p className="font-mono text-[10px] text-brand-400 uppercase tracking-[0.14em] mb-2">
-                        {week.label}
-                      </p>
-                      <h4 className="text-sm font-semibold text-white leading-snug mb-2">
-                        {week.title}
-                      </h4>
-                      <p className="text-xs text-white/55 leading-relaxed">
-                        {week.body}
+                  <div>
+                    <div className="max-w-3xl mb-6 sm:mb-8">
+                      <h3 className="text-2xl sm:text-[2rem] font-bold text-white tracking-tight leading-tight mb-3">
+                        {month.title}
+                      </h3>
+                      <p className="text-sm text-white/50 leading-relaxed max-w-2xl">
+                        {month.subtitle}
                       </p>
                     </div>
-                  ))}
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                      {month.weeks.map((week) => (
+                        <div
+                          key={week.label}
+                          className="relative overflow-hidden rounded-[22px] border border-brand-500/40 bg-[#151C2B] p-5 sm:p-6 shadow-[0_10px_30px_rgba(9,12,26,0.22)]"
+                        >
+                          <div className="absolute inset-y-0 left-0 w-1 bg-brand-500/85" />
+                          {week.liveCall ? (
+                            <div className="absolute top-5 right-5 rounded-full border border-brand-400 bg-brand-500/5 px-3 py-1">
+                              <span className="font-mono text-[10px] text-brand-400 uppercase tracking-[0.14em]">
+                                Live Call/Webinar
+                              </span>
+                            </div>
+                          ) : (
+                            <div className="absolute top-6 right-6 h-3.5 w-3.5 rounded-full bg-brand-500/80 shadow-[0_0_0_6px_rgba(59,130,246,0.06)]" />
+                          )}
+
+                          <p className="font-mono text-[10px] text-brand-400 uppercase tracking-[0.18em] mb-3">
+                            {week.label}
+                          </p>
+                          <h4 className="text-lg font-semibold text-white leading-snug mb-4 pr-28">
+                            {week.title}
+                          </h4>
+                          <div className="h-px bg-white/10 mb-4" />
+                          <div className="space-y-3.5">
+                            {week.points.map((point) => (
+                              <div key={point} className="flex items-start gap-3">
+                                <div className="mt-1.5 h-2.5 w-2.5 rounded-full bg-brand-400 flex-shrink-0" />
+                                <p className="text-sm text-white leading-relaxed">
+                                  {point}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -472,11 +572,52 @@ export default function Program() {
             <div className="h-px flex-1 bg-white/15" />
           </div>
 
-          <div className={`mt-8 border border-white/10 border-l-2 border-l-brand-500 bg-white/5 rounded-[16px] p-5 sm:p-6 backdrop-blur-sm transition-all duration-500 delay-300 ${roadmapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+          <div className={`mt-10 transition-all duration-500 delay-300 ${roadmapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+            <div className="grid grid-cols-1 xl:grid-cols-[220px_minmax(0,1fr)] gap-8 xl:gap-10 items-start">
+              <div>
+                <p className="font-mono text-xs text-brand-400 uppercase tracking-[0.18em] mb-3">
+                  {ongoingRoadmap.label}
+                </p>
+                <div className="inline-flex items-center rounded-full border border-brand-500/20 bg-brand-500/5 px-4 py-1.5 mb-5">
+                  <span className="font-mono text-[10px] text-brand-400 uppercase tracking-[0.22em]">
+                    {ongoingRoadmap.tag}
+                  </span>
+                </div>
+                <div className="font-mono text-[5rem] sm:text-[5.75rem] leading-none font-bold text-brand-400/95 tracking-tight">
+                  {ongoingRoadmap.number}
+                </div>
+              </div>
+
+              <div className="max-w-4xl">
+                <h3 className="text-2xl sm:text-[2rem] font-bold text-white tracking-tight leading-tight mb-3">
+                  {ongoingRoadmap.title}
+                </h3>
+                <p className="text-sm text-white/50 leading-relaxed max-w-3xl mb-6">
+                  {ongoingRoadmap.subtitle}
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                  {ongoingRoadmap.highlights.map((highlight) => (
+                    <div
+                      key={highlight}
+                      className="rounded-[20px] border border-brand-500/35 bg-[#151C2B] p-5 shadow-[0_10px_30px_rgba(9,12,26,0.18)]"
+                    >
+                      <div className="h-px bg-white/10 mb-4" />
+                      <p className="text-sm text-white leading-relaxed">
+                        {highlight}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={`mt-8 border border-brand-500/25 border-l-2 border-l-brand-500 bg-[#151C2B] rounded-[22px] p-6 sm:p-8 backdrop-blur-sm shadow-[0_12px_30px_rgba(9,12,26,0.22)] transition-all duration-500 delay-400 ${roadmapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <p className="font-mono text-[10px] text-brand-400 uppercase tracking-[0.15em] mb-2">
               Further Content
             </p>
-            <p className="text-sm text-white/80 leading-relaxed">
+            <p className="text-base text-white leading-relaxed max-w-4xl">
               We do not develop modules more than 3 months in advance. This keeps participants up to date with changes in AI, so we do not risk teaching outdated skills and tools. A roadmap for Weeks 13 and beyond is available upon request.
             </p>
           </div>

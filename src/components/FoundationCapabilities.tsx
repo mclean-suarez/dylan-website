@@ -24,11 +24,11 @@ export default function FoundationCapabilities() {
           }`}
         >
           <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">
-            After the Program
+            Program Outcomes
           </p>
           <div className="w-10 h-0.5 bg-brand-700 mb-6" />
           <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
-            What Your Person Can Do After the General Program
+            Skills Your Person Will Gain
           </h2>
         </div>
 
@@ -75,19 +75,6 @@ export default function FoundationCapabilities() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Closing line */}
-        <div
-          className={`mt-6 flex items-center gap-3 transition-all duration-500 delay-500 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
-          }`}
-        >
-          <div className="h-px flex-1 bg-stone-300" />
-          <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em] flex-shrink-0">
-            Ready to progress into role-specific training
-          </span>
-          <div className="h-px flex-1 bg-stone-300" />
         </div>
       </div>
     </section>

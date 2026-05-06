@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const stages = [
-  { number: '01', title: 'Guided Live Sessions', time: '2 hrs / month' },
-  { number: '02', title: 'Self-Paced Modules', time: '2 hrs / month' },
+  { number: '01', title: 'Guided Sessions', time: '1-2 hrs / month' },
+  { number: '02', title: 'Self-Paced Modules', time: '3-4 hrs / month' },
   { number: '03', title: 'Skills and Knowledge Check', time: 'End of month' },
   { number: '04', title: 'Application', time: 'In workflow' },
   { number: '05', title: 'Progress Report', time: 'Delivered to you' },
