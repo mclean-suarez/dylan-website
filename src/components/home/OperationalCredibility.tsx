@@ -29,8 +29,8 @@ export default function OperationalCredibility() {
           </h2>
           <p className="text-sm text-white/40 leading-relaxed max-w-xl">
             Ad On AI is a specialist division of Ad On Group — an Australian
-            diversified business services provider operating since 2008 with teams across Gold Coast,
-            Philippines, and South Africa. The enablement program was developed
+            diversified business services provider operating since 2008 with teams across Australia,
+            the Philippines, and South Africa. The enablement program was developed
             inside live operations before it was offered externally.
           </p>
         </div>

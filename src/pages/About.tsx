@@ -47,7 +47,10 @@ export default function About() {
             <p className="text-sm text-stone-500 leading-relaxed max-w-xl">
               The Ad On AI team comes from inside Ad On Group. People who
               built and ran AI workflows in live business operations before
-              teaching others to do the same.
+              teaching others to do the same. Our two main facilitators hold
+              multiple official Claude certifications between them, in
+              addition to their own multi-year experiences deploying AI into
+              their own work.
             </p>
           </div>
 

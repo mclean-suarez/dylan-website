@@ -42,7 +42,7 @@ export default function Navbar() {
             to="/"
             className={`hover:opacity-80 transition-opacity flex-shrink-0 ${onDark ? 'text-white' : 'text-stone-900'}`}
           >
-            <AdOnAILogo />
+            <AdOnAILogo showExpertTagline />
           </Link>
 
           {/* Desktop nav — three-zone: logo | links | actions */}

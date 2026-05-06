@@ -1,9 +1,9 @@
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
-import circleImage from '../../images/circle.png'
+import trainingExampleImage from '../../images/training-example.png'
 
 const steps = [
-  { number: '01', title: 'Guided Live Sessions', time: '2 hrs / month' },
-  { number: '02', title: 'Self-Paced Modules', time: '2 hrs / month' },
+  { number: '01', title: 'Guided Sessions', time: '1-2 hrs / month' },
+  { number: '02', title: 'Self-Paced Modules', time: '3-4 hrs / month' },
   { number: '03', title: 'Skills and Knowledge Check', time: 'End of month' },
   { number: '04', title: 'Progress Report', time: 'Delivered to you' },
   { number: '05', title: 'Hands-On Support & Implementation', time: 'As needed' },
@@ -20,11 +20,20 @@ export default function HowItWorks() {
         <div className="hidden lg:flex gap-20 items-start">
           {/* Left column: image */}
           <div className="flex-shrink-0 w-1/2">
-            <img
-              src={circleImage}
-              alt="Timeline Illustration"
-              className="w-full h-auto rounded-lg"
-            />
+            <div className="relative overflow-hidden rounded-[28px] border-[4px] border-[#4263EB] bg-white shadow-[0_14px_32px_rgba(66,99,235,0.2)] translate-y-6 -translate-x-4">
+              <img
+                src={trainingExampleImage}
+                alt="Ad On AI live training session"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="mt-10 ml-2 flex items-center gap-3 max-w-[42rem]">
+              <div className="h-px flex-1 bg-stone-300" />
+              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] flex-shrink-0">
+                Real training with a history of producing real productivity results
+              </p>
+              <div className="h-px flex-1 bg-stone-300" />
+            </div>
           </div>
 
           {/* Right column: vertical timeline */}

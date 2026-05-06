@@ -9,13 +9,19 @@
  */
 
 import logoSrc from '../assets/newlogo.png'
+import claudeLogoSrc from '../assets/tool-logos/claude.svg'
 
 interface AdOnAILogoProps {
   variant?: 'full' | 'mark'
   className?: string
+  showExpertTagline?: boolean
 }
 
-export default function AdOnAILogo({ variant = 'full', className = '' }: AdOnAILogoProps) {
+export default function AdOnAILogo({
+  variant = 'full',
+  className = '',
+  showExpertTagline = false,
+}: AdOnAILogoProps) {
   if (variant === 'mark') {
     return (
       <img
@@ -34,10 +40,24 @@ export default function AdOnAILogo({ variant = 'full', className = '' }: AdOnAIL
         aria-hidden="true"
         className="h-10 w-auto sm:h-12"
       />
-      <span className="whitespace-nowrap select-none tracking-[0.12em]">
-        <span className="text-[26px] sm:text-[30px] font-extrabold">AD</span>
-        <span className="text-[20px] sm:text-[22px] font-bold ml-[0.12em]">ON AI</span>
-      </span>
+      <div className="flex flex-col">
+        <span className="whitespace-nowrap select-none tracking-[0.12em] leading-none">
+          <span className="text-[26px] sm:text-[30px] font-extrabold">AD</span>
+          <span className="text-[20px] sm:text-[22px] font-bold ml-[0.12em]">ON AI</span>
+        </span>
+        {showExpertTagline && (
+          <span className="hidden md:flex items-center gap-1.5 mt-1 font-mono text-[9px] uppercase tracking-[0.12em] opacity-70 whitespace-nowrap">
+            <span>Ran by Certified</span>
+            <img
+              src={claudeLogoSrc}
+              alt=""
+              aria-hidden="true"
+              className="h-3 w-3 rounded-[2px]"
+            />
+            <span>Claude Experts</span>
+          </span>
+        )}
+      </div>
     </div>
   )
 }
