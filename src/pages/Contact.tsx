@@ -5,8 +5,8 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import watermarkImage from '../images/watermark.webp'
 
 const WEB3FORMS_URL = 'https://api.web3forms.com/submit'
-const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined
-const FORM_CONFIGURED = Boolean(ACCESS_KEY)
+const ACCESS_KEY = 'a5cd7b55-c99f-4b88-bd90-6622dadbd338'
+const FORM_CONFIGURED = true
 
 interface FormData {
   firstName: string
