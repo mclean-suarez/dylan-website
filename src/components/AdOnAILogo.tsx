@@ -46,13 +46,13 @@ export default function AdOnAILogo({
           <span className="text-[20px] sm:text-[22px] font-bold ml-[0.12em]">ON AI</span>
         </span>
         {showExpertTagline && (
-          <span className="hidden md:flex items-center gap-1.5 mt-1 font-mono text-[9px] uppercase tracking-[0.12em] opacity-70 whitespace-nowrap">
+          <span className="hidden md:flex items-center gap-1.5 mt-1 font-mono text-[10px] uppercase tracking-[0.13em] opacity-70 whitespace-nowrap">
             <span>Ran by Certified</span>
             <img
               src={claudeLogoSrc}
               alt=""
               aria-hidden="true"
-              className="h-3 w-3 rounded-[2px]"
+              className="h-3.5 w-3.5 rounded-[2px]"
             />
             <span>Claude Experts</span>
           </span>
