@@ -20,9 +20,9 @@ const ecosystemLinks = [
 ]
 
 const socialLinks = [
-  { icon: Facebook, href: 'https://www.facebook.com/adongroup', label: 'Facebook' },
+  { icon: Facebook, href: 'https://www.facebook.com/adongroup1/', label: 'Facebook' },
   { icon: Instagram, href: 'https://www.instagram.com/adongroup', label: 'Instagram' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/company/adongroup', label: 'LinkedIn' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/company/adongroup/', label: 'LinkedIn' },
 ]
 
 export default function Footer() {

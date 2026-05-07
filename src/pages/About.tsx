@@ -2,6 +2,12 @@ import PageHeader from '../components/PageHeader'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import adOnAiLogo from '../images/adonailogo.webp'
 import watermarkImage from '../images/watermark.webp'
+import beauRobardsImage from '../images/team/beau-robards.png'
+import benRaglessImage from '../images/team/ben-ragless.jpg'
+import dylanBaileyImage from '../images/team/dylan-bailey.png'
+import leahBarnesImage from '../images/team/leah-barnes.jpg'
+import tarynBoxerImage from '../images/team/taryn-boxer.jpg'
+import tracyMaloneImage from '../images/team/tracy-malone.jpg'
 
 export default function About() {
   const { ref: whyRef, isVisible: whyVisible } = useScrollAnimation()
@@ -65,12 +71,20 @@ export default function About() {
               style={{ transitionDelay: '160ms' }}
             >
               <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
-                <div className="w-16 h-16 flex items-center justify-center bg-brand-700">
-                  <span className="font-mono text-lg font-bold text-white tracking-tight">DB</span>
+                <div className="flex justify-center">
+                  <div className="w-32 h-32 rounded-full border-[8px] border-[#2EA3F2] bg-white overflow-hidden shadow-[0_6px_18px_rgba(46,163,242,0.2)]">
+                    <img
+                      src={dylanBaileyImage}
+                      alt="Dylan Bailey"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
-              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Dylan Bailey</h3>
-              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Facilitator</p>
+              <div className="text-center">
+                <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Dylan Bailey</h3>
+                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Facilitator</p>
+              </div>
             </div>
 
             {/* Beau Robards */}
@@ -79,12 +93,20 @@ export default function About() {
               style={{ transitionDelay: '240ms' }}
             >
               <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
-                <div className="w-16 h-16 flex items-center justify-center bg-stone-900">
-                  <span className="font-mono text-lg font-bold text-white tracking-tight">BR</span>
+                <div className="flex justify-center">
+                  <div className="w-32 h-32 rounded-full border-[8px] border-[#2EA3F2] bg-white overflow-hidden shadow-[0_6px_18px_rgba(46,163,242,0.2)]">
+                    <img
+                      src={beauRobardsImage}
+                      alt="Beau Robards"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
-              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Beau Robards</h3>
-              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Facilitator</p>
+              <div className="text-center">
+                <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Beau Robards</h3>
+                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Facilitator</p>
+              </div>
             </div>
 
             {/* Taryn Boxer */}
@@ -93,12 +115,20 @@ export default function About() {
               style={{ transitionDelay: '320ms' }}
             >
               <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
-                <div className="w-16 h-16 flex items-center justify-center bg-brand-700">
-                  <span className="font-mono text-lg font-bold text-white tracking-tight">TB</span>
+                <div className="flex justify-center">
+                  <div className="w-32 h-32 rounded-full border-[8px] border-[#2EA3F2] bg-white overflow-hidden shadow-[0_6px_18px_rgba(46,163,242,0.2)]">
+                    <img
+                      src={tarynBoxerImage}
+                      alt="Taryn Boxer"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
-              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Taryn Boxer</h3>
-              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Operations Manager</p>
+              <div className="text-center">
+                <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Taryn Boxer</h3>
+                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Operations Manager</p>
+              </div>
             </div>
 
             {/* Ben Ragless */}
@@ -107,54 +137,64 @@ export default function About() {
               style={{ transitionDelay: '400ms' }}
             >
               <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
-                <div className="w-16 h-16 flex items-center justify-center bg-stone-900">
-                  <span className="font-mono text-lg font-bold text-white tracking-tight">BR</span>
+                <div className="flex justify-center">
+                  <div className="w-32 h-32 rounded-full border-[8px] border-[#2EA3F2] bg-white overflow-hidden shadow-[0_6px_18px_rgba(46,163,242,0.2)]">
+                    <img
+                      src={benRaglessImage}
+                      alt="Ben Ragless"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
-              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Ben Ragless</h3>
-              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Business Development Representative</p>
-            </div>
-
-            {/* James Molloy */}
-            <div
-              className={`bg-white p-6 sm:p-8 relative border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-105`}
-              style={{ transitionDelay: '480ms' }}
-            >
-              <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
-                <div className="w-16 h-16 flex items-center justify-center bg-brand-700">
-                  <span className="font-mono text-lg font-bold text-white tracking-tight">JM</span>
-                </div>
+              <div className="text-center">
+                <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Ben Ragless</h3>
+                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Business Development Representative</p>
               </div>
-              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">James Molloy</h3>
-              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Business Development Representative</p>
             </div>
 
             {/* Leah Barnes */}
             <div
               className={`bg-white p-6 sm:p-8 relative border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-105`}
-              style={{ transitionDelay: '560ms' }}
+              style={{ transitionDelay: '480ms' }}
             >
               <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
-                <div className="w-16 h-16 flex items-center justify-center bg-stone-900">
-                  <span className="font-mono text-lg font-bold text-white tracking-tight">LB</span>
+                <div className="flex justify-center">
+                  <div className="w-32 h-32 rounded-full border-[8px] border-[#2EA3F2] bg-white overflow-hidden shadow-[0_6px_18px_rgba(46,163,242,0.2)]">
+                    <img
+                      src={leahBarnesImage}
+                      alt="Leah Barnes"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
-              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Leah Barnes</h3>
-              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Training Coordinator</p>
+              <div className="text-center">
+                <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Leah Barnes</h3>
+                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Training Coordinator</p>
+              </div>
             </div>
 
             {/* Tracy Malone */}
             <div
               className={`bg-white p-6 sm:p-8 relative border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-105`}
-              style={{ transitionDelay: '640ms' }}
+              style={{ transitionDelay: '560ms' }}
             >
               <div className="border-t-2 border-stone-900 pt-5 mb-5 hover:border-brand-500 transition-colors duration-300">
-                <div className="w-16 h-16 flex items-center justify-center bg-brand-700">
-                  <span className="font-mono text-lg font-bold text-white tracking-tight">TM</span>
+                <div className="flex justify-center">
+                  <div className="w-32 h-32 rounded-full border-[8px] border-[#2EA3F2] bg-white overflow-hidden shadow-[0_6px_18px_rgba(46,163,242,0.2)]">
+                    <img
+                      src={tracyMaloneImage}
+                      alt="Tracy Malone"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
-              <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Tracy Malone</h3>
-              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Training Coordinator</p>
+              <div className="text-center">
+                <h3 className="text-base font-bold text-stone-900 leading-snug mb-1">Tracy Malone</h3>
+                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em]">Training Coordinator</p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import watermarkImage from '../../images/watermark.webp'
+import claudeLogoSrc from '../../assets/tool-logos/claude.svg'
 
 export default function Hero() {
   return (
@@ -42,6 +43,21 @@ export default function Hero() {
             <p className="text-lg text-white/50 leading-relaxed max-w-xl mb-10 animate-fade-in-up animate-delay-100">
               Your team learns to use AI inside their daily tasks, creating real productivity gains for your business. Most AI training gets forgotten — not this.
             </p>
+
+            <div className="inline-flex max-w-full items-center gap-3 rounded-full border border-white/12 bg-white/5 px-6 py-3 mb-8 animate-fade-in-up animate-delay-150">
+              <span className="font-mono text-[15px] sm:text-[16px] text-white/70 uppercase tracking-[0.13em] leading-none">
+                Ran by Certified
+              </span>
+              <img
+                src={claudeLogoSrc}
+                alt=""
+                aria-hidden="true"
+                className="h-6 w-6 rounded-[4px] flex-shrink-0"
+              />
+              <span className="font-mono text-[15px] sm:text-[16px] text-white/70 uppercase tracking-[0.13em] leading-none">
+                Claude Experts
+              </span>
+            </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-14 animate-fade-in-up animate-delay-200">

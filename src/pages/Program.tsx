@@ -261,7 +261,7 @@ const scopeIn = [
 export default function Program() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const { ref: modulesRef, isVisible: modulesVisible } = useScrollAnimation()
-  const { ref: roadmapRef, isVisible: roadmapVisible } = useScrollAnimation()
+  const { ref: roadmapRef, isVisible: roadmapVisible } = useScrollAnimation(0.01)
   const { ref: scopeRef, isVisible: scopeVisible } = useScrollAnimation()
   const { ref: streamsRef, isVisible: streamsVisible } = useScrollAnimation()
   
