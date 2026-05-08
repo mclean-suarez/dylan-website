@@ -46,7 +46,7 @@ export default function Hero() {
 
             <div className="inline-flex max-w-full items-center gap-3 rounded-full border border-white/12 bg-white/5 px-6 py-3 mb-8 animate-fade-in-up animate-delay-150">
               <span className="font-mono text-[15px] sm:text-[16px] text-white/70 uppercase tracking-[0.13em] leading-none">
-                Ran by Certified
+                Certified
               </span>
               <img
                 src={claudeLogoSrc}
