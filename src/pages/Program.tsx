@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Check } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
+import Seo from '../components/Seo'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import FoundationCapabilities from '../components/FoundationCapabilities'
 import MonthlyCycleDiagram from '../components/MonthlyCycleDiagram'
@@ -267,6 +268,11 @@ export default function Program() {
   
   return (
     <>
+      <Seo
+        title="Ad On AI Program | AI Enablement Roadmap and Curriculum"
+        description="See the Ad On AI program structure, monthly cycle, learning roadmap, role-specific training, and the support included for each participant."
+        path="/program"
+      />
       <PageHeader
         label="The Program"
         title="Structured AI Enablement for Your People"

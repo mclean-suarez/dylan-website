@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { ArrowRight, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
+import Seo from '../components/Seo'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import watermarkImage from '../images/watermark.webp'
 
@@ -127,6 +128,11 @@ export default function Contact() {
   if (status === 'success') {
     return (
       <>
+        <Seo
+          title="Book a Call | Ad On AI"
+          description="Get in touch with Ad On AI to discuss AI training and enablement for your team, including guided sessions, modules, and practical implementation support."
+          path="/contact"
+        />
         <PageHeader
           label="Get Started"
           title="Book a Call"
@@ -157,6 +163,11 @@ export default function Contact() {
 
   return (
     <>
+      <Seo
+        title="Book a Call | Ad On AI"
+        description="Get in touch with Ad On AI to discuss AI training and enablement for your team, including guided sessions, modules, and practical implementation support."
+        path="/contact"
+      />
       <PageHeader
         label="Get Started"
         title="Book a Call"

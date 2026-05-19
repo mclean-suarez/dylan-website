@@ -1,4 +1,5 @@
 import PageHeader from '../components/PageHeader'
+import Seo from '../components/Seo'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import adOnAiLogo from '../images/adonailogo.webp'
 import watermarkImage from '../images/watermark.webp'
@@ -16,6 +17,11 @@ export default function About() {
 
   return (
     <>
+      <Seo
+        title="Meet the Team | Ad On AI"
+        description="Meet the Ad On AI team behind the program, including the facilitators and operational staff delivering practical AI enablement inside real business workflows."
+        path="/about"
+      />
       <PageHeader
         label="About"
         title="The Team Behind the Program"
