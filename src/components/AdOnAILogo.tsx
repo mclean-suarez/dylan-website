@@ -47,7 +47,7 @@ export default function AdOnAILogo({
         </span>
         {showExpertTagline && (
           <span className="hidden md:flex items-center gap-1.5 mt-1 font-mono text-[10px] uppercase tracking-[0.13em] opacity-70 whitespace-nowrap">
-            <span>Ran by Certified</span>
+            <span>Certified</span>
             <img
               src={claudeLogoSrc}
               alt=""

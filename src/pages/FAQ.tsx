@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronDown, ArrowRight } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
+import Seo from '../components/Seo'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import adOnAiLogo from '../images/adonailogo.webp'
 
@@ -94,6 +95,11 @@ export default function FAQ() {
 
   return (
     <>
+      <Seo
+        title="Ad On AI FAQ | Common Questions About the Program"
+        description="Read answers to common questions about Ad On AI, including the monthly cadence, role-specific training, guided sessions, support, and reporting."
+        path="/faq"
+      />
       <PageHeader
         label="FAQ"
         title="Frequently Asked Questions"
