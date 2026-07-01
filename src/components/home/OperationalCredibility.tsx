@@ -45,7 +45,7 @@ export default function OperationalCredibility() {
             style={{ transitionDelay: '100ms' }}
           >
             <div className="mx-auto max-w-[640px]">
-              <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#4263EB] bg-white/5 shadow-[0_16px_40px_rgba(66,99,235,0.22)]">
+              <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#6F9BFF] bg-white/5 shadow-[0_16px_40px_rgba(66,99,235,0.22)]">
                 <img
                   src="/images/offices/gold-coast-hq.png"
                   alt="Ad On Group headquarters, Gold Coast, Australia"
@@ -105,7 +105,7 @@ export default function OperationalCredibility() {
                 style={{ transitionDelay: '280ms' }}
               >
                 <div className="mx-auto max-w-[250px]">
-                  <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#4263EB] bg-white/5 shadow-[0_14px_32px_rgba(66,99,235,0.2)]">
+                  <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#6F9BFF] bg-white/5 shadow-[0_14px_32px_rgba(66,99,235,0.2)]">
                     <img
                       src="/images/offices/philippines-office.jpg"
                       alt="Ad On Group delivery office, Philippines"
@@ -131,7 +131,7 @@ export default function OperationalCredibility() {
                 style={{ transitionDelay: '360ms' }}
               >
                 <div className="mx-auto max-w-[250px]">
-                  <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#4263EB] bg-white/5 shadow-[0_14px_32px_rgba(66,99,235,0.2)]">
+                  <div className="relative aspect-square overflow-hidden rounded-full border-[4px] border-[#6F9BFF] bg-white/5 shadow-[0_14px_32px_rgba(66,99,235,0.2)]">
                     <img
                       src="/images/offices/south-africa.jpg"
                       alt="Cape Town, South Africa — remote delivery team"

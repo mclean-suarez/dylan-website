@@ -7,7 +7,7 @@ interface SeoProps {
 }
 
 const SITE_NAME = 'Ad On AI'
-const BASE_URL = 'https://adon-ai.com.au'
+const BASE_URL = 'https://www.adon-ai.com.au'
 const DEFAULT_IMAGE = `${BASE_URL}/ad-on-ai-logo.png`
 
 function upsertMeta(selector: string, attributes: Record<string, string>) {

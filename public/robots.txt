@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adon-ai.com.au/sitemap.xml
+Sitemap: https://www.adon-ai.com.au/sitemap.xml

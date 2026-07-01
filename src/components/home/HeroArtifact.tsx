@@ -11,7 +11,7 @@ export default function HeroArtifact({ className = '' }: { className?: string })
   // Palette tokens (aligned with tailwind config)
   const navy = '#0a0c1a'
   const navyLight = '#1a1f36'
-  const accent = '#4263eb'    // brand-700
+  const accent = '#6F9BFF'    // brand-700
   const accentSoft = '#748ffc' // brand-400
   const rule = 'rgba(255,255,255,0.06)'
   const ruleMid = 'rgba(255,255,255,0.10)'

@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Check } from 'lucide-react'
-import PageHeader from '../components/PageHeader'
 import Seo from '../components/Seo'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { KEYS, DarkPageHeader, Aurora, BlueprintGrid } from '../components/hero/visuals'
 import FoundationCapabilities from '../components/FoundationCapabilities'
 import MonthlyCycleDiagram from '../components/MonthlyCycleDiagram'
 import adOnAiLogo from '../images/adonailogo.webp'
@@ -237,7 +237,7 @@ const programProofPoints = [
   {
     label: 'Built Around Their Tasks',
     body: 'All content is curated to help participants supercharge their own tasks with AI, not generic tips & tricks that won\'t apply to your staff like most "AI Experts" offer',
-    accentClassName: 'border-l-stone-900',
+    accentClassName: 'border-l-white/30',
   },
   {
     label: "Progress You'll Notice Before Seeing the Report",
@@ -271,15 +271,14 @@ export default function Program() {
       <Seo
         title="Ad On AI Program | AI Enablement Roadmap and Curriculum"
         description="See the Ad On AI program structure, monthly cycle, learning roadmap, role-specific training, and the support included for each participant."
-        path="/program"
+        path="/bpo-ai-program"
       />
-      <PageHeader
+      <style>{KEYS}</style>
+      <div className="bg-black">
+      <DarkPageHeader
         label="The Program"
         title="Structured AI Enablement for Your People"
-        subtitle="A structured AI enablement program starting with foundational skills, and subsequent guided progression towards advanced use. Monthly knowledge &amp; skills checks, progress reporting, and hands-on implementation support when participants need it."
-        artSrc="/images/brand/aistar.png"
-        artAlt="Ad On AI star mark"
-        artClassName="max-h-[280px] w-auto ml-auto"
+        subtitle="A structured AI enablement program starting with foundational skills, and subsequent guided progression towards advanced use. Monthly knowledge & skills checks, progress reporting, and hands-on implementation support when participants need it."
       />
 
       {/* Monthly cycle — orbital loop diagram */}
@@ -287,15 +286,17 @@ export default function Program() {
 
       {/* Enablement modules — with pathway progression */}
       {/* Enablement modules — with cumulative hover */}
-      <section ref={modulesRef} className="section-padding bg-stone-100/50 relative">
-          <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
+      <section ref={modulesRef} className="section-padding bg-[#05070D] relative overflow-hidden">
+          <Aurora warm={false} />
+          <BlueprintGrid />
+          <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex opacity-[0.06]">
             <img
               src={adOnAiLogo}
-              alt="Hero"
+              alt=""
               className="
-                w-[400px] h-auto opacity-100
-                md:w-[400px] md:opacity-100
-                lg:w-[400px] lg:opacity-100
+                w-[400px] h-auto
+                md:w-[400px]
+                lg:w-[400px]
                 xl:w-[400px]
                 translate-x-8 md:translate-x-0
                 lg:-translate-x-[13rem]
@@ -304,36 +305,36 @@ export default function Program() {
               "
             />
         </div>
-        <div className="section-container">
+        <div className="section-container relative z-10">
           <div className={`mb-10 transition-all duration-500 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Enablement Modules</p>
+            <p className="font-mono text-xs text-[#6F9BFF] uppercase tracking-[0.15em] mb-4">Enablement Modules</p>
             <div className="w-10 h-0.5 bg-brand-700 mb-6" />
-            <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
+            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight">
               General Introductory Program
             </h2>
           </div>
 
           <div className={`grid grid-cols-1 xl:grid-cols-[0.88fr_1.12fr] gap-5 mb-10 transition-all duration-500 delay-75 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <div className="bg-white p-6 sm:p-8 border border-stone-200 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]">
-              <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-4">
+            <div className="bg-white/[0.03] p-6 sm:p-8 border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]">
+              <p className="font-mono text-[10px] text-white/45 uppercase tracking-[0.15em] mb-4">
                 Inside The Program
               </p>
-              <h3 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight mb-4">
                 A custom-built learning app with guided support
               </h3>
-              <p className="text-sm text-stone-500 leading-relaxed mb-6">
+              <p className="text-sm text-white/55 leading-relaxed mb-6">
                 Ad On AI combines a custom built app called the Academy Terminal with guided modules & extensive resources, a comprehensive learning library updated to stay relevant to the always-changing AI landscape, curated AI tools, and an Implementation Lab built to help participants customise their AI usage to their work. Depending on the participant and the stage of the program, support can include live calls, guided sessions, and practical help implementing AI into daily tasks.
               </p>
-              <div className={`border border-stone-200 border-l-2 ${programProofPoints[1].accentClassName} rounded-[12px] bg-stone-50/80 p-4`}>
-                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-2">{programProofPoints[1].label}</p>
-                <p className="text-sm text-stone-700 leading-relaxed">
+              <div className={`border border-white/10 border-l-2 ${programProofPoints[1].accentClassName} rounded-[12px] bg-white/[0.04] p-4`}>
+                <p className="font-mono text-[10px] text-white/45 uppercase tracking-[0.15em] mb-2">{programProofPoints[1].label}</p>
+                <p className="text-sm text-white/80 leading-relaxed">
                   {programProofPoints[1].body}
                 </p>
               </div>
             </div>
 
-            <div className="bg-white p-4 sm:p-5 border border-stone-200 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]">
-              <div className="relative overflow-hidden border-[3px] border-[#4263EB] rounded-[15px] h-[250px] sm:h-[320px] xl:h-[340px] bg-white mb-4">
+            <div className="bg-white/[0.03] p-4 sm:p-5 border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]">
+              <div className="relative overflow-hidden border-[3px] border-[#6F9BFF] rounded-[15px] h-[250px] sm:h-[320px] xl:h-[340px] bg-white/[0.03] mb-4">
                 <img
                   src="/images/program/learning-library2.png"
                   alt="Ad On AI Academy Terminal landing page"
@@ -349,10 +350,10 @@ export default function Program() {
                 {[programProofPoints[0], programProofPoints[2]].map((point) => (
                   <div
                     key={point.label}
-                    className={`border border-stone-200 border-l-2 ${point.accentClassName} rounded-[12px] bg-stone-50/80 p-4`}
+                    className={`border border-white/10 border-l-2 ${point.accentClassName} rounded-[12px] bg-white/[0.04] p-4`}
                   >
-                    <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-2">{point.label}</p>
-                    <p className="text-sm text-stone-700 leading-relaxed">
+                    <p className="font-mono text-[10px] text-white/45 uppercase tracking-[0.15em] mb-2">{point.label}</p>
+                    <p className="text-sm text-white/80 leading-relaxed">
                       {point.body}
                     </p>
                   </div>
@@ -364,13 +365,13 @@ export default function Program() {
           {/* Pathway progression indicator — desktop */}
           <div className={`hidden lg:block mb-8 transition-all duration-500 delay-100 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             <div className="relative">
-              <div className="absolute top-3 left-[12%] right-[12%] h-px transition-colors duration-300 bg-stone-300" />
+              <div className="absolute top-3 left-[12%] right-[12%] h-px transition-colors duration-300 bg-white/15" />
               <div className="grid grid-cols-4 gap-0">
                 {enablementModules.map((mod, i) => (
                   <div key={mod.title} className="flex justify-center">
                     <div
                       className={`w-6 h-6 flex items-center justify-center relative z-10 rounded-full transition-all duration-300
-                        ${hoveredIndex !== null && i <= hoveredIndex ? 'bg-brand-700 scale-110' : 'bg-stone-900'}
+                        ${hoveredIndex !== null && i <= hoveredIndex ? 'bg-brand-700 scale-110' : 'bg-white/15'}
                       `}
                     >
                       <span className={`font-mono text-[9px] font-bold transition-colors duration-300 ${
@@ -389,25 +390,25 @@ export default function Program() {
             {productScreens.map((screen, i) => (
               <div
                 key={screen.src}
-                className={`bg-white p-4 sm:p-5 border border-stone-200 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-[1.02] ${
+                className={`bg-white/[0.03] p-4 sm:p-5 border border-white/10 rounded-[20px] shadow-[0_8px_8px_0_rgba(66,99,235,0.5)] transition-transform duration-300 hover:scale-[1.02] ${
                   modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
                 }`}
                 style={{ transitionDelay: `${(i + 1) * 80}ms` }}
               >
-                <div className="relative overflow-hidden border-[3px] border-[#4263EB] rounded-[15px] mb-5">
+                <div className="relative overflow-hidden border-[3px] border-[#6F9BFF] rounded-[15px] mb-5">
                   <img
                     src={screen.src}
                     alt={screen.alt}
                     className={`w-full h-64 sm:h-72 object-cover ${screen.imageClassName ?? 'object-center'}`}
                   />
                 </div>
-                <p className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.15em] mb-2">
+                <p className="font-mono text-[10px] text-white/45 uppercase tracking-[0.15em] mb-2">
                   {screen.label}
                 </p>
-                <h3 className="text-base font-bold text-stone-900 leading-snug mb-2">
+                <h3 className="text-base font-bold text-white leading-snug mb-2">
                   {screen.title}
                 </h3>
-                <p className="text-sm text-stone-500 leading-relaxed">
+                <p className="text-sm text-white/55 leading-relaxed">
                   {screen.body}
                 </p>
               </div>
@@ -421,7 +422,7 @@ export default function Program() {
                 key={mod.title}
                 onMouseEnter={() => setHoveredIndex(i)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className={`bg-white p-6 border border-stone-200 transition-all duration-300 rounded-[20px] shadow-[0_4px_4px_0_rgba(66,99,235,0.5)]
+                className={`bg-white/[0.03] p-6 border border-white/10 transition-all duration-300 rounded-[20px] shadow-[0_4px_4px_0_rgba(66,99,235,0.5)]
                   transform ${hoveredIndex !== null && i <= hoveredIndex ? 'scale-105 shadow-[0_8px_8px_0_rgba(66,99,235,0.5)]' : ''}
                   ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}
                 `}
@@ -429,10 +430,10 @@ export default function Program() {
               >
                 {/* Top line */}
                 <div className={`border-t-2 pt-4 mb-3 transition-colors duration-300 ${
-                  hoveredIndex !== null && i <= hoveredIndex ? 'border-brand-700' : 'border-stone-900'
+                  hoveredIndex !== null && i <= hoveredIndex ? 'border-brand-700' : 'border-white/25'
                 }`}>
                   <span className={`font-mono text-[10px] font-bold uppercase tracking-[0.15em] transition-colors duration-300 ${
-                    hoveredIndex !== null && i <= hoveredIndex ? 'text-brand-700' : 'text-stone-400'
+                    hoveredIndex !== null && i <= hoveredIndex ? 'text-[#6F9BFF]' : 'text-white/45'
                   }`}>
                     {mod.label}
                   </span>
@@ -440,23 +441,23 @@ export default function Program() {
 
                 <h3
                   className={`text-sm font-bold leading-snug mb-2 transition-colors duration-300 ${
-                    hoveredIndex !== null && i <= hoveredIndex ? 'text-brand-700' : 'text-stone-900'
+                    hoveredIndex !== null && i <= hoveredIndex ? 'text-[#6F9BFF]' : 'text-white'
                   }`}
                 >
                   {mod.title}
                 </h3>
-                <p className="text-xs text-stone-500 leading-relaxed">{mod.body}</p>
+                <p className="text-xs text-white/55 leading-relaxed">{mod.body}</p>
               </div>
             ))}
           </div>
 
           {/* Pathway closing line */}
           <div className={`mt-6 flex items-center gap-3 transition-all duration-500 delay-400 ${modulesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <div className="h-px flex-1 bg-stone-300" />
-            <span className="font-mono text-[10px] text-stone-400 uppercase tracking-[0.12em] flex-shrink-0">
+            <div className="h-px flex-1 bg-white/15" />
+            <span className="font-mono text-[10px] text-white/45 uppercase tracking-[0.12em] flex-shrink-0">
               Start Strong → Apply In Role → Master Role-Specific AI
             </span>
-            <div className="h-px flex-1 bg-stone-300" />
+            <div className="h-px flex-1 bg-white/15" />
           </div>
         </div>
       </section>
@@ -683,15 +684,17 @@ export default function Program() {
       </section>
 
       {/* Scope — support types with system diagram */}
-      <section ref={scopeRef} className="section-padding bg-stone-100/50 relative overflow-hidden">
-        <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
+      <section ref={scopeRef} className="section-padding bg-[#05070D] relative overflow-hidden">
+        <Aurora warm={false} />
+        <BlueprintGrid />
+        <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex opacity-[0.06]">
             <img
               src={adOnAiLogo}
-              alt="Hero"
+              alt=""
               className="
-                w-[400px] h-auto opacity-100
-                md:w-[400px] md:opacity-100
-                lg:w-[400px] lg:opacity-100
+                w-[400px] h-auto
+                md:w-[400px]
+                lg:w-[400px]
                 xl:w-[400px]
                 translate-x-8 md:translate-x-0
                 lg:-translate-x-[13rem]
@@ -700,26 +703,26 @@ export default function Program() {
               "
             />
         </div>
-        <div className="section-container">
+        <div className="section-container relative z-10">
           <div className={`mb-10 transition-all duration-500 ${scopeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            <p className="font-mono text-xs text-brand-700 uppercase tracking-[0.15em] mb-4">Scope</p>
+            <p className="font-mono text-xs text-[#6F9BFF] uppercase tracking-[0.15em] mb-4">Scope</p>
             <div className="w-10 h-0.5 bg-brand-700 mb-6" />
-            <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight leading-tight">
+            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-tight">
               What Is Included
             </h2>
           </div>
 
           <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-10 transition-all duration-500 delay-100 ${scopeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
             {/* Left: support types */}
-            <div className="border border-stone-200 border-l-2 border-l-brand-700 p-6 md:p-8 bg-white rounded-[10px] shadow-[0_4px_4px_0_rgba(66,99,235,0.3)]">
-              <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-5">
+            <div className="border border-white/10 border-l-2 border-l-brand-700 p-6 md:p-8 bg-white rounded-[10px] shadow-[0_4px_4px_0_rgba(66,99,235,0.3)]">
+              <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/45 mb-5">
                 What your person gets help with
               </h3>
               <div className="space-y-4">
                 {scopeIn.map((item) => (
                   <div key={item} className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-brand-700 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-stone-700 leading-snug">{item}</span>
+                    <Check className="w-4 h-4 text-[#6F9BFF] flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white/80 leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
@@ -727,11 +730,11 @@ export default function Program() {
 
             {/* Right: how support works */}
             <div className="flex items-center">
-              <div className="w-full border border-stone-200 border-l-2 border-l-stone-900 p-6 md:p-8 bg-white rounded-[10px] shadow-[0_4px_4px_0_rgba(66,99,235,0.3)]">
-                <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-5">
+              <div className="w-full border border-white/10 border-l-2 border-l-white/30 p-6 md:p-8 bg-white rounded-[10px] shadow-[0_4px_4px_0_rgba(66,99,235,0.3)]">
+                <h3 className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/45 mb-5">
                   How it works
                 </h3>
-                <p className="text-sm text-stone-700 leading-relaxed">
+                <p className="text-sm text-white/80 leading-relaxed">
                   When your person needs help using AI in their work, we step in directly with real, hands-on support from someone who knows the tools.
                 </p>
               </div>
@@ -746,6 +749,7 @@ export default function Program() {
           </div>
         </div>
       </section>
+      </div>
     </>
   )
 }

@@ -20,7 +20,7 @@ export default function HowItWorks() {
         <div className="hidden lg:flex gap-20 items-start">
           {/* Left column: image */}
           <div className="flex-shrink-0 w-1/2">
-            <div className="relative overflow-hidden rounded-[28px] border-[4px] border-[#4263EB] bg-white shadow-[0_14px_32px_rgba(66,99,235,0.2)] translate-y-6 -translate-x-4">
+            <div className="relative overflow-hidden rounded-[28px] border-[4px] border-[#6F9BFF] bg-white shadow-[0_14px_32px_rgba(66,99,235,0.2)] translate-y-6 -translate-x-4">
               <img
                 src={trainingExampleImage}
                 alt="Ad On AI live training session"

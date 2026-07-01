@@ -3,7 +3,7 @@ import { ArrowUpRight, Facebook, Instagram, Linkedin } from 'lucide-react'
 import AdOnAILogo from './AdOnAILogo'
 
 const siteLinks = [
-  { label: 'Program', href: '/program' },
+  { label: 'BPO AI Learning Program', href: '/bpo-ai-program' },
   { label: 'Meet The Team', href: '/about' },
   { label: 'FAQ', href: '/faq' },
 ]
@@ -26,95 +26,61 @@ const socialLinks = [
 ]
 
 export default function Footer() {
+  const columns = [
+    { title: 'Ad On AI', links: siteLinks },
+    { title: 'Useful Links', links: usefulLinks },
+    { title: 'Ad On Group Sites', links: ecosystemLinks },
+  ]
   return (
-    <footer className="bg-[#2d3a4a]">
-      <div className="section-container">
-        {/* Main footer grid */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
-          {/* Logo + brand area */}
-          <div className="lg:col-span-3">
-            <Link to="/" className="inline-block mb-6 hover:opacity-80 transition-opacity text-white">
+    <footer className="relative overflow-hidden border-t border-white/10" style={{ background: '#05070D' }}>
+      {/* faint blueprint accent */}
+      <div className="absolute inset-0 pointer-events-none opacity-60" style={{ backgroundImage: 'linear-gradient(rgba(111,155,255,0.06) 1px,transparent 1px), linear-gradient(90deg, rgba(111,155,255,0.06) 1px, transparent 1px)', backgroundSize: '150px 150px' }} />
+      <div className="relative section-container">
+        <div className="py-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-8">
+          {/* Brand */}
+          <div className="col-span-2 md:col-span-4 lg:col-span-1">
+            <Link to="/" className="inline-block mb-3 hover:opacity-80 transition-opacity text-white">
               <AdOnAILogo />
             </Link>
-            <p className="text-sm text-white/40 leading-relaxed max-w-xs">
-              AI training and enablement for staff in Australian businesses.
-              Part of the Ad On Group ecosystem.
+            <p className="text-xs text-white/40 leading-relaxed max-w-xs">
+              AI training and enablement for Australian businesses. Part of the Ad On Group ecosystem.
             </p>
           </div>
 
-          {/* Ad On AI */}
-          <div className="lg:col-span-2 lg:col-start-5">
-            <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] mb-5 font-bold">
-              Ad On AI
-            </h4>
-            <ul className="space-y-3">
-              {siteLinks.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-white/50 hover:text-white transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Useful Links */}
-          <div className="lg:col-span-2">
-            <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] mb-5 font-bold">
-              Useful Links
-            </h4>
-            <ul className="space-y-3">
-              {usefulLinks.map((link) => (
-                <li key={link.label}>
-                  {link.href.startsWith('http') ? (
-                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm text-white/50 hover:text-white transition-colors">
-                      {link.label}
-                    </a>
-                  ) : (
-                    <Link to={link.href} className="text-sm text-white/50 hover:text-white transition-colors">
-                      {link.label}
-                    </Link>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Ad On Group Sites */}
-          <div className="lg:col-span-2">
-            <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] mb-5 font-bold">
-              Ad On Group Sites
-            </h4>
-            <ul className="space-y-3">
-              {ecosystemLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-white/50 hover:text-white transition-colors inline-flex items-center gap-1.5"
-                  >
-                    {link.label}
-                    <ArrowUpRight className="w-3 h-3 opacity-40" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal + Social */}
-          <div className="lg:col-span-3 lg:col-start-10">
-            <div className="space-y-3 mb-8">
-              <a href="#" className="block text-sm text-white/50 hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="block text-sm text-white/50 hover:text-white transition-colors">
-                Terms and Conditions
-              </a>
+          {columns.map((col) => (
+            <div key={col.title}>
+              <h4 className="font-mono text-[10px] text-white/35 uppercase tracking-[0.15em] mb-4 font-bold">
+                {col.title}
+              </h4>
+              <ul className="space-y-2.5">
+                {col.links.map((link) => (
+                  <li key={link.label}>
+                    {link.href.startsWith('http') ? (
+                      <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-[13px] text-white/55 hover:text-white transition-colors inline-flex items-center gap-1.5">
+                        {link.label}
+                        <ArrowUpRight className="w-3 h-3 opacity-40" />
+                      </a>
+                    ) : (
+                      <Link to={link.href} className="text-[13px] text-white/55 hover:text-white transition-colors">
+                        {link.label}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </div>
+          ))}
+        </div>
 
-            {/* Social icons */}
-            <div className="flex items-center gap-4">
+        {/* Bottom bar */}
+        <div className="py-5 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-white/10">
+          <p className="text-xs text-white/30">
+            &copy; {new Date().getFullYear()} Ad On Group. All Rights Reserved.
+          </p>
+          <div className="flex items-center gap-5">
+            <a href="#" className="text-xs text-white/40 hover:text-white transition-colors">Privacy</a>
+            <a href="#" className="text-xs text-white/40 hover:text-white transition-colors">Terms</a>
+            <div className="flex items-center gap-2.5 ml-1">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -122,20 +88,13 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-9 h-9 flex items-center justify-center bg-white/10 hover:bg-white/20 transition-colors"
+                  className="w-8 h-8 flex items-center justify-center rounded-[8px] bg-white/[0.06] hover:bg-white/15 transition-colors"
                 >
-                  <social.icon className="w-4 h-4 text-white/70" />
+                  <social.icon className="w-3.5 h-3.5 text-white/70" />
                 </a>
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="py-6 flex flex-col sm:flex-row items-center justify-center gap-2 border-t border-white/10">
-          <p className="text-xs text-white/30">
-            &copy; {new Date().getFullYear()} Ad On Group. All Rights Reserved.
-          </p>
         </div>
       </div>
     </footer>

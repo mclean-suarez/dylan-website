@@ -1,67 +1,62 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronDown, ArrowRight } from 'lucide-react'
-import PageHeader from '../components/PageHeader'
 import Seo from '../components/Seo'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import adOnAiLogo from '../images/adonailogo.webp'
+import { KEYS, CYAN, DarkPageHeader, Aurora, BlueprintGrid, Grain, MagneticButton } from '../components/hero/visuals'
 
 const faqs = [
   {
     question: 'What exactly is Ad On AI?',
-    answer: 'Ad On AI is a managed AI training and enablement program for staff in your business. Participants build capability through a structured monthly cycle that combines guided enablement, self-paced modules, practical application in their role, a knowledge check, and a Progress Report. As their capability grows, the training evolves into more advanced and role-specific AI tools, workflows, and use cases.',
+    answer: 'Ad On AI runs an ongoing, guided AI training and enablement program for the staff of Australian businesses. Over three months and 24 hands-on modules, your people go from using AI well, to automating their repetitive work, to deploying AI agents that run whole tasks for them — all built around the real work they already do.',
   },
   {
-    question: 'How is the monthly cadence structured?',
-    answer: 'Each month follows a complete enablement cycle built around guided learning, self-paced sessions through an online enablement terminal, a knowledge check where participants explain what they learned and how they applied AI, a Progress Report delivered to you, and hands-on support from the Ad On AI team when participants need it. Depending on the month and the participant, guided learning can include live calls, facilitated sessions, and practical implementation support.',
+    question: 'Do our staff need to be technical?',
+    answer: 'No. The program starts from first principles and is built around the everyday tasks your people already do, with a trainer on hand the moment they get stuck.',
   },
   {
-    question: 'What do participants start with?',
-    answer: 'Participants begin with a structured foundation in using AI well at work. This covers safe use, onboarding, prompting, and applying AI to real workflows so they can build confidence before moving into more advanced role-specific training. From there, the program continues to evolve with their role, responsibilities, and the latest useful AI tools.',
+    question: 'How much time does it take each week?',
+    answer: 'About two hours a week — two short modules that pair a concept with a hands-on build, applied inside the work they’re already doing, so it rarely feels like “extra”.',
   },
   {
-    question: 'What is role-specific training?',
-    answer: 'Role-specific training is where your person moves beyond the foundations of using AI well and begins mastering the latest and greatest AI tools, workflows, and practical use cases most relevant to their role. The training focus is shaped by their responsibilities and the outcomes you want to improve, and it continues evolving as new tools and opportunities emerge.',
+    question: 'How do I know they’re actually doing it?',
+    answer: 'Every module includes a test or practical project. They can’t progress without completing it, and you’re notified if they stall.',
   },
   {
-    question: 'What are the self-paced modules?',
-    answer: 'Modules are delivered through a purpose-built online enablement terminal. They cover practical AI techniques and workflows relevant to operational roles. Content is continuously updated as AI tools and best practices evolve. Specific module topics are being developed and will be published when available.',
+    question: 'How fast will I see results?',
+    answer: 'Most people start using AI in their daily work from month one — you’ll notice the difference before you read a report.',
   },
   {
-    question: 'What is the knowledge check?',
-    answer: 'At the end of each month, participants complete a knowledge check where they explain what they learned and how they applied AI in their work. This is the accountability checkpoint that separates managed enablement from passive learning. Results feed into the Progress Report.',
+    question: 'What if they miss a session?',
+    answer: 'All sessions are recorded and sent automatically, and stay in the academy for life.',
   },
   {
-    question: 'What kind of hands-on support is provided?',
-    answer: 'When a participant is struggling to apply what they have learned, the Ad On AI team steps in with practical assistance. This may include workflow guidance, help selecting the right AI approach, prompt templates, or a small workflow improvement deployed directly into their day-to-day work. The scope is deliberately kept small to ensure quality and fast deployment.',
+    question: 'Can new staff join mid-program?',
+    answer: 'Yes. New intake starts every month at level 1.',
   },
   {
-    question: 'What if we need a bigger build?',
-    answer: 'Anything that exceeds the scope of hands-on support becomes a separate project, scoped and delivered independently. Custom integrations, full system architecture, and bespoke software are not included in the program. This keeps the program focused and predictable.',
+    question: 'Can I add more staff later?',
+    answer: 'Yes. Monthly intake is limited so each person gets proper support, so it’s best to plan ahead — some months have a waiting list.',
   },
   {
-    question: 'Can our representative attend the enablement calls?',
-    answer: 'Yes. When live enablement calls or facilitated sessions are scheduled, client representatives are welcome to attend to observe the process, stay across participant progress, and provide context about priorities or upcoming workflow changes.',
+    question: 'Can I cancel?',
+    answer: 'Yes, any time.',
   },
   {
-    question: 'What is the Progress Report?',
-    answer: 'A clear report delivered to the client each month showing what was learned, what was applied, and how participants are progressing. It provides visibility into the program\u2019s value without requiring the client to manage the process directly.',
+    question: 'What if we don’t use Claude?',
+    answer: 'The skills are tool-agnostic by design — they transfer to ChatGPT, Copilot, Gemini and whatever comes next.',
   },
   {
-    question: 'Is this a training program or a webinar?',
-    answer: 'Ad On AI is a managed enablement program, not just a standalone webinar or a library of pre-recorded content. It combines facilitated sessions, self-paced modules delivered through a purpose-built enablement terminal, and practical application support. Everything is structured around real implementation, not passive learning.',
-  },
-  {
-    question: 'Do we need to be using Ad On Workforce?',
-    answer: 'The program is designed primarily for businesses using Ad On Workforce, but it works with any staffing arrangement. The key requirement is that the employees are working within your business workflows on an ongoing basis.',
+    question: 'Is there support after the program?',
+    answer: 'Yes — lifetime academy access plus ongoing webinars, podcasts, masterclasses and newsletters, designed to keep your team current as AI moves.',
   },
   {
     question: 'How do you handle data and safe use of AI?',
-    answer: 'We take a practical approach to AI safety. All implementations follow common-sense data handling practices. We don\u2019t send sensitive client data to AI tools without clear protocols, and we build workflows with appropriate human oversight. Specific data policies are discussed during onboarding.',
+    answer: 'We take a practical approach to AI safety. The very first module covers what client data should never go into a chat, and we build workflows with appropriate human oversight. Specific data policies are discussed during onboarding.',
   },
   {
     question: 'What kind of businesses is this for?',
-    answer: 'Australian SMEs with 5 to 50 staff, typically founder-led service businesses with staff who handle operational, administrative, or client-facing work. Businesses that want measurable outcomes and accountability, not impressive demos.',
+    answer: 'Primarily Australian small-to-medium service businesses that want their people genuinely using AI in their day-to-day work — measurable outcomes, not impressive demos.',
   },
 ]
 
@@ -72,18 +67,18 @@ function FAQItem({ question, answer, isOpen, onToggle }: {
   onToggle: () => void
 }) {
   return (
-    <div className="border-b border-stone-200">
+    <div style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
       <button
         onClick={onToggle}
         className="w-full flex items-start justify-between gap-4 py-6 text-left group"
       >
-        <span className="text-base font-semibold text-white group-hover:text-brand-700 transition-colors">
+        <span className="text-base font-semibold text-white transition-colors group-hover:text-[#6F9BFF]">
           {question}
         </span>
-        <ChevronDown className={`w-5 h-5 text-stone-400 flex-shrink-0 mt-0.5 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-5 h-5 flex-shrink-0 mt-0.5 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} style={{ color: CYAN }} />
       </button>
       <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 pb-6' : 'max-h-0'}`}>
-        <p className="text-sm text-white leading-relaxed pr-12">{answer}</p>
+        <p className="text-sm leading-relaxed pr-12" style={{ color: 'rgba(213,224,255,0.7)' }}>{answer}</p>
       </div>
     </div>
   )
@@ -100,53 +95,43 @@ export default function FAQ() {
         description="Read answers to common questions about Ad On AI, including the monthly cadence, role-specific training, guided sessions, support, and reporting."
         path="/faq"
       />
-      <PageHeader
-        label="FAQ"
-        title="Frequently Asked Questions"
-        subtitle="Everything you need to know about the Ad On AI managed enablement program and how it fits your business."
-      />
+      <style>{KEYS}</style>
 
-      <section ref={ref} className="section-padding bg-[#0A0C1A] relative overflow-hidden">
-        <div className="absolute inset-0 items-center justify-end pointer-events-none hidden md:flex">
-            <img
-              src={adOnAiLogo}
-              alt="Hero"
-              className="
-                w-[400px] h-auto opacity-100
-                md:w-[400px] md:opacity-100
-                lg:w-[400px] lg:opacity-100
-                xl:w-[400px]
-                translate-x-8 md:translate-x-0
-                lg:-translate-x-[13rem]
-                translate-y-[34rem]
-                select-none
-              "
-            />
-        </div>
-        <div className="section-container">
-          <div className={`max-w-3xl mx-auto transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-            {faqs.map((faq, i) => (
-              <FAQItem
-                key={i}
-                question={faq.question}
-                answer={faq.answer}
-                isOpen={openIndex === i}
-                onToggle={() => setOpenIndex(openIndex === i ? null : i)}
-              />
-            ))}
+      <div className="bg-black">
+        <DarkPageHeader
+          label="FAQ"
+          title="Frequently Asked Questions"
+          subtitle="Everything you need to know about the Ad On AI managed enablement program and how it fits your business."
+        />
 
-            <div className="mt-14 text-center">
-              <p className="text-sm text-stone-500 mb-6">
-                Have a question that isn&apos;t answered here?
-              </p>
-              <Link to="/contact" className="btn-primary text-sm">
-                Book a Call
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+        <section ref={ref} className="relative overflow-hidden" style={{ background: '#05070D' }}>
+          <Aurora warm={false} />
+          <BlueprintGrid />
+          <div className="relative z-10 max-w-[820px] mx-auto px-6 sm:px-10 py-20">
+            <div className={`transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+              {faqs.map((faq, i) => (
+                <FAQItem
+                  key={i}
+                  question={faq.question}
+                  answer={faq.answer}
+                  isOpen={openIndex === i}
+                  onToggle={() => setOpenIndex(openIndex === i ? null : i)}
+                />
+              ))}
+
+              <div className="mt-14 text-center">
+                <p className="text-sm mb-6" style={{ color: 'rgba(213,224,255,0.55)' }}>
+                  Have a question that isn&apos;t answered here?
+                </p>
+                <MagneticButton variant="solid" as={Link} to="/contact">
+                  BOOK A CALL <ArrowRight className="w-4 h-4" />
+                </MagneticButton>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+          <Grain opacity={0.1} />
+        </section>
+      </div>
     </>
   )
 }

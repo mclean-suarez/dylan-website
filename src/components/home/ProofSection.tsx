@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 const proofCards = [
-  { stat: 'Over $300,000', label: 'Annualised savings from AI workflow automation and software rationalisation' },
+  { stat: 'Over $300,000', label: 'Annualised savings from AI workflow automation and time saved' },
   { stat: 'Up to 8x', label: 'Output increases observed across enabled teams' },
   { stat: '3 Years', label: 'Applied AI inside Ad On Group operations' },
   { stat: 'Real Ops', label: 'Built inside live business operations. Real process, real scale.' },
