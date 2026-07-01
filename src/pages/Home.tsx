@@ -14,21 +14,13 @@ import {
 // ---------------------------------------------------------------------------
 // Homepage — "Blueprint × Liquid Chrome" premium dark theme.
 // Business-first, speaks to the boss buying for their team. Real copy.
-// NOTE: client logos (#trust) are PLACEHOLDERS — swap for signed-off real ones
-// pre-launch. Stats marked ★ are placeholders pending finalized BPO results.
+// NOTE: Stats marked ★ are placeholders pending finalized BPO results.
 // ---------------------------------------------------------------------------
 
 const heroStats = [
   ['80+', 'staff trained in AI'],
   ['2008', 'Ad On Group operating since'],
   ['3', 'countries of operation'],
-]
-
-// PLACEHOLDER client wordmarks — replace with real signed-off logos pre-launch.
-const clientLogos = [
-  'Brightwater Group', 'Meridian Partners', 'Northbridge Co', 'Coastline Services',
-  'Vantage Build', 'Harlow & Pike', 'Summit Advisory', 'Ironbark Civil',
-  'Bluestone Logistics', 'Fenwick & Co', 'Redleaf Studios', 'Clearwater Finance',
 ]
 
 const programIncludes = [
@@ -223,43 +215,6 @@ export default function Home() {
 
       <div className="bg-black">
         <HomeHero />
-
-        {/* ===== TRUST STRIP (placeholder client logos) ===== */}
-        <section className="relative overflow-hidden border-y border-white/[0.06]" style={{ background: '#04060c' }}>
-          <div className="relative z-10 py-9">
-            <p className="text-center font-mono text-[10px] uppercase tracking-[0.22em] mb-6" style={{ color: 'rgba(111,155,255,0.55)' }}>
-              Trusted by teams across Australian business
-            </p>
-            {/* marquee carousel */}
-            <div className="relative overflow-hidden">
-              {/* fade edges */}
-              <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10" style={{ background: 'linear-gradient(to right, #04060c, transparent)' }} />
-              <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10" style={{ background: 'linear-gradient(to left, #04060c, transparent)' }} />
-              <div
-                className="flex items-center gap-x-14 w-max"
-                style={{
-                  animation: 'marquee 28s linear infinite',
-                }}
-              >
-                {[...clientLogos, ...clientLogos].map((name, i) => (
-                  <span
-                    key={i}
-                    className="text-base sm:text-lg font-bold tracking-tight text-white/30 hover:text-white/55 transition-colors select-none whitespace-nowrap"
-                    style={{ fontFamily: 'Inter, sans-serif' }}
-                  >
-                    {name}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-          <style>{`
-            @keyframes marquee {
-              from { transform: translateX(0); }
-              to { transform: translateX(-50%); }
-            }
-          `}</style>
-        </section>
 
         {/* ===== SPOTLIGHT — AI TRAINING & ENABLEMENT ===== */}
         <section className="relative overflow-hidden" style={{ background: '#04060C' }}>
