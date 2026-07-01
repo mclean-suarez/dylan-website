@@ -48,7 +48,7 @@ export default function CTASection() {
               Book a Call
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to="/program" className="btn-secondary-on-dark text-sm">
+            <Link to="/bpo-ai-program" className="btn-secondary-on-dark text-sm">
               See the Program
             </Link>
           </div>

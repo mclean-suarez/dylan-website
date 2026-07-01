@@ -5,7 +5,7 @@
  * Designed to feel like an editorial systems diagram, not a generic SaaS flowchart.
  */
 export default function EnablementCycleDiagram({ className = '' }: { className?: string }) {
-  const accent = '#4263eb'
+  const accent = '#6F9BFF'
   const border = '#d6d3d1' // stone-300
   const borderLight = '#e7e5e4' // stone-200
   const textDark = '#1c1917' // stone-900

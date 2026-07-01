@@ -1,9 +1,8 @@
 import { useState, type FormEvent } from 'react'
 import { ArrowRight, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
-import PageHeader from '../components/PageHeader'
 import Seo from '../components/Seo'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import watermarkImage from '../images/watermark.webp'
+import { KEYS, CYAN, DarkPageHeader, Aurora, BlueprintGrid, Grain } from '../components/hero/visuals'
 
 const WEB3FORMS_URL = 'https://api.web3forms.com/submit'
 const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined
@@ -133,30 +132,37 @@ export default function Contact() {
           description="Get in touch with Ad On AI to discuss AI training and enablement for your team, including guided sessions, modules, and practical implementation support."
           path="/contact"
         />
-        <PageHeader
-          label="Get Started"
-          title="Book a Call"
-          subtitle="Tell us about your business and we'll show you how the program works for your team."
-        />
-        <section ref={ref} className="section-padding">
-          <div className="section-container">
-            <div className="max-w-xl mx-auto text-center">
-              <div className={`border border-stone-200 bg-white py-16 px-8 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-                <CheckCircle2 className="w-12 h-12 text-brand-700 mx-auto mb-5" />
-                <h3 className="text-xl font-bold text-stone-900 mb-3">Enquiry Received</h3>
-                <p className="text-sm text-stone-500 leading-relaxed max-w-sm mx-auto mb-8">
-                  Thanks for reaching out. We&apos;ll review your submission and get back to you within one business day to book your strategy call.
-                </p>
-                <button
-                  onClick={() => setStatus('idle')}
-                  className="text-sm font-medium text-brand-700 hover:text-brand-800 transition-colors"
-                >
-                  Submit another enquiry
-                </button>
+        <style>{KEYS}</style>
+        <div className="bg-black">
+          <DarkPageHeader
+            label="Get Started"
+            title="Book a Call"
+            subtitle="Tell us about your business and we'll show you how the program works for your team."
+          />
+          <section ref={ref} className="relative overflow-hidden" style={{ background: '#05070D' }}>
+            <Aurora warm={false} />
+            <BlueprintGrid />
+            <div className="relative z-10 max-w-[1280px] mx-auto px-6 sm:px-10 py-24">
+              <div className="max-w-xl mx-auto text-center">
+                <div className={`rounded-[18px] border border-white/10 bg-white/[0.03] py-16 px-8 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
+                  <CheckCircle2 className="w-12 h-12 mx-auto mb-5" style={{ color: CYAN }} />
+                  <h3 className="text-xl font-bold text-white mb-3">Enquiry Received</h3>
+                  <p className="text-sm leading-relaxed max-w-sm mx-auto mb-8" style={{ color: 'rgba(213,224,255,0.65)' }}>
+                    Thanks for reaching out. We&apos;ll review your submission and get back to you within one business day to book your strategy call.
+                  </p>
+                  <button
+                    onClick={() => setStatus('idle')}
+                    className="text-sm font-medium transition-colors"
+                    style={{ color: CYAN }}
+                  >
+                    Submit another enquiry
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+            <Grain opacity={0.1} />
+          </section>
+        </div>
       </>
     )
   }
@@ -168,35 +174,23 @@ export default function Contact() {
         description="Get in touch with Ad On AI to discuss AI training and enablement for your team, including guided sessions, modules, and practical implementation support."
         path="/contact"
       />
-      <PageHeader
+      <style>{KEYS}</style>
+      <div className="bg-black">
+      <DarkPageHeader
         label="Get Started"
         title="Book a Call"
         subtitle="Tell us about your business and we'll show you how the program works for your team."
       />
 
-      <section ref={ref} className="section-padding bg-[#2D3A4A] relative">
-        <div className="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden">
-            <img
-              src={watermarkImage}
-              alt="Hero"
-              className="
-                w-[100%] h-auto opacity-100
-                md:w-[100%] md:opacity-100
-                lg:w-[100% lg:opacity-100
-                xl:w-[100%]
-                translate-x-8 md:translate-x-0
-                lg:-translate-x-[0rem]
-                translate-y-[3rem]
-                select-none
-              "
-            />
-        </div>
-        <div className="section-container flex justify-center">
-          <div className="max-w-xl">
+      <section ref={ref} className="relative overflow-hidden" style={{ background: '#05070D' }}>
+        <Aurora warm={false} />
+        <BlueprintGrid />
+        <div className="relative z-10 max-w-[1280px] mx-auto px-6 sm:px-10 py-24 flex justify-center">
+          <div className="max-w-xl w-full">
             <div className={`transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}>
-              <div className="border border-stone-200 bg-white p-6 md:p-8">
-                <h3 className="text-lg font-bold text-stone-900 mb-1">Get Started</h3>
-                <p className="text-sm text-stone-500 mb-6">
+              <div className="rounded-[18px] border border-white/10 bg-white/[0.03] p-6 md:p-8">
+                <h3 className="text-lg font-bold text-white mb-1">Get Started</h3>
+                <p className="text-sm mb-6" style={{ color: 'rgba(213,224,255,0.6)' }}>
                   Fill out the form and we&apos;ll be in touch within one business day.
                 </p>
 
@@ -210,7 +204,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} noValidate className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-stone-700 mb-1.5">First Name</label>
+                      <label htmlFor="firstName" className="block text-sm font-medium text-white/70 mb-1.5">First Name</label>
                       <input
                         type="text"
                         id="firstName"
@@ -222,7 +216,7 @@ export default function Contact() {
                       {errors.firstName && <p className="text-xs text-red-500 mt-1">{errors.firstName}</p>}
                     </div>
                     <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-stone-700 mb-1.5">Last Name</label>
+                      <label htmlFor="lastName" className="block text-sm font-medium text-white/70 mb-1.5">Last Name</label>
                       <input
                         type="text"
                         id="lastName"
@@ -235,7 +229,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-1.5">Business Email</label>
+                    <label htmlFor="email" className="block text-sm font-medium text-white/70 mb-1.5">Business Email</label>
                     <input
                       type="email"
                       id="email"
@@ -247,7 +241,7 @@ export default function Contact() {
                     {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email}</p>}
                   </div>
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-stone-700 mb-1.5">Business Name</label>
+                    <label htmlFor="company" className="block text-sm font-medium text-white/70 mb-1.5">Business Name</label>
                     <input
                       type="text"
                       id="company"
@@ -259,12 +253,12 @@ export default function Contact() {
                     {errors.company && <p className="text-xs text-red-500 mt-1">{errors.company}</p>}
                   </div>
                   <div>
-                    <label htmlFor="seats" className="block text-sm font-medium text-stone-700 mb-1.5">How Many Employees to Enrol?</label>
+                    <label htmlFor="seats" className="block text-sm font-medium text-white/70 mb-1.5">How Many Employees to Enrol?</label>
                     <select
                       id="seats"
                       value={form.seats}
                       onChange={(e) => update('seats', e.target.value)}
-                      className={`${inputClass(errors.seats)} ${!form.seats ? 'text-stone-400' : 'text-stone-800'} appearance-none`}
+                      className={`${inputClass(errors.seats)} ${!form.seats ? 'text-white/40' : 'text-white'} appearance-none [&>option]:text-stone-800`}
                     >
                       <option value="">Select</option>
                       <option value="1-3">1 to 3 employees</option>
@@ -276,7 +270,7 @@ export default function Contact() {
                     {errors.seats && <p className="text-xs text-red-500 mt-1">{errors.seats}</p>}
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-1.5">Anything Else? (Optional)</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-white/70 mb-1.5">Anything Else? (Optional)</label>
                     <textarea
                       id="message"
                       rows={3}
@@ -299,7 +293,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={!FORM_CONFIGURED || status === 'submitting'}
-                    className="btn-primary w-full mt-2 disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full mt-2 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-[10px] bg-white text-black font-semibold text-sm hover:bg-white/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {status === 'submitting' ? (
                       <>
@@ -319,7 +313,9 @@ export default function Contact() {
 
           </div>
         </div>
+        <Grain opacity={0.1} />
       </section>
+      </div>
     </>
   )
 }
