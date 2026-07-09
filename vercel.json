@@ -8,7 +8,18 @@
       "has": [{ "type": "host", "value": "adon-ai.com.au" }],
       "destination": "https://www.adon-ai.com.au/:path*",
       "permanent": true
-    }
+    },
+    { "source": "/Ad On AI.dc.html", "destination": "/", "permanent": true },
+    { "source": "/Ad%20On%20AI.dc.html", "destination": "/", "permanent": true },
+    { "source": "/Programs.dc.html", "destination": "/programs", "permanent": true },
+    { "source": "/BPO AI Program.dc.html", "destination": "/bpo-program", "permanent": true },
+    { "source": "/BPO%20AI%20Program.dc.html", "destination": "/bpo-program", "permanent": true },
+    { "source": "/Ongoing Support.dc.html", "destination": "/ongoing-support", "permanent": true },
+    { "source": "/Ongoing%20Support.dc.html", "destination": "/ongoing-support", "permanent": true },
+    { "source": "/About.dc.html", "destination": "/about", "permanent": true },
+    { "source": "/Ad On Group.dc.html", "destination": "/ad-on-group", "permanent": true },
+    { "source": "/Ad%20On%20Group.dc.html", "destination": "/ad-on-group", "permanent": true },
+    { "source": "/Terms.dc.html", "destination": "/terms", "permanent": true }
   ],
   "headers": [
     {
