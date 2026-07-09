@@ -1,0 +1,24 @@
+# Ad On AI
+
+> Ad On AI runs AI training and enablement programs for Australian small-to-medium businesses. A 3-month, self-paced program takes non-technical staff from their first prompts to reusable skills, automations and deployed AI agents that do real chunks of their day-to-day job. Delivered by Certified Claude Experts; part of Ad On Group (Australian-owned since 2008). Skills are tool-agnostic and transfer to ChatGPT, Copilot, Gemini and Claude.
+
+## Programs
+
+- [AI Training & Enablement Program](https://www.adon-ai.com.au/programs): The flagship 3-month program for non-technical SME staff. Foundations → automating tasks → agentic AI. Every module has a test or practical project; managers are notified if a learner stalls. Includes lifetime academy access.
+- [BPO AI Program](https://www.adon-ai.com.au/bpo-program): A separate, structured AI-enablement product for BPO and outsourced teams, run on a monthly cycle across three months.
+- [Ongoing Support](https://www.adon-ai.com.au/ongoing-support): Optional add-ons after the program — webinars, masterclasses, podcasts and community that keep skills current as AI moves.
+
+## Company
+
+- [About Ad On AI](https://www.adon-ai.com.au/about): The team behind the program, including Certified Claude Experts, and why the program exists.
+- [Ad On Group](https://www.adon-ai.com.au/ad-on-group): The parent company — Australian-owned since 2008, with divisions across workforce, AI, digital and hold. Partners include Anthropic, Google, Meta and Telstra.
+- [Terms & Conditions](https://www.adon-ai.com.au/terms)
+
+## Key facts
+
+- Audience: non-technical staff at Australian SMEs (finance, operations, marketing, admin, customer service).
+- Format: self-paced modules on a custom AI-enabled training platform, plus webinars and async support. No live in-person or screen-share sessions.
+- Duration: 3 months, around 2 hours per week.
+- Outcomes per learner: reusable prompt packs, custom skills, multimodal tasks, end-to-end workflows, deployed AI agents and an agentic orchestrator.
+- Contact: info@adongroup.com.au
+- ABN: 54 808 983 598
