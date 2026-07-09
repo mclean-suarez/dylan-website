@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.22), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.18), transparent 52%), radial-gradient(85% 38% at 102% 40%, rgba(47,111,237,0.10), transparent 56%), radial-gradient(85% 36% at -2% 70%, rgba(255,168,112,0.12), transparent 56%), radial-gradient(80% 34% at 50% 100%, rgba(45,212,191,0.10), transparent 60%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.045em !important; font-weight: 500 !important; }
+  .nav-prog { position: relative; }
+  .nav-menu { opacity: 0; pointer-events: none; transform: translateY(6px); transition: opacity .18s ease, transform .18s ease; }
+  .nav-prog:hover .nav-menu, .nav-menu:hover { opacity: 1; pointer-events: auto; transform: none; }
+</style>
+</helmet>
+
+<div style="max-width:100%;overflow-x:clip;background:transparent;position:relative">
+
+  <!-- global pixel-grid texture (one continuous layer) -->
+  <div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(11,18,32,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.05) 1px, transparent 1px);background-size:4px 4px;-webkit-mask-image:radial-gradient(125% 70% at 50% 2%, #000 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.12) 64%, transparent 84%);mask-image:radial-gradient(125% 70% at 50% 2%, #000 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.12) 64%, transparent 84%)"></div>
+
+  <!-- ======================= NAV ======================= -->
+  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div style="position:relative;max-width:1120px;margin:0 auto">
+    <div style="background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="Ad On AI.dc.html#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+      <div style="{{ navDesktopStyle }}">
+        <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
+        <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
+          <a href="Ad On Group.dc.html" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <div class="nav-prog" style="position:relative">
+            <a href="Programs.dc.html" style="text-decoration:none;color:#2F6FED;font-weight:700;display:inline-flex;align-items:center;gap:5px">Programs<svg viewBox="0 0 12 12" style="width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:round;stroke-linejoin:round"><path d="M2.5 4.5L6 8L9.5 4.5"></path></svg></a>
+            <div class="nav-menu" style="position:absolute;top:100%;left:-16px;padding-top:12px;z-index:60">
+              <div style="width:300px;background:rgba(252,251,250,0.94);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:16px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.28);padding:8px">
+                <a href="Programs.dc.html" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:12px 14px;border-radius:11px;transition:background .18s ease" style-hover="background:rgba(47,111,237,0.08)">
+                  <span style="font-size:14.5px;font-weight:700;color:#0B1220">AI Training &amp; Enablement</span>
+                  <span style="font-size:12.5px;color:#6B7480;font-weight:500">Our flagship 3-month program</span>
+                </a>
+                <a href="BPO AI Program.dc.html" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:12px 14px;border-radius:11px;transition:background .18s ease" style-hover="background:rgba(108,92,214,0.08)">
+                  <span style="font-size:14.5px;font-weight:700;color:#0B1220">BPO AI Program</span>
+                  <span style="font-size:12.5px;color:#6B7480;font-weight:500">For outsourced &amp; BPO teams</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="Ongoing Support.dc.html" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="About.dc.html" style="text-decoration:none;color:inherit">About</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(11,18,32,0.4)">Book a call</a>
+        </div>
+      </div>
+      <button onClick="{{ toggleNav }}" aria-label="Menu" style="{{ navBurgerStyle }};align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(11,18,32,0.10);background:#fff;cursor:pointer;flex-direction:column;gap:4px">
+        <span style="width:16px;height:2px;background:#0B1220;border-radius:2px;display:block"></span>
+        <span style="width:16px;height:2px;background:#0B1220;border-radius:2px;display:block"></span>
+      </button>
+    </div>
+    <div style="{{ navPanelStyle }}">
+      <a href="Ad On Group.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Ad On Group</a>
+      <a href="Programs.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">AI Training &amp; Enablement</a>
+      <a href="BPO AI Program.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">BPO AI Program</a>
+      <a href="Ongoing Support.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Ongoing Support</a>
+      <a href="About.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">About</a>
+      <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" onClick="{{ closeNav }}" style="text-decoration:none;text-align:center;margin-top:6px;font-size:15px;font-weight:700;color:#fff;background:#0B1220;padding:13px 20px;border-radius:12px">Book a call</a>
+    </div>
+    </div>
+  </nav>
+
+  <!-- ======================= HERO ======================= -->
+  <header id="top" style="max-width:940px;margin:0 auto;padding:{{ heroPad }};text-align:center">
+    <span style="display:inline-flex;align-items:center;gap:7px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#6C5CD6;text-transform:uppercase;background:rgba(108,92,214,0.09);border:1px solid rgba(108,92,214,0.2);border-radius:999px;padding:5px 12px"><span style="width:6px;height:6px;border-radius:50%;background:#6C5CD6"></span>For BPOs &amp; outsourced teams</span>
+    <h1 style="font-size:clamp(34px,4.8vw,62px);line-height:1.02;letter-spacing:-0.045em;font-weight:600;margin:20px 0 0">Structured AI enablement<br>for your people.</h1>
+    <p style="font-size:18px;line-height:1.6;color:#4A5462;max-width:720px;margin:24px auto 0">A structured program that starts with foundational skills and progresses, month by month, toward advanced use &mdash; with monthly knowledge and skills checks, progress reporting, and hands-on implementation support whenever your people need it.</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:36px">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.85);box-shadow:0 8px 22px -14px rgba(11,18,32,0.25);border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;color:#27313F"><span style="width:7px;height:7px;border-radius:50%;background:#6C5CD6"></span>Foundational &rarr; advanced</div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.85);box-shadow:0 8px 22px -14px rgba(11,18,32,0.25);border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;color:#27313F"><span style="width:7px;height:7px;border-radius:50%;background:#6C5CD6"></span>Monthly progress reporting</div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.85);box-shadow:0 8px 22px -14px rgba(11,18,32,0.25);border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;color:#27313F"><span style="width:7px;height:7px;border-radius:50%;background:#6C5CD6"></span>Hands-on implementation support</div>
+    </div>
+  </header>
+
+  <!-- ======================= MONTHLY CYCLE ======================= -->
+  <section style="max-width:1100px;margin:0 auto;padding:80px 28px 40px">
+    <div style="max-width:720px;margin-bottom:44px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#6C5CD6;text-transform:uppercase;font-weight:500">Monthly cycle</span>
+      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 16px">How each month works.</h2>
+      <p style="font-size:16px;line-height:1.65;color:#4A5462;margin:0;max-width:640px">Every month runs on the same rhythm &mdash; guided learning, real application, a check on what stuck, and a clear read on progress. Then it repeats, building on the last.</p>
+    </div>
+    <div style="{{ cycleGridStyle }}">
+      <sc-for list="{{ cycle }}" as="c" hint-placeholder-count="6">
+        <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 36px -20px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <span style="font-family:'Inter Tight',sans-serif;font-size:30px;font-weight:800;letter-spacing:-0.04em;color:transparent;-webkit-text-stroke:1.4px rgba(108,92,214,0.45)">{{ c.n }}</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.1em;color:#6C5CD6;text-transform:uppercase;background:rgba(108,92,214,0.08);border:1px solid rgba(108,92,214,0.16);border-radius:999px;padding:4px 9px">{{ c.when }}</span>
+          </div>
+          <h3 style="font-size:17px;font-weight:800;margin:0 0 7px;letter-spacing:-0.01em">{{ c.t }}</h3>
+          <p style="font-size:14px;line-height:1.55;color:#5A6473;margin:0">{{ c.d }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#6C5CD6;letter-spacing:0.04em">
+      <span style="width:26px;height:1px;background:rgba(108,92,214,0.4)"></span>01 &rarr; 06, repeats monthly<span style="width:26px;height:1px;background:rgba(108,92,214,0.4)"></span>
+    </div>
+  </section>
+
+  <!-- ======================= 3-MONTH PROGRESSION ======================= -->
+  <section style="max-width:1100px;margin:0 auto;padding:80px 28px 40px">
+    <div style="max-width:720px;margin-bottom:44px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#6C5CD6;text-transform:uppercase">Staged progression</span>
+      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 16px">From novice to advanced AI user.</h2>
+      <p style="font-size:16px;line-height:1.65;color:#4A5462;margin:0;max-width:640px">Three foundational months grounded in each person&rsquo;s real work &mdash; then the program continues, tailored to their specific role.</p>
+    </div>
+    <div style="{{ progressionGridStyle }}">
+      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 36px -20px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:18px;padding:28px 26px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#6C5CD6;text-transform:uppercase">Month 1</div>
+        <h3 style="font-size:19px;font-weight:800;margin:10px 0 10px;letter-spacing:-0.02em">Orientation &amp; possibilities</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:#5A6473;margin:0">Set up tools, learn safe AI usage, and identify where AI supports each participant&rsquo;s specific responsibilities.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 36px -20px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:18px;padding:28px 26px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#6C5CD6;text-transform:uppercase">Month 2</div>
+        <h3 style="font-size:19px;font-weight:800;margin:10px 0 10px;letter-spacing:-0.02em">Prompt mastery</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:#5A6473;margin:0">Build repeatable prompting methods, create templates for frequent tasks, and reduce rework through clearer instructions.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 36px -20px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:18px;padding:28px 26px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#6C5CD6;text-transform:uppercase">Month 3</div>
+        <h3 style="font-size:19px;font-weight:800;margin:10px 0 10px;letter-spacing:-0.02em">Applying AI to your workflow</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:#5A6473;margin:0">Convert learning into practical, repeatable workflows &mdash; integrating AI into real process steps and demonstrating it in-role.</p>
+      </div>
+    </div>
+    <div style="margin-top:20px;background:linear-gradient(135deg,rgba(108,92,214,0.08),rgba(47,111,237,0.06));border:1px solid rgba(108,92,214,0.16);border-radius:18px;padding:24px 28px;display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#6C5CD6;text-transform:uppercase;flex:none">Month 4 &amp; beyond</span>
+      <div style="flex:1;min-width:260px">
+        <h3 style="font-size:18px;font-weight:800;margin:0 0 4px;letter-spacing:-0.02em">Role-specific training</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:#5A6473;margin:0">Participants are grouped by role &mdash; admin, marketing, finance, EA/VA and more &mdash; and training keeps evolving around the tasks, tools and workflows each person actually uses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= PROGRAM OUTCOMES ======================= -->
+  <section style="max-width:1100px;margin:0 auto;padding:80px 28px 40px">
+    <div style="max-width:720px;margin-bottom:40px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#6C5CD6;text-transform:uppercase">Program outcomes</span>
+      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 16px">Skills your person will gain.</h2>
+    </div>
+    <div style="{{ outcomesGridStyle }}">
+      <sc-for list="{{ outcomes }}" as="o" hint-placeholder-count="6">
+        <div style="display:flex;align-items:center;gap:16px;background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 12px 30px -20px rgba(11,18,32,0.22), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:14px;padding:18px 22px">
+          <span style="flex:none;font-family:'Inter Tight',sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.03em;color:#6C5CD6;min-width:30px">{{ o.n }}</span>
+          <span style="font-size:15.5px;font-weight:600;color:#27313F;line-height:1.4">{{ o.t }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ======================= SCOPE / WHAT'S INCLUDED ======================= -->
+  <section style="max-width:1100px;margin:0 auto;padding:80px 28px 40px">
+    <div style="{{ scopeGridStyle }};align-items:stretch">
+      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 36px -20px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:18px;padding:32px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#6C5CD6;text-transform:uppercase">What&rsquo;s included</span>
+        <h3 style="font-size:22px;font-weight:800;margin:12px 0 20px;letter-spacing:-0.02em">What your person gets help with</h3>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:20px;height:20px;margin-top:1px;border-radius:50%;background:rgba(108,92,214,0.12);display:inline-flex;align-items:center;justify-content:center"><span style="width:8px;height:5px;border-left:2px solid #6C5CD6;border-bottom:2px solid #6C5CD6;transform:rotate(-45deg) translateY(-1px)"></span></span><p style="font-size:15px;line-height:1.55;color:#4A5462;margin:0">Using AI to speed up the tasks they already do every day.</p></div>
+          <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:20px;height:20px;margin-top:1px;border-radius:50%;background:rgba(108,92,214,0.12);display:inline-flex;align-items:center;justify-content:center"><span style="width:8px;height:5px;border-left:2px solid #6C5CD6;border-bottom:2px solid #6C5CD6;transform:rotate(-45deg) translateY(-1px)"></span></span><p style="font-size:15px;line-height:1.55;color:#4A5462;margin:0">Getting unstuck when AI isn&rsquo;t giving them the right results.</p></div>
+          <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:20px;height:20px;margin-top:1px;border-radius:50%;background:rgba(108,92,214,0.12);display:inline-flex;align-items:center;justify-content:center"><span style="width:8px;height:5px;border-left:2px solid #6C5CD6;border-bottom:2px solid #6C5CD6;transform:rotate(-45deg) translateY(-1px)"></span></span><p style="font-size:15px;line-height:1.55;color:#4A5462;margin:0">Building AI into their actual role &mdash; not just learning about it.</p></div>
+        </div>
+      </div>
+      <div style="background:#0B1220;border-radius:18px;padding:32px;box-shadow:0 30px 60px -34px rgba(11,18,32,0.5);display:flex;flex-direction:column;justify-content:center">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#B9AEF5;text-transform:uppercase">How it works</span>
+        <p style="font-size:18px;line-height:1.6;color:#E4EAF2;margin:16px 0 0;font-weight:500;letter-spacing:-0.01em">When your person needs help using AI in their work, we step in directly &mdash; real, hands-on support from someone who knows the tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= AFTER THE PROGRAM ======================= -->
+  <section style="max-width:1000px;margin:0 auto;padding:80px 28px 40px">
+    <div style="text-align:center;max-width:680px;margin:0 auto 40px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#6C5CD6;text-transform:uppercase">Optional add-on</span>
+      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 16px">Keep the momentum after month three.</h2>
+      <p style="font-size:16px;line-height:1.65;color:#4A5462;margin:0">Add ongoing support on top of the BPO program &mdash; lifetime academy access, webinars, masterclasses and an active community &mdash; so skills stay current as AI moves.</p>
+    </div>
+    <a href="Ongoing Support.dc.html" style="text-decoration:none;color:inherit;display:block;background:linear-gradient(135deg,rgba(108,92,214,0.08),rgba(47,111,237,0.06));border:1px solid rgba(108,92,214,0.18);border-radius:18px;padding:28px 30px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-3px);box-shadow:0 22px 44px -24px rgba(11,18,32,0.3)">
+      <div>
+        <div style="font-size:18px;font-weight:800;letter-spacing:-0.02em;color:#0B1220">Explore ongoing support &amp; community</div>
+        <div style="font-size:13.5px;color:#5A6473;margin-top:4px">Monthly webinars, tool masterclasses, podcasts, a newsletter and a support hour.</div>
+      </div>
+      <span style="flex:none;font-size:22px;color:#6C5CD6">&rarr;</span>
+    </a>
+  </section>
+
+  <!-- ======================= CTA ======================= -->
+  <section id="contact" style="max-width:1200px;margin:0 auto;padding:80px 28px 80px">
+    <div style="position:relative;overflow:hidden;border-radius:24px;padding:64px 40px;text-align:center;background:radial-gradient(120% 150% at 50% -30%, rgba(108,92,214,0.12), transparent 55%), rgba(255,255,255,0.58);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%);border:1px solid rgba(255,255,255,0.9);box-shadow:0 26px 64px -32px rgba(11,18,32,0.26), inset 0 1px 0 rgba(255,255,255,0.8)">
+      <div style="position:absolute;width:300px;height:300px;left:-70px;bottom:-140px;border-radius:50%;background:radial-gradient(circle,rgba(255,168,112,0.30),transparent 70%);pointer-events:none"></div>
+      <div style="position:absolute;width:320px;height:320px;right:-90px;top:-150px;border-radius:50%;background:radial-gradient(circle,rgba(108,92,214,0.22),transparent 70%);pointer-events:none"></div>
+      <div style="position:relative">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#6C5CD6;text-transform:uppercase">Get started</span>
+        <h2 style="font-size:clamp(24px,2.8vw,38px);line-height:1.05;letter-spacing:-0.035em;font-weight:800;margin:14px 0 14px;color:#0B1220">Get your BPO team started.</h2>
+        <p style="font-size:17px;line-height:1.55;color:#4A5462;max-width:480px;margin:0 auto 30px">Tell us about your operation and the roles you&rsquo;d enrol, and we&rsquo;ll show you exactly how the program would work for your team.</p>
+        <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:16px;font-weight:700;color:#fff;background:#0B1220;padding:15px 30px;border-radius:14px;display:inline-flex;align-items:center;gap:9px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(11,18,32,0.4)">Book a call <span style="font-size:17px">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 28px;{{ footerGridStyle }}">
+      <div>
+        <a href="Ad On AI.dc.html#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block"></span>
+          <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span>
+        </a>
+        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses.</p>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="Programs.dc.html" style="text-decoration:none;color:inherit">AI Training &amp; Enablement</a>
+          <a href="BPO AI Program.dc.html" style="text-decoration:none;color:inherit">BPO AI Program</a>
+          <a href="Ongoing Support.dc.html" style="text-decoration:none;color:inherit">Ongoing Support</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="About.dc.html" style="text-decoration:none;color:inherit">About</a>
+          <a href="Ad On AI.dc.html#faqs" style="text-decoration:none;color:inherit">FAQs</a>
+          <a href="#contact" style="text-decoration:none;color:inherit">Contact</a>
+          <a href="Terms.dc.html" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="mailto:info@adongroup.com.au" style="text-decoration:none;color:inherit">info@adongroup.com.au</a>
+          <span>Australia-wide delivery</span>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI. All rights reserved.</span>
+      <div style="display:flex;gap:22px;font-size:13px;color:#8A93A1">
+        <a href="#" style="text-decoration:none;color:inherit">Privacy Policy</a>
+        <a href="Terms.dc.html" style="text-decoration:none;color:inherit">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+  <template id="__bundler_thumbnail" data-bg-color="#F4F7FC">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1200" height="800" fill="#F4F7FC"/>
+      <g transform="translate(600 400)">
+        <circle cx="-60" cy="-70" r="46" fill="none" stroke="#2F6FED" stroke-width="34"/>
+        <path d="M-150 120 a90 90 0 0 1 180 0 v60 h-180 z" fill="#2F6FED"/>
+        <path d="M120 -150 l22 70 l70 22 l-70 22 l-22 70 l-22 -70 l-70 -22 l70 -22 z" fill="#3FA9E6"/>
+      </g>
+    </svg>
+  </template>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#2F6FED&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { isMobile: false, navOpen: false };
+  componentDidMount() {
+    this._onResize = () => {
+      const m = window.innerWidth < 860;
+      if (m !== this.state.isMobile) this.setState({ isMobile: m, navOpen: m ? this.state.navOpen : false });
+    };
+    this._onResize();
+    window.addEventListener('resize', this._onResize, { passive: true });
+  }
+  componentWillUnmount() {
+    if (this._onResize) window.removeEventListener('resize', this._onResize);
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#2F6FED';
+    const isMobile = this.state.isMobile;
+    const navOpen = this.state.navOpen;
+    const toggleNav = () => this.setState(s => ({ navOpen: !s.navOpen }));
+    const closeNav = () => this.setState({ navOpen: false });
+
+    const navDesktopStyle = isMobile ? 'display:none' : 'display:flex;align-items:center;gap:28px';
+    const navBurgerStyle = isMobile ? 'display:inline-flex' : 'display:none';
+    const navPanelStyle = (isMobile && navOpen)
+      ? 'display:flex;flex-direction:column;gap:4px;position:absolute;top:100%;left:0;right:0;margin-top:10px;background:rgba(252,251,250,0.98);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:20px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.3);padding:10px;z-index:60'
+      : 'display:none';
+
+    const stackCols = (desktop, gap, mobileGap) => isMobile
+      ? ('display:grid;grid-template-columns:1fr;gap:' + (mobileGap != null ? mobileGap : gap))
+      : ('display:grid;grid-template-columns:' + desktop + ';gap:' + gap);
+    const heroPad = isMobile ? '132px 20px 48px' : '112px 28px 72px';
+    const cycleGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:16px' : 'display:grid;grid-template-columns:repeat(3,1fr);gap:18px';
+    const progressionGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:16px' : 'display:grid;grid-template-columns:repeat(3,1fr);gap:20px';
+    const outcomesGridStyle = stackCols('repeat(2,1fr)', '14px');
+    const scopeGridStyle = stackCols('1fr 1fr', '24px');
+    const footerGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:28px' : 'display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px';
+
+    return {
+      accent,
+      isMobile, navOpen, toggleNav, closeNav,
+      navDesktopStyle, navBurgerStyle, navPanelStyle, heroPad,
+      cycleGridStyle, progressionGridStyle, outcomesGridStyle, scopeGridStyle, footerGridStyle,
+      cycle: [
+        { n: '01', when: '1–2 hrs / mo', t: 'Guided sessions', d: 'Live sessions that introduce the month\u2019s focus and work through it together.' },
+        { n: '02', when: '3–4 hrs / mo', t: 'Self-paced modules', d: 'Structured modules in the Academy Terminal, worked around their normal workload.' },
+        { n: '03', when: 'End of month', t: 'Skills & knowledge check', d: 'A short check on what they learned and how they applied it that month.' },
+        { n: '04', when: 'In workflow', t: 'Application', d: 'They apply the month\u2019s skills to a real task in their actual role.' },
+        { n: '05', when: 'To you', t: 'Progress report', d: 'A clear read for leadership on what each person learned and applied.' },
+        { n: '06', when: 'As needed', t: 'Hands-on support', d: 'When someone gets stuck, we step in directly and help them implement.' },
+      ],
+      outcomes: [
+        { n: '01', t: 'Understand where AI is useful' },
+        { n: '02', t: 'Competent in a range of AI tools' },
+        { n: '03', t: 'Get useful results from AI in their daily tasks' },
+        { n: '04', t: 'Prompt with more control and consistency' },
+        { n: '05', t: 'Apply AI inside their own workflow' },
+        { n: '06', t: 'Demonstrate measurable productivity improvement' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

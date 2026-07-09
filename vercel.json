@@ -1,21 +1,5 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "adon-ai.com.au"
-        }
-      ],
-      "destination": "https://www.adon-ai.com.au/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
-    {
-      "source": "/((?!.*\\.).*)",
-      "destination": "/index.html"
-    }
+    { "source": "/", "destination": "/Ad On AI.dc.html" }
   ]
 }

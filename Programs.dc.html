@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.22), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.18), transparent 52%), radial-gradient(85% 38% at 102% 40%, rgba(47,111,237,0.10), transparent 56%), radial-gradient(85% 36% at -2% 70%, rgba(255,168,112,0.12), transparent 56%), radial-gradient(80% 34% at 50% 100%, rgba(45,212,191,0.10), transparent 60%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 600; }
+  @keyframes adonShimmer { to { background-position: 200% 0; } }
+  @keyframes adonPulse { 0%,100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.12); } }
+  @keyframes adonNodePulse { 0%,100% { box-shadow: 0 8px 20px -6px rgba(11,18,32,0.5), 0 0 0 0 rgba(127,208,255,0.55); } 50% { box-shadow: 0 8px 20px -6px rgba(11,18,32,0.5), 0 0 0 10px rgba(127,208,255,0); } }
+  @keyframes adonFlow { to { background-position: 0 22px; } }
+  @keyframes adonArrowBob { 0%,100% { transform: rotate(45deg) translate(0,0); } 50% { transform: rotate(45deg) translate(2px,2px); } }
+  .nav-prog { position: relative; }
+  .nav-menu { opacity: 0; pointer-events: none; transform: translateY(6px); transition: opacity .18s ease, transform .18s ease; }
+  .nav-prog:hover .nav-menu, .nav-menu:hover { opacity: 1; pointer-events: auto; transform: none; }
+</style>
+</helmet>
+
+<div style="max-width:100%;overflow-x:clip;background:transparent;position:relative">
+
+  <div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(11,18,32,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.05) 1px, transparent 1px);background-size:4px 4px;-webkit-mask-image:radial-gradient(125% 70% at 50% 2%, #000 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.12) 64%, transparent 84%);mask-image:radial-gradient(125% 70% at 50% 2%, #000 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.12) 64%, transparent 84%)"></div>
+
+  <!-- ======================= NAV ======================= -->
+  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div style="position:relative;max-width:1120px;margin:0 auto">
+    <div style="background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="Ad On AI.dc.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+      <div style="{{ navDesktopStyle }}">
+        <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
+        <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
+          <a href="Ad On Group.dc.html" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <div class="nav-prog" style="position:relative">
+            <a href="Programs.dc.html" style="text-decoration:none;color:#2F6FED;font-weight:700;display:inline-flex;align-items:center;gap:5px">Programs<svg viewBox="0 0 12 12" style="width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:round;stroke-linejoin:round"><path d="M2.5 4.5L6 8L9.5 4.5"></path></svg></a>
+            <div class="nav-menu" style="position:absolute;top:100%;left:-16px;padding-top:12px;z-index:60">
+              <div style="width:300px;background:rgba(252,251,250,0.94);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:16px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.28);padding:8px">
+                <a href="Programs.dc.html" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:12px 14px;border-radius:11px;transition:background .18s ease" style-hover="background:rgba(47,111,237,0.08)">
+                  <span style="font-size:14.5px;font-weight:700;color:#0B1220">AI Training &amp; Enablement</span>
+                  <span style="font-size:12.5px;color:#6B7480;font-weight:500">Our flagship 3-month program</span>
+                </a>
+                <a href="BPO AI Program.dc.html" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:12px 14px;border-radius:11px;transition:background .18s ease" style-hover="background:rgba(108,92,214,0.08)">
+                  <span style="font-size:14.5px;font-weight:700;color:#0B1220">BPO AI Program</span>
+                  <span style="font-size:12.5px;color:#6B7480;font-weight:500">For outsourced &amp; BPO teams</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="Ongoing Support.dc.html" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="About.dc.html" style="text-decoration:none;color:inherit">About</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(11,18,32,0.4)">Book a call</a>
+        </div>
+      </div>
+      <button onClick="{{ toggleNav }}" aria-label="Menu" style="{{ navBurgerStyle }};align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(11,18,32,0.10);background:#fff;cursor:pointer;flex-direction:column;gap:4px">
+        <span style="width:16px;height:2px;background:#0B1220;border-radius:2px;display:block"></span>
+        <span style="width:16px;height:2px;background:#0B1220;border-radius:2px;display:block"></span>
+      </button>
+    </div>
+    <div style="{{ navPanelStyle }}">
+      <a href="Ad On Group.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Ad On Group</a>
+      <a href="Programs.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">AI Training &amp; Enablement</a>
+      <a href="BPO AI Program.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">BPO AI Program</a>
+      <a href="Ongoing Support.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Ongoing Support</a>
+      <a href="About.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">About</a>
+      <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" onClick="{{ closeNav }}" style="text-decoration:none;text-align:center;margin-top:6px;font-size:15px;font-weight:700;color:#fff;background:#0B1220;padding:13px 20px;border-radius:12px">Book a call</a>
+    </div>
+    </div>
+  </nav>
+
+  <!-- ======================= HERO ======================= -->
+  <header id="top" data-screen-label="Programs hero" style="max-width:880px;margin:0 auto;padding:{{ heroPad }};text-align:center">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">The program</span>
+    <h1 style="font-size:clamp(34px,5vw,64px);line-height:1.0;letter-spacing:-0.045em;font-weight:500;margin:16px 0 20px;color:#0B1220">The program, in full.</h1>
+    <p style="font-size:17px;line-height:1.6;color:#4A5462;max-width:600px;margin:0 auto 30px;font-weight:400">Three months, 24 modules, and a clear outcome every week &mdash; built around the real work your team does.</p>
+    <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:16px;font-weight:700;color:#fff;background:#0B1220;padding:15px 32px;border-radius:14px;display:inline-flex;align-items:center;gap:9px;box-shadow:0 14px 30px -12px rgba(11,18,32,0.45);transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 18px 36px -12px rgba(11,18,32,0.5)">Book a call <span style="color:#2F6FED">&rarr;</span></a>
+  </header>
+
+  <!-- ======================= THE DIFFERENCE ======================= -->
+  <section style="max-width:1200px;margin:0 auto;padding:60px 28px 40px">
+    <div style="max-width:760px;margin-bottom:44px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:{{ accent }};text-transform:uppercase">01 &middot; The difference</span>
+      <h2 style="font-size:clamp(23px,2.7vw,36px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:16px 0 0">Most AI training gets watched once and forgotten.</h2>
+      <p style="font-size:16px;line-height:1.6;color:#5A6473;margin:18px 0 0;max-width:680px">A one-off course or a folder of videos doesn&rsquo;t change how anyone works. Ours is ongoing, hands-on, and built around the actual work your people do &mdash; so they use AI every day, and you see it in their output before you see it in a report.</p>
+    </div>
+    <div style="{{ diffGridStyle }}">
+      <div style="background:rgba(247,248,250,0.7);border:1px solid rgba(11,18,32,0.08);border-radius:18px;padding:28px 30px">
+        <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:14px"><span style="width:22px;height:22px;border-radius:50%;background:rgba(11,18,32,0.06);display:inline-flex;align-items:center;justify-content:center"><span style="position:relative;width:9px;height:9px"><span style="position:absolute;top:50%;left:0;width:9px;height:1.6px;background:#9AA6B6;transform:rotate(45deg)"></span><span style="position:absolute;top:50%;left:0;width:9px;height:1.6px;background:#9AA6B6;transform:rotate(-45deg)"></span></span></span><span style="font-size:15px;font-weight:700;color:#6B7480">A generic AI course</span></div>
+        <p style="font-size:15px;line-height:1.6;color:#8A93A1;margin:0">Watched once, forgotten by Friday. Generic examples that don&rsquo;t fit your business, and no one to turn to when it doesn&rsquo;t work on real tasks.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(47,111,237,0.28);box-shadow:0 18px 44px -22px rgba(47,111,237,0.4), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:18px;padding:28px 30px">
+        <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:14px"><span style="width:22px;height:22px;border-radius:50%;background:rgba(47,111,237,0.14);display:inline-flex;align-items:center;justify-content:center"><span style="width:9px;height:5px;border-left:2px solid #2F6FED;border-bottom:2px solid #2F6FED;transform:rotate(-45deg) translateY(-1px)"></span></span><span style="font-size:15px;font-weight:700;color:#0B1220">The Ad On AI program</span></div>
+        <p style="font-size:15px;line-height:1.6;color:#3A434F;margin:0">Ongoing, applied to their real role, with hands-on support and monthly proof of progress &mdash; so the skills stick and compound instead of fading.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= HOW IT WORKS (MONTHLY RHYTHM) ======================= -->
+  <section style="max-width:1200px;margin:0 auto;padding:60px 28px 40px">
+    <div style="max-width:760px;margin-bottom:44px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:{{ accent }};text-transform:uppercase">02 &middot; How it works</span>
+      <h2 style="font-size:clamp(23px,2.7vw,36px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:16px 0 0">A managed program, not a video library.</h2>
+      <p style="font-size:16px;line-height:1.6;color:#5A6473;margin:18px 0 0;max-width:680px">Every month runs on the same rhythm &mdash; guided learning, real application, and a clear read on progress.</p>
+    </div>
+    <div style="{{ rhythmGridStyle }}">
+      <sc-for list="{{ rhythm }}" as="r" hint-placeholder-count="6">
+        <div style="position:relative;background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 12px 30px -20px rgba(11,18,32,0.22), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:22px 22px 22px 24px;overflow:hidden;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-5px);box-shadow:0 26px 48px -22px rgba(11,18,32,0.32), inset 0 1px 0 rgba(255,255,255,0.7)">
+          <span style="position:absolute;left:0;top:0;bottom:0;width:3px;background:{{ r.ink }}"></span>
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:10px">
+            <span style="flex:none;width:34px;height:34px;border-radius:10px;background:{{ r.tint }};border:1px solid {{ r.border }};display:inline-flex;align-items:center;justify-content:center"><svg viewBox="0 0 20 20" style="width:18px;height:18px;fill:none;stroke:{{ r.ink }};stroke-width:1.7px;stroke-linecap:round;stroke-linejoin:round"><path d="{{ r.icon }}"></path></svg></span>
+            <h3 style="font-size:16px;font-weight:800;margin:0;letter-spacing:-0.01em">{{ r.t }}</h3>
+          </div>
+          <p style="font-size:14px;line-height:1.55;color:#5A6473;margin:0">{{ r.d }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ======================= 3-MONTH ARC (dark band) ======================= -->
+  <section style="position:relative;overflow:hidden;color:#fff;background:radial-gradient(120% 80% at 50% 46%, rgba(38,62,102,0.45), transparent 62%), linear-gradient(180deg, rgba(11,18,32,0) 0%, rgba(11,18,32,0.05) 5%, rgba(11,18,32,0.22) 9%, rgba(11,18,32,0.5) 13%, rgba(11,18,32,0.78) 17%, rgba(11,18,32,0.94) 21%, rgba(11,18,32,1) 25%, rgba(11,18,32,1) 73%, rgba(11,18,32,0.98) 79%, rgba(11,18,32,0.82) 84%, rgba(11,18,32,0.5) 90%, rgba(11,18,32,0.22) 95%, rgba(11,18,32,0) 100%)">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);background-size:6px 6px;-webkit-mask-image:radial-gradient(120% 80% at 50% 44%, #000 0%, rgba(0,0,0,0.4) 55%, transparent 88%);mask-image:radial-gradient(120% 80% at 50% 44%, #000 0%, rgba(0,0,0,0.4) 55%, transparent 88%);opacity:0.6"></div>
+    <div style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:{{ arcPad }}">
+    <div style="max-width:760px;margin-bottom:64px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#7FB2FF;text-transform:uppercase">03 &middot; The 3-month arc</span>
+      <h2 style="font-size:clamp(23px,2.7vw,36px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:16px 0 0;max-width:760px;color:#fff">From AI-curious to building their own AI <span style="background:linear-gradient(92deg,#5A9BFF,#7FE9FF,#5A9BFF);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(127,208,255,0.5));animation:adonShimmer 4.5s linear infinite">agents</span> &mdash; in three months.</h2>
+      <p style="font-size:16px;line-height:1.6;color:rgba(255,255,255,0.72);margin:18px 0 0;max-width:680px">Your staff don&rsquo;t need to become engineers. Across three months and 24 hands-on modules, they go from using AI well, to automating their repetitive work, to deploying agents that run it for them &mdash; every step built on the real tasks they do for you.</p>
+    </div>
+    <div style="position:relative;{{ arcGridStyle }}">
+      <div style="{{ arcLineStyle }}"></div>
+      <div style="{{ arcItemStyle }}">
+        <div style="width:48px;height:48px;border-radius:50%;background:#3F7BFF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;box-shadow:0 8px 22px -6px rgba(63,123,255,0.8);position:relative;z-index:1">1</div>
+        <span style="display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#7FB2FF;text-transform:uppercase;font-weight:600;margin:22px 0 7px">Month 1</span>
+        <h3 style="font-size:19px;font-weight:800;margin:0 0 9px;letter-spacing:-0.02em;color:#fff">Foundations</h3>
+        <p style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.66);margin:0;padding-right:14px">Getting genuinely good at AI &mdash; accurate, safe, on-the-job use, and their first real working AI workflow.</p>
+      </div>
+      <div style="{{ arcItemStyle }}">
+        <div style="width:48px;height:48px;border-radius:50%;background:#17B89E;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;box-shadow:0 8px 22px -6px rgba(23,184,158,0.8);position:relative;z-index:1">2</div>
+        <span style="display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#4FD6C0;text-transform:uppercase;font-weight:600;margin:22px 0 7px">Month 2</span>
+        <h3 style="font-size:19px;font-weight:800;margin:0 0 9px;letter-spacing:-0.02em;color:#fff">Automation</h3>
+        <p style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.66);margin:0;padding-right:14px">Turning repeatable tasks into AI workflows and automations that run on a schedule, even in the background.</p>
+      </div>
+      <div style="{{ arcItemStyle }}">
+        <div style="width:48px;height:48px;border-radius:50%;background:#7A68E8;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;box-shadow:0 8px 22px -6px rgba(122,104,232,0.8);position:relative;z-index:1">3</div>
+        <span style="display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#A99BF0;text-transform:uppercase;font-weight:600;margin:22px 0 7px">Month 3</span>
+        <h3 style="font-size:19px;font-weight:800;margin:0 0 9px;letter-spacing:-0.02em;color:#fff">AI Agents</h3>
+        <p style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.66);margin:0;padding-right:14px">Designing and deploying AI agents that handle whole jobs on their own &mdash; including a &ldquo;manager&rdquo; agent that runs the rest.</p>
+      </div>
+      <div style="position:relative">
+        <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(140deg,#1F8AD9,#12233c);color:#7FD0FF;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800;box-shadow:0 8px 20px -6px rgba(31,138,217,0.6);position:relative;z-index:1;animation:adonNodePulse 2.8s ease-in-out infinite">&infin;</div>
+        <span style="display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#7FD0FF;text-transform:uppercase;font-weight:600;margin:22px 0 7px">Ongoing &middot; add-on</span>
+        <h3 style="font-size:19px;font-weight:800;margin:0 0 9px;letter-spacing:-0.02em;color:#fff">Stay Sharp</h3>
+        <p style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.66);margin:0">An optional add-on: monthly sessions on new tools and lifetime academy access keep their skills current as AI moves.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ======================= ARC -> CURRICULUM CONNECTOR ======================= -->
+  <div style="max-width:1200px;margin:0 auto;padding:48px 28px 0;display:flex;flex-direction:column;align-items:center">
+    <div style="width:2px;height:64px;background:repeating-linear-gradient(180deg,rgba(47,111,237,0.45) 0 6px,transparent 6px 12px);background-size:2px 22px;animation:adonFlow 0.9s linear infinite"></div>
+    <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(47,111,237,0.08);border:1px solid rgba(47,111,237,0.18);border-radius:999px;padding:8px 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase;font-weight:600">04 &middot; The full breakdown</span>
+    <div style="width:2px;height:20px;background:linear-gradient(180deg,rgba(47,111,237,0.18),rgba(47,111,237,0.05))"></div>
+    <span style="width:9px;height:9px;border-right:2px solid rgba(47,111,237,0.4);border-bottom:2px solid rgba(47,111,237,0.4);transform:rotate(45deg);margin-top:-4px;animation:adonArrowBob 1.6s ease-in-out infinite"></span>
+  </div>
+
+  <!-- ======================= FULL CURRICULUM ======================= -->
+  <section id="curriculum" style="max-width:1200px;margin:0 auto;padding:56px 28px 40px">
+    <sc-for list="{{ curriculum }}" as="m" hint-placeholder-count="3">
+      <div style="margin-bottom:28px;background:{{ m.panelBg }};border:1px solid {{ m.panelBorder }};border-radius:24px;padding:34px 32px">
+        <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:24px">
+          <div style="flex:none;width:46px;height:46px;border-radius:50%;background:{{ m.circleBg }};color:{{ m.circleColor }};display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800">{{ m.num }}</div>
+          <div style="flex:1;min-width:0">
+            <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap">
+              <h3 style="font-size:clamp(20px,2.2vw,28px);font-weight:800;letter-spacing:-0.03em;margin:0">{{ m.title }}</h3>
+              <span style="font-size:15px;color:#8A93A1;font-weight:500">{{ m.tagline }}</span>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:10px;align-items:flex-start;background:{{ m.tint }};border:1px solid {{ m.border }};border-radius:12px;padding:12px 15px;max-width:760px">
+              <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;color:{{ m.accent }};text-transform:uppercase;font-weight:600;margin-top:2px">Outcome</span>
+              <span style="font-size:14px;line-height:1.55;color:#3A434F">{{ m.outcome }}</span>
+            </div>
+          </div>
+        </div>
+        <div style="{{ curricModGridStyle }}">
+          <sc-for list="{{ m.modules }}" as="mod" hint-placeholder-count="8">
+            <div style="height:100%;background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 10px 28px -18px rgba(11,18,32,0.18), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:14px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start;transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease" style-hover="transform:translateY(-3px);box-shadow:0 20px 40px -20px rgba(47,111,237,0.34), inset 0 1px 0 rgba(255,255,255,0.7);border-color:rgba(47,111,237,0.32)">
+              <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;color:{{ m.accent }};margin-top:1px">{{ mod.n }}</span>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:15px;font-weight:700;color:#0B1220;letter-spacing:-0.01em;margin-bottom:5px">{{ mod.t }}</div>
+                <div style="font-size:13.5px;line-height:1.5;color:#5A6473">{{ mod.d }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-for>
+    <div style="display:flex;gap:10px;align-items:center;justify-content:center;text-align:center;border-top:1px solid rgba(11,18,32,0.08);padding-top:28px;color:#5A6473">
+      <span style="font-size:14px;line-height:1.55;max-width:680px"><strong style="color:#0B1220;font-weight:700">We don&rsquo;t build modules more than three months ahead</strong> &mdash; so we never teach outdated AI.</span>
+    </div>
+  </section>
+
+  <!-- ======================= ROLE COVERAGE ======================= -->
+  <section style="max-width:1100px;margin:0 auto;padding:80px 28px 40px;text-align:center">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:{{ accent }};text-transform:uppercase">05 &middot; Role coverage</span>
+    <h2 style="font-size:clamp(23px,2.7vw,36px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:16px auto 0;max-width:640px">Trained for the job they actually do.</h2>
+    <p style="font-size:16px;line-height:1.6;color:#5A6473;margin:18px auto 30px;max-width:680px">The same strong foundation, applied to each person&rsquo;s real responsibilities. Everything they build is for their own role &mdash; not a generic demo.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:820px;margin:0 auto">
+      <sc-for list="{{ roles }}" as="r" hint-placeholder-count="7">
+        <span style="font-size:15px;font-weight:600;color:{{ r.color }};background:{{ r.bg }};border:1px solid {{ r.border }};border-radius:999px;padding:11px 20px">{{ r.label }}</span>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ======================= WALK AWAY WITH ======================= -->
+  <section id="walk-away-with" style="max-width:1100px;margin:0 auto;padding:96px 28px 40px;{{ walkAwayGridStyle }}">
+    <div style="order:1;background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 12px 32px -16px rgba(11,18,32,0.20), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:18px;overflow:hidden">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:15px 22px;border-bottom:1px solid rgba(11,18,32,0.08);background:rgba(47,111,237,0.04)">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:{{ accent }};text-transform:uppercase;font-weight:600">Personally built &amp; deployed</span>
+        <span style="font-size:12px;color:#9AA6B6;font-weight:600">10 deliverables</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:13px;padding:14px 22px;border-bottom:1px solid rgba(11,18,32,0.08);background:rgba(11,18,32,0.03)">
+        <span style="flex:none;width:26px;height:26px;border-radius:8px;background:rgba(11,18,32,0.06);border:1px solid rgba(11,18,32,0.14);color:#0B1220;font-size:14px;font-weight:800;display:inline-flex;align-items:center;justify-content:center">∞</span>
+        <span style="font-size:14.5px;font-weight:600;color:#27313F">Skills and knowledge taught in the program, learn once and apply forever.</span>
+      </div>
+      <div style="padding:6px 22px 10px">
+        <sc-for list="{{ builds }}" as="b" hint-placeholder-count="10">
+          <div style="display:flex;gap:13px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(11,18,32,0.06)">
+            <span style="flex:none;width:26px;height:26px;border-radius:8px;background:linear-gradient(150deg,#EAF1FF,#D4E4FF);border:1px solid rgba(47,111,237,0.18);display:inline-flex;align-items:center;justify-content:center"><span style="width:10px;height:6px;border-left:2px solid #2F6FED;border-bottom:2px solid #2F6FED;transform:rotate(-45deg) translateY(-1px)"></span></span>
+            <span style="font-size:15px;line-height:1.45;color:#27313F"><strong style="color:#0B1220;font-weight:700">{{ b.n }}</strong> {{ b.t }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="order:2;{{ walkAwaySticky }}">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:{{ accent }};text-transform:uppercase">06 &middot; What they walk away with</span>
+      <h2 style="font-size:clamp(23px,2.6vw,34px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:16px 0 0">Every staff member finishes with 20+ working AI builds &mdash; for their own job.</h2>
+      <p style="font-size:16px;line-height:1.6;color:#5A6473;margin:18px 0 22px">This isn&rsquo;t theory they forget by Friday. At a minimum, each person you enrol walks away having personally built and deployed the list opposite &mdash; all tied to their real role, plus a documented record of the hours reclaimed and the work now handled automatically.</p>
+      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(47,111,237,0.08);border:1px solid rgba(47,111,237,0.16);border-radius:12px;padding:11px 15px">
+        <span style="font-size:24px;font-weight:800;letter-spacing:-0.03em;color:{{ accent }}">20+</span>
+        <span style="font-size:13px;line-height:1.3;color:#3A434F;font-weight:600">deployed AI builds<br>per learner, minimum</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA ======================= -->
+  <section id="cta" style="max-width:1200px;margin:0 auto;padding:80px 28px 80px">
+    <div style="position:relative;overflow:hidden;border-radius:24px;padding:64px 40px;text-align:center;background:radial-gradient(120% 150% at 50% -30%, rgba(47,111,237,0.12), transparent 55%), rgba(255,255,255,0.58);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%);border:1px solid rgba(255,255,255,0.9);box-shadow:0 26px 64px -32px rgba(11,18,32,0.26), inset 0 1px 0 rgba(255,255,255,0.8)">
+      <div style="position:absolute;width:300px;height:300px;left:-70px;bottom:-140px;border-radius:50%;background:radial-gradient(circle,rgba(255,168,112,0.30),transparent 70%);pointer-events:none"></div>
+      <div style="position:absolute;width:320px;height:320px;right:-90px;top:-150px;border-radius:50%;background:radial-gradient(circle,rgba(45,212,191,0.22),transparent 70%);pointer-events:none"></div>
+      <div style="position:relative">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:{{ accent }};text-transform:uppercase">Get started</span>
+        <h2 style="font-size:clamp(24px,2.8vw,38px);line-height:1.05;letter-spacing:-0.035em;font-weight:800;margin:14px 0 14px;color:#0B1220">Ready to get your team doing more with AI?</h2>
+        <p style="font-size:17px;line-height:1.55;color:#4A5462;max-width:460px;margin:0 auto 30px">Book a call and we&rsquo;ll map a program to your team and goals.</p>
+        <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:16px;font-weight:700;color:#fff;background:#0B1220;padding:15px 30px;border-radius:14px;display:inline-flex;align-items:center;gap:9px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(11,18,32,0.4)">Book a call <span style="font-size:17px">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 28px;{{ footerGridStyle }}">
+      <div>
+        <a href="Ad On AI.dc.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block"></span>
+          <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span>
+        </a>
+        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses.</p>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="Programs.dc.html" style="text-decoration:none;color:inherit">AI Training &amp; Enablement</a>
+          <a href="BPO AI Program.dc.html" style="text-decoration:none;color:inherit">BPO AI Program</a>
+          <a href="Ongoing Support.dc.html" style="text-decoration:none;color:inherit">Ongoing Support</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="About.dc.html" style="text-decoration:none;color:inherit">About</a>
+          <a href="Ad On AI.dc.html#faqs" style="text-decoration:none;color:inherit">FAQs</a>
+          <a href="#cta" style="text-decoration:none;color:inherit">Contact</a>
+          <a href="Terms.dc.html" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="mailto:info@adongroup.com.au" style="text-decoration:none;color:inherit">info@adongroup.com.au</a>
+          <span>Australia-wide delivery</span>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI. All rights reserved.</span>
+      <div style="display:flex;gap:22px;font-size:13px;color:#8A93A1">
+        <a href="#" style="text-decoration:none;color:inherit">Privacy Policy</a>
+        <a href="Terms.dc.html" style="text-decoration:none;color:inherit">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+  <template id="__bundler_thumbnail" data-bg-color="#F4F7FC">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1200" height="800" fill="#F4F7FC"/>
+      <g transform="translate(600 400)">
+        <circle cx="-60" cy="-70" r="46" fill="none" stroke="#2F6FED" stroke-width="34"/>
+        <path d="M-150 120 a90 90 0 0 1 180 0 v60 h-180 z" fill="#2F6FED"/>
+        <path d="M120 -150 l22 70 l70 22 l-70 22 l-22 70 l-22 -70 l-70 -22 l70 -22 z" fill="#3FA9E6"/>
+      </g>
+    </svg>
+  </template>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#2F6FED&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { isMobile: false, navOpen: false };
+  componentDidMount() {
+    this._onResize = () => {
+      const m = window.innerWidth < 860;
+      if (m !== this.state.isMobile) this.setState({ isMobile: m, navOpen: m ? this.state.navOpen : false });
+    };
+    this._onResize();
+    window.addEventListener('resize', this._onResize, { passive: true });
+    this._scrollToHash();
+  }
+  componentWillUnmount() {
+    if (this._onResize) window.removeEventListener('resize', this._onResize);
+  }
+  componentDidUpdate() {
+    this._scrollToHash();
+  }
+  _scrollToHash() {
+    const hash = (typeof window !== 'undefined' && window.location.hash) || '';
+    if (!hash || hash === this._lastHash) return;
+    const id = hash.slice(1);
+    const tryScroll = (attempt) => {
+      const el = document.getElementById(id);
+      if (el) {
+        this._lastHash = hash;
+        const top = el.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top, behavior: 'smooth' });
+      } else if (attempt < 20) {
+        setTimeout(() => tryScroll(attempt + 1), 100);
+      }
+    };
+    tryScroll(0);
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#2F6FED';
+    const isMobile = this.state.isMobile;
+    const navOpen = this.state.navOpen;
+    const toggleNav = () => this.setState(s => ({ navOpen: !s.navOpen }));
+    const closeNav = () => this.setState({ navOpen: false });
+
+    const navDesktopStyle = isMobile ? 'display:none' : 'display:flex;align-items:center;gap:28px';
+    const navBurgerStyle = isMobile ? 'display:inline-flex' : 'display:none';
+    const navPanelStyle = (isMobile && navOpen)
+      ? 'display:flex;flex-direction:column;gap:4px;position:absolute;top:100%;left:0;right:0;margin-top:10px;background:rgba(252,251,250,0.98);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:20px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.3);padding:10px;z-index:60'
+      : 'display:none';
+
+    const stackCols = (desktop, gap, mobileGap) => isMobile
+      ? ('display:grid;grid-template-columns:1fr;gap:' + (mobileGap != null ? mobileGap : gap))
+      : ('display:grid;grid-template-columns:' + desktop + ';gap:' + gap);
+    const diffGridStyle = stackCols('1fr 1fr', '22px');
+    const rhythmGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:16px' : 'display:grid;grid-template-columns:repeat(3,1fr);gap:18px';
+    const arcGridStyle = stackCols('repeat(4,1fr)', '0', '32px');
+    const arcLineStyle = isMobile ? 'display:none' : 'position:absolute;left:0;right:0;top:23px;height:2px;background:linear-gradient(90deg,rgba(90,155,255,0.7),rgba(45,212,191,0.6) 40%,rgba(150,130,255,0.6) 72%,rgba(127,208,255,0.5))';
+    const arcItemStyle = isMobile ? 'position:relative;padding:0 0 8px 0' : 'position:relative;padding:0 26px 0 0';
+    const curricModGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:14px' : 'display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:14px';
+    const walkAwayGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:32px;align-items:start' : 'display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:start';
+    const walkAwaySticky = isMobile ? 'position:static' : 'position:sticky;top:108px';
+    const footerGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:28px' : 'display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px';
+    const heroPad = isMobile ? '132px 20px 40px' : '120px 28px 64px';
+    const arcPad = isMobile ? '80px 20px 90px' : '172px 28px 168px';
+
+    return {
+      accent,
+      isMobile, navOpen, toggleNav, closeNav,
+      navDesktopStyle, navBurgerStyle, navPanelStyle,
+      diffGridStyle, rhythmGridStyle, arcGridStyle, arcLineStyle, arcItemStyle,
+      curricModGridStyle, walkAwayGridStyle, walkAwaySticky, footerGridStyle, heroPad, arcPad,
+      rhythm: [
+        { t: 'AI built into the platform', d: 'AI is built right into the Academy Terminal \u2014 help and answers are one click away on any lesson or task.', ink: '#2F6FED', tint: 'rgba(47,111,237,0.1)', border: 'rgba(47,111,237,0.2)', icon: 'M10 3l1.6 3.4L15 8l-3.4 1.6L10 13 8.4 9.6 5 8l3.4-1.6z M15 13.5l.7 1.5 1.5.7-1.5.7-.7 1.5-.7-1.5-1.5-.7 1.5-.7z' },
+        { t: 'Self-paced modules', d: 'Structured modules in the Academy Terminal they work through around their normal workload.', ink: '#14A08C', tint: 'rgba(20,160,140,0.1)', border: 'rgba(20,160,140,0.2)', icon: 'M4 5h8a1 1 0 0 1 1 1v10H5a1 1 0 0 1-1-1z M16 5a1 1 0 0 0-1 1v10h1 M7 8h5 M7 11h4' },
+        { t: 'Applied to their role', d: 'Every module ends in a real deliverable built on the tasks they actually do \u2014 not a quiz.', ink: '#6C5CD6', tint: 'rgba(108,92,214,0.1)', border: 'rgba(108,92,214,0.2)', icon: 'M10 16.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z M10 12.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z' },
+        { t: 'Hands-on support', d: 'When someone gets stuck, we step in and build the fix with them.', ink: '#E07A3F', tint: 'rgba(224,122,63,0.1)', border: 'rgba(224,122,63,0.22)', icon: 'M4 11l3-1 4 3.4c.6.5.4 1.6-.5 1.6H6 M7 10V5.5a1.3 1.3 0 0 1 2.6 0V9 M9.6 8.6V4.6a1.3 1.3 0 0 1 2.6 0V9 M12.2 8.8V6a1.3 1.3 0 0 1 2.6 0v5c0 3-2 5-5 5' },
+        { t: 'Monthly progress report', d: 'A clear read for leadership on what each person learned and actually applied.', ink: '#1F8AD9', tint: 'rgba(31,138,217,0.1)', border: 'rgba(31,138,217,0.2)', icon: 'M4 16V4 M4 16h12 M7 13l3-3.5 2.3 2L16 6' },
+        { t: 'Optional ongoing support', d: 'Add lifetime academy access, a monthly trends webinar and a community on top to keep skills sharp as AI moves.', ink: '#14A08C', tint: 'rgba(20,160,140,0.1)', border: 'rgba(20,160,140,0.2)', icon: 'M10 4v3 M10 4a6 6 0 1 0 5.2 3 M15.5 3.5V7H12' },
+      ],
+      curriculum: [
+        {
+          num: '1', circleBg: '#2F6FED', circleColor: '#fff', accent: '#2F6FED', panelBg: 'rgba(47,111,237,0.045)', panelBorder: 'rgba(47,111,237,0.14)', tint: 'rgba(47,111,237,0.08)', border: 'rgba(47,111,237,0.18)',
+          title: 'Month 1 — Foundations', tagline: 'get fluent',
+          outcome: 'A reusable, engineered master prompt, a live Project for their main workstream, and a working end-to-end workflow for a real recurring task.',
+          modules: [
+            { n: '01', t: 'What AI Is & the Rules of Engagement', d: 'How models really work, why we run on Claude, what a prompt actually is — and the client data that never goes in a chat.' },
+            { n: '02', t: 'Context Engineering', d: 'Treat the context window as a finite budget: keep it clean, one job per chat, and a prompt that works every time.' },
+            { n: '03', t: 'Metaprompting & Hallucination Detection', d: 'Get AI to write its own prompts, use examples as your strongest quality lever, and catch it when it bluffs.' },
+            { n: '04', t: 'Persistent Context Infrastructure', d: 'Set context once and reuse it forever — Memory, custom instructions, Projects and clean reference files.' },
+            { n: '05', t: 'Multimodal Capability & Verification', d: 'Put screenshots, images and long documents in; get real files out — and check the output against the real thing.' },
+            { n: '06', t: 'MCP & the Connected Second Brain', d: 'Connect Claude to Gmail, Outlook and Drive so it works inside your tools instead of waiting on copy-paste.' },
+            { n: '07', t: 'Build the AI-Powered Workflow', d: 'They assemble their first real, end-to-end workflow &mdash; with hands-on support to unblock them the moment they get stuck.' },
+            { n: '08', t: 'Evals & the Audit Loop', d: 'Check, repeat and trust a workflow so it holds up every single time it runs — then present it.' },
+          ],
+        },
+        {
+          num: '2', circleBg: '#14A08C', circleColor: '#fff', accent: '#14A08C', panelBg: 'rgba(20,160,140,0.05)', panelBorder: 'rgba(20,160,140,0.15)', tint: 'rgba(20,160,140,0.09)', border: 'rgba(20,160,140,0.2)',
+          title: 'Month 2 — Automating Your Tasks', tagline: 'get your time back',
+          outcome: 'Their own starter library of role skills, a configured and tested Claude Cowork automation, and a scheduled task running on a clock.',
+          modules: [
+            { n: '09', t: 'Training Your Claude — Intro to Skills', d: 'A skill is a recipe you reuse instead of re-prompting. Find, install and run the skills built for their role.' },
+            { n: '10', t: 'Making Your Own Skills', d: 'Capture how they already do a job into a skill Claude invokes automatically — then spin up a small library.' },
+            { n: '11', t: 'Inter-tool Cooperation', d: "Hand work cleanly from one tool to the next, so one tool's output becomes a clean input to another — no breakage." },
+            { n: '12', t: 'How Automated Work Actually Works', d: "Crossing from AI helping you to the task running on its own: rule- vs AI-based automation, triggers, and what's worth automating." },
+            { n: '13', t: 'Why Automations Break & What Makes One Trustworthy', d: 'How automations degrade through brittleness or drift, why errors compound, and the autonomy dial — in, on, or out of the loop.' },
+            { n: '14', t: 'Claude Cowork I — Your First Major Automation', d: 'Set up a dedicated workspace, load their toolkit, wire persistent connections and run their first real task.' },
+            { n: '15', t: 'Claude Cowork II — Expand & Build', d: 'Point the automation at new use cases, put it on a schedule, and widen its scope to its useful limit.' },
+            { n: '16', t: 'Scheduled Tasks + Claude in Chrome', d: 'Put a recurring job on a clock and let Claude act on live web pages — then watch it run without you.' },
+          ],
+        },
+        {
+          num: '3', circleBg: '#6C5CD6', circleColor: '#fff', accent: '#6C5CD6', panelBg: 'rgba(108,92,214,0.055)', panelBorder: 'rgba(108,92,214,0.16)', tint: 'rgba(108,92,214,0.1)', border: 'rgba(108,92,214,0.2)',
+          title: 'Month 3 — Agentic AI', tagline: 'go autonomous',
+          outcome: 'Hardened, orchestrated agents working as one agentic operating system, a documented system map, and an impact record of time reclaimed.',
+          modules: [
+            { n: '17', t: 'Intro to Agentic AI', d: 'What makes an agent an agent, the ladder from automation to true agent, and when one is worth it — or overkill.' },
+            { n: '18', t: 'Agent Design', d: 'Scope, execution spec, autonomy, observability and verification — plus splitting a job across a lead agent and specialists.' },
+            { n: '19', t: 'Agentic Infrastructure', d: 'Use Claude Code to build and Claude Console to deploy, with credential vaults, environments and the APIs the agent needs.' },
+            { n: '20', t: 'Agentic Building & Deployment', d: 'Six stages from writing the code to a successful first live run — with webhook alerts and run logs in place.' },
+            { n: '21', t: 'Autonomous Iteration', d: 'Instrument, observe, diagnose, fix and redeploy — the loop that makes an agent measurably better over time.' },
+            { n: '22', t: 'Hardening & Agent Supervision', d: 'Build an eval set and run production safely: cost control, monitoring, alerting, least-privilege permissions and an audit trail.' },
+            { n: '23', t: 'Multi-Agent Orchestration', d: 'Coordinate specialists with an orchestrator agent using chain, command-and-control and fan-out / fan-in patterns.' },
+            { n: '24', t: 'Your Agentic Operating System', d: 'Bring every agent, connector and schedule into one coherent system — and measure the hours and volume it gives back.' },
+          ],
+        },
+      ],
+      roles: [
+        { label: 'Admin & operations', color: '#0B1220', bg: '#fff', border: 'rgba(11,18,32,0.10)' },
+        { label: 'Marketing', color: '#0B1220', bg: '#fff', border: 'rgba(11,18,32,0.10)' },
+        { label: 'Finance & accounts', color: '#0B1220', bg: '#fff', border: 'rgba(11,18,32,0.10)' },
+        { label: 'EA / VA support', color: '#0B1220', bg: '#fff', border: 'rgba(11,18,32,0.10)' },
+        { label: 'Customer service', color: '#0B1220', bg: '#fff', border: 'rgba(11,18,32,0.10)' },
+        { label: 'Sales', color: '#0B1220', bg: '#fff', border: 'rgba(11,18,32,0.10)' },
+        { label: '+ mapped to your team', color: '#2F6FED', bg: 'rgba(47,111,237,0.08)', border: 'rgba(47,111,237,0.20)' },
+      ],
+      builds: [
+        { n: '5\u20136', t: 'reusable prompt packs covering their main tasks' },
+        { n: '1', t: 'AI-powered workflow, end to end' },
+        { n: '3', t: 'multimodal AI-powered tasks' },
+        { n: '3', t: 'custom Claude skills built' },
+        { n: '1', t: 'meta skill built' },
+        { n: '2', t: 'cross-tool AI-powered workflows' },
+        { n: '1', t: 'Claude Cowork automation' },
+        { n: '1', t: 'Claude-in-Chrome automation' },
+        { n: '3', t: 'AI agents' },
+        { n: '1', t: 'agentic AI orchestrator agent' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
