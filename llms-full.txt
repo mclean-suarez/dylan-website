@@ -1,0 +1,52 @@
+# Ad On AI — Full Reference for AI Answer Engines
+
+> Ad On AI runs AI training and enablement programs for Australian small-to-medium businesses (SMEs). The flagship program is 3 months, self-paced (~2 hours/week), and takes non-technical staff from their first prompts to reusable skills, automations and deployed AI agents that do real chunks of their day-to-day job. Delivered by Certified Claude Experts. Ad On AI is a division of Ad On Group, an Australian-owned company operating since 2008. Skills taught are tool-agnostic and transfer to ChatGPT, Copilot, Gemini and Claude.
+
+- Website: https://www.adon-ai.com.au
+- Contact: info@adongroup.com.au
+- Parent company: Ad On Group (Australian-owned since 2008)
+- ABN: 54 808 983 598
+- Market: Australia
+
+## AI Training & Enablement Program (flagship)
+
+The core offering: a managed 3-month program — not a video library — for non-technical SME staff in roles like finance, operations, marketing, admin and customer service. No technical background is required.
+
+- Duration: 3 months, self-paced, around 2 hours per week.
+- Structure: staged from Foundations → Automation → AI Agents → Stay Sharp.
+- Accountability: every module includes a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls.
+- Outcome per learner: 20+ working AI builds tied to their own job — reusable prompt packs, custom skills, automations, end-to-end workflows and deployed AI agents — plus a record of hours reclaimed.
+- Tool-agnostic: the skills transfer to ChatGPT, Copilot, Gemini and other tools; Claude is the worked example.
+- After the program: lifetime academy access, plus optional ongoing support.
+
+## BPO AI Program (separate product)
+
+Structured AI enablement built specifically for BPO providers and outsourced/offshore teams. Runs on a monthly cycle across 3 months, taking each person from novice to advanced AI user. Each month covers orientation and possibilities, prompt mastery, applying AI to real workflows, and role-specific training. Support continues after month three to keep momentum.
+
+## Ongoing Support (optional add-on)
+
+An optional layer on top of the course that keeps teams current as AI moves — AI trends webinars, tool masterclasses (recorded and kept), business-application podcasts, a newsletter, a weekly support hour and a peer network. It is an add-on after the program, not a core inclusion.
+
+## Common questions
+
+Q: How fast will staff see results?
+A: Most people start using AI in their daily work from month one — you'll notice the difference before you read a report.
+
+Q: Do the skills only work with Claude?
+A: No. They are tool-agnostic and transfer to ChatGPT, Copilot, Gemini and whatever comes next.
+
+Q: How is progress tracked?
+A: Every module has a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls.
+
+Q: Can new staff join mid-program, or can I add more staff later?
+A: Yes. New intake starts every month at level 1. Monthly intake is limited so each person gets proper support, so it's best to plan ahead.
+
+Q: Is there support after the program?
+A: Yes — lifetime academy access plus optional ongoing webinars, podcasts, masterclasses and newsletters.
+
+Q: Can I cancel?
+A: Yes, any time.
+
+## Company
+
+Ad On AI is a division of Ad On Group, an Australian business services provider operating since 2008, with divisions across workforce, AI, digital and hold. Ad On AI's team includes Certified Claude Experts. The enablement program was first built to train Ad On Group's own staff, then offered externally after the internal version proved effective.

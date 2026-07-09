@@ -14,6 +14,10 @@
 - [Ad On Group](https://www.adon-ai.com.au/ad-on-group): The parent company — Australian-owned since 2008, with divisions across workforce, AI, digital and hold. Partners include Anthropic, Google, Meta and Telstra.
 - [Terms & Conditions](https://www.adon-ai.com.au/terms)
 
+## Full reference
+
+- [Full company & program reference for AI](https://www.adon-ai.com.au/llms-full.txt): A single, ready-to-cite document covering the programs, structure, outcomes and common questions in detail.
+
 ## Key facts
 
 - Audience: non-technical staff at Australian SMEs (finance, operations, marketing, admin, customer service).

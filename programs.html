@@ -383,6 +383,47 @@
   </section>
 
   <!-- ======================= CTA ======================= -->
+  
+  <!-- ======================= FAQ (SEO/AEO) ======================= -->
+  <section id="faqs" style="max-width:860px;margin:0 auto;padding:56px 28px 24px">
+    <div style="text-align:center;margin-bottom:30px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; FAQ</span>
+      <h2 style="font-size:clamp(22px,2.4vw,31px);line-height:1.08;letter-spacing:-0.03em;font-weight:800;margin:14px 0 0;color:#0B1220">Frequently asked questions</h2>
+    </div>
+    <style>
+.aoa-faq{background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;margin:0 0 12px;overflow:hidden}
+.aoa-faq>summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Inter Tight','Helvetica Neue',sans-serif;font-weight:600;font-size:16.5px;letter-spacing:-0.02em;color:#0B1220}
+.aoa-faq>summary::-webkit-details-marker{display:none}
+.aoa-faq>summary svg{flex:none;transition:transform .22s ease;color:#2F6FED}
+.aoa-faq[open]>summary svg{transform:rotate(45deg)}
+.aoa-faq>div{padding:0 22px 20px;font-size:15px;line-height:1.62;color:#5A6473}
+</style>
+  <details class="aoa-faq">
+    <summary>How long is the AI Training &amp; Enablement program?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>It runs over three months and is self-paced, at around two hours per week. You can go faster or slower, but three months gives the knowledge time to sink in and be applied to real work.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>Who is the program designed for?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>Non-technical staff at Australian small-to-medium businesses — roles like finance, operations, marketing, admin and customer service. No technical background is required.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>What will each staff member be able to do by the end?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>Every learner finishes with 20+ working AI builds tied to their own job — reusable prompt packs, custom skills, automations, end-to-end workflows and deployed AI agents — plus a record of the hours reclaimed.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>Is this just a video course?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>No. It's a managed program, not a video library. Every module includes a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>Does it only work with Claude?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>No. The skills are tool-agnostic by design and transfer to ChatGPT, Copilot, Gemini and whatever comes next. Claude is used as the worked example.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>What happens after the three months?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>Learners keep lifetime academy access, and optional ongoing support — webinars, masterclasses, podcasts and a newsletter — is available to keep skills current as AI moves.</div>
+  </details>
+  </section>
+
   <section id="cta" style="max-width:1200px;margin:0 auto;padding:80px 28px 80px">
     <div style="position:relative;overflow:hidden;border-radius:24px;padding:64px 40px;text-align:center;background:radial-gradient(120% 150% at 50% -30%, rgba(47,111,237,0.12), transparent 55%), rgba(255,255,255,0.58);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%);border:1px solid rgba(255,255,255,0.9);box-shadow:0 26px 64px -32px rgba(11,18,32,0.26), inset 0 1px 0 rgba(255,255,255,0.8)">
       <div style="position:absolute;width:300px;height:300px;left:-70px;bottom:-140px;border-radius:50%;background:radial-gradient(circle,rgba(255,168,112,0.30),transparent 70%);pointer-events:none"></div>
@@ -599,6 +640,63 @@ class Component extends DCLogic {
       ],
     };
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.adon-ai.com.au/programs#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the AI Training & Enablement program?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It runs over three months and is self-paced, at around two hours per week. You can go faster or slower, but three months gives the knowledge time to sink in and be applied to real work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is the program designed for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non-technical staff at Australian small-to-medium businesses — roles like finance, operations, marketing, admin and customer service. No technical background is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What will each staff member be able to do by the end?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every learner finishes with 20+ working AI builds tied to their own job — reusable prompt packs, custom skills, automations, end-to-end workflows and deployed AI agents — plus a record of the hours reclaimed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this just a video course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It's a managed program, not a video library. Every module includes a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it only work with Claude?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The skills are tool-agnostic by design and transfer to ChatGPT, Copilot, Gemini and whatever comes next. Claude is used as the worked example."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after the three months?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Learners keep lifetime academy access, and optional ongoing support — webinars, masterclasses, podcasts and a newsletter — is available to keep skills current as AI moves."
+      }
+    }
+  ]
 }
 </script>
 </body>

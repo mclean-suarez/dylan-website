@@ -326,6 +326,43 @@
   </section>
 
   <!-- ======================= CTA ======================= -->
+  
+  <!-- ======================= FAQ (SEO/AEO) ======================= -->
+  <section id="faqs" style="max-width:860px;margin:0 auto;padding:56px 28px 24px">
+    <div style="text-align:center;margin-bottom:30px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; FAQ</span>
+      <h2 style="font-size:clamp(22px,2.4vw,31px);line-height:1.08;letter-spacing:-0.03em;font-weight:800;margin:14px 0 0;color:#0B1220">Frequently asked questions</h2>
+    </div>
+    <style>
+.aoa-faq{background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;margin:0 0 12px;overflow:hidden}
+.aoa-faq>summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Inter Tight','Helvetica Neue',sans-serif;font-weight:600;font-size:16.5px;letter-spacing:-0.02em;color:#0B1220}
+.aoa-faq>summary::-webkit-details-marker{display:none}
+.aoa-faq>summary svg{flex:none;transition:transform .22s ease;color:#2F6FED}
+.aoa-faq[open]>summary svg{transform:rotate(45deg)}
+.aoa-faq>div{padding:0 22px 20px;font-size:15px;line-height:1.62;color:#5A6473}
+</style>
+  <details class="aoa-faq">
+    <summary>Who is the BPO AI Program for?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>It's built specifically for BPO providers and outsourced teams who want to turn their people into confident, productive AI users. It's a separate product from our main SME program.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>How is the program structured?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>It runs on a monthly cycle across three months, taking each person from novice to advanced AI user with structured, role-relevant training.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>What does each month cover?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>The cycle moves through orientation and possibilities, prompt mastery, applying AI to your actual workflow, and role-specific training — so the skills map to the work your people already do.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>How is this different from the standard program?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>The BPO AI Program is tailored to outsourced and offshore teams and the way they work, rather than the in-house SME staff the main AI Training &amp; Enablement program is built for.</div>
+  </details>
+  <details class="aoa-faq">
+    <summary>What happens after month three?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+    <div>There's support to keep the momentum going after the program, so your team keeps building on what they've learnt rather than losing it.</div>
+  </details>
+  </section>
+
   <section id="contact" style="max-width:1200px;margin:0 auto;padding:80px 28px 80px">
     <div style="position:relative;overflow:hidden;border-radius:24px;padding:64px 40px;text-align:center;background:radial-gradient(120% 150% at 50% -30%, rgba(108,92,214,0.12), transparent 55%), rgba(255,255,255,0.58);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%);border:1px solid rgba(255,255,255,0.9);box-shadow:0 26px 64px -32px rgba(11,18,32,0.26), inset 0 1px 0 rgba(255,255,255,0.8)">
       <div style="position:absolute;width:300px;height:300px;left:-70px;bottom:-140px;border-radius:50%;background:radial-gradient(circle,rgba(255,168,112,0.30),transparent 70%);pointer-events:none"></div>
@@ -456,6 +493,55 @@ class Component extends DCLogic {
       ],
     };
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.adon-ai.com.au/bpo-program#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is the BPO AI Program for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's built specifically for BPO providers and outsourced teams who want to turn their people into confident, productive AI users. It's a separate product from our main SME program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the program structured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It runs on a monthly cycle across three months, taking each person from novice to advanced AI user with structured, role-relevant training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does each month cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cycle moves through orientation and possibilities, prompt mastery, applying AI to your actual workflow, and role-specific training — so the skills map to the work your people already do."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from the standard program?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The BPO AI Program is tailored to outsourced and offshore teams and the way they work, rather than the in-house SME staff the main AI Training & Enablement program is built for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after month three?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's support to keep the momentum going after the program, so your team keeps building on what they've learnt rather than losing it."
+      }
+    }
+  ]
 }
 </script>
 </body>
