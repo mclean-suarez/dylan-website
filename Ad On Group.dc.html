@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: radial-gradient(120% 62% at -4% -10%, rgba(255,168,112,0.16), transparent 56%), radial-gradient(115% 64% at 104% -4%, rgba(47,111,237,0.12), transparent 58%), radial-gradient(70% 44% at 60% 6%, rgba(45,212,191,0.06), transparent 60%), radial-gradient(85% 38% at 102% 40%, rgba(47,111,237,0.10), transparent 56%), radial-gradient(85% 36% at -2% 70%, rgba(255,168,112,0.12), transparent 56%), radial-gradient(80% 34% at 50% 100%, rgba(45,212,191,0.10), transparent 60%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.045em !important; font-weight: 500 !important; }
+  a { color: #2F6FED; }
+  a:hover { color: #1B54C4; }
+  .nav-prog { position: relative; }
+  .nav-menu { opacity: 0; pointer-events: none; transform: translateY(6px); transition: opacity .18s ease, transform .18s ease; }
+  .nav-prog:hover .nav-menu, .nav-menu:hover { opacity: 1; pointer-events: auto; transform: none; }
+  @keyframes adonShimmer { from { background-position: 0 0; } to { background-position: -200% 0; } }
+  @keyframes adonMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes adonGradShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+  @keyframes adonBorderFlow { to { background-position: 300% 0; } }
+</style>
+</helmet>
+
+<div style="max-width:100%;overflow-x:clip;background:transparent;position:relative">
+
+  <!-- global pixel-grid texture -->
+  <div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(11,18,32,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.05) 1px, transparent 1px);background-size:4px 4px;-webkit-mask-image:radial-gradient(125% 70% at 50% 2%, #000 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.12) 64%, transparent 84%);mask-image:radial-gradient(125% 70% at 50% 2%, #000 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.12) 64%, transparent 84%)"></div>
+
+  <!-- ======================= NAV ======================= -->
+  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div style="position:relative;max-width:1120px;margin:0 auto">
+    <div style="background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="Ad On AI.dc.html#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+      <div style="{{ navDesktopStyle }}">
+        <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
+        <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
+          <a href="Ad On Group.dc.html" style="text-decoration:none;color:#0B1220;font-weight:700">Ad On Group</a>
+          <div class="nav-prog" style="position:relative">
+            <a href="Programs.dc.html" style="text-decoration:none;color:inherit;display:inline-flex;align-items:center;gap:5px">Programs<svg viewBox="0 0 12 12" style="width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:round;stroke-linejoin:round"><path d="M2.5 4.5L6 8L9.5 4.5"></path></svg></a>
+            <div class="nav-menu" style="position:absolute;top:100%;left:-16px;padding-top:12px;z-index:60">
+              <div style="width:300px;background:rgba(252,251,250,0.94);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:16px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.28);padding:8px">
+                <a href="Programs.dc.html" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:12px 14px;border-radius:11px;transition:background .18s ease" style-hover="background:rgba(47,111,237,0.08)">
+                  <span style="font-size:14.5px;font-weight:700;color:#0B1220">AI Training &amp; Enablement</span>
+                  <span style="font-size:12.5px;color:#6B7480;font-weight:500">Our flagship 3-month program</span>
+                </a>
+                <a href="BPO AI Program.dc.html" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:12px 14px;border-radius:11px;transition:background .18s ease" style-hover="background:rgba(62,78,197,0.08)">
+                  <span style="font-size:14.5px;font-weight:700;color:#0B1220">BPO AI Program</span>
+                  <span style="font-size:12.5px;color:#6B7480;font-weight:500">For outsourced &amp; BPO teams</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="Ongoing Support.dc.html" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="About.dc.html" style="text-decoration:none;color:inherit">About</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(11,18,32,0.4)">Book a call</a>
+        </div>
+      </div>
+      <button onClick="{{ toggleNav }}" aria-label="Menu" style="{{ navBurgerStyle }};align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(11,18,32,0.10);background:#fff;cursor:pointer;flex-direction:column;gap:4px">
+        <span style="width:16px;height:2px;background:#0B1220;border-radius:2px;display:block"></span>
+        <span style="width:16px;height:2px;background:#0B1220;border-radius:2px;display:block"></span>
+      </button>
+    </div>
+    <div style="{{ navPanelStyle }}">
+      <a href="Ad On Group.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Ad On Group</a>
+      <a href="Programs.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">AI Training &amp; Enablement</a>
+      <a href="BPO AI Program.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">BPO AI Program</a>
+      <a href="Ongoing Support.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Ongoing Support</a>
+      <a href="About.dc.html" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">About</a>
+      <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" onClick="{{ closeNav }}" style="text-decoration:none;text-align:center;margin-top:6px;font-size:15px;font-weight:700;color:#fff;background:#0B1220;padding:13px 20px;border-radius:12px">Book a call</a>
+    </div>
+    </div>
+  </nav>
+
+  <!-- ======================= HERO ======================= -->
+  <header id="top" style="max-width:1180px;margin:0 auto;padding:{{ heroPad }}">
+    <div style="{{ heroGridStyle }}">
+      <!-- LEFT: text -->
+      <div>
+        <h1 style="font-size:clamp(34px,4.4vw,58px);line-height:1.02;letter-spacing:-0.045em;font-weight:600;margin:0;background:linear-gradient(92deg,#2F6FED,#5A9BFF,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:adonShimmer 5s linear infinite">Innovative solutions from an innovative company.</h1>
+        <p style="font-size:17px;line-height:1.6;color:#4A5462;max-width:520px;margin:22px 0 0">For over 18 years we&rsquo;ve helped Australian businesses work smarter and grow faster.</p>
+        <div style="display:flex;flex-direction:column;gap:13px;margin-top:30px">
+          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">AI training &amp; enablement</span></div>
+          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">Offshore staff</span></div>
+          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">Large-scale staffing</span></div>
+          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">Digital marketing</span></div>
+          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">On-hold messages</span></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:34px">
+          <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:13px 24px;border-radius:14px;display:inline-flex;align-items:center;gap:8px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 14px 28px -10px rgba(11,18,32,0.4)">Book a call <span style="font-size:16px">&rarr;</span></a>
+        </div>
+      </div>
+
+      <!-- RIGHT: image composition -->
+      <div style="{{ heroImgWrapStyle }}">
+        <div style="position:absolute;right:-4%;top:2%;width:78%;height:82%;border-radius:40% 44% 46% 42%;background:radial-gradient(circle at 40% 35%, rgba(47,111,237,0.28), rgba(45,212,191,0.16) 62%, transparent 78%);filter:blur(6px);z-index:0"></div>
+        <div data-img-slot="office-main" style="position:relative;z-index:1;aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:linear-gradient(150deg,#DFE9F7,#CBD9EC 60%,#D7E4E0);box-shadow:0 34px 72px -34px rgba(11,18,32,0.5), inset 0 1px 0 rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center">
+          <img src="assets/group-team.jpg" alt="The Ad On Group team" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <div data-img-slot="office-inset" style="position:absolute;z-index:2;left:-14px;bottom:8px;width:44%;aspect-ratio:1/1;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#EDE7F3,#E0D8EC);box-shadow:0 22px 48px -24px rgba(11,18,32,0.5)">
+          <img src="assets/group-au-office.png" alt="Ad On Group Australia office" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <div style="position:absolute;z-index:3;right:2px;top:16px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 30px -16px rgba(11,18,32,0.35);border-radius:12px;padding:9px 14px" style-after="content:'';position:absolute;inset:0;border-radius:12px;padding:2px;background:linear-gradient(120deg,#2F6FED,#7FD0FF,#2DD4BF,#2F6FED);background-size:200% 100%;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;animation:adonShimmer 4s linear infinite"><span style="font-family:'Inter Tight',sans-serif;font-size:18px;font-weight:800;letter-spacing:-0.02em;color:#0B1220">18</span><span style="font-size:11.5px;font-weight:600;color:#6B7480;line-height:1.15">years<br>in business</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================= THE PROBLEM ======================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:64px 28px 36px">
+    <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 24px 60px -30px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:26px;padding:clamp(34px,4vw,60px)">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase"><span style="width:22px;height:1.5px;background:#2F6FED"></span>The problem</span>
+      <h2 style="font-size:clamp(30px,4vw,52px);line-height:1.02;letter-spacing:-0.04em;font-weight:800;margin:18px 0 0;max-width:640px">Business shouldn&rsquo;t be <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">this hard</span>.</h2>
+      <p style="font-size:17px;line-height:1.6;color:#4A5462;margin:20px 0 0;max-width:440px">But for many business owners, this is exactly what happens &mdash; month after month.</p>
+      <div style="{{ problemGridStyle }};margin:46px 0 0">
+        <div style="display:flex;gap:16px;align-items:flex-start"><span style="flex:none;width:26px;height:26px;border-radius:8px;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 4px 12px -4px rgba(47,111,237,0.6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><p style="font-size:17px;line-height:1.45;font-weight:500;letter-spacing:-0.01em;color:#1F2733;margin:0">You shouldn&rsquo;t have to spend months trying to find great people.</p></div>
+        <div style="display:flex;gap:16px;align-items:flex-start"><span style="flex:none;width:26px;height:26px;border-radius:8px;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 4px 12px -4px rgba(47,111,237,0.6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><p style="font-size:17px;line-height:1.45;font-weight:500;letter-spacing:-0.01em;color:#1F2733;margin:0">You shouldn&rsquo;t have to feel overwhelmed by AI or wonder where to start.</p></div>
+        <div style="display:flex;gap:16px;align-items:flex-start"><span style="flex:none;width:26px;height:26px;border-radius:8px;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 4px 12px -4px rgba(47,111,237,0.6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><p style="font-size:17px;line-height:1.45;font-weight:500;letter-spacing:-0.01em;color:#1F2733;margin:0">You shouldn&rsquo;t have to pay a fortune to build a capable team.</p></div>
+        <div style="display:flex;gap:16px;align-items:flex-start"><span style="flex:none;width:26px;height:26px;border-radius:8px;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 4px 12px -4px rgba(47,111,237,0.6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><p style="font-size:17px;line-height:1.45;font-weight:500;letter-spacing:-0.01em;color:#1F2733;margin:0">You shouldn&rsquo;t have to spend countless hours working out how AI can actually help.</p></div>
+      </div>
+      <div style="height:1px;background:rgba(11,18,32,0.1);margin:40px 0 0"></div>
+      <p style="font-size:19px;line-height:1.5;font-weight:700;letter-spacing:-0.015em;color:#0B1220;margin:28px 0 0">At Ad On Group, we decided that needed to change. <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">So we built the solutions ourselves.</span></p>
+    </div>
+  </section>
+
+  <!-- ======================= OUR MISSION ======================= -->
+  <section style="position:relative;overflow:hidden;margin:0;margin-top:-40px;padding-top:40px;color:#fff;background:linear-gradient(180deg, rgba(11,18,32,0) 0%, rgba(11,18,32,0) 5%, rgba(11,18,32,0.02) 9%, rgba(11,18,32,0.06) 13%, rgba(11,18,32,0.13) 17%, rgba(11,18,32,0.24) 21%, rgba(11,18,32,0.39) 25%, rgba(11,18,32,0.56) 28.5%, rgba(11,18,32,0.72) 31.5%, rgba(11,18,32,0.85) 34.5%, rgba(11,18,32,0.94) 37.5%, rgba(11,18,32,0.99) 40.5%, rgba(11,18,32,1) 43%, rgba(11,18,32,1) 64%, rgba(11,18,32,0.99) 71%, rgba(11,18,32,0.9) 77%, rgba(11,18,32,0.72) 83%, rgba(11,18,32,0.48) 88%, rgba(11,18,32,0.24) 93%, rgba(11,18,32,0.08) 97%, rgba(11,18,32,0) 100%)">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);background-size:6px 6px;-webkit-mask-image:radial-gradient(120% 80% at 50% 44%, #000 0%, rgba(0,0,0,0.4) 55%, transparent 88%);mask-image:radial-gradient(120% 80% at 50% 44%, #000 0%, rgba(0,0,0,0.4) 55%, transparent 88%);opacity:0.6"></div>
+    <div style="position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:130px 28px 150px;text-align:center">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#7FB2FF;text-transform:uppercase"><span style="width:22px;height:1.5px;background:#7FB2FF"></span>Our mission</span>
+      <h2 style="font-size:clamp(25px,3.1vw,40px);line-height:1.08;letter-spacing:-0.03em;font-weight:800;margin:16px 0 30px;color:#fff">Customers kept telling us the <span style="background:linear-gradient(92deg,#5A9BFF,#7FE9FF,#5A9BFF);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(127,208,255,0.5));animation:adonShimmer 4.5s linear infinite">same two things</span>.</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
+        <div style="display:inline-flex;align-items:center;gap:11px;background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:13px 22px">
+          <span style="font-family:Georgia,serif;font-size:28px;line-height:0;color:#5A9BFF;opacity:0.6;transform:translateY(4px)">&ldquo;</span>
+          <p style="font-size:15px;line-height:1.3;font-weight:600;letter-spacing:-0.01em;color:#fff;margin:0">Finding great staff is hard.</p>
+        </div>
+        <div style="display:inline-flex;align-items:center;gap:11px;background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:13px 22px">
+          <span style="font-family:Georgia,serif;font-size:28px;line-height:0;color:#5A9BFF;opacity:0.6;transform:translateY(4px)">&ldquo;</span>
+          <p style="font-size:15px;line-height:1.3;font-weight:600;letter-spacing:-0.01em;color:#fff;margin:0">I know AI is important, but I have no idea where to start.</p>
+        </div>
+      </div>
+      <p style="font-size:16.5px;line-height:1.6;color:rgba(255,255,255,0.72);max-width:660px;margin:34px auto 0">We heard these frustrations over and over again &mdash; so we made it our mission to solve both. That mission led to the creation of our two flagship divisions.</p>
+      <div id="divisions" style="text-align:left;max-width:980px;margin:48px auto 0;{{ divisionsGridStyle }};align-items:stretch">
+      <div style="position:relative;border-radius:25px;padding:1px;background:linear-gradient(145deg,rgba(14,134,176,0.85),rgba(90,196,224,0.35) 45%,rgba(12,106,144,0.7));box-shadow:0 30px 70px -34px rgba(11,40,34,0.5)">
+      <div style="background:#fff;border-radius:24px;overflow:hidden;display:flex;flex-direction:column;height:100%">
+        <div style="position:relative;min-height:184px;box-sizing:border-box;padding:30px 32px 26px;background:linear-gradient(135deg,#0C7BA5 0%,#1596C0 52%,#0E86B0 100%);overflow:hidden">
+          <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);background-size:7px 7px;-webkit-mask-image:radial-gradient(120% 130% at 88% 12%, #000, transparent 72%);mask-image:radial-gradient(120% 130% at 88% 12%, #000, transparent 72%)"></div>
+          
+          <div style="position:relative;display:flex;align-items:center;gap:14px">
+            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.28);display:flex;align-items:center;justify-content:center"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+            <div>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.78);text-transform:uppercase;font-weight:600">Flagship division</span>
+              <div style="font-size:25px;font-weight:800;letter-spacing:-0.025em;color:#fff;line-height:1.05;margin-top:3px">Ad On Workforce</div>
+            </div>
+          </div>
+          <p style="position:relative;font-size:15px;font-weight:600;color:rgba(255,255,255,0.94);margin:16px 0 0">Great people without the recruitment headaches.</p>
+        </div>
+        <div style="padding:26px 32px 30px;display:flex;flex-direction:column;flex:1">
+          <p style="font-size:14.5px;line-height:1.6;color:#4A5462;margin:0 0 20px"><span style="display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#0C6A90;text-transform:uppercase;margin:0 0 10px">What we do</span>Build high-performing teams through dedicated offshore staff who become a genuine extension of your business &mdash; admin, customer service, finance, marketing and industry specialists.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 18px;margin-bottom:26px"><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Scale faster</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Reduce wage costs</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Increase productivity</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Focus on growing your business</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Stop wasting time on recruitment cycles</span></div></div>
+          <div style="margin-top:auto"><a href="https://www.adongroup.com.au" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;color:#fff;background:#0E86B0;padding:12px 22px;border-radius:13px;transition:transform .2s ease, box-shadow .2s ease" style-hover="transform:translateY(-2px);box-shadow:0 12px 24px -10px #0E86B0">Find out more <span style="font-size:16px">&rarr;</span></a></div>
+        </div>
+      </div>
+      </div>
+      <div style="position:relative;border-radius:25px;padding:1px;background:linear-gradient(145deg,rgba(47,111,237,0.85),rgba(90,155,255,0.35) 45%,rgba(31,84,199,0.7));box-shadow:0 30px 70px -34px rgba(14,30,70,0.5)">
+      <div style="background:#fff;border-radius:24px;overflow:hidden;display:flex;flex-direction:column;height:100%">
+        <div style="position:relative;min-height:184px;box-sizing:border-box;padding:30px 32px 26px;background:linear-gradient(135deg,#2257CC 0%,#2F6FED 52%,#3D7BF5 100%);overflow:hidden">
+          <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);background-size:7px 7px;-webkit-mask-image:radial-gradient(120% 130% at 88% 12%, #000, transparent 72%);mask-image:radial-gradient(120% 130% at 88% 12%, #000, transparent 72%)"></div>
+          <span style="position:absolute;top:22px;right:24px;font-size:10px;font-weight:700;color:#2F6FED;background:rgba(255,255,255,0.94);border-radius:999px;padding:4px 11px;z-index:1">This site</span>
+          <div style="position:relative;display:flex;align-items:center;gap:14px">
+            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:#fff;border:1px solid rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px -4px rgba(0,0,0,0.25)"><img src="assets/logo-claude.svg" alt="Claude" style="width:30px;height:30px;object-fit:contain;display:block"></span>
+            <div>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.78);text-transform:uppercase;font-weight:600">Flagship division</span>
+              <div style="font-size:25px;font-weight:800;letter-spacing:-0.025em;color:#fff;line-height:1.05;margin-top:3px">Ad On AI</div>
+            </div>
+          </div>
+          <p style="position:relative;font-size:15px;font-weight:600;color:rgba(255,255,255,0.94);margin:16px 0 0">From confusion to confidence — in partnership with Anthropic.</p>
+        </div>
+        <div style="padding:26px 32px 30px;display:flex;flex-direction:column;flex:1">
+          <p style="font-size:14.5px;line-height:1.6;color:#4A5462;margin:0 0 20px"><span style="display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#2F6FED;text-transform:uppercase;margin:0 0 10px">What we do</span>We help businesses understand, adopt and implement AI safely to improve productivity, efficiency and profitability &mdash; and achieve real results rather than just experimenting.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 18px;margin-bottom:26px"><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">AI Training &amp; Enablement</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">AI Adoption Programs</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Custom AI Agents</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Workflow Automation</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">AI Strategy &amp; Consulting</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Placement of Certified Claude Architects</span></div></div>
+          <div style="margin-top:auto"><a href="Programs.dc.html" style="text-decoration:none;display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;color:#fff;background:#2F6FED;padding:12px 22px;border-radius:13px;transition:transform .2s ease, box-shadow .2s ease" style-hover="transform:translateY(-2px);box-shadow:0 12px 24px -10px #2F6FED">Explore the programs <span style="font-size:16px">&rarr;</span></a></div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= THE FULL PICTURE ======================= -->
+  <section style="max-width:1160px;margin:0 auto;padding:36px 28px 28px">
+    <div style="text-align:center;max-width:700px;margin:0 auto 44px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">The full picture</span>
+      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 12px">Two more ways we make <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">life easier</span>.</h2>
+      <p style="font-size:16px;line-height:1.6;color:#4A5462;margin:0">Once you have the right people and the right technology, you still need customers.</p>
+    </div>
+    <div style="{{ pictureGridStyle }}">
+      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;overflow:hidden;display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:16/7;overflow:hidden;border-bottom:3px solid #3E4EC5;background:radial-gradient(110% 100% at 22% 15%, #6B78E8 0%, #3A46B8 55%, #232C86 100%)"><div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);background-size:7px 7px;-webkit-mask-image:radial-gradient(90% 90% at 30% 20%, #000, transparent 82%);mask-image:radial-gradient(90% 90% at 30% 20%, #000, transparent 82%)"></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 15v-4z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg></div></div>
+        <div style="padding:22px 24px 24px;display:flex;flex-direction:column;flex:1">
+          <div style="font-size:18px;font-weight:800;letter-spacing:-0.02em;color:#0B1220">Ad On Digital</div>
+          <div style="font-size:14px;font-weight:600;color:#3E4EC5;margin:4px 0 12px">Helping businesses get found.</div>
+          <p style="font-size:13.5px;line-height:1.55;color:#4A5462;margin:0 0 16px">Fully managed digital marketing solutions that bring the customers to your door.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px 16px;margin-bottom:20px"><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Website Design</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">SEO</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Google Ads</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Facebook Advertising</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Digital Brochures</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Content &amp; Blogs</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Online Reputation</span></div></div>
+          <div style="margin-top:auto"><a href="https://www.adongroup.com.au" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#3844B0">Find out more <span style="font-size:15px">&rarr;</span></a></div>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;overflow:hidden;display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:16/7;overflow:hidden;border-bottom:3px solid #1E6DB8;background:radial-gradient(110% 100% at 22% 15%, #5AA8E8 0%, #2E7FC8 52%, #134A82 100%)"><div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);background-size:7px 7px;-webkit-mask-image:radial-gradient(90% 90% at 30% 20%, #000, transparent 82%);mask-image:radial-gradient(90% 90% at 30% 20%, #000, transparent 82%)"></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg></div></div>
+        <div style="padding:22px 24px 24px;display:flex;flex-direction:column;flex:1">
+          <div style="font-size:18px;font-weight:800;letter-spacing:-0.02em;color:#0B1220">Ad On Hold</div>
+          <div style="font-size:14px;font-weight:600;color:#1E6DB8;margin:4px 0 12px">Every phone call is an opportunity.</div>
+          <p style="font-size:13.5px;line-height:1.55;color:#4A5462;margin:0 0 16px">Turn caller waiting time into a valuable communication and marketing channel.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px 16px;margin-bottom:20px"><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Promote products</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Answer common questions</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Educate customers</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Strengthen your brand</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Better caller experience</span></div></div>
+          <div style="margin-top:auto"><a href="https://www.adongroup.com.au" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#16528C">Find out more <span style="font-size:15px">&rarr;</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= OFFICE IMAGE BAND ======================= -->
+  <section style="max-width:1200px;margin:0 auto;padding:88px 28px 96px">
+    <div style="{{ officeBandStyle }}">
+      <div style="flex:0 0 auto;text-align:center">
+        <div data-img-slot="band-1" style="position:relative;width:clamp(180px,20vw,280px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:#E7EDF6;border:4px solid #fff;box-shadow:0 26px 54px -26px rgba(11,18,32,0.42)"><img src="assets/group-capetown.webp" alt="Cape Town, South Africa" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="font-size:clamp(15px,1.5vw,19px);font-weight:600;letter-spacing:-0.01em;color:#0B1220;margin-top:20px">South Africa</div>
+      </div>
+      <div style="flex:0 0 auto;text-align:center;margin:0 -8px">
+        <div data-img-slot="band-2" style="position:relative;width:clamp(230px,27vw,400px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:#DFE9F7;border:4px solid #fff;box-shadow:0 32px 64px -28px rgba(11,18,32,0.48)"><img src="assets/group-au-office.png" alt="Ad On Group Australia HQ" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="font-size:clamp(18px,1.9vw,24px);font-weight:700;letter-spacing:-0.02em;color:#0B1220;margin-top:22px">Australia Headquarters</div>
+      </div>
+      <div style="flex:0 0 auto;text-align:center">
+        <div data-img-slot="band-3" style="position:relative;width:clamp(180px,20vw,280px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:#EDE7F3;border:4px solid #fff;box-shadow:0 26px 54px -26px rgba(11,18,32,0.42)"><img src="assets/group-ph-office.jpg" alt="Ad On Group Philippines office" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="font-size:clamp(15px,1.5vw,19px);font-weight:600;letter-spacing:-0.01em;color:#0B1220;margin-top:20px">Philippines Office</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= THE AD ON DIFFERENCE ======================= -->
+  <section style="max-width:1040px;margin:0 auto;padding:56px 28px 28px">
+    <div style="text-align:center;max-width:780px;margin:0 auto 48px">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase"><span style="width:22px;height:1.5px;background:#2F6FED"></span>The Ad On difference</span>
+      <h2 style="font-size:clamp(25px,3.1vw,40px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:16px 0 0">We&rsquo;re not in the business of selling services. We&rsquo;re in the business of <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">solving problems</span>.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:880px;margin:0 auto">
+      <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -24px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px 28px 24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px"><div style="position:absolute;inset:0 auto 0 0;width:5px;background:#0E86B0"></div><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A93A1;flex:none">When customers struggled to</span><span style="font-size:19px;font-weight:800;letter-spacing:-0.02em;color:#0B1220;flex:1;min-width:180px">find great people</span><span style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:-0.01em;color:#0C6A90;background:rgba(14,134,176,0.1);border:1px solid rgba(14,134,176,0.2);border-radius:999px;padding:8px 16px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>we built Ad On Workforce</span></div>
+      <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -24px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px 28px 24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px"><div style="position:absolute;inset:0 auto 0 0;width:5px;background:#2F6FED"></div><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A93A1;flex:none">When customers struggled to</span><span style="font-size:19px;font-weight:800;letter-spacing:-0.02em;color:#0B1220;flex:1;min-width:180px">understand AI</span><span style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:-0.01em;color:#2F6FED;background:rgba(47,111,237,0.1);border:1px solid rgba(47,111,237,0.2);border-radius:999px;padding:8px 16px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>we built Ad On AI</span></div>
+      <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -24px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px 28px 24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px"><div style="position:absolute;inset:0 auto 0 0;width:5px;background:#3E4EC5"></div><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A93A1;flex:none">When customers struggled to</span><span style="font-size:19px;font-weight:800;letter-spacing:-0.02em;color:#0B1220;flex:1;min-width:180px">attract more customers</span><span style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:-0.01em;color:#3844B0;background:rgba(62,78,197,0.1);border:1px solid rgba(62,78,197,0.2);border-radius:999px;padding:8px 16px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3E4EC5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>we built Ad On Digital</span></div>
+      <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -24px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px 28px 24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px"><div style="position:absolute;inset:0 auto 0 0;width:5px;background:#1E6DB8"></div><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A93A1;flex:none">When customers struggled to</span><span style="font-size:19px;font-weight:800;letter-spacing:-0.02em;color:#0B1220;flex:1;min-width:180px">create a better caller experience</span><span style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:-0.01em;color:#16528C;background:rgba(30,109,184,0.12);border:1px solid rgba(30,109,184,0.24);border-radius:999px;padding:8px 16px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1E6DB8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>we built Ad On Hold</span></div>
+    </div>
+    <p style="text-align:center;font-size:16.5px;line-height:1.6;color:#4A5462;max-width:700px;margin:40px auto 0">Everything we do starts with one question: <strong style="color:#0B1220;font-weight:700">&ldquo;How can we make life easier for our customers?&rdquo;</strong> That&rsquo;s been our mission for more than 18 years.</p>
+  </section>
+
+  <!-- ======================= HAPPY STAFF WORLDWIDE ======================= -->
+  <section style="max-width:1200px;margin:0 auto;padding:40px 28px 14px">
+    <div style="text-align:center;max-width:780px;margin:0 auto 40px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">Around the world</span>
+      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 0">We have happy staff and clients around the world.</h2>
+    </div>
+    <div style="{{ worldGridStyle }}">
+      <div data-img-slot="world-1" style="position:relative;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:#F6E1EC;box-shadow:0 20px 46px -28px rgba(11,18,32,0.4)"><img src="assets/world-1.jpg" alt="Ad On Group team — International Women's Day" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div data-img-slot="world-2" style="position:relative;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:#DFE9F7;box-shadow:0 20px 46px -28px rgba(11,18,32,0.4)"><img src="assets/world-2.jpg" alt="Ad On Group team" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div data-img-slot="world-3" style="position:relative;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:#DDEEEA;box-shadow:0 20px 46px -28px rgba(11,18,32,0.4)"><img src="assets/world-3.jpg" alt="Ad On Group Philippines team" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+    </div>
+  </section>
+
+  <!-- ======================= PARTNERS ======================= -->
+  <section style="max-width:1160px;margin:0 auto;padding:72px 28px 64px;text-align:center">
+    <span style="display:block;font-family:'JetBrains Mono',monospace;font-size:clamp(22px,2.6vw,32px);letter-spacing:0.04em;text-transform:uppercase;margin:0 0 56px;color:#0B1220">Our <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">partners</span></span>
+    <div style="overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)">
+      <div style="display:flex;align-items:center;gap:110px;width:max-content;animation:adonMarquee 32s linear infinite">
+        <img src="assets/partner-anthropic-trim.png" alt="Anthropic" style="height:30px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-google-trim.png" alt="Google" style="height:44px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-meta-trim.png" alt="Meta" style="height:40px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-telstra-trim.png" alt="Telstra" style="height:40px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-anthropic-trim.png" alt="Anthropic" style="height:30px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-google-trim.png" alt="Google" style="height:44px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-meta-trim.png" alt="Meta" style="height:40px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-telstra-trim.png" alt="Telstra" style="height:40px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-anthropic-trim.png" alt="Anthropic" style="height:30px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-google-trim.png" alt="Google" style="height:44px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-meta-trim.png" alt="Meta" style="height:40px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-telstra-trim.png" alt="Telstra" style="height:40px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-anthropic-trim.png" alt="Anthropic" style="height:30px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-google-trim.png" alt="Google" style="height:44px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-meta-trim.png" alt="Meta" style="height:40px;width:auto;object-fit:contain;display:block;flex:none">
+        <img src="assets/partner-telstra-trim.png" alt="Telstra" style="height:40px;width:auto;object-fit:contain;display:block;flex:none">
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= REVIEWS ======================= -->
+  <section style="max-width:1160px;margin:0 auto;padding:28px 28px 28px">
+    <div style="text-align:center;max-width:720px;margin:0 auto 44px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">Testimonials</span>
+      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 22px">Read what our customers are saying.</h2>
+      <div style="display:inline-flex;align-items:center;gap:16px;background:rgba(255,255,255,0.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.85);box-shadow:0 12px 30px -18px rgba(11,18,32,0.24);border-radius:16px;padding:14px 22px">
+        <div style="text-align:left"><div style="font-family:'Inter Tight',sans-serif;font-size:15px;font-weight:800;letter-spacing:0.02em;color:#0B1220;text-transform:uppercase">Excellent</div><div style="display:flex;gap:2px;margin-top:3px">{{ starRow }}</div></div>
+        <span style="width:1px;height:34px;background:rgba(11,18,32,0.1)"></span>
+        <div style="text-align:left;display:flex;align-items:center;gap:9px"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.5 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2-1.9 3.3-4.7 3.3-7.9z"></path><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2v2.8A11 11 0 0 0 12 23z"></path><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2a11 11 0 0 0 0 9.8l3.7-2.8z"></path><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.7l3.1-3.1A11 11 0 0 0 2 7.1l3.7 2.8C6.6 7.3 9.1 5.4 12 5.4z"></path></svg><div><div style="font-size:13px;font-weight:700;color:#0B1220;line-height:1.1">Google Reviews</div><div style="font-size:12px;color:#6B7480">Based on 223 reviews</div></div></div>
+      </div>
+    </div>
+    <div style="{{ reviewsWrapStyle }}">
+      <button onClick="{{ prevRev }}" aria-label="Previous reviews" style="{{ reviewNavStyle }};left:0" style-hover="transform:translateY(-50%) scale(1.08);box-shadow:0 12px 26px -12px rgba(11,18,32,0.4)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
+      <div style="{{ reviewsGridStyle }}">
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
+        <div style="min-width:0;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 36px -22px rgba(11,18,32,0.22), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:18px;padding:26px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="flex:none;width:42px;height:42px;border-radius:50%;background:{{ r.av }};display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#fff;letter-spacing:-0.01em">{{ r.initials }}</span>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:14.5px;font-weight:700;color:#0B1220;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.name }}</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:2px"><span style="display:flex;gap:1.5px">{{ starRowSm }}</span><span style="font-size:11.5px;color:#8A93A1">{{ r.date }}</span></div>
+            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" style="flex:none;opacity:0.9"><path fill="#4285F4" d="M22.5 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2-1.9 3.3-4.7 3.3-7.9z"></path><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2v2.8A11 11 0 0 0 12 23z"></path><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2a11 11 0 0 0 0 9.8l3.7-2.8z"></path><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.7l3.1-3.1A11 11 0 0 0 2 7.1l3.7 2.8C6.6 7.3 9.1 5.4 12 5.4z"></path></svg>
+          </div>
+          <p style="font-size:13.5px;line-height:1.6;color:#414B59;margin:0;display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden">{{ r.text }}</p>
+        </div>
+      </sc-for>
+      </div>
+      <button onClick="{{ nextRev }}" aria-label="Next reviews" style="{{ reviewNavStyle }};right:0" style-hover="transform:translateY(-50%) scale(1.08);box-shadow:0 12px 26px -12px rgba(11,18,32,0.4)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
+    </div>
+  </section>
+
+  <!-- ======================= CTA ======================= -->
+  <section id="contact" style="max-width:1200px;margin:0 auto;padding:48px 28px 64px">
+    <div style="position:relative;overflow:hidden;border-radius:24px;padding:64px 40px;text-align:center;background:radial-gradient(120% 150% at 50% -30%, rgba(47,111,237,0.12), transparent 55%), rgba(255,255,255,0.58);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%);border:1px solid rgba(255,255,255,0.9);box-shadow:0 26px 64px -32px rgba(11,18,32,0.26), inset 0 1px 0 rgba(255,255,255,0.8)">
+      <div style="position:absolute;width:300px;height:300px;left:-70px;bottom:-140px;border-radius:50%;background:radial-gradient(circle,rgba(255,168,112,0.30),transparent 70%);pointer-events:none"></div>
+      <div style="position:absolute;width:320px;height:320px;right:-90px;top:-150px;border-radius:50%;background:radial-gradient(circle,rgba(45,212,191,0.22),transparent 70%);pointer-events:none"></div>
+      <div style="position:relative">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">Get in touch</span>
+        <h2 style="font-size:clamp(24px,2.8vw,38px);line-height:1.05;letter-spacing:-0.035em;font-weight:800;margin:14px 0 14px;color:#0B1220">Contact us to find out more.</h2>
+        <p style="font-size:17px;line-height:1.55;color:#4A5462;max-width:480px;margin:0 auto 30px">Tell us what you&rsquo;re trying to solve and we&rsquo;ll point you to the right division.</p>
+        <a href="#contact" style="text-decoration:none;font-size:16px;font-weight:700;color:#fff;background:#0B1220;padding:15px 30px;border-radius:14px;display:inline-flex;align-items:center;gap:9px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(11,18,32,0.4)">Contact us <span style="font-size:17px">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 28px;{{ footerGridStyle }}">
+      <div>
+        <a href="Ad On AI.dc.html#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block"></span>
+          <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span>
+        </a>
+        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">A division of Ad On Group &mdash; practical AI training and enablement for Australian businesses.</p>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="Programs.dc.html" style="text-decoration:none;color:inherit">AI Training &amp; Enablement</a>
+          <a href="BPO AI Program.dc.html" style="text-decoration:none;color:inherit">BPO AI Program</a>
+          <a href="Ongoing Support.dc.html" style="text-decoration:none;color:inherit">Ongoing Support</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="Ad On Group.dc.html" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <a href="About.dc.html" style="text-decoration:none;color:inherit">About</a>
+          <a href="#contact" style="text-decoration:none;color:inherit">Contact</a>
+          <a href="Terms.dc.html" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
+          <a href="mailto:info@adongroup.com.au" style="text-decoration:none;color:inherit">info@adongroup.com.au</a>
+          <span>Australia-wide delivery</span>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On Group. All rights reserved.</span>
+      <div style="display:flex;gap:22px;font-size:13px;color:#8A93A1">
+        <a href="#" style="text-decoration:none;color:inherit">Privacy Policy</a>
+        <a href="Terms.dc.html" style="text-decoration:none;color:inherit">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+  <template id="__bundler_thumbnail" data-bg-color="#F4F7FC">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1200" height="800" fill="#F4F7FC"/>
+      <g transform="translate(600 400)">
+        <rect x="-190" y="-90" width="170" height="170" rx="24" fill="#14A08C"/>
+        <rect x="20" y="-90" width="170" height="170" rx="24" fill="#2F6FED"/>
+        <rect x="-190" y="10" width="170" height="70" rx="18" fill="#6C5CD6"/>
+        <rect x="20" y="10" width="170" height="70" rx="18" fill="#E0842F"/>
+      </g>
+    </svg>
+  </template>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#2F6FED&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { hov: null, rev: 0, isMobile: false, navOpen: false };
+  componentDidMount() {
+    this._onResize = () => {
+      const m = window.innerWidth < 860;
+      if (m !== this.state.isMobile) this.setState({ isMobile: m, navOpen: m ? this.state.navOpen : false });
+    };
+    this._onResize();
+    window.addEventListener('resize', this._onResize, { passive: true });
+  }
+  componentWillUnmount() {
+    if (this._onResize) window.removeEventListener('resize', this._onResize);
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#2F6FED';
+    const isMobile = this.state.isMobile;
+    const navOpen = this.state.navOpen;
+    const toggleNav = () => this.setState(s => ({ navOpen: !s.navOpen }));
+    const closeNav = () => this.setState({ navOpen: false });
+
+    const navDesktopStyle = isMobile ? 'display:none' : 'display:flex;align-items:center;gap:28px';
+    const navBurgerStyle = isMobile ? 'display:inline-flex' : 'display:none';
+    const navPanelStyle = (isMobile && navOpen)
+      ? 'display:flex;flex-direction:column;gap:4px;position:absolute;top:100%;left:0;right:0;margin-top:10px;background:rgba(252,251,250,0.98);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:20px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.3);padding:10px;z-index:60'
+      : 'display:none';
+
+    const stackCols = (desktop, gap, mobileGap) => isMobile
+      ? ('display:grid;grid-template-columns:1fr;gap:' + (mobileGap != null ? mobileGap : gap))
+      : ('display:grid;grid-template-columns:' + desktop + ';gap:' + gap);
+    const heroGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:36px;align-items:start' : 'display:grid;grid-template-columns:1.02fr 0.98fr;gap:60px;align-items:center';
+    const heroImgWrapStyle = isMobile ? 'position:relative;padding:14px 8px 30px 14px;max-width:360px;margin:0 auto' : 'position:relative;padding:14px 8px 30px 14px;transform:translate(26px,-20px) scale(0.88);transform-origin:top right';
+    const heroPad = isMobile ? '132px 20px 40px' : '92px 28px 44px';
+    const problemGridStyle = stackCols('1fr 1fr', '22px 56px', '16px');
+    const divisionsGridStyle = stackCols('1fr 1fr', '24px');
+    const pictureGridStyle = stackCols('1fr 1fr', '18px');
+    const officeBandStyle = isMobile ? 'display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:24px' : 'display:flex;justify-content:center;align-items:center;gap:clamp(8px,2.5vw,40px)';
+    const worldGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr 1fr;gap:12px' : 'display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px';
+    const reviewsWrapStyle = isMobile ? 'position:relative;padding:0' : 'position:relative;padding:0 60px';
+    const reviewsGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:16px' : 'display:grid;grid-template-columns:repeat(3,1fr);gap:18px';
+    const reviewNavStyle = isMobile ? 'display:none' : 'position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid rgba(11,18,32,0.1);background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 22px -12px rgba(11,18,32,0.3);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .18s ease, box-shadow .18s ease';
+    const footerGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:28px' : 'display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px';
+    const hov = this.state.hov;
+    const perView = 3;
+    const split = {
+      hoverW: () => this.setState({ hov: 'W' }),
+      hoverA: () => this.setState({ hov: 'A' }),
+      unhover: () => this.setState({ hov: null }),
+      flexW: hov === 'W' ? 1.95 : hov === 'A' ? 0.75 : 1,
+      flexA: hov === 'A' ? 1.95 : hov === 'W' ? 0.75 : 1,
+      openW: hov === 'W' ? '340px' : '0px',
+      openA: hov === 'A' ? '340px' : '0px',
+      opW: hov === 'W' ? 1 : 0,
+      opA: hov === 'A' ? 1 : 0,
+    };
+    const star = (c, s) => React.createElement('svg', { width: s, height: s, viewBox: '0 0 24 24', style: { display: 'block' } },
+      React.createElement('path', { fill: c, d: 'M12 2l2.9 6.1 6.6.8-4.9 4.5 1.3 6.6L12 17.3 6.1 20l1.3-6.6L2.5 8.9l6.6-.8z' }));
+    const starRow = [1,2,3,4,5].map((i) => React.createElement('span', { key: i }, star('#FBB400', 15)));
+    const starRowSm = [1,2,3,4,5].map((i) => React.createElement('span', { key: i }, star('#FBB400', 12)));
+    const reviewsAll = [
+        { name: 'A and D Discount Roofing Supplies', initials: 'AD', av: '#2F6FED', date: 'Nov 2025', text: 'I highly recommend Ad On Group to create your website and manage your digital marketing. Their creative team is highly skilled in designing and writing informative blogs and digital brochures, and adept in SEO strategies that have consistently driven traffic and sales. Their cutting-edge approach lets us focus on our business goals.' },
+        { name: 'Gayle Slater', initials: 'GS', av: '#14A08C', date: 'Oct 2025', text: 'Thank you Charlotte, I am extremely happy with the adjustments and your work. It looks fantastic.' },
+        { name: 'Th\u00e9r\u00e8se Hallett', initials: 'TH', av: '#6C5CD6', date: 'Jul 2025', text: 'What can I say about my experience with Ad On Hold. The lovely young lady who looks after our account, Alaskah, was simply amazing \u2014 super patient and understanding. I feel we are treated as a person firstly and a business owner second, certainly not just a number. She is a gem!' },
+        { name: 'Ashar Rees', initials: 'AR', av: '#E0842F', date: 'Jul 2025', text: 'Great team, very professional, great results. Highly recommended.' },
+        { name: 'John Milios', initials: 'JM', av: '#2F6FED', date: 'Apr 2025', text: 'Great team to work with \u2014 professional, easy, friendly, can\u2019t do enough for us. Recommend Ad On Group for all your business needs. A++' },
+        { name: 'John Martin', initials: 'JM', av: '#14A08C', date: 'Jan 2025', text: 'Happy to sing praises for Ad On Group! We\u2019ve been a customer for quite a few years and recently had our website revamped by their team \u2014 a painless process with terrific results. Alaskah was a treasure to deal with.' },
+        { name: 'Ashmore City Medical Centre', initials: 'AC', av: '#6C5CD6', date: 'Sep 2024', text: 'The flow of the changes to the script is simple and easy. They keep up to date with the changes required and remind me to update. Excellent service \u2014 would highly recommend.' },
+    ];
+    const maxStart = Math.max(0, reviewsAll.length - perView);
+    const rev = Math.min(this.state.rev, maxStart);
+    const visibleReviews = reviewsAll.slice(rev, rev + perView);
+    const prevRev = () => this.setState({ rev: Math.max(0, rev - 1) });
+    const nextRev = () => this.setState({ rev: Math.min(maxStart, rev + 1) });
+    return {
+      accent,
+      isMobile, navOpen, toggleNav, closeNav,
+      navDesktopStyle, navBurgerStyle, navPanelStyle,
+      heroGridStyle, heroImgWrapStyle, heroPad,
+      problemGridStyle, divisionsGridStyle, pictureGridStyle, officeBandStyle, worldGridStyle,
+      reviewsWrapStyle, reviewsGridStyle, reviewNavStyle, footerGridStyle,
+      ...split,
+      starRow,
+      starRowSm,
+      promises: [
+        { n: '01', t: 'We will always provide you value for money.' },
+        { n: '02', t: 'We will always put you first.' },
+        { n: '03', t: 'We will always provide you with an innovative solution.' },
+        { n: '04', t: 'Our people will be amazing to deal with.' },
+        { n: '05', t: 'You will always deal with a person.' },
+        { n: '06', t: 'We treat people as we would want to be treated.' },
+      ],
+      reviews: visibleReviews,
+      prevRev,
+      nextRev,
+      revAtStart: rev <= 0,
+      revAtEnd: rev >= maxStart,
+    };
+  }
+}
+</script>
+</body>
+</html>
