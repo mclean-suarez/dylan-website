@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Glossary: Plain-English Definitions for Business | Ad On AI</title>
+<meta name="description" content="A plain-English AI glossary — short, jargon-free definitions of the terms Australian businesses run into, from AI agents and LLMs to prompts, RAG and hallucination, each with a real-world example.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.adon-ai.com.au/resources/glossary">
+<meta name="theme-color" content="#2F6FED">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ad On AI">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="AI Glossary: Plain-English Definitions for Business">
+<meta property="og:description" content="Short, jargon-free definitions of the AI terms businesses actually run into — from AI agents and LLMs to prompts, RAG and hallucination — each with a real-world example.">
+<meta property="og:url" content="https://www.adon-ai.com.au/resources/glossary">
+<meta property="og:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Glossary: Plain-English Definitions for Business">
+<meta name="twitter:description" content="Short, jargon-free definitions of the AI terms businesses actually run into, each with a real-world example.">
+<meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/intertight.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrainsmono-500.woff2" crossorigin>
+<style>@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500 800;font-display:swap;src:url('/assets/fonts/intertight.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrainsmono-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.18), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.15), transparent 52%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; min-height: 100vh; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 800; }
+  a { color: #2F6FED; } a:hover { color: #1B54C4; }
+  .aoa-plink { color:#2F6FED; font-weight:600; text-decoration:none; }
+  .aoa-plink:hover { text-decoration:underline; }
+  /* term index */
+  .gl-index { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px; }
+  .gl-index a { text-decoration:none; font-size:13.5px; font-weight:600; color:#3A434F; background:rgba(255,255,255,0.7); border:1px solid rgba(11,18,32,0.08); border-radius:999px; padding:7px 13px; transition:all .16s ease; }
+  .gl-index a:hover { color:#2F6FED; border-color:rgba(47,111,237,0.35); background:rgba(47,111,237,0.06); }
+  /* term cards */
+  .gl-term { scroll-margin-top: 92px; background:rgba(255,255,255,0.64); backdrop-filter:blur(14px) saturate(150%); -webkit-backdrop-filter:blur(14px) saturate(150%); border:1px solid rgba(255,255,255,0.85); box-shadow:0 16px 40px -26px rgba(11,18,32,0.24); border-radius:16px; padding:24px 26px; margin:0 0 16px; }
+  .gl-term h2 { font-size:22px; line-height:1.2; margin:0 0 10px; color:#0B1220; letter-spacing:-0.02em; }
+  .gl-term h2 .abbr { font-size:14px; font-weight:600; color:#8A93A1; letter-spacing:0; }
+  .gl-def { font-size:16px; line-height:1.66; color:#2B333F; margin:0 0 14px; }
+  .gl-eg { font-size:14.5px; line-height:1.6; color:#5A6473; margin:0; padding:12px 16px; background:rgba(47,111,237,0.045); border-left:3px solid rgba(47,111,237,0.4); border-radius:0 10px 10px 0; }
+  .gl-eg .tag { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#2F6FED; margin-right:8px; }
+  .gl-more { margin-top:14px; font-size:13.5px; color:#6B7480; }
+  .gl-more a { color:#2F6FED; font-weight:600; text-decoration:none; }
+  .gl-more a:hover { text-decoration:underline; }
+  .gl-more .sep { color:#C2C8D2; margin:0 9px; }
+  @media (max-width: 760px) { .bio-navlinks > div:first-of-type, .bio-navlinks > span { display: none !important; } .bio-footgrid { grid-template-columns: 1fr 1fr !important; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.adon-ai.com.au/resources/glossary#webpage",
+      "url": "https://www.adon-ai.com.au/resources/glossary",
+      "name": "AI Glossary: Plain-English Definitions for Business",
+      "description": "A plain-English AI glossary — short, jargon-free definitions of the terms businesses run into, each with a real-world example.",
+      "isPartOf": { "@id": "https://www.adon-ai.com.au/#website" },
+      "inLanguage": "en-AU",
+      "about": { "@id": "https://www.adon-ai.com.au/#organization" },
+      "mainEntity": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://www.adon-ai.com.au/resources/glossary#termset",
+      "name": "Ad On AI Plain-English AI Glossary",
+      "url": "https://www.adon-ai.com.au/resources/glossary",
+      "inLanguage": "en-AU",
+      "publisher": { "@id": "https://www.adon-ai.com.au/#organization" },
+      "hasDefinedTerm": [
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#agentic-ai", "name": "Agentic AI", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "The adjective for AI that behaves like an agent — taking initiative and working through steps toward a goal, rather than only answering the question in front of it. Same idea as an AI agent, described as a quality." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#ai-agent", "name": "AI agent", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "An AI system you give a goal to, which then works out and carries out the steps to reach it — deciding what to do next and using tools along the way — instead of just answering a single question." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#ai-automation", "name": "AI automation", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "Getting software to carry out a task by following fixed rules you set in advance — 'when this happens, do that' — the same way every time. Best for repetitive, predictable work." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#ai-workflow", "name": "AI workflow", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "A set sequence of steps where AI makes a judgement call at one or more points — like drafting a reply based on the message — rather than following a fixed rule at every step. Best for tasks that vary." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#claude-skill", "name": "Claude skill", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "A reusable package of instructions — and, if useful, example files — that teaches Claude how to do a specific task your way, so you don't have to re-explain it each time." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#context-window", "name": "Context window", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "The amount of text an AI can hold in mind at once — your conversation, anything you have pasted in, and its own replies. Go past it and the earliest material drops off, and the AI can forget it." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#fine-tuning", "name": "Fine-tuning", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "Further training of an existing AI model on extra examples so it gets better at a specific style or task. It changes the model itself — unlike a prompt or a skill, which do not. Usually a job for technical teams." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#hallucination", "name": "Hallucination", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "When AI states something that sounds confident and plausible but is actually wrong or made up. It is a known, common failure mode — and the reason you check important output before relying on it." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#llm", "name": "LLM (large language model)", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "The kind of AI behind assistants like Claude and ChatGPT. Trained on huge amounts of text to predict likely words, which lets it write, summarise and answer in natural language. It is the engine under the bonnet of a chatbot." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#mcp", "name": "MCP (Model Context Protocol)", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "An open standard, introduced by Anthropic, for connecting AI assistants to outside tools and data sources in a consistent way. Think of it as a common plug so AI can reach the things it needs." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#multimodal", "name": "Multimodal", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "AI that can work with more than just text — images, audio, and sometimes documents or video — not only read and write words." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#orchestrator-agent", "name": "Orchestrator agent", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "An AI agent whose job is to coordinate other agents or steps — breaking a big goal into parts, handing each to the right place, and pulling the results back together. The project manager of a multi-agent setup." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#prompt", "name": "Prompt", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "The instruction or question you give an AI. Everything you type to get a response is a prompt — and the clearer and more specific it is, the better the result." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#prompt-engineering", "name": "Prompt engineering", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "The skill of writing clear, well-structured prompts to get reliable results — giving context, examples and limits instead of a vague one-liner. Less 'engineering', more learning to brief well." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#rag", "name": "RAG (retrieval-augmented generation)", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "A method where the AI looks up relevant information from your own documents or a database and uses it to answer, instead of relying only on what it learned in training. It is how you get answers grounded in your business's actual content." },
+        { "@type": "DefinedTerm", "@id": "https://www.adon-ai.com.au/resources/glossary#token", "name": "Token", "inDefinedTermSet": { "@id": "https://www.adon-ai.com.au/resources/glossary#termset" }, "description": "The small chunks of text an AI reads and generates — roughly a word or a piece of a word. Usage and limits, including the context window, are often measured in tokens." }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.adon-ai.com.au/resources/glossary#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.adon-ai.com.au/" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.adon-ai.com.au/resources" },
+        { "@type": "ListItem", "position": 3, "name": "AI Glossary", "item": "https://www.adon-ai.com.au/resources/glossary" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div style="max-width:1120px;margin:0 auto;background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="/assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+      <div class="bio-navlinks" style="display:flex;align-items:center;gap:28px">
+        <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
+        <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
+          <a href="/ad-on-group" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <a href="/programs" style="text-decoration:none;color:inherit">Programs</a>
+          <a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="/about" style="text-decoration:none;color:inherit">About</a>
+        </div>
+        <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px">Book a call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="max-width:820px;margin:0 auto;padding:44px 28px 0">
+    <nav aria-label="Breadcrumb" style="font-size:13.5px;color:#7C8696;margin-bottom:22px">
+      <a href="/" style="color:#7C8696;text-decoration:none">Home</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <a href="/resources" style="color:#7C8696;text-decoration:none">Resources</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <span style="color:#3A434F">AI Glossary</span>
+    </nav>
+
+    <header style="margin:0 0 30px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; Glossary</span>
+      <h1 style="font-size:clamp(32px,4.4vw,50px);line-height:1.03;letter-spacing:-0.04em;font-weight:800;margin:12px 0 16px;color:#0B1220">Plain-English AI glossary</h1>
+      <p style="font-size:17px;line-height:1.66;color:#39424E;margin:0;max-width:640px">Short, jargon-free definitions of the AI terms businesses actually run into &mdash; each with a real-world example. The kind of clear answer you&rsquo;d want whether you asked one of our <a href="/about" class="aoa-plink">Certified Claude Experts</a> or asked your AI assistant. No hype, no fabricated numbers.</p>
+    </header>
+
+    <!-- term index -->
+    <nav class="gl-index" aria-label="Jump to a term">
+      <a href="#agentic-ai">Agentic AI</a>
+      <a href="#ai-agent">AI agent</a>
+      <a href="#ai-automation">AI automation</a>
+      <a href="#ai-workflow">AI workflow</a>
+      <a href="#claude-skill">Claude skill</a>
+      <a href="#context-window">Context window</a>
+      <a href="#fine-tuning">Fine-tuning</a>
+      <a href="#hallucination">Hallucination</a>
+      <a href="#llm">LLM</a>
+      <a href="#mcp">MCP</a>
+      <a href="#multimodal">Multimodal</a>
+      <a href="#orchestrator-agent">Orchestrator agent</a>
+      <a href="#prompt">Prompt</a>
+      <a href="#prompt-engineering">Prompt engineering</a>
+      <a href="#rag">RAG</a>
+      <a href="#token">Token</a>
+    </nav>
+
+    <section style="margin-top:28px">
+      <div class="gl-term" id="agentic-ai">
+        <h2>Agentic AI</h2>
+        <p class="gl-def">The adjective for AI that behaves like an <a href="#ai-agent" class="aoa-plink">agent</a> &mdash; taking initiative and working through steps toward a goal, rather than only answering the question in front of it. It&rsquo;s the same idea as an AI agent, just described as a quality: if a tool is &ldquo;agentic&rdquo;, it can act like an agent. Don&rsquo;t let the jargon make it sound like a separate technology.</p>
+        <p class="gl-eg"><span class="tag">Example</span> A tool described as &ldquo;agentic&rdquo; could be handed the goal &ldquo;sort these enquiries&rdquo; and figure out the steps itself, instead of waiting for each instruction.</p>
+        <div class="gl-more"><a href="/resources/what-is-an-ai-agent">Read the full guide &rarr;</a><span class="sep">&middot;</span>See also: <a href="#ai-agent">AI agent</a>, <a href="#orchestrator-agent">Orchestrator agent</a></div>
+      </div>
+
+      <div class="gl-term" id="ai-agent">
+        <h2>AI agent</h2>
+        <p class="gl-def">An AI system you give a goal to, which then works out and carries out the steps to reach it &mdash; deciding what to do next, using tools or software along the way, and adjusting as it goes &mdash; instead of just answering a single question. A chatbot answers; an <a href="#ai-automation" class="aoa-plink">automation</a> follows fixed steps; an agent is trusted to find its own path.</p>
+        <p class="gl-eg"><span class="tag">Example</span> Given &ldquo;draft a reply to this after-hours enquiry&rdquo;, an agent could read the message, check your service-area list, look up the standard call-out guidance, and prepare a draft for a staff member to approve.</p>
+        <div class="gl-more"><a href="/resources/what-is-an-ai-agent">Read the full guide &rarr;</a><span class="sep">&middot;</span>See also: <a href="#agentic-ai">Agentic AI</a>, <a href="#ai-workflow">AI workflow</a></div>
+      </div>
+
+      <div class="gl-term" id="ai-automation">
+        <h2>AI automation</h2>
+        <p class="gl-def">Getting software to carry out a task by following fixed rules you set in advance &mdash; &ldquo;when this happens, do that&rdquo; &mdash; the same way every time. There&rsquo;s no interpretation involved, which makes it reliable and easy to trust. Best for repetitive, predictable work with one correct outcome.</p>
+        <p class="gl-eg"><span class="tag">Example</span> Every time a booking email lands, the customer&rsquo;s name, job and date are pulled out and dropped into a spreadsheet and the calendar &mdash; automatically, every time.</p>
+        <div class="gl-more"><a href="/resources/ai-automation-vs-ai-workflow">Read the full guide &rarr;</a><span class="sep">&middot;</span>See also: <a href="#ai-workflow">AI workflow</a></div>
+      </div>
+
+      <div class="gl-term" id="ai-workflow">
+        <h2>AI workflow</h2>
+        <p class="gl-def">A set sequence of steps where AI makes a judgement call at one or more points &mdash; reading, drafting or deciding based on what&rsquo;s in front of it &mdash; rather than following a fixed rule at every step. Often a person checks or approves the key steps, which lets a workflow handle tasks that don&rsquo;t look the same twice. Best for work that varies.</p>
+        <p class="gl-eg"><span class="tag">Example</span> A client emails a question; the workflow drafts a tailored reply and hands it to a staff member to review and send.</p>
+        <div class="gl-more"><a href="/resources/ai-automation-vs-ai-workflow">Read the full guide &rarr;</a><span class="sep">&middot;</span>See also: <a href="#ai-automation">AI automation</a>, <a href="#ai-agent">AI agent</a></div>
+      </div>
+
+      <div class="gl-term" id="claude-skill">
+        <h2>Claude skill</h2>
+        <p class="gl-def">A reusable package of instructions &mdash; and, if useful, example files &mdash; that teaches Claude how to do a specific task your way, so you don&rsquo;t have to re-explain it each time. Claude brings the skill in when it&rsquo;s relevant. Different from a one-off <a href="#prompt" class="aoa-plink">prompt</a>: a skill is saved, shareable and reused.</p>
+        <p class="gl-eg"><span class="tag">Example</span> A firm builds a &ldquo;client onboarding email&rdquo; skill &mdash; house tone, document checklist, structure &mdash; so anyone can produce a consistent draft for a new client.</p>
+        <div class="gl-more"><a href="/resources/what-are-claude-skills">Read the full guide &rarr;</a><span class="sep">&middot;</span>See also: <a href="#prompt">Prompt</a>, <a href="#ai-agent">AI agent</a></div>
+      </div>
+
+      <div class="gl-term" id="context-window">
+        <h2>Context window</h2>
+        <p class="gl-def">The amount of text an AI can hold in mind at once &mdash; your conversation, anything you&rsquo;ve pasted in, and its own replies so far. Go past it and the earliest material drops off, and the AI can forget what was said or shared at the start. Bigger models can hold more, but every one has a limit.</p>
+        <p class="gl-eg"><span class="tag">Example</span> Paste one long contract and the AI can discuss all of it; paste a dozen and it may lose track of the first before you get to the last.</p>
+        <div class="gl-more">See also: <a href="#token">Token</a>, <a href="#llm">LLM</a></div>
+      </div>
+
+      <div class="gl-term" id="fine-tuning">
+        <h2>Fine-tuning</h2>
+        <p class="gl-def">Further training of an existing AI model on extra examples so it gets better at a specific style or task. It changes the model itself &mdash; unlike a <a href="#prompt" class="aoa-plink">prompt</a> or a <a href="#claude-skill" class="aoa-plink">skill</a>, which guide the model without altering it. It&rsquo;s usually a job for technical teams, and most businesses get what they need from good prompting and skills long before fine-tuning is worth it.</p>
+        <p class="gl-eg"><span class="tag">Example</span> A large team with a very particular writing style might fine-tune a model on past documents &mdash; but for most, a well-built skill does the job with far less effort.</p>
+        <div class="gl-more">See also: <a href="#prompt-engineering">Prompt engineering</a>, <a href="#claude-skill">Claude skill</a></div>
+      </div>
+
+      <div class="gl-term" id="hallucination">
+        <h2>Hallucination</h2>
+        <p class="gl-def">When AI states something that sounds confident and plausible but is actually wrong or made up. It&rsquo;s a known, common failure mode &mdash; the AI isn&rsquo;t lying, it&rsquo;s predicting likely-sounding text &mdash; and it&rsquo;s the main reason you always check important output before relying on it. &ldquo;Confident but wrong&rdquo; is the thing to watch for.</p>
+        <p class="gl-eg"><span class="tag">Example</span> Asked about a rule it&rsquo;s unsure of, an AI might invent an official-sounding clause that doesn&rsquo;t exist &mdash; stated with complete confidence.</p>
+        <div class="gl-more">See also: <a href="#llm">LLM</a>, <a href="#rag">RAG</a></div>
+      </div>
+
+      <div class="gl-term" id="llm">
+        <h2>LLM <span class="abbr">(large language model)</span></h2>
+        <p class="gl-def">The kind of AI behind assistants like Claude and ChatGPT. It&rsquo;s trained on huge amounts of text to predict likely words, and that ability to predict is what lets it write, summarise, answer questions and hold a conversation in natural language. If a chatbot is the app you talk to, the LLM is the engine under the bonnet.</p>
+        <p class="gl-eg"><span class="tag">Example</span> When you ask an assistant to summarise a report, it&rsquo;s an LLM doing the reading and writing behind the scenes.</p>
+        <div class="gl-more">See also: <a href="#token">Token</a>, <a href="#context-window">Context window</a>, <a href="#hallucination">Hallucination</a></div>
+      </div>
+
+      <div class="gl-term" id="mcp">
+        <h2>MCP <span class="abbr">(Model Context Protocol)</span></h2>
+        <p class="gl-def">An open standard, introduced by Anthropic, for connecting AI assistants to outside tools and data sources in a consistent way &mdash; your files, a calendar, a business system. Think of it as a common plug: instead of a custom connection for every tool, MCP gives them a shared way to talk, so AI can safely reach the things it needs.</p>
+        <p class="gl-eg"><span class="tag">Example</span> Through an MCP connection, an assistant could look up the right document from your files before answering a staff question, rather than guessing.</p>
+        <div class="gl-more">See also: <a href="#ai-agent">AI agent</a>, <a href="#rag">RAG</a></div>
+      </div>
+
+      <div class="gl-term" id="multimodal">
+        <h2>Multimodal</h2>
+        <p class="gl-def">AI that can work with more than just text &mdash; images, audio, and sometimes documents or video &mdash; not only read and write words. It means you can show the AI something, not just describe it.</p>
+        <p class="gl-eg"><span class="tag">Example</span> Photographing a damaged part and asking the AI what it is and whether it&rsquo;s the sort of thing you&rsquo;d usually replace.</p>
+        <div class="gl-more">See also: <a href="#llm">LLM</a>, <a href="#prompt">Prompt</a></div>
+      </div>
+
+      <div class="gl-term" id="orchestrator-agent">
+        <h2>Orchestrator agent</h2>
+        <p class="gl-def">An <a href="#ai-agent" class="aoa-plink">AI agent</a> whose job is to coordinate other agents or steps &mdash; breaking a big goal into parts, handing each to the right place, and pulling the results back together. If several agents each handle a piece of a job, the orchestrator is the one keeping the whole thing on track. The project manager of a multi-agent setup.</p>
+        <p class="gl-eg"><span class="tag">Example</span> For &ldquo;prepare this month&rsquo;s client report&rdquo;, an orchestrator might send one agent to gather figures, another to draft the summary, then assemble the result.</p>
+        <div class="gl-more">See also: <a href="#ai-agent">AI agent</a>, <a href="#agentic-ai">Agentic AI</a></div>
+      </div>
+
+      <div class="gl-term" id="prompt">
+        <h2>Prompt</h2>
+        <p class="gl-def">The instruction or question you give an AI. Everything you type to get a response is a prompt &mdash; and the clearer and more specific it is, the better the result. A vague prompt gets a vague answer; a prompt with context, examples and clear limits gets something you can actually use.</p>
+        <p class="gl-eg"><span class="tag">Example</span> &ldquo;Rewrite this quote email to be friendlier and under 120 words, keeping the price and the two dates&rdquo; is a far better prompt than &ldquo;fix this email&rdquo;.</p>
+        <div class="gl-more">See also: <a href="#prompt-engineering">Prompt engineering</a>, <a href="#claude-skill">Claude skill</a></div>
+      </div>
+
+      <div class="gl-term" id="prompt-engineering">
+        <h2>Prompt engineering</h2>
+        <p class="gl-def">The skill of writing clear, well-structured <a href="#prompt" class="aoa-plink">prompts</a> to get reliable results &mdash; giving the AI context, examples and limits instead of a vague one-liner. Despite the name, it&rsquo;s less &ldquo;engineering&rdquo; and more learning to brief well: the same clarity you&rsquo;d give a capable new staff member so they get it right the first time.</p>
+        <p class="gl-eg"><span class="tag">Example</span> Adding &ldquo;here are two past examples of the tone I want, and don&rsquo;t mention pricing&rdquo; to a request is prompt engineering in action.</p>
+        <div class="gl-more">See also: <a href="#prompt">Prompt</a>, <a href="#claude-skill">Claude skill</a></div>
+      </div>
+
+      <div class="gl-term" id="rag">
+        <h2>RAG <span class="abbr">(retrieval-augmented generation)</span></h2>
+        <p class="gl-def">A method where the AI looks up relevant information from your own documents or a database and uses it to answer, instead of relying only on what it learned in training. It&rsquo;s how you get answers grounded in your business&rsquo;s actual content &mdash; and it helps reduce <a href="#hallucination" class="aoa-plink">hallucination</a>, because the AI is working from real source material rather than memory.</p>
+        <p class="gl-eg"><span class="tag">Example</span> A staff chatbot that answers &ldquo;how much leave do I have to give?&rdquo; by pulling the exact wording from your own policy handbook.</p>
+        <div class="gl-more">See also: <a href="#hallucination">Hallucination</a>, <a href="#mcp">MCP</a></div>
+      </div>
+
+      <div class="gl-term" id="token">
+        <h2>Token</h2>
+        <p class="gl-def">The small chunks of text an AI reads and generates &mdash; roughly a word or a piece of a word. Models break text into tokens to process it, and usage and limits (including the <a href="#context-window" class="aoa-plink">context window</a> and, on paid plans, cost) are often measured in tokens. As a rough guide, a token tends to be a bit shorter than an average English word.</p>
+        <p class="gl-eg"><span class="tag">Example</span> A short email might be a few hundred tokens; a long report, many thousands &mdash; which is why very long documents can bump into limits.</p>
+        <div class="gl-more">See also: <a href="#context-window">Context window</a>, <a href="#llm">LLM</a></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div style="background:#0B1220;border-radius:22px;padding:36px 32px;color:#fff;margin:36px 0 0">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; Beyond the definitions</div>
+      <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Learn to actually use this, on your own tasks</h2>
+      <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">Knowing the words is a start &mdash; our <a href="/programs" style="color:#fff;font-weight:600;text-decoration:underline">AI Training &amp; Enablement program</a> takes non-technical Australian teams from the vocabulary to working AI builds on the jobs they do every day.</p>
+      <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:700;color:#0B1220;background:#fff;padding:13px 24px;border-radius:14px">Book a call <span style="font-size:16px">&rarr;</span></a>
+    </div>
+
+    <div style="margin:40px 0 0"><a href="/resources" style="display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:14px;font-weight:600;color:#5A6473"><span style="font-size:16px">&larr;</span> All resources</a></div>
+  </main>
+
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA;margin-top:72px">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 28px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px" class="bio-footgrid">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px"><span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block" width="2000" height="2000"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span></a>
+        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses.</p>
+      </div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/programs" style="text-decoration:none;color:inherit">AI Training &amp; Enablement</a><a href="/bpo-program" style="text-decoration:none;color:inherit">BPO AI Program</a><a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/resources" style="text-decoration:none;color:inherit">Resources</a><a href="/about" style="text-decoration:none;color:inherit">About</a><a href="/#faqs" style="text-decoration:none;color:inherit">FAQs</a><a href="/terms" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="mailto:adonai@adongroup.com.au" style="text-decoration:none;color:inherit">adonai@adongroup.com.au</a><span>Australia-wide delivery</span></div></div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px"><span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI. All rights reserved.</span><a href="/terms" style="text-decoration:none;color:#0B1220;font-weight:700;font-size:13px">Terms of Use</a></div>
+  </footer>
+</body>
+</html>
