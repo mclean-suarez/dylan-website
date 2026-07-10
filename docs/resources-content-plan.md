@@ -39,3 +39,33 @@ Status: **topics locked, not yet authored.** SERP-grounded (seo-cluster, WebSear
 - Spoke ↔ spoke: #4↔#5, #4↔#1, #6↔#4, #8↔#4/#6, #3↔#7, #3↔#5, #1↔#2.
 - To core pages (contextual, near close, once): Explainers → `/programs`; Comparisons → `/programs` + `/ongoing-support`; #2 → both.
 - Every spoke must have ≥3 incoming links (no orphans).
+
+---
+
+# Beyond articles — "build soon" list
+
+Approved 2026-07-10, **not yet built.** Same build spec as articles (clean static HTML, matches design, schema, author bylines → bios where relevant, internal links, CTAs, AU English, no fabricated data). Media-based repurposing (webinar/podcast recordings, transcripts, video) is **excluded for now** — that content doesn't exist yet.
+
+## 1. Interactive tools — client-side only, NO LLM connection
+Pure vanilla JS (fits the de-runtimed static approach). Strong link/engagement magnets; each ends in a soft CTA to `/programs`.
+- **AI Training ROI Calculator** — `/tools/ai-roi-calculator`. Inputs: team size, avg hourly cost, hours/week on automatable tasks, expected time-saved %. Output: hours + $ reclaimed per month/year (+ optional payback framing). All arithmetic in-browser. Schema: `WebApplication`. Guardrail: label outputs as estimates, no invented benchmarks.
+- **AI Readiness Quiz** — `/tools/ai-readiness-quiz`. ~8–10 multiple-choice questions → readiness tier + tailored next steps. Client-side scoring, no backend. Optional soft email capture. Schema: `Quiz`/`WebApplication`.
+
+## 2. Downloadable resources (lead magnets)
+Hub page `/resources/toolkit` (or `/downloads`) listing them; PDFs in `/assets/downloads/`. Recommend **ungated** (or soft gate) for SEO. Directly aligned with the product (reusable prompt packs).
+- Role-based prompt packs: "AI prompts for [finance / admin / marketing / operations / customer service]".
+- Checklists: "AI rollout checklist for SMEs", "Is this task safe to hand to AI?".
+- Playbook: "Getting your team started with AI in week one".
+- Schema per item: `DigitalDocument`/`Article`. Content must be genuinely useful + accurate (no filler).
+
+## 3. Glossary / knowledge base
+`/resources/glossary` — short plain-English definition entries, each with an AU SME example. **AEO gold** (`DefinedTerm` / `DefinedTermSet` schema). Distinct from the explainer articles: glossary = short entries, articles = deep dives → cross-link (glossary term ↔ its deep article).
+- Seed terms: AI agent, agentic AI, LLM, prompt, prompt engineering, RAG, context window, token, hallucination, multimodal, AI automation, AI workflow, Claude skill, MCP, orchestrator agent, fine-tuning.
+- Structure decision at build time: one page w/ anchors vs one page per term (per-term pages = more indexable, more internal-link surface).
+
+## 4. Original research / data report
+`/resources/state-of-ai-australian-smes-2026` (+ downloadable PDF + a short shareable summary for backlinks). **Biggest authority + backlink play**; heavily cited by AI/press. `Dataset` + `Report` schema.
+- **Hard dependency: real data.** Do NOT fabricate stats. Data sources to decide: (a) a small survey of the webinar audience / newsletter list, or (b) anonymised/aggregated program outcomes (e.g. hours saved, builds deployed per learner). Blocked until a data source is chosen.
+
+## Suggested sequence
+Articles Batch 1 → Glossary (fast, reuses article research) → ROI Calculator → Downloadables (prompt packs) → AI Readiness Quiz → Original research (once data source exists).
