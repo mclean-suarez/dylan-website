@@ -14,6 +14,15 @@
 - [Ad On Group](https://www.adon-ai.com.au/ad-on-group): The parent company — Australian-owned since 2008, with divisions across workforce, AI, digital and hold. Partners include Anthropic, Google, Meta and Telstra.
 - [Terms & Conditions](https://www.adon-ai.com.au/terms)
 
+## Resources (plain-English AI guides)
+
+- [Resources hub](https://www.adon-ai.com.au/resources): Plain-English guides to AI for Australian small businesses, written by Certified Claude Experts.
+- [AI Automation vs AI Workflow](https://www.adon-ai.com.au/resources/ai-automation-vs-ai-workflow): Automation follows fixed rules; a workflow lets AI make judgement calls — the difference and when to use each, with AU SME examples.
+- [AI Training vs Learning AI Yourself](https://www.adon-ai.com.au/resources/ai-training-vs-learning-ai-yourself): An honest look at the trade-offs — cost, speed, consistency and accountability — of self-teaching vs structured training.
+- [Claude vs ChatGPT for Australian Business](https://www.adon-ai.com.au/resources/claude-vs-chatgpt-for-business): A fair, tool-agnostic comparison by real task types, with a simple way to choose.
+- [What Is an AI Agent? (+ Agentic AI)](https://www.adon-ai.com.au/resources/what-is-an-ai-agent): An AI agent is given a goal and works out the steps to reach it — plain English, with an AU small-business example.
+- [What Are Claude Skills?](https://www.adon-ai.com.au/resources/what-are-claude-skills): Reusable packages of instructions that teach Claude to do a specific task your way — what they are and why they matter.
+
 ## Full reference
 
 - [Full company & program reference for AI](https://www.adon-ai.com.au/llms-full.txt): A single, ready-to-cite document covering the programs, structure, outcomes and common questions in detail.

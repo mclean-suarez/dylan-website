@@ -50,6 +50,16 @@ A: Yes — lifetime academy access plus optional ongoing webinars, podcasts, mas
 Q: Can I cancel?
 A: Yes, any time.
 
+## Resources (plain-English AI guides)
+
+Tool-agnostic explainers and comparisons for Australian SMEs, authored by the team's Certified Claude Experts (Dylan Bailey, Beau Robards). Hub: https://www.adon-ai.com.au/resources
+
+- AI Automation vs AI Workflow (https://www.adon-ai.com.au/resources/ai-automation-vs-ai-workflow): AI automation follows fixed rules; an AI workflow lets AI make judgement calls. Covers the plain-English difference and when to use each, with Australian small-business examples.
+- AI Training vs Learning AI Yourself (https://www.adon-ai.com.au/resources/ai-training-vs-learning-ai-yourself): An honest comparison of self-teaching versus structured training — weighing cost, speed, consistency and accountability for Australian small businesses.
+- Claude vs ChatGPT for Australian Business (https://www.adon-ai.com.au/resources/claude-vs-chatgpt-for-business): A fair, tool-agnostic comparison by real task types. Both are highly capable; the right one depends on the work.
+- What Is an AI Agent? (+ Agentic AI) (https://www.adon-ai.com.au/resources/what-is-an-ai-agent): An AI agent is given a goal and works out the steps to reach it — choosing actions and using tools, not just answering. Plain English, with an Australian small-business example.
+- What Are Claude Skills? (https://www.adon-ai.com.au/resources/what-are-claude-skills): Claude Skills are reusable packages of instructions that teach Claude to do a specific task your way, so you don't re-explain it every time. What they are and why they matter, with an Australian small-business example.
+
 ## Company
 
 Ad On AI is a division of Ad On Group, an Australian business services provider operating since 2008, with divisions across workforce, AI, digital and hold. Ad On AI's team includes Certified Claude Experts. The enablement program was first built to train Ad On Group's own staff, then offered externally after the internal version proved effective.
