@@ -3,10 +3,13 @@
 > Ad On AI runs AI training and enablement programs for Australian small-to-medium businesses (SMEs). The flagship program is 3 months, self-paced (~2 hours/week), and takes non-technical staff from their first prompts to reusable skills, automations and deployed AI agents that do real chunks of their day-to-day job. Delivered by Certified Claude Experts. Ad On AI is a division of Ad On Group, an Australian-owned company operating since 2008. Skills taught are tool-agnostic and transfer to ChatGPT, Copilot, Gemini and Claude.
 
 - Website: https://www.adon-ai.com.au
-- Contact: info@adongroup.com.au
+- Contact: info@adongroup.com.au · (07) 5586 1400
+- Address: 1/44 Township Drive, Burleigh Heads QLD 4219, Australia
 - Parent company: Ad On Group (Australian-owned since 2008)
 - ABN: 54 808 983 598
 - Market: Australia
+- Key people: Dylan Bailey (Facilitator, Certified Claude Expert), Beau Robards (Facilitator, Certified Claude Expert)
+- Monthly free webinars on the 1st of each month (online), covering practical AI for Australian SMEs
 
 ## AI Training & Enablement Program (flagship)
 

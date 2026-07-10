@@ -24,5 +24,6 @@
 - Format: self-paced modules on a custom AI-enabled training platform, plus webinars and async support. No live in-person or screen-share sessions.
 - Duration: 3 months, around 2 hours per week.
 - Outcomes per learner: reusable prompt packs, custom skills, multimodal tasks, end-to-end workflows, deployed AI agents and an agentic orchestrator.
-- Contact: info@adongroup.com.au
-- ABN: 54 808 983 598
+- Contact: info@adongroup.com.au · (07) 5586 1400
+- Address: 1/44 Township Drive, Burleigh Heads QLD 4219, Australia
+- ABN: 54 808 983 598 (Ad On AI is a division of Ad On Group)
