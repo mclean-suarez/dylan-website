@@ -32,7 +32,12 @@
   body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.18), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.15), transparent 52%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; min-height: 100vh; }
   h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 800; }
   a { color: #2F6FED; } a:hover { color: #1B54C4; }
+  .bio-certgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .bio-cert img { transition: transform .2s ease, box-shadow .2s ease; }
+  .bio-cert:hover img { transform: translateY(-3px); box-shadow: 0 20px 40px -20px rgba(11,18,32,0.34); }
+  @media (max-width: 860px) { .bio-certgrid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 760px) { .bio-navlinks > div:first-of-type, .bio-navlinks > span { display: none !important; } .bio-hero { grid-template-columns: 1fr !important; } .bio-footgrid { grid-template-columns: 1fr 1fr !important; } }
+  @media (max-width: 520px) { .bio-certgrid { grid-template-columns: 1fr; } }
 </style>
 <script type="application/ld+json">
 {
@@ -68,11 +73,71 @@
         "Prompt engineering",
         "AI training for business"
       ],
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "certification",
-        "name": "Certified Claude Expert"
-      }
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Claude 101",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com"
+          },
+          "url": "https://www.adon-ai.com.au/assets/certs/beau-claude-101.pdf",
+          "identifier": "ei9zawcy6zdt",
+          "dateCreated": "2026-05-10"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Introduction to Agent Skills",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com"
+          },
+          "url": "https://www.adon-ai.com.au/assets/certs/beau-agent-skills.pdf",
+          "dateCreated": "2026-05-10"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Claude with the Anthropic API",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com"
+          },
+          "url": "https://verify.skilljar.com/c/n62y3wsca8nc",
+          "identifier": "n62y3wsca8nc",
+          "dateCreated": "2026-05-17"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Claude Code in Action",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com"
+          },
+          "url": "https://verify.skilljar.com/c/36o5os24aibf",
+          "identifier": "36o5os24aibf"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Introduction to Model Context Protocol",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com"
+          },
+          "url": "https://verify.skilljar.com/c/f7pjhnffpx66",
+          "identifier": "f7pjhnffpx66",
+          "dateCreated": "2026-05-17"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -129,10 +194,9 @@
       <div>
         <div style="aspect-ratio:1/1;border-radius:22px;overflow:hidden;background:#E1DDDB;box-shadow:0 26px 54px -26px rgba(11,18,32,0.42);border:1px solid rgba(11,18,32,0.06)"><img src="assets/team-beau.png" alt="Beau Robards" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block"></div>
         <!-- Claude certification card -->
-        <div style="margin-top:18px;background:rgba(255,255,255,0.7);backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 34px -20px rgba(11,18,32,0.24);border-radius:16px;padding:16px 18px">
-          <div style="display:flex;align-items:center;gap:10px"><span style="flex:none;width:38px;height:38px;border-radius:10px;background:rgba(47,111,237,0.08);border:1px solid rgba(47,111,237,0.16);display:inline-flex;align-items:center;justify-content:center"><img src="assets/logo-claude.svg" alt="Claude" style="width:20px;height:20px;object-fit:contain"></span><div><div style="font-size:14.5px;font-weight:800;color:#0B1220;letter-spacing:-0.01em">Certified Claude Expert</div><div style="font-size:12px;color:#6B7480">Certified in building with Claude</div></div></div>
-          <!-- To show an official badge image or verification link, add it here. -->
-        </div>
+        <a href="#certifications" style="text-decoration:none;color:inherit;display:block;margin-top:18px;background:rgba(255,255,255,0.7);backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 34px -20px rgba(11,18,32,0.24);border-radius:16px;padding:16px 18px">
+          <div style="display:flex;align-items:center;gap:10px"><span style="flex:none;width:38px;height:38px;border-radius:10px;background:rgba(47,111,237,0.08);border:1px solid rgba(47,111,237,0.16);display:inline-flex;align-items:center;justify-content:center"><img src="assets/logo-claude.svg" alt="Claude" style="width:20px;height:20px;object-fit:contain"></span><div><div style="font-size:14.5px;font-weight:800;color:#0B1220;letter-spacing:-0.01em">Certified Claude Expert</div><div style="font-size:12px;color:#6B7480">5 verified Anthropic certifications &darr;</div></div></div>
+        </a>
       </div>
 
       <div>
@@ -144,6 +208,58 @@
         <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:700;color:#fff;background:#0B1220;padding:13px 24px;border-radius:14px;margin-top:12px">Book a call <span style="font-size:16px">&rarr;</span></a>
       </div>
     </div>
+
+  <!-- ======================= CERTIFICATIONS ======================= -->
+  <section id="certifications" style="max-width:960px;margin:0 auto;padding:64px 28px 8px">
+    <div style="margin-bottom:28px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; Certifications</span>
+      <h2 style="font-size:clamp(22px,2.6vw,32px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:12px 0 6px;color:#0B1220">Verified Anthropic certifications</h2>
+      <p style="font-size:15px;color:#5A6473;margin:0;max-width:560px">Certificates of completion issued by Anthropic. Where a public verification link is available, it&rsquo;s linked directly &mdash; the rest open the certificate.</p>
+    </div>
+    <div class="bio-certgrid">
+      <div class="bio-cert">
+        <a href="/assets/certs/beau-claude-101.pdf" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
+          <img loading="lazy" decoding="async" src="assets/certs/beau-claude-101.png" alt="Anthropic certificate: Claude 101 — Beau" style="width:100%;height:auto;display:block;border-radius:12px;border:1px solid rgba(11,18,32,0.08);box-shadow:0 12px 30px -20px rgba(11,18,32,0.24)">
+          <div style="margin-top:11px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:15px;letter-spacing:-0.01em;color:#0B1220">Claude 101</div>
+          <div style="font-size:12.5px;color:#6B7480;margin-top:2px">Anthropic &middot; 10 May 2026</div>
+          <span style="display:inline-block;margin-top:6px;font-size:12.5px;font-weight:600;color:#2F6FED">View certificate &nearr;</span>
+        </a>
+      </div>
+      <div class="bio-cert">
+        <a href="/assets/certs/beau-agent-skills.pdf" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
+          <img loading="lazy" decoding="async" src="assets/certs/beau-agent-skills.png" alt="Anthropic certificate: Introduction to Agent Skills — Beau" style="width:100%;height:auto;display:block;border-radius:12px;border:1px solid rgba(11,18,32,0.08);box-shadow:0 12px 30px -20px rgba(11,18,32,0.24)">
+          <div style="margin-top:11px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:15px;letter-spacing:-0.01em;color:#0B1220">Introduction to Agent Skills</div>
+          <div style="font-size:12.5px;color:#6B7480;margin-top:2px">Anthropic &middot; 10 May 2026</div>
+          <span style="display:inline-block;margin-top:6px;font-size:12.5px;font-weight:600;color:#2F6FED">View certificate &nearr;</span>
+        </a>
+      </div>
+      <div class="bio-cert">
+        <a href="https://verify.skilljar.com/c/n62y3wsca8nc" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
+          <img loading="lazy" decoding="async" src="assets/certs/beau-claude-api.png" alt="Anthropic certificate: Claude with the Anthropic API — Beau" style="width:100%;height:auto;display:block;border-radius:12px;border:1px solid rgba(11,18,32,0.08);box-shadow:0 12px 30px -20px rgba(11,18,32,0.24)">
+          <div style="margin-top:11px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:15px;letter-spacing:-0.01em;color:#0B1220">Claude with the Anthropic API</div>
+          <div style="font-size:12.5px;color:#6B7480;margin-top:2px">Anthropic &middot; 17 May 2026</div>
+          <span style="display:inline-block;margin-top:6px;font-size:12.5px;font-weight:600;color:#2F6FED">Verify &nearr;</span>
+        </a>
+      </div>
+      <div class="bio-cert">
+        <a href="https://verify.skilljar.com/c/36o5os24aibf" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
+          <img loading="lazy" decoding="async" src="assets/certs/beau-claude-code.png" alt="Anthropic certificate: Claude Code in Action — Beau" style="width:100%;height:auto;display:block;border-radius:12px;border:1px solid rgba(11,18,32,0.08);box-shadow:0 12px 30px -20px rgba(11,18,32,0.24)">
+          <div style="margin-top:11px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:15px;letter-spacing:-0.01em;color:#0B1220">Claude Code in Action</div>
+          <div style="font-size:12.5px;color:#6B7480;margin-top:2px">Anthropic</div>
+          <span style="display:inline-block;margin-top:6px;font-size:12.5px;font-weight:600;color:#2F6FED">Verify &nearr;</span>
+        </a>
+      </div>
+      <div class="bio-cert">
+        <a href="https://verify.skilljar.com/c/f7pjhnffpx66" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
+          <img loading="lazy" decoding="async" src="assets/certs/beau-mcp.png" alt="Anthropic certificate: Introduction to Model Context Protocol — Beau" style="width:100%;height:auto;display:block;border-radius:12px;border:1px solid rgba(11,18,32,0.08);box-shadow:0 12px 30px -20px rgba(11,18,32,0.24)">
+          <div style="margin-top:11px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:15px;letter-spacing:-0.01em;color:#0B1220">Introduction to Model Context Protocol</div>
+          <div style="font-size:12.5px;color:#6B7480;margin-top:2px">Anthropic &middot; 17 May 2026</div>
+          <span style="display:inline-block;margin-top:6px;font-size:12.5px;font-weight:600;color:#2F6FED">Verify &nearr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   </main>
 
   <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA;margin-top:80px">
