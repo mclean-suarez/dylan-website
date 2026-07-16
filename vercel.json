@@ -11,6 +11,7 @@
     },
     { "source": "/Ad On AI.dc.html", "destination": "/", "permanent": true },
     { "source": "/Ad%20On%20AI.dc.html", "destination": "/", "permanent": true },
+    { "source": "/program", "destination": "/programs", "permanent": true },
     { "source": "/Programs.dc.html", "destination": "/programs", "permanent": true },
     { "source": "/BPO AI Program.dc.html", "destination": "/bpo-program", "permanent": true },
     { "source": "/BPO%20AI%20Program.dc.html", "destination": "/bpo-program", "permanent": true },
@@ -22,6 +23,12 @@
     { "source": "/Terms.dc.html", "destination": "/terms", "permanent": true }
   ],
   "headers": [
+    {
+      "source": "/program-pricing",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    },
     {
       "source": "/assets/(.*)",
       "headers": [

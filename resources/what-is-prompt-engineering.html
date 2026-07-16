@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is Prompt Engineering? A Plain-English Guide for Business | Ad On AI</title>
+<meta name="description" content="Prompt engineering is writing clear, well-structured instructions so AI produces useful, reliable work. What it means in plain English — and why your non-technical staff can learn it.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.adon-ai.com.au/resources/what-is-prompt-engineering">
+<meta name="theme-color" content="#2F6FED">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ad On AI">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="What Is Prompt Engineering? A Plain-English Guide for Business">
+<meta property="og:description" content="Prompt engineering is writing clear instructions so AI produces useful, reliable work. Why your non-technical staff can learn it.">
+<meta property="og:url" content="https://www.adon-ai.com.au/resources/what-is-prompt-engineering">
+<meta property="og:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Is Prompt Engineering? A Plain-English Guide for Business">
+<meta name="twitter:description" content="Prompt engineering is writing clear instructions so AI produces useful work. Why your non-technical staff can learn it.">
+<meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/intertight.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrainsmono-500.woff2" crossorigin>
+<style>@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500 800;font-display:swap;src:url('/assets/fonts/intertight.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrainsmono-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.18), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.15), transparent 52%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; min-height: 100vh; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 800; }
+  a { color: #2F6FED; } a:hover { color: #1B54C4; }
+  .aoa-prose { font-size: 17px; line-height: 1.72; color: #2B333F; }
+  .aoa-prose p { margin: 0 0 20px; }
+  .aoa-prose h2 { font-size: clamp(23px,2.6vw,30px); line-height: 1.14; margin: 44px 0 14px; color: #0B1220; }
+  .aoa-prose h3 { font-size: 20px; line-height: 1.2; margin: 30px 0 10px; color: #0B1220; letter-spacing: -0.02em; }
+  .aoa-prose ul { margin: 0 0 20px; padding-left: 22px; }
+  .aoa-prose li { margin: 0 0 9px; }
+  .aoa-prose strong { color: #0B1220; }
+  .aoa-plink { color:#2F6FED; font-weight:600; text-decoration:none; }
+  .aoa-plink:hover { text-decoration:underline; }
+  .aoa-answer { background: rgba(47,111,237,0.06); border: 1px solid rgba(47,111,237,0.18); border-radius: 16px; padding: 22px 24px; margin: 0 0 32px; }
+  .aoa-answer .lbl { font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:#2F6FED; }
+  .aoa-answer p { font-size: 17.5px; line-height: 1.6; color: #1B2430; margin: 8px 0 0; }
+  .aoa-example { background: rgba(255,255,255,0.62); border: 1px solid rgba(11,18,32,0.08); border-radius: 14px; padding: 4px 20px; margin: 0 0 26px; }
+  .aoa-faq{background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;margin:0 0 12px;overflow:hidden}
+  .aoa-faq>summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Inter Tight','Helvetica Neue',sans-serif;font-weight:600;font-size:16.5px;letter-spacing:-0.02em;color:#0B1220}
+  .aoa-faq>summary::-webkit-details-marker{display:none}
+  .aoa-faq>summary svg{flex:none;transition:transform .22s ease;color:#2F6FED}
+  .aoa-faq[open]>summary svg{transform:rotate(45deg)}
+  .aoa-faq>div{padding:0 22px 20px;font-size:15px;line-height:1.62;color:#5A6473}
+  .aoa-related{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .aoa-relcard{display:block;text-decoration:none;background:rgba(255,255,255,0.66);border:1px solid rgba(11,18,32,0.07);border-radius:14px;padding:18px 20px;transition:transform .18s ease, box-shadow .18s ease}
+  .aoa-relcard:hover{transform:translateY(-2px);box-shadow:0 18px 38px -24px rgba(11,18,32,0.3)}
+  .aoa-cta{background:#0B1220;border-radius:22px;padding:34px 32px;color:#fff}
+  @media (max-width: 640px){ .aoa-related{grid-template-columns:1fr} }
+  @media (max-width: 760px) { .bio-navlinks > div:first-of-type, .bio-navlinks > span { display: none !important; } .bio-footgrid { grid-template-columns: 1fr 1fr !important; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.adon-ai.com.au/resources/what-is-prompt-engineering#article",
+      "headline": "What Is Prompt Engineering? A Plain-English Guide for Business",
+      "description": "Prompt engineering is writing clear, well-structured instructions so AI produces useful, reliable work. What it means in plain English, and why your non-technical staff can learn it.",
+      "datePublished": "2026-07-15",
+      "dateModified": "2026-07-15",
+      "inLanguage": "en-AU",
+      "image": "https://www.adon-ai.com.au/assets/og-image.png",
+      "author": { "@id": "https://www.adon-ai.com.au/beau-robards#person" },
+      "publisher": { "@id": "https://www.adon-ai.com.au/#organization" },
+      "mainEntityOfPage": "https://www.adon-ai.com.au/resources/what-is-prompt-engineering",
+      "isPartOf": { "@id": "https://www.adon-ai.com.au/#website" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.adon-ai.com.au/beau-robards#person",
+      "name": "Beau Robards",
+      "url": "https://www.adon-ai.com.au/beau-robards",
+      "jobTitle": "Facilitator",
+      "worksFor": { "@id": "https://www.adon-ai.com.au/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.adon-ai.com.au/resources/what-is-prompt-engineering#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is prompt engineering in simple terms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prompt engineering is the skill of writing clear, well-structured instructions so an AI tool gives you useful, reliable output. A prompt is just what you type in; prompt engineering is doing it deliberately — giving the AI the context, the role, the task and the format you want — so you get work you can trust instead of a generic answer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is prompt engineering just for developers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Despite the word 'engineering', it involves no coding. It is a communication skill — being clear about what you want — and non-technical staff in finance, admin, marketing and operations learn it quickly. The people who get the most out of AI are usually the ones who write the clearest instructions, not the most technical ones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes a good AI prompt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A good prompt usually gives the AI four things: context (the background it needs), a role (who it should act as), a clear task (exactly what to produce), and a format (how the answer should be structured). Adding a short example of what 'good' looks like helps even more. The clearer and more specific you are, the better the result."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you learn prompt engineering without a technical background?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It is one of the fastest AI skills for a non-technical person to pick up because it is really about clear thinking and clear writing. Most people see a noticeable jump in the quality of their AI results within their first few structured prompts, and the skill transfers across ChatGPT, Claude, Copilot and Gemini."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a reusable prompt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A reusable prompt is a well-written instruction you save and use again for a recurring task — like a monthly report summary or a customer-reply draft — changing only the details each time. Instead of re-explaining the job to the AI every time, you paste your saved prompt, drop in this week's information, and get a consistent result. Building a small library of these is where a lot of the time saving comes from."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.adon-ai.com.au/resources/what-is-prompt-engineering#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.adon-ai.com.au/" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.adon-ai.com.au/resources" },
+        { "@type": "ListItem", "position": 3, "name": "What Is Prompt Engineering?", "item": "https://www.adon-ai.com.au/resources/what-is-prompt-engineering" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div style="max-width:1120px;margin:0 auto;background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="/assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+      <div class="bio-navlinks" style="display:flex;align-items:center;gap:28px">
+        <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
+        <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
+          <a href="/ad-on-group" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <a href="/programs" style="text-decoration:none;color:inherit">Programs</a>
+          <a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="/about" style="text-decoration:none;color:inherit">About</a>
+        </div>
+        <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px">Book a call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="max-width:760px;margin:0 auto;padding:40px 28px 0">
+    <nav aria-label="Breadcrumb" style="font-size:13.5px;color:#7C8696;margin-bottom:22px">
+      <a href="/" style="color:#7C8696;text-decoration:none">Home</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <a href="/resources" style="color:#7C8696;text-decoration:none">Resources</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <span style="color:#3A434F">What Is Prompt Engineering?</span>
+    </nav>
+
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; Explainer</span>
+    <h1 style="font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-0.04em;font-weight:800;margin:12px 0 18px;color:#0B1220">What is prompt engineering? (and do your staff need it?)</h1>
+
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:26px;border-bottom:1px solid rgba(11,18,32,0.08)">
+      <img src="/assets/team-beau.png" alt="Beau Robards" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%" width="88" height="88">
+      <div style="font-size:14px;line-height:1.4;color:#5A6473">
+        <div>By <a href="/beau-robards" style="color:#0B1220;font-weight:700;text-decoration:none">Beau Robards</a>, Certified Claude Expert</div>
+        <div style="color:#8A93A1">Updated 15 July 2026 &middot; 6 min read</div>
+      </div>
+    </div>
+
+    <article class="aoa-prose">
+      <div class="aoa-answer">
+        <span class="lbl">The short answer</span>
+        <p><strong>Prompt engineering</strong> is the skill of writing clear, well-structured instructions so an AI tool gives you useful, reliable work &mdash; not a vague, generic answer. A &ldquo;prompt&rdquo; is just what you type in; prompt <em>engineering</em> is doing it deliberately. Despite the name, <strong>it involves no coding</strong> &mdash; it&rsquo;s a communication skill, and it&rsquo;s one of the fastest things a non-technical person can learn.</p>
+      </div>
+
+      <p>&ldquo;Prompt engineering&rdquo; sounds like something only a developer would do. It isn&rsquo;t. If you can explain a task clearly to a new team member, you already have the raw skill &mdash; you just need to know what the AI needs from you. Here&rsquo;s what the term actually means, and whether it&rsquo;s worth your staff learning.</p>
+
+      <h2>It&rsquo;s not coding &mdash; it&rsquo;s clear instructions</h2>
+      <p>An AI tool like ChatGPT or Claude will do almost anything you ask &mdash; but it can only work with what you give it. Type &ldquo;write me an email&rdquo; and you&rsquo;ll get something generic. Tell it who the email is for, what it&rsquo;s about, what tone to strike and what outcome you want, and you&rsquo;ll get something you could almost send as-is.</p>
+      <p>That&rsquo;s the whole of prompt engineering: <strong>being specific enough that the AI can actually help</strong>. There&rsquo;s no special syntax and no programming. It&rsquo;s closer to briefing a capable but literal assistant than to writing software.</p>
+
+      <h2>Why the same tool gives one person junk and another gold</h2>
+      <p>Two people can open the exact same AI tool and come away with completely different opinions of it &mdash; one says it&rsquo;s useless, the other says it saves them hours. Almost always, the difference isn&rsquo;t the tool. <strong>It&rsquo;s the prompt.</strong> The person getting great results is giving the AI context and direction; the frustrated one is typing a half-sentence and hoping.</p>
+      <p>This is good news, because it means the quality of your team&rsquo;s AI results is largely a <em>learnable skill</em>, not a matter of luck or which tool you bought.</p>
+
+      <h2>The parts of a prompt that actually matter</h2>
+      <p>You don&rsquo;t need a formula, but a good prompt usually gives the AI four things:</p>
+      <ul>
+        <li><strong>Context</strong> &mdash; the background it needs. <em>&ldquo;We&rsquo;re a 20-person plumbing business in Brisbane.&rdquo;</em></li>
+        <li><strong>A role</strong> &mdash; who it should act as. <em>&ldquo;Act as our office manager.&rdquo;</em></li>
+        <li><strong>A clear task</strong> &mdash; exactly what to produce. <em>&ldquo;Draft a reply to this overdue-invoice email.&rdquo;</em></li>
+        <li><strong>A format</strong> &mdash; how you want the answer. <em>&ldquo;Keep it under 120 words, friendly but firm.&rdquo;</em></li>
+      </ul>
+      <p>Add a short example of what &ldquo;good&rdquo; looks like &mdash; a past email you were happy with &mdash; and the result gets better again. The pattern is simple: <strong>the clearer and more specific you are, the less generic the output.</strong> (For a step-by-step, see <a href="/resources/how-to-write-an-ai-prompt" class="aoa-plink">how to write an AI prompt</a>.)</p>
+
+      <h2>An Australian small-business example</h2>
+      <p>Say a finance manager writes the same monthly summary of the numbers for the owner. The lazy prompt &mdash; <em>&ldquo;summarise these figures&rdquo;</em> &mdash; produces a flat list that still needs heavy editing.</p>
+      <div class="aoa-example">
+        <p>The engineered version reads more like: <em>&ldquo;You&rsquo;re writing for the owner of a small business who isn&rsquo;t across the detail. From the figures below, write a 6-line summary: what changed versus last month, anything that needs their attention, and one plain-English recommendation. Friendly, no jargon.&rdquo;</em></p>
+      </div>
+      <p>Same tool, same numbers &mdash; but the second version returns something the owner can actually read, and the finance manager saves the twenty minutes they used to spend rewriting it. Better still, they can <strong>save that instruction and reuse it every month</strong>. That&rsquo;s a reusable prompt, and it&rsquo;s where a lot of the real time saving comes from.</p>
+
+      <h2>Do your staff really need to learn it?</h2>
+      <p>If you want AI to do more than produce first-draft filler, then yes &mdash; prompt engineering is the entry skill everything else builds on. It&rsquo;s what turns AI from a novelty into a tool people actually reach for. And because the skill is about clear communication rather than any one product, it <strong>transfers across every tool</strong>: what your team learns on Claude works just as well on ChatGPT, Copilot or Gemini. (If you&rsquo;re weighing those up, see <a href="/resources/claude-vs-chatgpt-for-business" class="aoa-plink">Claude vs ChatGPT for business</a>.)</p>
+      <p>It&rsquo;s also the first rung on a longer ladder &mdash; from writing good prompts, to saving reusable ones, to building <a href="/resources/what-is-an-ai-agent" class="aoa-plink">AI agents</a> that carry out whole tasks. But it all starts with being able to ask well.</p>
+
+      <div class="aoa-cta">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; Learn it on your real work</div>
+        <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Turn clear prompts into hours back</h2>
+        <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">In our <a href="/programs" style="color:#fff;font-weight:600;text-decoration:underline">AI Training &amp; Enablement program</a>, non-technical Australian staff learn to write and save reusable prompts for their own recurring tasks &mdash; the skill that makes every other AI skill work.</p>
+        <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:700;color:#0B1220;background:#fff;padding:13px 24px;border-radius:14px">Book a call <span style="font-size:16px">&rarr;</span></a>
+      </div>
+
+      <h2 id="faqs">Frequently asked questions</h2>
+      <details class="aoa-faq">
+        <summary>What is prompt engineering in simple terms?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Prompt engineering is the skill of writing clear, well-structured instructions so an AI tool gives you useful, reliable output. A prompt is just what you type in; prompt engineering is doing it deliberately &mdash; giving the AI the context, the role, the task and the format you want &mdash; so you get work you can trust instead of a generic answer.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Is prompt engineering just for developers?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>No. Despite the word &lsquo;engineering&rsquo;, it involves no coding. It&rsquo;s a communication skill &mdash; being clear about what you want &mdash; and non-technical staff in finance, admin, marketing and operations learn it quickly. The people who get the most out of AI are usually the ones who write the clearest instructions, not the most technical ones.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>What makes a good AI prompt?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>A good prompt usually gives the AI four things: context (the background it needs), a role (who it should act as), a clear task (exactly what to produce), and a format (how the answer should be structured). Adding a short example of what &lsquo;good&rsquo; looks like helps even more. The clearer and more specific you are, the better the result.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Can you learn prompt engineering without a technical background?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Yes. It&rsquo;s one of the fastest AI skills for a non-technical person to pick up because it&rsquo;s really about clear thinking and clear writing. Most people see a noticeable jump in the quality of their AI results within their first few structured prompts, and the skill transfers across ChatGPT, Claude, Copilot and Gemini.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>What is a reusable prompt?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>A reusable prompt is a well-written instruction you save and use again for a recurring task &mdash; like a monthly report summary or a customer-reply draft &mdash; changing only the details each time. Instead of re-explaining the job to the AI every time, you paste your saved prompt, drop in this week&rsquo;s information, and get a consistent result. Building a small library of these is where a lot of the time saving comes from.</div>
+      </details>
+
+      <h2>Keep reading</h2>
+      <div class="aoa-related">
+        <a class="aoa-relcard" href="/resources/what-is-an-ai-agent">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Explainer</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">What is an AI agent?</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">The next rung up from prompting &mdash; AI that acts on a goal.</div>
+        </a>
+        <a class="aoa-relcard" href="/resources/claude-vs-chatgpt-for-business">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Comparison</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">Claude vs ChatGPT for business</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">Which tool to write those prompts in &mdash; and why it matters less than you think.</div>
+        </a>
+      </div>
+    </article>
+
+    <div style="margin:40px 0 0"><a href="/resources" style="display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:14px;font-weight:600;color:#5A6473"><span style="font-size:16px">&larr;</span> All resources</a></div>
+  </main>
+
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA;margin-top:72px">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 28px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px" class="bio-footgrid">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px"><span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block" width="2000" height="2000"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span></a>
+        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses.</p>
+      </div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/programs" style="text-decoration:none;color:inherit">AI Training &amp; Enablement</a><a href="/bpo-program" style="text-decoration:none;color:inherit">BPO AI Program</a><a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/resources" style="text-decoration:none;color:inherit">Resources</a><a href="/about" style="text-decoration:none;color:inherit">About</a><a href="/#faqs" style="text-decoration:none;color:inherit">FAQs</a><a href="/terms" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="mailto:adonai@adongroup.com.au" style="text-decoration:none;color:inherit">adonai@adongroup.com.au</a><span>Australia-wide delivery</span></div></div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px"><span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI. All rights reserved.</span><a href="/terms" style="text-decoration:none;color:#0B1220;font-weight:700;font-size:13px">Terms of Use</a></div>
+  </footer>
+</body>
+</html>

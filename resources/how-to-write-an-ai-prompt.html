@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Write an AI Prompt That Actually Works (Step by Step) | Ad On AI</title>
+<meta name="description" content="How to write a good AI prompt: give it context, a role, a clear task and a format, then add an example. A simple step-by-step that turns vague asks into reliable results — no tech skills needed.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt">
+<meta name="theme-color" content="#2F6FED">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ad On AI">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="How to Write an AI Prompt That Actually Works (Step by Step)">
+<meta property="og:description" content="Give it context, a role, a clear task and a format, then add an example. A simple step-by-step that turns vague asks into reliable results.">
+<meta property="og:url" content="https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt">
+<meta property="og:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Write an AI Prompt That Actually Works (Step by Step)">
+<meta name="twitter:description" content="Context, role, task, format, plus an example. Turn vague asks into reliable results.">
+<meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/intertight.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrainsmono-500.woff2" crossorigin>
+<style>@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500 800;font-display:swap;src:url('/assets/fonts/intertight.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrainsmono-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.18), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.15), transparent 52%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; min-height: 100vh; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 800; }
+  a { color: #2F6FED; } a:hover { color: #1B54C4; }
+  .aoa-prose { font-size: 17px; line-height: 1.72; color: #2B333F; }
+  .aoa-prose p { margin: 0 0 20px; }
+  .aoa-prose h2 { font-size: clamp(23px,2.6vw,30px); line-height: 1.14; margin: 44px 0 14px; color: #0B1220; }
+  .aoa-prose h3 { font-size: 20px; line-height: 1.2; margin: 30px 0 10px; color: #0B1220; letter-spacing: -0.02em; }
+  .aoa-prose ul, .aoa-prose ol { margin: 0 0 20px; padding-left: 22px; }
+  .aoa-prose li { margin: 0 0 9px; }
+  .aoa-prose strong { color: #0B1220; }
+  .aoa-plink { color:#2F6FED; font-weight:600; text-decoration:none; }
+  .aoa-plink:hover { text-decoration:underline; }
+  .aoa-answer { background: rgba(47,111,237,0.06); border: 1px solid rgba(47,111,237,0.18); border-radius: 16px; padding: 22px 24px; margin: 0 0 32px; }
+  .aoa-answer .lbl { font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:#2F6FED; }
+  .aoa-answer p { font-size: 17.5px; line-height: 1.6; color: #1B2430; margin: 8px 0 0; }
+  .aoa-box { background: rgba(255,255,255,0.62); border: 1px solid rgba(11,18,32,0.08); border-radius: 14px; padding: 4px 20px; margin: 0 0 22px; }
+  .aoa-box .tag { font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A93A1; display:block; margin:16px 0 -6px; }
+  .aoa-mono { font-family:'JetBrains Mono',monospace; font-size:13.5px; line-height:1.6; color:#2B333F; background:rgba(11,18,32,0.035); border-radius:10px; padding:14px 16px; margin:0 0 16px; white-space:pre-wrap; }
+  .aoa-faq{background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;margin:0 0 12px;overflow:hidden}
+  .aoa-faq>summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Inter Tight','Helvetica Neue',sans-serif;font-weight:600;font-size:16.5px;letter-spacing:-0.02em;color:#0B1220}
+  .aoa-faq>summary::-webkit-details-marker{display:none}
+  .aoa-faq>summary svg{flex:none;transition:transform .22s ease;color:#2F6FED}
+  .aoa-faq[open]>summary svg{transform:rotate(45deg)}
+  .aoa-faq>div{padding:0 22px 20px;font-size:15px;line-height:1.62;color:#5A6473}
+  .aoa-related{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .aoa-relcard{display:block;text-decoration:none;background:rgba(255,255,255,0.66);border:1px solid rgba(11,18,32,0.07);border-radius:14px;padding:18px 20px;transition:transform .18s ease, box-shadow .18s ease}
+  .aoa-relcard:hover{transform:translateY(-2px);box-shadow:0 18px 38px -24px rgba(11,18,32,0.3)}
+  .aoa-cta{background:#0B1220;border-radius:22px;padding:34px 32px;color:#fff}
+  @media (max-width: 640px){ .aoa-related{grid-template-columns:1fr} }
+  @media (max-width: 760px) { .bio-navlinks > div:first-of-type, .bio-navlinks > span { display: none !important; } .bio-footgrid { grid-template-columns: 1fr 1fr !important; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt#article",
+      "headline": "How to Write an AI Prompt That Actually Works (Step by Step)",
+      "description": "How to write a good AI prompt: give it context, a role, a clear task and a format, then add an example. A simple step-by-step that turns vague asks into reliable results.",
+      "datePublished": "2026-07-15",
+      "dateModified": "2026-07-15",
+      "inLanguage": "en-AU",
+      "image": "https://www.adon-ai.com.au/assets/og-image.png",
+      "author": { "@id": "https://www.adon-ai.com.au/beau-robards#person" },
+      "publisher": { "@id": "https://www.adon-ai.com.au/#organization" },
+      "mainEntityOfPage": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt",
+      "isPartOf": { "@id": "https://www.adon-ai.com.au/#website" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.adon-ai.com.au/beau-robards#person",
+      "name": "Beau Robards",
+      "url": "https://www.adon-ai.com.au/beau-robards",
+      "jobTitle": "Facilitator",
+      "worksFor": { "@id": "https://www.adon-ai.com.au/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I write a good AI prompt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Give the AI four things: context (the background it needs), a role (who it should act as), a clear task (exactly what to produce), and a format (how the answer should look). Then add a short example of what 'good' looks like. The more specific you are, the better and less generic the result — a vague ask gets a vague answer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should an AI prompt include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A strong prompt usually includes context, a role, a specific task, a desired format, and ideally an example. You don't need all five every time, but the more of them you provide, the closer the first draft will be to what you actually want. Vague, one-line prompts are the most common reason people get disappointing results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my AI give bad or generic answers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Almost always because the prompt was too vague. The AI can only work with what you give it, so 'write me an email' returns something generic. Add who it's for, what it's about, the tone, and the outcome you want, and the answer improves dramatically. The quality of the output tracks the quality of the instruction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a prompt template?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A prompt template is a reusable, fill-in-the-blanks version of a prompt you use for a recurring task. You write it well once, then each time you just drop in that day's details rather than re-explaining the job. Building a small library of templates for your common tasks is where a lot of the real time saving comes from."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do prompts work the same across ChatGPT, Claude and Gemini?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Largely, yes. The core skill — being clear about context, role, task and format — transfers across ChatGPT, Claude, Copilot and Gemini. Each tool has small quirks, but a well-structured prompt works well in all of them, which is why the skill is worth learning independently of any one product."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.adon-ai.com.au/" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.adon-ai.com.au/resources" },
+        { "@type": "ListItem", "position": 3, "name": "How to Write an AI Prompt", "item": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div style="max-width:1120px;margin:0 auto;background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="/assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+      <div class="bio-navlinks" style="display:flex;align-items:center;gap:28px">
+        <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
+        <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
+          <a href="/ad-on-group" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <a href="/programs" style="text-decoration:none;color:inherit">Programs</a>
+          <a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="/about" style="text-decoration:none;color:inherit">About</a>
+        </div>
+        <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px">Book a call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="max-width:760px;margin:0 auto;padding:40px 28px 0">
+    <nav aria-label="Breadcrumb" style="font-size:13.5px;color:#7C8696;margin-bottom:22px">
+      <a href="/" style="color:#7C8696;text-decoration:none">Home</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <a href="/resources" style="color:#7C8696;text-decoration:none">Resources</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <span style="color:#3A434F">How to Write an AI Prompt</span>
+    </nav>
+
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; How-to</span>
+    <h1 style="font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-0.04em;font-weight:800;margin:12px 0 18px;color:#0B1220">How to write an AI prompt that actually works</h1>
+
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:26px;border-bottom:1px solid rgba(11,18,32,0.08)">
+      <img src="/assets/team-beau.png" alt="Beau Robards" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%" width="88" height="88">
+      <div style="font-size:14px;line-height:1.4;color:#5A6473">
+        <div>By <a href="/beau-robards" style="color:#0B1220;font-weight:700;text-decoration:none">Beau Robards</a>, Certified Claude Expert</div>
+        <div style="color:#8A93A1">Updated 15 July 2026 &middot; 6 min read</div>
+      </div>
+    </div>
+
+    <article class="aoa-prose">
+      <div class="aoa-answer">
+        <span class="lbl">The short answer</span>
+        <p>To write a good AI prompt, give it <strong>four things: context, a role, a clear task, and a format</strong> &mdash; then add a short example of what &ldquo;good&rdquo; looks like. Be specific: a vague ask gets a vague answer. That&rsquo;s the whole method, and it works the same across ChatGPT, Claude, Copilot and Gemini.</p>
+      </div>
+
+      <p>Most disappointing AI results come down to one thing: the prompt was too vague. The good news is that writing a good one is a simple, repeatable skill &mdash; no coding, no jargon. Here&rsquo;s the method, then a worked example turning a weak prompt into a strong one.</p>
+
+      <h2>The four parts of a prompt that does the job</h2>
+      <p>A strong prompt usually gives the AI four things. You won&rsquo;t always need all four, but the more you include, the closer the first draft lands:</p>
+      <ol>
+        <li><strong>Context</strong> &mdash; the background it needs. <em>Who are you, what&rsquo;s the situation?</em></li>
+        <li><strong>Role</strong> &mdash; who it should act as. <em>&ldquo;Act as our office manager / a friendly copywriter.&rdquo;</em></li>
+        <li><strong>Task</strong> &mdash; exactly what to produce. <em>Be specific about the output.</em></li>
+        <li><strong>Format</strong> &mdash; how you want the answer. <em>Length, structure, tone.</em></li>
+      </ol>
+      <p>If you want the underlying idea, we cover it in <a href="/resources/what-is-prompt-engineering" class="aoa-plink">what prompt engineering is</a>. But you can start with the four parts right now.</p>
+
+      <h2>Step by step: turn a vague ask into a good one</h2>
+      <p>Say you want AI to reply to a customer chasing a delivery update. Here&rsquo;s the weak version most people type:</p>
+      <div class="aoa-box">
+        <span class="tag">Weak prompt</span>
+        <div class="aoa-mono">Write a reply to this customer.</div>
+      </div>
+      <p>Now add the four parts, one at a time:</p>
+      <ul>
+        <li><strong>Context:</strong> &ldquo;We&rsquo;re a small homewares store. This customer ordered a lamp, it&rsquo;s delayed by a week from our supplier.&rdquo;</li>
+        <li><strong>Role:</strong> &ldquo;Act as our customer service lead.&rdquo;</li>
+        <li><strong>Task:</strong> &ldquo;Write a reply that apologises, gives the new timeframe, and offers free express shipping.&rdquo;</li>
+        <li><strong>Format:</strong> &ldquo;Warm and genuine, under 100 words, no corporate jargon.&rdquo;</li>
+      </ul>
+      <div class="aoa-box">
+        <span class="tag">Strong prompt</span>
+        <div class="aoa-mono">Act as our customer service lead at a small homewares store.
+A customer ordered a lamp; it's delayed a week from our supplier.
+Write a reply that apologises, gives the new timeframe, and offers
+free express shipping. Warm and genuine, under 100 words, no jargon.</div>
+      </div>
+      <p>Same tool, wildly different result. The second version returns something you could almost send as-is.</p>
+
+      <h2>Add an example (the biggest single upgrade)</h2>
+      <p>If you have a past reply you were happy with, paste it in: <em>&ldquo;Match the tone of this example.&rdquo;</em> Showing the AI what &ldquo;good&rdquo; looks like is often more powerful than describing it, and it&rsquo;s the fastest way to get output that sounds like <em>you</em> rather than a generic bot.</p>
+
+      <h2>Iterate: tell it what to fix</h2>
+      <p>Your first result won&rsquo;t always be perfect &mdash; that&rsquo;s normal. Don&rsquo;t start over; just steer it: <em>&ldquo;Make it warmer,&rdquo; &ldquo;shorter,&rdquo; &ldquo;drop the last line,&rdquo; &ldquo;more formal.&rdquo;</em> A couple of quick nudges usually gets you there, and it teaches you what this tool responds to.</p>
+
+      <h2>Save it: turn a good prompt into a reusable one</h2>
+      <p>Once a prompt works, don&rsquo;t retype it next time. Save it as a <strong>template</strong> with blanks for the details that change:</p>
+      <div class="aoa-box">
+        <span class="tag">Reusable template</span>
+        <div class="aoa-mono">Act as our customer service lead at [business].
+Situation: [what happened].
+Write a reply that [goals]. [Tone], under [N] words, no jargon.</div>
+      </div>
+      <p>Now the recurring job takes ten seconds: paste, fill the blanks, done. A small library of these for your common tasks is where the real hours come back &mdash; and it&rsquo;s exactly the kind of thing your whole team can share.</p>
+
+      <div class="aoa-cta">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; Build your own prompt library</div>
+        <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Reusable prompts, for your real tasks</h2>
+        <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">In our <a href="/programs" style="color:#fff;font-weight:600;text-decoration:underline">AI Training &amp; Enablement program</a>, non-technical Australian staff build and save reusable prompts for the recurring work in their own week &mdash; so the time saving compounds.</p>
+        <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:700;color:#0B1220;background:#fff;padding:13px 24px;border-radius:14px">Book a call <span style="font-size:16px">&rarr;</span></a>
+      </div>
+
+      <h2 id="faqs">Frequently asked questions</h2>
+      <details class="aoa-faq">
+        <summary>How do I write a good AI prompt?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Give the AI four things: context (the background it needs), a role (who it should act as), a clear task (exactly what to produce), and a format (how the answer should look). Then add a short example of what &lsquo;good&rsquo; looks like. The more specific you are, the better and less generic the result &mdash; a vague ask gets a vague answer.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>What should an AI prompt include?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>A strong prompt usually includes context, a role, a specific task, a desired format, and ideally an example. You don&rsquo;t need all five every time, but the more of them you provide, the closer the first draft will be to what you actually want. Vague, one-line prompts are the most common reason people get disappointing results.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Why does my AI give bad or generic answers?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Almost always because the prompt was too vague. The AI can only work with what you give it, so &lsquo;write me an email&rsquo; returns something generic. Add who it&rsquo;s for, what it&rsquo;s about, the tone, and the outcome you want, and the answer improves dramatically. The quality of the output tracks the quality of the instruction.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>What is a prompt template?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>A prompt template is a reusable, fill-in-the-blanks version of a prompt you use for a recurring task. You write it well once, then each time you just drop in that day&rsquo;s details rather than re-explaining the job. Building a small library of templates for your common tasks is where a lot of the real time saving comes from.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Do prompts work the same across ChatGPT, Claude and Gemini?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Largely, yes. The core skill &mdash; being clear about context, role, task and format &mdash; transfers across ChatGPT, Claude, Copilot and Gemini. Each tool has small quirks, but a well-structured prompt works well in all of them, which is why the skill is worth learning independently of any one product.</div>
+      </details>
+
+      <h2>Keep reading</h2>
+      <div class="aoa-related">
+        <a class="aoa-relcard" href="/resources/what-is-prompt-engineering">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Explainer</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">What is prompt engineering?</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">The idea behind the four parts, and why anyone can learn it.</div>
+        </a>
+        <a class="aoa-relcard" href="/resources/claude-vs-chatgpt-for-business">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Comparison</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">Claude vs ChatGPT for business</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">Which tool to practise your prompts in.</div>
+        </a>
+      </div>
+    </article>
+
+    <div style="margin:40px 0 0"><a href="/resources" style="display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:14px;font-weight:600;color:#5A6473"><span style="font-size:16px">&larr;</span> All resources</a></div>
+  </main>
+
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA;margin-top:72px">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 28px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px" class="bio-footgrid">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px"><span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block" width="2000" height="2000"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span></a>
+        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses.</p>
+      </div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/programs" style="text-decoration:none;color:inherit">AI Training &amp; Enablement</a><a href="/bpo-program" style="text-decoration:none;color:inherit">BPO AI Program</a><a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/resources" style="text-decoration:none;color:inherit">Resources</a><a href="/about" style="text-decoration:none;color:inherit">About</a><a href="/#faqs" style="text-decoration:none;color:inherit">FAQs</a><a href="/terms" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="mailto:adonai@adongroup.com.au" style="text-decoration:none;color:inherit">adonai@adongroup.com.au</a><span>Australia-wide delivery</span></div></div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px"><span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI. All rights reserved.</span><a href="/terms" style="text-decoration:none;color:#0B1220;font-weight:700;font-size:13px">Terms of Use</a></div>
+  </footer>
+</body>
+</html>
