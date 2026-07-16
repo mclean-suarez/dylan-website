@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What Is an LLM (Large Language Model)? Explained Simply | Ad On AI</title>
-<meta name="description" content="An LLM is the AI technology behind tools like ChatGPT and Claude — trained on huge amounts of text to predict and generate language. What that means in plain English, and why it's sometimes confidently wrong.">
+<title>How to Write an AI Prompt That Actually Works (Step by Step) | Ad On AI</title>
+<meta name="description" content="How to write a good AI prompt: give it context, a role, a clear task and a format, then add an example. A simple step-by-step that turns vague asks into reliable results — no tech skills needed.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://www.adon-ai.com.au/resources/what-is-an-llm">
+<link rel="canonical" href="https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt">
 <meta name="theme-color" content="#2F6FED">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ad On AI">
 <meta property="og:locale" content="en_AU">
-<meta property="og:title" content="What Is an LLM (Large Language Model)? Explained Simply">
-<meta property="og:description" content="An LLM is the technology behind tools like ChatGPT and Claude — trained on huge amounts of text to predict language. Explained in plain English.">
-<meta property="og:url" content="https://www.adon-ai.com.au/resources/what-is-an-llm">
+<meta property="og:title" content="How to Write an AI Prompt That Actually Works (Step by Step)">
+<meta property="og:description" content="Give it context, a role, a clear task and a format, then add an example. A simple step-by-step that turns vague asks into reliable results.">
+<meta property="og:url" content="https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt">
 <meta property="og:image" content="https://www.adon-ai.com.au/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="What Is an LLM (Large Language Model)? Explained Simply">
-<meta name="twitter:description" content="An LLM is the technology behind ChatGPT and Claude. Explained in plain English, with why it's sometimes wrong.">
+<meta name="twitter:title" content="How to Write an AI Prompt That Actually Works (Step by Step)">
+<meta name="twitter:description" content="Context, role, task, format, plus an example. Turn vague asks into reliable results.">
 <meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-image.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
@@ -37,7 +37,7 @@
   .aoa-prose p { margin: 0 0 20px; }
   .aoa-prose h2 { font-size: clamp(23px,2.6vw,30px); line-height: 1.14; margin: 44px 0 14px; color: #0B1220; }
   .aoa-prose h3 { font-size: 20px; line-height: 1.2; margin: 30px 0 10px; color: #0B1220; letter-spacing: -0.02em; }
-  .aoa-prose ul { margin: 0 0 20px; padding-left: 22px; }
+  .aoa-prose ul, .aoa-prose ol { margin: 0 0 20px; padding-left: 22px; }
   .aoa-prose li { margin: 0 0 9px; }
   .aoa-prose strong { color: #0B1220; }
   .aoa-plink { color:#2F6FED; font-weight:600; text-decoration:none; }
@@ -45,6 +45,9 @@
   .aoa-answer { background: rgba(47,111,237,0.06); border: 1px solid rgba(47,111,237,0.18); border-radius: 16px; padding: 22px 24px; margin: 0 0 32px; }
   .aoa-answer .lbl { font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:#2F6FED; }
   .aoa-answer p { font-size: 17.5px; line-height: 1.6; color: #1B2430; margin: 8px 0 0; }
+  .aoa-box { background: rgba(255,255,255,0.62); border: 1px solid rgba(11,18,32,0.08); border-radius: 14px; padding: 4px 20px; margin: 0 0 22px; }
+  .aoa-box .tag { font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A93A1; display:block; margin:16px 0 -6px; }
+  .aoa-mono { font-family:'JetBrains Mono',monospace; font-size:13.5px; line-height:1.6; color:#2B333F; background:rgba(11,18,32,0.035); border-radius:10px; padding:14px 16px; margin:0 0 16px; white-space:pre-wrap; }
   .aoa-faq{background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;margin:0 0 12px;overflow:hidden}
   .aoa-faq>summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Inter Tight','Helvetica Neue',sans-serif;font-weight:600;font-size:16.5px;letter-spacing:-0.02em;color:#0B1220}
   .aoa-faq>summary::-webkit-details-marker{display:none}
@@ -64,16 +67,16 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "@id": "https://www.adon-ai.com.au/resources/what-is-an-llm#article",
-      "headline": "What Is an LLM (Large Language Model)? Explained Simply",
-      "description": "An LLM is the AI technology behind tools like ChatGPT and Claude, trained on huge amounts of text to predict and generate language. What that means in plain English, and why it is sometimes confidently wrong.",
+      "@id": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt#article",
+      "headline": "How to Write an AI Prompt That Actually Works (Step by Step)",
+      "description": "How to write a good AI prompt: give it context, a role, a clear task and a format, then add an example. A simple step-by-step that turns vague asks into reliable results.",
       "datePublished": "2026-07-15",
       "dateModified": "2026-07-15",
       "inLanguage": "en-AU",
       "image": "https://www.adon-ai.com.au/assets/og-image.png",
       "author": { "@id": "https://www.adon-ai.com.au/beau-robards#person" },
       "publisher": { "@id": "https://www.adon-ai.com.au/#organization" },
-      "mainEntityOfPage": "https://www.adon-ai.com.au/resources/what-is-an-llm",
+      "mainEntityOfPage": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt",
       "isPartOf": { "@id": "https://www.adon-ai.com.au/#website" }
     },
     {
@@ -86,57 +89,57 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.adon-ai.com.au/resources/what-is-an-llm#faq",
+      "@id": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is an LLM in simple terms?",
+          "name": "How do I write a good AI prompt?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "An LLM, or large language model, is the AI technology behind tools like ChatGPT, Claude and Gemini. It has been trained on enormous amounts of text so it can predict the most likely next words in a piece of writing — which is how it holds a conversation, drafts documents and summarises information. Think of the LLM as the engine and the chatbot you type into as the car built around it."
+            "text": "Give the AI four things: context (the background it needs), a role (who it should act as), a clear task (exactly what to produce), and a format (how the answer should look). Then add a short example of what 'good' looks like. The more specific you are, the better and less generic the result — a vague ask gets a vague answer."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the difference between an LLM and ChatGPT?",
+          "name": "What should an AI prompt include?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "An LLM is the underlying technology; ChatGPT is a product built on top of one. ChatGPT is the app and chat interface you use, powered by OpenAI's large language models. In the same way, Claude is Anthropic's app powered by its LLMs. You interact with the product; the LLM is the engine doing the language work underneath."
+            "text": "A strong prompt usually includes context, a role, a specific task, a desired format, and ideally an example. You don't need all five every time, but the more of them you provide, the closer the first draft will be to what you actually want. Vague, one-line prompts are the most common reason people get disappointing results."
           }
         },
         {
           "@type": "Question",
-          "name": "Why do LLMs get things wrong or make things up?",
+          "name": "Why does my AI give bad or generic answers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Because an LLM generates language by predicting likely words, not by looking up verified facts. Most of the time that produces accurate, useful text — but it can also produce something that sounds right and isn't, stated with complete confidence. This is often called a 'hallucination'. It's why you should always check anything factual, especially names, numbers, dates and legal or financial details."
+            "text": "Almost always because the prompt was too vague. The AI can only work with what you give it, so 'write me an email' returns something generic. Add who it's for, what it's about, the tone, and the outcome you want, and the answer improves dramatically. The quality of the output tracks the quality of the instruction."
           }
         },
         {
           "@type": "Question",
-          "name": "Is an LLM the same as artificial intelligence?",
+          "name": "What is a prompt template?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Not exactly. An LLM is one type of AI — the type focused on language. Artificial intelligence is the broader field that also covers things like image recognition and recommendation systems. When people today say 'AI' they often mean an LLM-powered tool like ChatGPT, but the LLM is a specific technology within the wider world of AI."
+            "text": "A prompt template is a reusable, fill-in-the-blanks version of a prompt you use for a recurring task. You write it well once, then each time you just drop in that day's details rather than re-explaining the job. Building a small library of templates for your common tasks is where a lot of the real time saving comes from."
           }
         },
         {
           "@type": "Question",
-          "name": "Do I need to understand LLMs to use AI at work?",
+          "name": "Do prompts work the same across ChatGPT, Claude and Gemini?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No — you can get great results without any technical knowledge. But understanding one thing helps enormously: an LLM predicts plausible language rather than knowing facts. Once that clicks, you naturally give it clearer instructions and check its factual claims, which is exactly how to use it safely and well."
+            "text": "Largely, yes. The core skill — being clear about context, role, task and format — transfers across ChatGPT, Claude, Copilot and Gemini. Each tool has small quirks, but a well-structured prompt works well in all of them, which is why the skill is worth learning independently of any one product."
           }
         }
       ]
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.adon-ai.com.au/resources/what-is-an-llm#breadcrumb",
+      "@id": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt#breadcrumb",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.adon-ai.com.au/" },
         { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.adon-ai.com.au/resources" },
-        { "@type": "ListItem", "position": 3, "name": "What Is an LLM?", "item": "https://www.adon-ai.com.au/resources/what-is-an-llm" }
+        { "@type": "ListItem", "position": 3, "name": "How to Write an AI Prompt", "item": "https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt" }
       ]
     }
   ]
@@ -169,95 +172,116 @@
       <span style="margin:0 8px;color:#B7BDC7">/</span>
       <a href="/resources" style="color:#7C8696;text-decoration:none">Resources</a>
       <span style="margin:0 8px;color:#B7BDC7">/</span>
-      <span style="color:#3A434F">What Is an LLM?</span>
+      <span style="color:#3A434F">How to Write an AI Prompt</span>
     </nav>
 
-    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; Explainer</span>
-    <h1 style="font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-0.04em;font-weight:800;margin:12px 0 18px;color:#0B1220">What is an LLM (large language model)? Explained simply</h1>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; How-to</span>
+    <h1 style="font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-0.04em;font-weight:800;margin:12px 0 18px;color:#0B1220">How to write an AI prompt that actually works</h1>
 
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:26px;border-bottom:1px solid rgba(11,18,32,0.08)">
       <img src="/assets/team-beau.png" alt="Beau Robards" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%" width="88" height="88">
       <div style="font-size:14px;line-height:1.4;color:#5A6473">
         <div>By <a href="/beau-robards" style="color:#0B1220;font-weight:700;text-decoration:none">Beau Robards</a>, Certified Claude Expert</div>
-        <div style="color:#8A93A1">Updated 15 July 2026 &middot; 5 min read</div>
+        <div style="color:#8A93A1">Updated 15 July 2026 &middot; 6 min read</div>
       </div>
     </div>
 
     <article class="aoa-prose">
       <div class="aoa-answer">
         <span class="lbl">The short answer</span>
-        <p>An <strong>LLM</strong> &mdash; large language model &mdash; is the AI technology behind tools like ChatGPT, Claude and Gemini. It&rsquo;s been trained on <strong>enormous amounts of text</strong> so it can predict the most likely next words in a piece of writing, which is how it holds a conversation, drafts and summarises. The LLM is the <em>engine</em>; the chatbot you type into is the <em>car</em> built around it.</p>
+        <p>To write a good AI prompt, give it <strong>four things: context, a role, a clear task, and a format</strong> &mdash; then add a short example of what &ldquo;good&rdquo; looks like. Be specific: a vague ask gets a vague answer. That&rsquo;s the whole method, and it works the same across ChatGPT, Claude, Copilot and Gemini.</p>
       </div>
 
-      <p>You don&rsquo;t need to understand how an engine works to drive &mdash; and you don&rsquo;t need to understand LLMs to use AI at work. But one idea about how they work is genuinely useful, because it explains both why AI is so good and why it&rsquo;s sometimes confidently wrong. Here it is in plain terms.</p>
+      <p>Most disappointing AI results come down to one thing: the prompt was too vague. The good news is that writing a good one is a simple, repeatable skill &mdash; no coding, no jargon. Here&rsquo;s the method, then a worked example turning a weak prompt into a strong one.</p>
 
-      <h2>The engine behind the tools you&rsquo;ve heard of</h2>
-      <p>Every mainstream AI assistant &mdash; ChatGPT, Claude, Gemini, Copilot &mdash; is a product built on top of one or more large language models. When you type a message and get a fluent reply, an LLM is doing the language work underneath. So &ldquo;LLM&rdquo; isn&rsquo;t a competitor to those tools; it&rsquo;s the <strong>category of technology they&rsquo;re all made from</strong>.</p>
+      <h2>The four parts of a prompt that does the job</h2>
+      <p>A strong prompt usually gives the AI four things. You won&rsquo;t always need all four, but the more you include, the closer the first draft lands:</p>
+      <ol>
+        <li><strong>Context</strong> &mdash; the background it needs. <em>Who are you, what&rsquo;s the situation?</em></li>
+        <li><strong>Role</strong> &mdash; who it should act as. <em>&ldquo;Act as our office manager / a friendly copywriter.&rdquo;</em></li>
+        <li><strong>Task</strong> &mdash; exactly what to produce. <em>Be specific about the output.</em></li>
+        <li><strong>Format</strong> &mdash; how you want the answer. <em>Length, structure, tone.</em></li>
+      </ol>
+      <p>If you want the underlying idea, we cover it in <a href="/resources/what-is-prompt-engineering" class="aoa-plink">what prompt engineering is</a>. But you can start with the four parts right now.</p>
 
-      <h2>How it works, without the maths</h2>
-      <p>An LLM was trained by reading a staggering amount of text and learning the patterns in how language fits together. From all that, it becomes very good at one core task: <strong>given some words, predict the words that most likely come next</strong>.</p>
-      <p>That sounds almost too simple to be useful, but predicting language well turns out to cover a huge amount of ground. Answering a question, drafting an email, summarising a report, rewriting something in a friendlier tone &mdash; all of it is, underneath, the model producing the most fitting next words for the situation. It&rsquo;s not looking anything up in a database; it&rsquo;s generating language on the fly.</p>
-
-      <h2>Why it&rsquo;s brilliant &mdash; and why it&rsquo;s confidently wrong sometimes</h2>
-      <p>This one fact explains both sides of AI&rsquo;s reputation:</p>
+      <h2>Step by step: turn a vague ask into a good one</h2>
+      <p>Say you want AI to reply to a customer chasing a delivery update. Here&rsquo;s the weak version most people type:</p>
+      <div class="aoa-box">
+        <span class="tag">Weak prompt</span>
+        <div class="aoa-mono">Write a reply to this customer.</div>
+      </div>
+      <p>Now add the four parts, one at a time:</p>
       <ul>
-        <li><strong>Why it&rsquo;s brilliant:</strong> because it generates language rather than pulling from fixed templates, it&rsquo;s flexible. It can adapt to your exact request, your tone and your context in a way older software never could.</li>
-        <li><strong>Why it&rsquo;s sometimes wrong:</strong> because it predicts <em>plausible</em> language rather than looking up <em>verified</em> facts, it can produce something that reads perfectly and simply isn&rsquo;t true &mdash; a made-up statistic, a wrong date, a fake reference &mdash; stated with total confidence. This is often called a <strong>&ldquo;<a href="/resources/ai-hallucinations" class="aoa-plink">hallucination</a>&rdquo;</strong>, and it&rsquo;s a known, normal behaviour, not a rare glitch.</li>
+        <li><strong>Context:</strong> &ldquo;We&rsquo;re a small homewares store. This customer ordered a lamp, it&rsquo;s delayed by a week from our supplier.&rdquo;</li>
+        <li><strong>Role:</strong> &ldquo;Act as our customer service lead.&rdquo;</li>
+        <li><strong>Task:</strong> &ldquo;Write a reply that apologises, gives the new timeframe, and offers free express shipping.&rdquo;</li>
+        <li><strong>Format:</strong> &ldquo;Warm and genuine, under 100 words, no corporate jargon.&rdquo;</li>
       </ul>
-      <p>The practical takeaway is simple: <strong>use LLMs freely for language, and always check anything factual</strong> &mdash; names, numbers, dates, and anything legal or financial. Treat it as a fast, capable drafter, not a source of truth.</p>
+      <div class="aoa-box">
+        <span class="tag">Strong prompt</span>
+        <div class="aoa-mono">Act as our customer service lead at a small homewares store.
+A customer ordered a lamp; it's delayed a week from our supplier.
+Write a reply that apologises, gives the new timeframe, and offers
+free express shipping. Warm and genuine, under 100 words, no jargon.</div>
+      </div>
+      <p>Same tool, wildly different result. The second version returns something you could almost send as-is.</p>
 
-      <h2>LLM vs chatbot vs AI agent</h2>
-      <p>These words get muddled, but the relationship is straightforward:</p>
-      <ul>
-        <li>An <strong>LLM</strong> is the engine &mdash; the language technology.</li>
-        <li>A <strong>chatbot</strong> is the interface &mdash; the app you type into, powered by an LLM.</li>
-        <li>An <strong><a href="/resources/what-is-an-ai-agent" class="aoa-plink">AI agent</a></strong> is an LLM given the ability to take actions and work through a goal over several steps, not just chat.</li>
-      </ul>
-      <p>So an agent uses an LLM to think, and adds the ability to <em>act</em>. Same engine, more built around it.</p>
+      <h2>Add an example (the biggest single upgrade)</h2>
+      <p>If you have a past reply you were happy with, paste it in: <em>&ldquo;Match the tone of this example.&rdquo;</em> Showing the AI what &ldquo;good&rdquo; looks like is often more powerful than describing it, and it&rsquo;s the fastest way to get output that sounds like <em>you</em> rather than a generic bot.</p>
 
-      <h2>What this means for using it at work</h2>
-      <p>You don&rsquo;t need to know how an LLM is built to get real value from one. But knowing that it <strong>predicts plausible language rather than knowing facts</strong> quietly makes you better at it: you give clearer instructions, you check the claims that matter, and you stop being surprised when it&rsquo;s occasionally wrong. That mindset &mdash; plus a bit of <a href="/resources/what-is-prompt-engineering" class="aoa-plink">prompt engineering</a> &mdash; is most of what separates people who find AI useful from people who find it frustrating.</p>
+      <h2>Iterate: tell it what to fix</h2>
+      <p>Your first result won&rsquo;t always be perfect &mdash; that&rsquo;s normal. Don&rsquo;t start over; just steer it: <em>&ldquo;Make it warmer,&rdquo; &ldquo;shorter,&rdquo; &ldquo;drop the last line,&rdquo; &ldquo;more formal.&rdquo;</em> A couple of quick nudges usually gets you there, and it teaches you what this tool responds to.</p>
+
+      <h2>Save it: turn a good prompt into a reusable one</h2>
+      <p>Once a prompt works, don&rsquo;t retype it next time. Save it as a <strong>template</strong> with blanks for the details that change:</p>
+      <div class="aoa-box">
+        <span class="tag">Reusable template</span>
+        <div class="aoa-mono">Act as our customer service lead at [business].
+Situation: [what happened].
+Write a reply that [goals]. [Tone], under [N] words, no jargon.</div>
+      </div>
+      <p>Now the recurring job takes ten seconds: paste, fill the blanks, done. A small library of these for your common tasks is where the real hours come back &mdash; and it&rsquo;s exactly the kind of thing your whole team can share.</p>
 
       <div class="aoa-cta">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; From understanding to using</div>
-        <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Put the technology to work, safely</h2>
-        <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">Our <a href="/programs" style="color:#fff;font-weight:600;text-decoration:underline">AI Training &amp; Enablement program</a> teaches non-technical Australian teams how to get reliable work out of AI &mdash; including how to spot and avoid the &ldquo;confidently wrong&rdquo; failure mode &mdash; on their own real tasks.</p>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; Build your own prompt library</div>
+        <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Reusable prompts, for your real tasks</h2>
+        <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">In our <a href="/programs" style="color:#fff;font-weight:600;text-decoration:underline">AI Training &amp; Enablement program</a>, non-technical Australian staff build and save reusable prompts for the recurring work in their own week &mdash; so the time saving compounds.</p>
         <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:700;color:#0B1220;background:#fff;padding:13px 24px;border-radius:14px">Book a call <span style="font-size:16px">&rarr;</span></a>
       </div>
 
       <h2 id="faqs">Frequently asked questions</h2>
       <details class="aoa-faq">
-        <summary>What is an LLM in simple terms?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>An LLM, or large language model, is the AI technology behind tools like ChatGPT, Claude and Gemini. It&rsquo;s been trained on enormous amounts of text so it can predict the most likely next words in a piece of writing &mdash; which is how it holds a conversation, drafts documents and summarises information. Think of the LLM as the engine and the chatbot you type into as the car built around it.</div>
+        <summary>How do I write a good AI prompt?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Give the AI four things: context (the background it needs), a role (who it should act as), a clear task (exactly what to produce), and a format (how the answer should look). Then add a short example of what &lsquo;good&rsquo; looks like. The more specific you are, the better and less generic the result &mdash; a vague ask gets a vague answer.</div>
       </details>
       <details class="aoa-faq">
-        <summary>What is the difference between an LLM and ChatGPT?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>An LLM is the underlying technology; ChatGPT is a product built on top of one. ChatGPT is the app and chat interface you use, powered by OpenAI&rsquo;s large language models. In the same way, Claude is Anthropic&rsquo;s app powered by its LLMs. You interact with the product; the LLM is the engine doing the language work underneath.</div>
+        <summary>What should an AI prompt include?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>A strong prompt usually includes context, a role, a specific task, a desired format, and ideally an example. You don&rsquo;t need all five every time, but the more of them you provide, the closer the first draft will be to what you actually want. Vague, one-line prompts are the most common reason people get disappointing results.</div>
       </details>
       <details class="aoa-faq">
-        <summary>Why do LLMs get things wrong or make things up?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>Because an LLM generates language by predicting likely words, not by looking up verified facts. Most of the time that produces accurate, useful text &mdash; but it can also produce something that sounds right and isn&rsquo;t, stated with complete confidence. This is often called a &lsquo;hallucination&rsquo;. It&rsquo;s why you should always check anything factual, especially names, numbers, dates and legal or financial details.</div>
+        <summary>Why does my AI give bad or generic answers?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Almost always because the prompt was too vague. The AI can only work with what you give it, so &lsquo;write me an email&rsquo; returns something generic. Add who it&rsquo;s for, what it&rsquo;s about, the tone, and the outcome you want, and the answer improves dramatically. The quality of the output tracks the quality of the instruction.</div>
       </details>
       <details class="aoa-faq">
-        <summary>Is an LLM the same as artificial intelligence?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>Not exactly. An LLM is one type of AI &mdash; the type focused on language. Artificial intelligence is the broader field that also covers things like image recognition and recommendation systems. When people today say &lsquo;AI&rsquo; they often mean an LLM-powered tool like ChatGPT, but the LLM is a specific technology within the wider world of AI.</div>
+        <summary>What is a prompt template?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>A prompt template is a reusable, fill-in-the-blanks version of a prompt you use for a recurring task. You write it well once, then each time you just drop in that day&rsquo;s details rather than re-explaining the job. Building a small library of templates for your common tasks is where a lot of the real time saving comes from.</div>
       </details>
       <details class="aoa-faq">
-        <summary>Do I need to understand LLMs to use AI at work?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>No &mdash; you can get great results without any technical knowledge. But understanding one thing helps enormously: an LLM predicts plausible language rather than knowing facts. Once that clicks, you naturally give it clearer instructions and check its factual claims, which is exactly how to use it safely and well.</div>
+        <summary>Do prompts work the same across ChatGPT, Claude and Gemini?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Largely, yes. The core skill &mdash; being clear about context, role, task and format &mdash; transfers across ChatGPT, Claude, Copilot and Gemini. Each tool has small quirks, but a well-structured prompt works well in all of them, which is why the skill is worth learning independently of any one product.</div>
       </details>
 
       <h2>Keep reading</h2>
       <div class="aoa-related">
-        <a class="aoa-relcard" href="/resources/what-is-an-ai-agent">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Explainer</div>
-          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">What is an AI agent?</div>
-          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">What you get when you give an LLM the ability to act.</div>
-        </a>
         <a class="aoa-relcard" href="/resources/what-is-prompt-engineering">
           <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Explainer</div>
           <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">What is prompt engineering?</div>
-          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">How to get reliable work out of the engine.</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">The idea behind the four parts, and why anyone can learn it.</div>
+        </a>
+        <a class="aoa-relcard" href="/resources/claude-vs-chatgpt-for-business">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Comparison</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">Claude vs ChatGPT for business</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">Which tool to practise your prompts in.</div>
         </a>
       </div>
     </article>
