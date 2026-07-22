@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What Is RAG (Retrieval-Augmented Generation)? Explained Simply | Ad On AI</title>
-<meta name="description" content="RAG is when AI looks up your own documents before answering, instead of relying only on what it learned in training. What that means in plain English, and why it makes AI answers more trustworthy.">
+<title>AI Agent vs Chatbot: What's the Difference? | Ad On AI</title>
+<meta name="description" content="A chatbot answers the question you ask. An AI agent is given a goal and works out the steps itself. The plain-English difference, a comparison table, and when a business needs each.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://www.adon-ai.com.au/resources/what-is-rag">
+<link rel="canonical" href="https://www.adon-ai.com.au/resources/ai-agent-vs-chatbot">
 <meta name="theme-color" content="#2F6FED">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ad On AI">
 <meta property="og:locale" content="en_AU">
-<meta property="og:title" content="What Is RAG (Retrieval-Augmented Generation)? Explained Simply">
-<meta property="og:description" content="RAG is when AI looks up your own documents before answering, instead of relying only on training. Explained in plain English.">
-<meta property="og:url" content="https://www.adon-ai.com.au/resources/what-is-rag">
+<meta property="og:title" content="AI Agent vs Chatbot: What's the Difference?">
+<meta property="og:description" content="A chatbot answers what you ask. An AI agent works out its own steps toward a goal. The plain-English difference and when a business needs each.">
+<meta property="og:url" content="https://www.adon-ai.com.au/resources/ai-agent-vs-chatbot">
 <meta property="og:image" content="https://www.adon-ai.com.au/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="What Is RAG (Retrieval-Augmented Generation)? Explained Simply">
-<meta name="twitter:description" content="RAG is when AI looks up your own documents before answering. Explained in plain English.">
+<meta name="twitter:title" content="AI Agent vs Chatbot: What's the Difference?">
+<meta name="twitter:description" content="A chatbot answers what you ask. An AI agent works out its own steps toward a goal.">
 <meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-image.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
@@ -36,7 +36,6 @@
   .aoa-prose { font-size: 17px; line-height: 1.72; color: #2B333F; }
   .aoa-prose p { margin: 0 0 20px; }
   .aoa-prose h2 { font-size: clamp(23px,2.6vw,30px); line-height: 1.14; margin: 44px 0 14px; color: #0B1220; }
-  .aoa-prose h3 { font-size: 20px; line-height: 1.2; margin: 30px 0 10px; color: #0B1220; letter-spacing: -0.02em; }
   .aoa-prose ul { margin: 0 0 20px; padding-left: 22px; }
   .aoa-prose li { margin: 0 0 9px; }
   .aoa-prose strong { color: #0B1220; }
@@ -45,7 +44,6 @@
   .aoa-answer { background: rgba(47,111,237,0.06); border: 1px solid rgba(47,111,237,0.18); border-radius: 16px; padding: 22px 24px; margin: 0 0 32px; }
   .aoa-answer .lbl { font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:#2F6FED; }
   .aoa-answer p { font-size: 17.5px; line-height: 1.6; color: #1B2430; margin: 8px 0 0; }
-  .aoa-ex { background: rgba(255,255,255,0.62); border: 1px solid rgba(11,18,32,0.08); border-radius: 14px; padding: 4px 20px; margin: 0 0 22px; }
   .aoa-tablewrap { overflow-x: auto; margin: 0 0 26px; border-radius: 14px; border: 1px solid rgba(11,18,32,0.09); }
   table.aoa-cmp { border-collapse: collapse; width: 100%; min-width: 560px; background: rgba(255,255,255,0.6); font-size: 15px; }
   table.aoa-cmp th, table.aoa-cmp td { text-align: left; padding: 13px 16px; border-bottom: 1px solid rgba(11,18,32,0.08); vertical-align: top; color:#2B333F; }
@@ -71,71 +69,71 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "@id": "https://www.adon-ai.com.au/resources/what-is-rag#article",
-      "headline": "What Is RAG (Retrieval-Augmented Generation)? Explained Simply",
-      "description": "RAG is when AI looks up your own documents before answering, instead of relying only on what it learned in training. What that means in plain English, and why it makes AI answers more trustworthy.",
+      "@id": "https://www.adon-ai.com.au/resources/ai-agent-vs-chatbot#article",
+      "headline": "AI Agent vs Chatbot: What's the Difference?",
+      "description": "A chatbot answers the question you ask. An AI agent is given a goal and works out the steps itself. The plain-English difference, a comparison table, and when a business needs each.",
       "datePublished": "2026-07-16",
       "dateModified": "2026-07-16",
       "inLanguage": "en-AU",
       "image": "https://www.adon-ai.com.au/assets/og-image.png",
-      "author": { "@id": "https://www.adon-ai.com.au/beau-robards#person" },
+      "author": { "@id": "https://www.adon-ai.com.au/dylan-bailey#person" },
       "publisher": { "@id": "https://www.adon-ai.com.au/#organization" },
-      "mainEntityOfPage": "https://www.adon-ai.com.au/resources/what-is-rag",
+      "mainEntityOfPage": "https://www.adon-ai.com.au/resources/ai-agent-vs-chatbot",
       "isPartOf": { "@id": "https://www.adon-ai.com.au/#website" }
     },
     {
       "@type": "Person",
-      "@id": "https://www.adon-ai.com.au/beau-robards#person",
-      "name": "Beau Robards",
-      "url": "https://www.adon-ai.com.au/beau-robards",
+      "@id": "https://www.adon-ai.com.au/dylan-bailey#person",
+      "name": "Dylan Bailey",
+      "url": "https://www.adon-ai.com.au/dylan-bailey",
       "jobTitle": "Facilitator",
       "worksFor": { "@id": "https://www.adon-ai.com.au/#organization" }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.adon-ai.com.au/resources/what-is-rag#faq",
+      "@id": "https://www.adon-ai.com.au/resources/ai-agent-vs-chatbot#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is RAG in AI?",
+          "name": "What is the difference between an AI agent and a chatbot?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "RAG (retrieval-augmented generation) is a method where an AI tool looks up relevant information from your own documents or a database before it answers, rather than relying only on what it learned during training. It combines a search step (retrieval) with the AI's writing ability (generation), so the answer is grounded in real, checkable source material."
+            "text": "A chatbot answers the specific question or message you send it — one exchange at a time, with you directing the conversation. An AI agent is given a goal and works out the steps to reach it itself, often using tools and taking several actions before coming back with a result. A chatbot responds; an agent acts."
           }
         },
         {
           "@type": "Question",
-          "name": "Why does RAG matter for business?",
+          "name": "Is ChatGPT a chatbot or an AI agent?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Because it lets AI answer questions about your specific business — your policies, pricing, past jobs, product details — that it was never trained on and couldn't otherwise know. It also reduces hallucination, since the AI is working from real documents rather than guessing from memory, which matters wherever accuracy counts."
+            "text": "By default, tools like ChatGPT and Claude behave as chatbots — you ask, they answer. The same underlying technology can be given agent-like abilities (using tools, taking multiple steps, working toward a goal), which is when it starts behaving as an AI agent. It is less about which product you use and more about how it is set up and what it is allowed to do."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the difference between RAG and fine-tuning?",
+          "name": "Does a small business need an AI agent or is a chatbot enough?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "RAG looks up information at the moment you ask, without changing the underlying AI model — update your documents and the AI's answers update immediately. Fine-tuning retrains the model itself on examples, which is more involved, harder to update, and usually a job for technical teams. For most small businesses, RAG (or simply pasting the relevant document into a prompt) gets the same practical benefit far more easily."
+            "text": "For most simple, single-question tasks — drafting a reply, summarising a document, brainstorming — a chatbot is enough and is simpler to trust. An agent is worth it once a task needs several steps done in sequence, like gathering information from more than one place before producing an answer. Start with a chatbot for a task; move to an agent only once you can see the multi-step pattern clearly."
           }
         },
         {
           "@type": "Question",
-          "name": "Do I need to be technical to use RAG?",
+          "name": "Can a chatbot become an AI agent?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Not to benefit from it. Many AI tools now offer a simple 'upload your documents' or 'connect your files' feature that sets up RAG behind the scenes. Even without that, you can get a lighter version of the same benefit by pasting the relevant document straight into your prompt and asking the AI to answer using only that information."
+            "text": "Yes. The same underlying AI can be used as a simple chatbot or set up to act as an agent — it depends on whether it is given a goal and the ability to take multiple actions, or just asked a single question. Many AI products are adding agent-like features on top of what started as a chatbot interface."
           }
         }
       ]
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.adon-ai.com.au/resources/what-is-rag#breadcrumb",
+      "@id": "https://www.adon-ai.com.au/resources/ai-agent-vs-chatbot#breadcrumb",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.adon-ai.com.au/" },
         { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.adon-ai.com.au/resources" },
-        { "@type": "ListItem", "position": 3, "name": "What Is RAG?", "item": "https://www.adon-ai.com.au/resources/what-is-rag" }
+        { "@type": "ListItem", "position": 3, "name": "AI Agent vs Chatbot", "item": "https://www.adon-ai.com.au/resources/ai-agent-vs-chatbot" }
       ]
     }
   ]
@@ -168,16 +166,16 @@
       <span style="margin:0 8px;color:#B7BDC7">/</span>
       <a href="/resources" style="color:#7C8696;text-decoration:none">Resources</a>
       <span style="margin:0 8px;color:#B7BDC7">/</span>
-      <span style="color:#3A434F">What Is RAG?</span>
+      <span style="color:#3A434F">AI Agent vs Chatbot</span>
     </nav>
 
-    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; Explainer</span>
-    <h1 style="font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-0.04em;font-weight:800;margin:12px 0 18px;color:#0B1220">What is RAG (retrieval-augmented generation)? Explained simply</h1>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; Comparison</span>
+    <h1 style="font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-0.04em;font-weight:800;margin:12px 0 18px;color:#0B1220">AI agent vs chatbot: what's the difference?</h1>
 
     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:26px;border-bottom:1px solid rgba(11,18,32,0.08)">
-      <img src="/assets/team-beau.png" alt="Beau Robards" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%" width="88" height="88">
+      <img src="/assets/team-dylan.png" alt="Dylan Bailey" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%" width="88" height="88">
       <div style="font-size:14px;line-height:1.4;color:#5A6473">
-        <div>By <a href="/beau-robards" style="color:#0B1220;font-weight:700;text-decoration:none">Beau Robards</a>, Certified Claude Expert</div>
+        <div>By <a href="/dylan-bailey" style="color:#0B1220;font-weight:700;text-decoration:none">Dylan Bailey</a>, Certified Claude Expert</div>
         <div style="color:#8A93A1">Updated 16 July 2026 &middot; 5 min read</div>
       </div>
     </div>
@@ -185,80 +183,81 @@
     <article class="aoa-prose">
       <div class="aoa-answer">
         <span class="lbl">The short answer</span>
-        <p><strong>RAG</strong> (retrieval-augmented generation) is when an AI tool <strong>looks up relevant information from your own documents</strong> &mdash; a policy, a price list, past correspondence &mdash; and uses it to answer, instead of relying only on what it learned during training. It&rsquo;s the difference between an AI guessing from memory and an AI checking your actual files first. The main benefit: <strong>answers grounded in your real business, with less made-up detail.</strong></p>
+        <p>A <strong>chatbot answers</strong> the specific question or message you send it &mdash; one exchange at a time, with you steering the conversation. An <strong>AI agent is given a goal</strong> and works out the steps to reach it itself, often using tools and taking several actions before it comes back with a result. Put simply: <strong>a chatbot responds; an agent acts.</strong></p>
       </div>
 
-      <p>You&rsquo;ll hear &ldquo;RAG&rdquo; a lot around AI tools that &ldquo;connect to your documents&rdquo; or &ldquo;answer from your knowledge base.&rdquo; It sounds technical, but the idea behind it is simple &mdash; and understanding it explains why some AI answers feel far more trustworthy than others.</p>
+      <p>&ldquo;Aren't they the same thing?&rdquo; is a fair question &mdash; both look like a text box you type into. But the difference between being <em>asked a question</em> and being <em>given a goal</em> matters a lot for what each can actually do for your business.</p>
 
-      <h2>Retrieval, then generation &mdash; two steps in one word</h2>
-      <p>RAG is really two steps stitched together:</p>
-      <ul>
-        <li><strong>Retrieval</strong> &mdash; the AI first searches a set of documents you&rsquo;ve given it access to, and pulls out the passages most relevant to your question.</li>
-        <li><strong>Generation</strong> &mdash; it then writes an answer using what it found, in its own natural language, instead of just pasting the raw text back at you.</li>
-      </ul>
-      <p>So a RAG-powered assistant doesn&rsquo;t just recite your documents &mdash; it reads the relevant parts and writes a proper answer, the way a well-briefed staff member would after checking the file.</p>
+      <h2>The one-line difference</h2>
+      <p>A chatbot is reactive: you ask, it answers, the exchange ends. An agent is proactive within its task: you state an outcome, and it decides what needs to happen &mdash; checking information, using tools, adjusting &mdash; until that outcome is reached. (We go deeper on what makes something an agent in <a href="/resources/what-is-an-ai-agent" class="aoa-plink">what is an AI agent?</a>)</p>
 
-      <h2>Why it matters: less guessing, more grounding</h2>
-      <p>Left to itself, a <a href="/resources/what-is-an-llm" class="aoa-plink">large language model</a> answers from patterns in the huge amount of text it was trained on &mdash; which is why it can produce a <a href="/resources/ai-hallucinations" class="aoa-plink">confident, plausible-sounding answer that&rsquo;s simply wrong</a>. RAG changes what it&rsquo;s working from: instead of guessing from general training, it&rsquo;s reading your specific, checkable material first. That doesn&rsquo;t eliminate the risk of a wrong answer, but it substantially reduces it &mdash; and it means the AI can answer questions about things it was never trained on at all, like your own pricing or last week&rsquo;s job notes.</p>
-
-      <h2>An Australian small-business example</h2>
-      <div class="aoa-ex">
-        <p style="margin:16px 0">A staff member asks an internal AI assistant, &ldquo;how many weeks of parental leave do we offer?&rdquo; Without RAG, the AI would have to guess at a generic, general answer &mdash; and could easily get your specific policy wrong. With RAG connected to your actual staff handbook, it retrieves the exact clause and answers from your real policy, with the correct number.</p>
-      </div>
-      <p>The same pattern works for pricing sheets, past quotes, product specs, or a supplier&rsquo;s terms &mdash; anywhere the correct answer lives in a document you already have, rather than in general knowledge.</p>
-
-      <h2>RAG vs fine-tuning &mdash; which one do you need?</h2>
+      <h2>Side by side</h2>
       <div class="aoa-tablewrap">
         <table class="aoa-cmp">
-          <thead><tr><th></th><th>RAG</th><th>Fine-tuning</th></tr></thead>
+          <thead><tr><th></th><th>Chatbot</th><th>AI agent</th></tr></thead>
           <tbody>
-            <tr><th>What it does</th><td>Looks up your documents at the moment you ask</td><td>Retrains the AI model itself on examples</td></tr>
-            <tr><th>Updating it</th><td>Update the documents, answers update instantly</td><td>Requires retraining to reflect new information</td></tr>
-            <tr><th>Who it&rsquo;s for</th><td>Most businesses &mdash; simpler to set up and maintain</td><td>Usually technical teams, for a specific style or skill</td></tr>
+            <tr><th>What you give it</th><td>A question or instruction</td><td>A goal</td></tr>
+            <tr><th>What it does</th><td>Answers directly</td><td>Works out its own steps, then acts</td></tr>
+            <tr><th>Number of steps</th><td>One reply per message</td><td>Several actions in sequence</td></tr>
+            <tr><th>Uses tools/data</th><td>Rarely, if at all</td><td>Often — files, systems, lookups</td></tr>
+            <tr><th>Best for</th><td>Quick, single-step tasks</td><td>Multi-step tasks with a clear end goal</td></tr>
+            <tr><th>Oversight needed</th><td>Low — you see the whole exchange</td><td>Higher — check its work, especially early on</td></tr>
           </tbody>
         </table>
       </div>
-      <p>For the vast majority of small businesses, RAG (or even just pasting the relevant document into a prompt) delivers the practical benefit people actually want &mdash; accurate, grounded answers &mdash; without the cost and complexity of fine-tuning.</p>
 
-      <h2>You can get a lighter version of this today</h2>
-      <p>You don&rsquo;t need a technical RAG setup to benefit from the idea. The simplest version: <strong>paste the relevant document straight into your prompt</strong> and ask the AI to answer using only that information. It&rsquo;s the same principle &mdash; grounding the answer in something real &mdash; just done manually instead of automatically. Many AI tools also now offer a built-in &ldquo;upload your files&rdquo; or &ldquo;connect your documents&rdquo; feature that sets up proper RAG behind the scenes.</p>
+      <h2>An Australian small-business example</h2>
+      <p>A customer emails asking about a delayed order.</p>
+      <ul>
+        <li><strong>As a chatbot task:</strong> you ask, &ldquo;Draft a reply apologising for the delay and giving a new date of Friday.&rdquo; It answers with a draft. Done in one step.</li>
+        <li><strong>As an agent task:</strong> you say, &ldquo;Handle this enquiry.&rdquo; The agent checks the order status, looks up the supplier delay, decides on a fair gesture (like free shipping), and drafts a complete reply &mdash; several steps, one goal, no back-and-forth from you along the way.</li>
+      </ul>
+      <p>Same underlying AI, same business problem &mdash; the difference is whether you're driving each step or handing over the destination.</p>
+
+      <h2>Which does your business actually need?</h2>
+      <p>Most people don't need to choose one and stick with it &mdash; they use both, for different jobs:</p>
+      <ul>
+        <li><strong>Reach for chatbot-style use</strong> when a task is quick and single-step: draft this, summarise that, brainstorm three options. You stay in full control of each exchange.</li>
+        <li><strong>Reach for an agent</strong> once a task clearly has several steps that would otherwise take you back and forth manually &mdash; gathering information from more than one place, then producing a result.</li>
+      </ul>
+      <p>A sensible path is to start with chatbot-style prompting on a task, and once you notice yourself repeating the same multi-step dance every time, that's the signal it's ready to become an agent. If you want the safety rules for that step, see <a href="/resources/ai-agent-examples-for-small-business" class="aoa-plink">AI agent examples for small business</a>.</p>
 
       <div class="aoa-cta">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; Ground AI in your own business</div>
-        <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Connect AI to what you already know</h2>
-        <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">In our <a href="/programs" style="color:#fff;font-weight:600;text-decoration:underline">AI Training &amp; Enablement program</a>, non-technical Australian teams learn to connect AI to their own documents and data, so answers are grounded in the real business &mdash; not guesswork.</p>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; Know which to build</div>
+        <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Learn when to prompt, and when to build an agent</h2>
+        <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">Our <a href="/programs" style="color:#fff;font-weight:600;text-decoration:underline">AI Training &amp; Enablement program</a> teaches non-technical Australian teams both skills — quick chatbot-style prompting and building supervised agents — on their own real tasks.</p>
         <a href="mailto:info@adongroup.com.au?subject=AI%20Training%20Enquiry" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:700;color:#0B1220;background:#fff;padding:13px 24px;border-radius:14px">Book a call <span style="font-size:16px">&rarr;</span></a>
       </div>
 
       <h2 id="faqs">Frequently asked questions</h2>
       <details class="aoa-faq">
-        <summary>What is RAG in AI?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>RAG (retrieval-augmented generation) is a method where an AI tool looks up relevant information from your own documents or a database before it answers, rather than relying only on what it learned during training. It combines a search step (retrieval) with the AI&rsquo;s writing ability (generation), so the answer is grounded in real, checkable source material.</div>
+        <summary>What is the difference between an AI agent and a chatbot?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>A chatbot answers the specific question or message you send it &mdash; one exchange at a time, with you directing the conversation. An AI agent is given a goal and works out the steps to reach it itself, often using tools and taking several actions before coming back with a result. A chatbot responds; an agent acts.</div>
       </details>
       <details class="aoa-faq">
-        <summary>Why does RAG matter for business?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>Because it lets AI answer questions about your specific business &mdash; your policies, pricing, past jobs, product details &mdash; that it was never trained on and couldn&rsquo;t otherwise know. It also reduces hallucination, since the AI is working from real documents rather than guessing from memory, which matters wherever accuracy counts.</div>
+        <summary>Is ChatGPT a chatbot or an AI agent?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>By default, tools like ChatGPT and Claude behave as chatbots &mdash; you ask, they answer. The same underlying technology can be given agent-like abilities (using tools, taking multiple steps, working toward a goal), which is when it starts behaving as an AI agent. It's less about which product you use and more about how it's set up and what it's allowed to do.</div>
       </details>
       <details class="aoa-faq">
-        <summary>What is the difference between RAG and fine-tuning?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>RAG looks up information at the moment you ask, without changing the underlying AI model &mdash; update your documents and the AI&rsquo;s answers update immediately. Fine-tuning retrains the model itself on examples, which is more involved, harder to update, and usually a job for technical teams. For most small businesses, RAG (or simply pasting the relevant document into a prompt) gets the same practical benefit far more easily.</div>
+        <summary>Does a small business need an AI agent or is a chatbot enough?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>For most simple, single-question tasks &mdash; drafting a reply, summarising a document, brainstorming &mdash; a chatbot is enough and is simpler to trust. An agent is worth it once a task needs several steps done in sequence, like gathering information from more than one place before producing an answer. Start with a chatbot for a task; move to an agent only once you can see the multi-step pattern clearly.</div>
       </details>
       <details class="aoa-faq">
-        <summary>Do I need to be technical to use RAG?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>Not to benefit from it. Many AI tools now offer a simple &lsquo;upload your documents&rsquo; or &lsquo;connect your files&rsquo; feature that sets up RAG behind the scenes. Even without that, you can get a lighter version of the same benefit by pasting the relevant document straight into your prompt and asking the AI to answer using only that information.</div>
+        <summary>Can a chatbot become an AI agent?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Yes. The same underlying AI can be used as a simple chatbot or set up to act as an agent &mdash; it depends on whether it's given a goal and the ability to take multiple actions, or just asked a single question. Many AI products are adding agent-like features on top of what started as a chatbot interface.</div>
       </details>
 
       <h2>Keep reading</h2>
       <div class="aoa-related">
-        <a class="aoa-relcard" href="/resources/ai-hallucinations">
+        <a class="aoa-relcard" href="/resources/what-is-an-ai-agent">
           <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Explainer</div>
-          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">AI hallucinations</div>
-          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">The problem RAG is designed to reduce.</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">What is an AI agent?</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">The full picture, including agentic AI and where to be careful.</div>
         </a>
-        <a class="aoa-relcard" href="/resources/what-is-an-llm">
+        <a class="aoa-relcard" href="/resources/ai-agent-examples-for-small-business">
           <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Explainer</div>
-          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">What is an LLM?</div>
-          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">The technology RAG adds a lookup step in front of.</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">AI agent examples for small business</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">Five real uses, and the rule that keeps them safe.</div>
         </a>
       </div>
     </article>

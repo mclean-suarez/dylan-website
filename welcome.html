@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Ad On AI</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2F6FED">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/intertight.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrainsmono-500.woff2" crossorigin>
+<style>@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500 800;font-display:swap;src:url('/assets/fonts/intertight.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrainsmono-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.20), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.16), transparent 52%), radial-gradient(85% 38% at 102% 40%, rgba(47,111,237,0.10), transparent 56%), radial-gradient(80% 34% at 50% 100%, rgba(45,212,191,0.10), transparent 60%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; min-height: 100vh; display: flex; flex-direction: column; }
+  h1 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 800; }
+  a { color: #2F6FED; } a:hover { color: #1B54C4; }
+  .eyebrow { font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; color:#2F6FED; text-transform:uppercase; }
+  .sec { max-width:1000px; margin:0 auto; padding:0 28px; width:100%; }
+  .stage { flex:1; display:flex; flex-direction:column; justify-content:center; padding:40px 0 64px; }
+  .v-shell { position:relative; margin:34px auto 0; max-width:920px; }
+  .v-glow { position:absolute; inset:-8% -6% -12%; z-index:-1; background:radial-gradient(60% 70% at 50% 20%, rgba(47,111,237,0.22), transparent 70%); filter:blur(20px); }
+  .v-frame { border-radius:20px; overflow:hidden; background:#05070C; box-shadow:0 40px 90px -40px rgba(11,18,32,0.55), 0 8px 24px -14px rgba(11,18,32,0.4), inset 0 1px 0 rgba(255,255,255,0.06); border:1px solid rgba(11,18,32,0.5); }
+  .v-frame video { display:block; width:100%; aspect-ratio:16/9; background:#000; }
+  @media (max-width:640px){ h1{ font-size:32px !important; } }
+</style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav style="padding:0 20px;margin-top:16px">
+    <div style="max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="/assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== VIDEO STAGE ===== -->
+  <main class="stage">
+    <div class="sec" style="text-align:center">
+      <span class="eyebrow">// Welcome to Ad On AI</span>
+      <h1 style="font-size:clamp(36px,5.4vw,58px);line-height:1.02;letter-spacing:-0.04em;margin:16px 0 0;color:#0B1220">Welcome aboard.</h1>
+      <p style="font-size:18px;line-height:1.6;color:#5A6473;margin:18px auto 0;max-width:600px">A quick hello and what to expect before you get started.</p>
+
+      <div class="v-shell">
+        <div class="v-glow"></div>
+        <div class="v-frame">
+          <!-- VIDEO: welcome.mp4 (Pete's welcome video) — hosted on Cloudflare R2. -->
+          <!-- If the R2 base domain differs, update the src + fallback href below. -->
+          <video controls preload="metadata" playsinline controlslist="nodownload" poster="">
+            <source src="https://pub-f0773479a3e54dc68633fadac765b41e.r2.dev/welcome.mp4" type="video/mp4">
+            Your browser doesn’t support embedded video. <a href="https://pub-f0773479a3e54dc68633fadac765b41e.r2.dev/welcome.mp4">Download the welcome video</a> instead.
+          </video>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA">
+    <div style="max-width:1000px;margin:0 auto;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220"><span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:28px;height:28px;object-fit:contain;display:block"></span><span style="font-weight:800;font-size:16px;letter-spacing:-0.02em">Ad On AI</span></a>
+      <span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI · A division of Ad On Group · ABN 54 808 983 598</span>
+    </div>
+  </footer>
+
+</body>
+</html>
