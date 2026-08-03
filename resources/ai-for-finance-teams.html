@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for Finance Teams: Real Tasks for Australian SMEs | Ad On AI</title>
+<meta name="description" content="Practical, high-value AI uses for finance teams at Australian small businesses — variance commentary, invoice chasing, reconciliation prep and supplier comparisons, not generic email drafting.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.adon-ai.com.au/resources/ai-for-finance-teams">
+<meta name="theme-color" content="#2F6FED">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ad On AI">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="AI for Finance Teams: Real Tasks for Australian SMEs">
+<meta property="og:description" content="Practical, high-value AI uses for finance teams — variance commentary, invoice chasing, reconciliation prep and supplier comparisons.">
+<meta property="og:url" content="https://www.adon-ai.com.au/resources/ai-for-finance-teams">
+<meta property="og:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI for Finance Teams: Real Tasks for Australian SMEs">
+<meta name="twitter:description" content="Practical, high-value AI uses for finance teams at Australian small businesses.">
+<meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/intertight.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrainsmono-500.woff2" crossorigin>
+<style>@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500 800;font-display:swap;src:url('/assets/fonts/intertight.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrainsmono-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.18), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.15), transparent 52%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; min-height: 100vh; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 800; }
+  a { color: #2F6FED; } a:hover { color: #1B54C4; }
+  .aoa-prose { font-size: 17px; line-height: 1.72; color: #2B333F; }
+  .aoa-prose p { margin: 0 0 20px; }
+  .aoa-prose h2 { font-size: clamp(23px,2.6vw,30px); line-height: 1.14; margin: 44px 0 14px; color: #0B1220; }
+  .aoa-prose ul { margin: 0 0 20px; padding-left: 22px; }
+  .aoa-prose li { margin: 0 0 9px; }
+  .aoa-prose strong { color: #0B1220; }
+  .aoa-plink { color:#2F6FED; font-weight:600; text-decoration:none; }
+  .aoa-plink:hover { text-decoration:underline; }
+  .aoa-answer { background: rgba(47,111,237,0.06); border: 1px solid rgba(47,111,237,0.18); border-radius: 16px; padding: 22px 24px; margin: 0 0 32px; }
+  .aoa-answer .lbl { font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:#2F6FED; }
+  .aoa-answer p { font-size: 17.5px; line-height: 1.6; color: #1B2430; margin: 8px 0 0; }
+  .aoa-ex { background: rgba(255,255,255,0.62); border: 1px solid rgba(11,18,32,0.08); border-radius: 16px; padding: 22px 24px 8px; margin: 0 0 18px; }
+  .aoa-ex h3 { margin: 0 0 4px; font-size: 19px; letter-spacing: -0.02em; color: #0B1220; }
+  .aoa-ex .role { font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#2F6FED; }
+  .aoa-faq{background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;margin:0 0 12px;overflow:hidden}
+  .aoa-faq>summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Inter Tight','Helvetica Neue',sans-serif;font-weight:600;font-size:16.5px;letter-spacing:-0.02em;color:#0B1220}
+  .aoa-faq>summary::-webkit-details-marker{display:none}
+  .aoa-faq>summary svg{flex:none;transition:transform .22s ease;color:#2F6FED}
+  .aoa-faq[open]>summary svg{transform:rotate(45deg)}
+  .aoa-faq>div{padding:0 22px 20px;font-size:15px;line-height:1.62;color:#5A6473}
+  .aoa-related{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .aoa-relcard{display:block;text-decoration:none;background:rgba(255,255,255,0.66);border:1px solid rgba(11,18,32,0.07);border-radius:14px;padding:18px 20px;transition:transform .18s ease, box-shadow .18s ease}
+  .aoa-relcard:hover{transform:translateY(-2px);box-shadow:0 18px 38px -24px rgba(11,18,32,0.3)}
+  .aoa-cta{background:#0B1220;border-radius:22px;padding:34px 32px;color:#fff}
+  @media (max-width: 640px){ .aoa-related{grid-template-columns:1fr} }
+  @media (max-width: 760px) { .bio-navlinks > div:first-of-type, .bio-navlinks > span { display: none !important; } .bio-footgrid { grid-template-columns: 1fr 1fr !important; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.adon-ai.com.au/resources/ai-for-finance-teams#article",
+      "headline": "AI for Finance Teams: Real Tasks for Australian SMEs",
+      "description": "Practical, high-value AI uses for finance teams at Australian small businesses — variance commentary, invoice chasing, reconciliation prep and supplier comparisons, not generic email drafting.",
+      "datePublished": "2026-08-03",
+      "dateModified": "2026-08-03",
+      "inLanguage": "en-AU",
+      "image": "https://www.adon-ai.com.au/assets/og-image.png",
+      "author": { "@id": "https://www.adon-ai.com.au/dylan-bailey#person" },
+      "publisher": { "@id": "https://www.adon-ai.com.au/#organization" },
+      "mainEntityOfPage": "https://www.adon-ai.com.au/resources/ai-for-finance-teams",
+      "isPartOf": { "@id": "https://www.adon-ai.com.au/#website" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.adon-ai.com.au/dylan-bailey#person",
+      "name": "Dylan Bailey",
+      "url": "https://www.adon-ai.com.au/dylan-bailey",
+      "jobTitle": "Facilitator",
+      "worksFor": { "@id": "https://www.adon-ai.com.au/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.adon-ai.com.au/resources/ai-for-finance-teams#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can a finance team at a small business use AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Beyond generic drafting, AI genuinely helps a finance team with tasks like drafting variance commentary on a P&L, preparing tailored follow-ups for overdue invoices, getting reconciliations ready for review, and comparing supplier costs and terms. The common thread is AI doing the first pass on a task that involves gathering, comparing or explaining numbers, with a person checking the result before it's used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to use AI with financial data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Used well, yes, with sensible limits. Keep AI working from figures you provide rather than asking it to recall numbers from memory, always check anything it states as fact, and be deliberate about which tools and connections you allow to see sensitive financial data. A structured training program covers exactly these limits before a team starts using AI on real numbers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI replace a bookkeeper or finance manager?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — and that's not the goal. AI is best used to take the repetitive first pass off a finance person's plate — drafting, comparing, summarising — so they spend their time on judgement calls, checking the work and talking to the business, not on the manual grind of pulling it together. The decisions stay with the person."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What AI skill should a finance team learn first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Writing a clear, reusable prompt for one of your actual recurring finance tasks — a monthly variance summary or an invoice chase, for example — is the best starting point. It's the foundation every other finance use case builds on, and it turns a one-off experiment into something the whole team can reuse every month."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.adon-ai.com.au/resources/ai-for-finance-teams#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.adon-ai.com.au/" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.adon-ai.com.au/resources" },
+        { "@type": "ListItem", "position": 3, "name": "AI for Finance Teams", "item": "https://www.adon-ai.com.au/resources/ai-for-finance-teams" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div style="max-width:1120px;margin:0 auto;background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="/assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+      <div class="bio-navlinks" style="display:flex;align-items:center;gap:28px">
+        <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
+        <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
+          <a href="/ad-on-group" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <a href="/programs" style="text-decoration:none;color:inherit">Programs</a>
+          <a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="/about" style="text-decoration:none;color:inherit">About</a>
+        </div>
+        <a href="https://adongroup.com.au/contact/" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px">Book a call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="max-width:760px;margin:0 auto;padding:40px 28px 0">
+    <nav aria-label="Breadcrumb" style="font-size:13.5px;color:#7C8696;margin-bottom:22px">
+      <a href="/" style="color:#7C8696;text-decoration:none">Home</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <a href="/resources" style="color:#7C8696;text-decoration:none">Resources</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <span style="color:#3A434F">AI for Finance Teams</span>
+    </nav>
+
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; Explainer</span>
+    <h1 style="font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-0.04em;font-weight:800;margin:12px 0 18px;color:#0B1220">AI for finance teams: real tasks for Australian SMEs</h1>
+
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:26px;border-bottom:1px solid rgba(11,18,32,0.08)">
+      <img src="/assets/team-dylan.png" alt="Dylan Bailey" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%" width="88" height="88">
+      <div style="font-size:14px;line-height:1.4;color:#5A6473">
+        <div>By <a href="/dylan-bailey" style="color:#0B1220;font-weight:700;text-decoration:none">Dylan Bailey</a>, Certified Claude Expert</div>
+        <div style="color:#8A93A1">Updated 3 August 2026 &middot; 6 min read</div>
+      </div>
+    </div>
+
+    <article class="aoa-prose">
+      <div class="aoa-answer">
+        <span class="lbl">The short answer</span>
+        <p>The AI uses that actually matter for a finance team go well beyond drafting emails: <strong>writing variance commentary on a P&amp;L, preparing tailored invoice chases, getting reconciliations ready for review, and comparing supplier costs.</strong> These are tasks that move real time, cash flow and decision quality &mdash; not the generic filler most &ldquo;AI for finance&rdquo; lists reach for.</p>
+      </div>
+
+      <p>Search &ldquo;AI for finance teams&rdquo; and most results land on the same handful of low-value ideas &mdash; drafting emails, summarising meeting notes. A finance function at an Australian SME has more valuable, more specific work than that. Here's what actually earns its place.</p>
+
+      <h2>Four practical, high-value uses</h2>
+
+      <div class="aoa-ex">
+        <div class="role">Reporting</div>
+        <h3>1. Draft variance commentary on the monthly P&amp;L</h3>
+        <p>Turning a set of numbers into a clear, board-ready explanation of what moved and why is real, skilled work &mdash; and one of the more time-consuming parts of a monthly close. Given the figures and the context, AI can produce a first draft of the commentary: what changed versus last month, what needs attention, and a plain-English read for a non-finance owner. A person still checks and finalises it, but the blank-page problem disappears.</p>
+      </div>
+
+      <div class="aoa-ex">
+        <div class="role">Accounts receivable</div>
+        <h3>2. Prepare a tailored chase for every overdue invoice</h3>
+        <p>Instead of one generic reminder template sent to everyone, AI can draft a tone-matched follow-up for each overdue account &mdash; polite for a reliable customer who's just running late, firmer for a repeat late-payer &mdash; ready for a person to review and send. The judgement about which tone fits which relationship is exactly the kind of thing worth having AI do the first pass on.</p>
+      </div>
+
+      <div class="aoa-ex">
+        <div class="role">Reconciliation</div>
+        <h3>3. Get a reconciliation ready for review</h3>
+        <p>Before someone sits down to reconcile accounts, AI can lay out the discrepancies clearly &mdash; what doesn't match, by how much, and where to look first &mdash; so the person doing the actual reconciliation starts from a clear picture instead of a blank spreadsheet and a stack of statements.</p>
+      </div>
+
+      <div class="aoa-ex">
+        <div class="role">Procurement</div>
+        <h3>4. Compare supplier costs and terms</h3>
+        <p>Given a few supplier quotes or price lists, AI can lay out a clear side-by-side &mdash; price, terms, notable differences &mdash; so the person deciding starts from a genuine comparison rather than three separate PDFs open in different tabs. The decision stays a person's call; the legwork of pulling it together doesn't have to be.</p>
+      </div>
+
+      <p>Want these ready to use? Grab the <a href="/resources/ai-prompts-for-finance-teams" class="aoa-plink">10 AI prompts for finance teams</a> &mdash; the exact prompt behind each task above, free to copy or download as a PDF.</p>
+
+      <h2>Why these, and not the usual list</h2>
+      <p>Notice what all four have in common: they involve <strong>gathering, comparing or explaining numbers</strong> &mdash; the kind of work that eats real hours in a finance function, not the low-value drafting every generic AI list reaches for. And in each case, AI does the first pass; a person still checks the result before it goes anywhere. That split &mdash; <a href="/resources/what-is-an-ai-agent" class="aoa-plink">AI does the legwork, a person keeps the judgement</a> &mdash; is exactly how these tasks should work in practice.</p>
+      <p>Financial data also means a slightly higher bar for care: keep AI working from figures you actually provide rather than asking it to recall numbers from memory, and always independently check anything it states as fact &mdash; the same &ldquo;confidently wrong&rdquo; risk covered in <a href="/resources/ai-hallucinations" class="aoa-plink">AI hallucinations</a> applies just as much to a spreadsheet as it does to a paragraph.</p>
+
+      <div class="aoa-cta">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; Build this on your real numbers</div>
+        <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Turn your monthly close into a saved prompt</h2>
+        <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">In our <a href="/programs" style="color:#fff;font-weight:600;text-decoration:underline">AI Training &amp; Enablement program</a>, finance staff build reusable prompts and automations for their own real reporting, reconciliation and accounts tasks &mdash; not generic examples, their actual monthly work.</p>
+        <a href="https://adongroup.com.au/contact/" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:700;color:#0B1220;background:#fff;padding:13px 24px;border-radius:14px">Book a call <span style="font-size:16px">&rarr;</span></a>
+      </div>
+
+      <h2 id="faqs">Frequently asked questions</h2>
+      <details class="aoa-faq">
+        <summary>How can a finance team at a small business use AI?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Beyond generic drafting, AI genuinely helps a finance team with tasks like drafting variance commentary on a P&amp;L, preparing tailored follow-ups for overdue invoices, getting reconciliations ready for review, and comparing supplier costs and terms. The common thread is AI doing the first pass on a task that involves gathering, comparing or explaining numbers, with a person checking the result before it's used.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Is it safe to use AI with financial data?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Used well, yes, with sensible limits. Keep AI working from figures you provide rather than asking it to recall numbers from memory, always check anything it states as fact, and be deliberate about which tools and connections you allow to see sensitive financial data. A structured training program covers exactly these limits before a team starts using AI on real numbers.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Can AI replace a bookkeeper or finance manager?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>No &mdash; and that's not the goal. AI is best used to take the repetitive first pass off a finance person's plate &mdash; drafting, comparing, summarising &mdash; so they spend their time on judgement calls, checking the work and talking to the business, not on the manual grind of pulling it together. The decisions stay with the person.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>What AI skill should a finance team learn first?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Writing a clear, reusable prompt for one of your actual recurring finance tasks &mdash; a monthly variance summary or an invoice chase, for example &mdash; is the best starting point. It's the foundation every other finance use case builds on, and it turns a one-off experiment into something the whole team can reuse every month.</div>
+      </details>
+
+      <h2>Keep reading</h2>
+      <div class="aoa-related">
+        <a class="aoa-relcard" href="/resources/ai-agent-examples-for-small-business">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Explainer</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">AI agent examples for small business</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">More real examples across other roles.</div>
+        </a>
+        <a class="aoa-relcard" href="/resources/ai-prompts-for-finance-teams">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Free download</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">10 AI prompts for finance teams</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">These four tasks, as ready-to-use prompts.</div>
+        </a>
+        <a class="aoa-relcard" href="/resources/how-to-write-an-ai-prompt">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">How-to</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">How to write an AI prompt</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">The skill behind every task on this page.</div>
+        </a>
+      </div>
+    </article>
+
+    <div style="margin:40px 0 0"><a href="/resources" style="display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:14px;font-weight:600;color:#5A6473"><span style="font-size:16px">&larr;</span> All resources</a></div>
+  </main>
+
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA;margin-top:72px">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 28px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px" class="bio-footgrid">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px"><span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block" width="2000" height="2000"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span></a>
+        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses.</p>
+      </div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/programs" style="text-decoration:none;color:inherit">AI Training &amp; Enablement</a><a href="/bpo-program" style="text-decoration:none;color:inherit">BPO AI Program</a><a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/resources" style="text-decoration:none;color:inherit">Resources</a><a href="/about" style="text-decoration:none;color:inherit">About</a><a href="/#faqs" style="text-decoration:none;color:inherit">FAQs</a><a href="/terms" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="mailto:adonai@adongroup.com.au" style="text-decoration:none;color:inherit">adonai@adongroup.com.au</a><span>Australia-wide delivery</span></div></div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI. All rights reserved.</span>
+      <div style="display:flex;align-items:center;gap:10px"><a href="https://www.instagram.com/adonai.australia/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#5A6473"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"></circle></svg></a><a href="https://www.facebook.com/adongroup1/" target="_blank" rel="noopener" aria-label="Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#5A6473"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.7V3.3C16.5 3.2 15.4 3 14.2 3c-2.4 0-4 1.4-4 4.1v2.7H7.5v3.2h2.7v8h3.3z"></path></svg></a></div>
+      <a href="/terms" style="text-decoration:none;color:#0B1220;font-weight:700;font-size:13px">Terms of Use</a>
+    </div>
+  </footer>
+</body>
+</html>
