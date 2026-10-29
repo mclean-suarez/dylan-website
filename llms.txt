@@ -1,13 +1,13 @@
 # Ad On AI
 
-> Ad On AI runs AI training and enablement programs for Australian small-to-medium businesses. Two self-paced programs take non-technical staff from their first prompts to reusable skills, automations and deployed AI agents that do real chunks of their day-to-day job. Delivered by Certified Claude Experts; part of Ad On Group (Australian-owned since 2008). Skills are tool-agnostic and transfer to ChatGPT, Copilot, Gemini, Grok and Claude.
+> Ad On AI runs AI training and enablement programs for Australian small-to-medium businesses. Two self-paced programs take non-technical staff from their first prompts to reusable skills, automations and deployed AI agents that do real chunks of their day-to-day job. Delivered by Certified Claude Experts; part of Ad On Group (Australian-owned since 2008). Skills are tool-agnostic and carry across to ChatGPT, Copilot, Gemini, Grok and Claude.
 
 ## Programs
 
 - [AI Enablement Program](https://www.adon-ai.com.au/programs): The most comprehensive program: 24 self-paced modules for non-technical SME staff. The essential skills → automation → AI agents. Every module has a test or practical project; managers are notified if a learner stalls.
 - AI Intermediate: a shorter, six-module program focused on getting Claude working day to day, for people who are short on time. Covers setup, workflows, skills and scheduled tasks, without AI agents. Details on a discovery call.
 - [BPO AI Program](https://www.adon-ai.com.au/bpo-program): A separate, structured AI-enablement product for BPO and outsourced teams, run on a monthly cycle across three months.
-- [Ongoing Support](https://www.adon-ai.com.au/ongoing-support): A monthly membership, separate from the program fee — one-on-one support, masterclasses, podcasts and community that keep skills current as AI moves. Membership also keeps lifetime academy access active.
+- [Ongoing Support](https://www.adon-ai.com.au/ongoing-support): A monthly membership, separate from the program fee — one-on-one support, masterclasses, podcasts and community that keep skills current as AI moves. Membership also gives ongoing Learning Academy access.
 
 ## Company
 
@@ -32,7 +32,7 @@
 
 - Audience: non-technical staff at Australian SMEs (finance, operations, marketing, admin, customer service).
 - Format: self-paced modules on a custom AI-enabled training platform. Membership adds one-on-one support, webinars and the community.
-- Duration: self-paced, no deadline. Every module is open from day one.
+- Duration: self-paced. Every module is open from day one; the program includes 4 months of Learning Academy access, and access continues with a membership.
 - Outcomes per learner (AI Enablement): ready-made prompts, AI skills, tasks using images and documents, end-to-end workflows, AI agents and a lead agent running the others.
 - Contact: info@adongroup.com.au · (07) 5586 1400
 - Address: 1/44 Township Drive, Burleigh Heads QLD 4219, Australia
