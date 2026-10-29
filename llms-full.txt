@@ -1,6 +1,6 @@
 # Ad On AI — Full Reference for AI Answer Engines
 
-> Ad On AI runs AI training and enablement programs for Australian small-to-medium businesses (SMEs). There are two self-paced programs, AI Enablement and AI Intermediate. AI Enablement, the most comprehensive, takes non-technical staff from their first prompts to reusable skills, automations and deployed AI agents that do real chunks of their day-to-day job. Delivered by Certified Claude Experts. Ad On AI is a division of Ad On Group, an Australian-owned company operating since 2008. Skills taught are tool-agnostic and transfer to ChatGPT, Copilot, Gemini, Grok and Claude.
+> Ad On AI runs AI training and enablement programs for Australian small-to-medium businesses (SMEs). There are two self-paced programs, AI Enablement and AI Intermediate. AI Enablement, the most comprehensive, takes non-technical staff from their first prompts to reusable skills, automations and deployed AI agents that do real chunks of their day-to-day job. Delivered by Certified Claude Experts. Ad On AI is a division of Ad On Group, an Australian-owned company operating since 2008. Skills taught are tool-agnostic and carry across to ChatGPT, Copilot, Gemini, Grok and Claude.
 
 - Website: https://www.adon-ai.com.au
 - Contact: info@adongroup.com.au · (07) 5586 1400
@@ -15,12 +15,12 @@
 
 The core offering: a managed, self-paced program of 24 modules — not a video library — for non-technical SME staff in roles like finance, operations, marketing, admin and customer service. No technical background is required.
 
-- Duration: self-paced, no deadline. Every module is open from day one.
+- Duration: self-paced. Every module is open from day one; the program includes 4 months of Learning Academy access, and access continues with a membership.
 - Structure: three topics — the essential skills (modules 1–8), automation (9–16) and AI agents (17–24).
 - Accountability: every module includes a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls.
 - Outcome per learner: 20+ working AI builds tied to their own job — reusable prompt packs, custom skills, automations, end-to-end workflows and deployed AI agents — plus a record of hours reclaimed.
-- Tool-agnostic: the skills transfer to ChatGPT, Copilot, Gemini, Grok and other tools; Claude is the worked example.
-- After the program: a monthly membership (separate from the program fee) adds two hours of one-on-one support a month, a monthly live AI trends webinar and the community, and keeps lifetime academy access active.
+- Tool-agnostic: the skills carry across to ChatGPT, Copilot, Gemini, Grok and other tools; Claude is the worked example.
+- After the program: a monthly membership (separate from the program fee) adds two hours of one-on-one support a month, a monthly live AI trends webinar and the community, and gives ongoing Learning Academy access.
 
 ## AI Intermediate
 
@@ -32,7 +32,7 @@ Structured AI enablement built specifically for BPO providers and outsourced/off
 
 ## Ongoing Support (membership)
 
-A monthly membership, separate from the program fee, that keeps teams current as AI moves — one-on-one support each month (1 hour with AI Intermediate, 2 hours with AI Enablement), tool masterclasses (recorded and kept), business-application podcasts, a monthly newsletter and a peer network. AI Enablement members also get a monthly live AI trends webinar. Lifetime academy access continues for as long as the membership is active.
+A monthly membership, separate from the program fee, that keeps teams current as AI moves — one-on-one support each month (1 hour with AI Intermediate, 2 hours with AI Enablement), tool masterclasses (recorded and kept), business-application podcasts, a monthly newsletter and a peer network. AI Enablement members also get a monthly live AI trends webinar. Learning Academy access continues for as long as the membership is active.
 
 ## Common questions
 
@@ -40,7 +40,7 @@ Q: How fast will staff see results?
 A: Most people start using AI in their daily work from the first module — you'll notice the difference before you read a report.
 
 Q: Do the skills only work with Claude?
-A: No. They are tool-agnostic and transfer to ChatGPT, Copilot, Gemini, Grok and whatever comes next.
+A: No. They are tool-agnostic and carry across to ChatGPT, Copilot, Gemini, Grok and whatever comes next.
 
 Q: How is progress tracked?
 A: Every module has a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls.
@@ -49,10 +49,10 @@ Q: Can new staff join mid-program, or can I add more staff later?
 A: Yes. New intake starts every month at level 1. Monthly intake is limited so each person gets proper support, so it's best to plan ahead.
 
 Q: Is there support after the program?
-A: Yes — with a membership, which is separate from the program fee: one-on-one support, webinars, podcasts, masterclasses and newsletters, and lifetime academy access stays active.
+A: Yes — with a membership, which is separate from the program fee: one-on-one support, webinars, podcasts, masterclasses and newsletters, and ongoing Learning Academy access.
 
 Q: Can I cancel?
-A: Yes, the membership can be cancelled any time. That ends support, community and academy access, and a re-joining fee applies to come back later.
+A: Yes, the membership can be cancelled any time. That ends one-on-one support, community and ongoing academy access.
 
 ## Resources (plain-English AI guides)
 
