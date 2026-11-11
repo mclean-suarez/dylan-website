@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Use Claude Sheets, Whiteboards &amp; Meetings (2026 Guide) | Ad On AI</title>
+<meta name="description" content="A quick, visual guide to Claude Sheets, Whiteboards and Meetings: how to turn them on, what each does, and 15 copy-paste prompts for budgets, quotes, plans and meeting notes.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings">
+<meta name="author" content="Beau Robards">
+<meta name="theme-color" content="#2F6FED">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ad On AI">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="How to Use Claude Sheets, Whiteboards &amp; Meetings (2026 Guide)">
+<meta property="og:description" content="Turn them on, see what each one does, and copy 15 ready-made prompts.">
+<meta property="og:url" content="https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings">
+<meta property="og:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<meta property="article:published_time" content="2026-11-12">
+<meta property="article:modified_time" content="2026-11-12">
+<meta property="article:author" content="https://www.adon-ai.com.au/beau-robards">
+<meta property="article:section" content="Guides">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Use Claude Sheets, Whiteboards &amp; Meetings (2026 Guide)">
+<meta name="twitter:description" content="Turn them on, see what each one does, and copy 15 ready-made prompts.">
+<meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/intertight.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrainsmono-500.woff2" crossorigin>
+<style>@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500 800;font-display:swap;src:url('/assets/fonts/intertight.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/jetbrainsmono-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.18), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.15), transparent 52%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; min-height: 100vh; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 800; }
+  a { color: #2F6FED; } a:hover { color: #1B54C4; }
+  .aoa-prose { font-size: 17px; line-height: 1.72; color: #2B333F; }
+  .aoa-prose p { margin: 0 0 20px; }
+  .aoa-prose h2 { font-size: clamp(23px,2.6vw,30px); line-height: 1.14; margin: 44px 0 14px; color: #0B1220; }
+  .aoa-prose ul { margin: 0 0 20px; padding-left: 22px; }
+  .aoa-prose li { margin: 0 0 9px; }
+  .aoa-prose strong { color: #0B1220; }
+  .aoa-plink { color:#2F6FED; font-weight:600; text-decoration:none; }
+  .aoa-plink:hover { text-decoration:underline; }
+  .aoa-answer { background: rgba(47,111,237,0.06); border: 1px solid rgba(47,111,237,0.18); border-radius: 16px; padding: 22px 24px; margin: 0 0 32px; }
+  .aoa-answer .lbl { font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:#2F6FED; }
+  .aoa-answer p { font-size: 17.5px; line-height: 1.6; color: #1B2430; margin: 8px 0 0; }
+  .aoa-faq{background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;margin:0 0 12px;overflow:hidden}
+  .aoa-faq>summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Inter Tight','Helvetica Neue',sans-serif;font-weight:600;font-size:16.5px;letter-spacing:-0.02em;color:#0B1220}
+  .aoa-faq>summary::-webkit-details-marker{display:none}
+  .aoa-faq>summary svg{flex:none;transition:transform .22s ease;color:#2F6FED}
+  .aoa-faq[open]>summary svg{transform:rotate(45deg)}
+  .aoa-faq>div{padding:0 22px 20px;font-size:15px;line-height:1.62;color:#5A6473}
+  .aoa-related{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .aoa-relcard{display:block;text-decoration:none;background:rgba(255,255,255,0.66);border:1px solid rgba(11,18,32,0.07);border-radius:14px;padding:18px 20px;transition:transform .18s ease, box-shadow .18s ease}
+  .aoa-relcard:hover{transform:translateY(-2px);box-shadow:0 18px 38px -24px rgba(11,18,32,0.3)}
+  .aoa-cta{background:#0B1220;border-radius:22px;padding:34px 32px;color:#fff}
+  @media (max-width: 640px){ .aoa-related{grid-template-columns:1fr} }
+  @media (max-width: 760px) { .bio-navlinks > div:first-of-type, .bio-navlinks > span { display: none !important; } .bio-footgrid { grid-template-columns: 1fr 1fr !important; } }
+   .aoa-prose h2 { scroll-margin-top: 96px; margin-top: 52px; }
+  .aoa-prose h3 { font-size: 17px; line-height: 1.3; margin: 28px 0 10px; color: #0B1220; letter-spacing: -0.02em; font-weight: 700; }
+  .aoa-prose ol.aoa-steps { list-style: none; counter-reset: st; padding: 0; margin: 0 0 20px; }
+  .aoa-prose ol.aoa-steps > li { counter-increment: st; position: relative; padding: 0 0 0 42px; margin: 0 0 12px; }
+  .aoa-prose ol.aoa-steps > li::before { content: counter(st); position: absolute; left: 0; top: 2px; width: 28px; height: 28px; border-radius: 50%; background: rgba(47,111,237,0.1); color: #2F6FED; font: 700 13.5px/28px 'Inter Tight', sans-serif; text-align: center; }
+  /* at-a-glance */
+  .aoa-trio { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin: 0 0 8px; }
+  .aoa-trio a { display: flex; flex-direction: column; gap: 4px; text-decoration: none; background: rgba(255,255,255,0.72); border: 1px solid rgba(11,18,32,0.07); border-radius: 16px; padding: 18px; transition: transform .18s ease, box-shadow .18s ease; }
+  .aoa-trio a:hover { transform: translateY(-2px); box-shadow: 0 18px 38px -24px rgba(11,18,32,0.3); }
+  .aoa-trio strong { font-family: 'Inter Tight', sans-serif; font-size: 17px; color: #0B1220; }
+  .aoa-trio span { font-size: 14px; line-height: 1.45; color: #5A6473; }
+  .aoa-trio em { font-style: normal; align-self: flex-start; margin-top: 8px; font: 600 11.5px/1 'Inter Tight', sans-serif; padding: 6px 9px; border-radius: 999px; }
+  .aoa-trio em.live { background: rgba(34,160,90,0.1); color: #167A43; } .aoa-trio em.soon { background: rgba(230,160,30,0.13); color: #8A5F00; }
+  .aoa-trio .ic { width: 34px; height: 34px; border-radius: 10px; margin-bottom: 8px; background: rgba(47,111,237,0.1) center/18px no-repeat; }
+  .ic-sheet { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F6FED' stroke-width='2'%3E%3Crect x='3' y='3' width='18' height='18' rx='2'/%3E%3Cpath d='M3 9h18M3 15h18M9 3v18'/%3E%3C/svg%3E") !important; }
+  .ic-board { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F6FED' stroke-width='2' stroke-linecap='round'%3E%3Crect x='3' y='4' width='7' height='7' rx='1.5'/%3E%3Crect x='14' y='13' width='7' height='7' rx='1.5'/%3E%3Cpath d='M10 7.5h4a3 3 0 0 1 3 3V13'/%3E%3C/svg%3E") !important; }
+  .ic-meet { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F6FED' stroke-width='2' stroke-linejoin='round'%3E%3Crect x='2' y='6' width='13' height='12' rx='2'/%3E%3Cpath d='m15 10 6-3v10l-6-3z'/%3E%3C/svg%3E") !important; }
+  /* prompts */
+  .aoa-prompt { background: #0B1220; border-radius: 16px; margin: 16px 0 20px; overflow: hidden; box-shadow: 0 18px 40px -26px rgba(11,18,32,0.55); }
+  .aoa-prompt-h { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px 10px 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .aoa-prompt-h .fn { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: #8FB0F5; }
+  .aoa-copy { font: 600 13px/1 'Inter Tight', sans-serif; color: #0B1220; background: #fff; border: 0; border-radius: 10px; padding: 9px 14px; cursor: pointer; transition: background .15s ease; }
+  .aoa-copy:hover { background: #DCE7FD; } .aoa-copy.done { background: #CFF1DC; }
+  .aoa-copy:focus-visible, .aoa-tablist button:focus-visible { outline: 2px solid #2F6FED; outline-offset: 2px; }
+  .aoa-prompt pre { margin: 0; padding: 16px 18px 18px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13.5px; line-height: 1.65; color: #E6EBF2; white-space: pre-wrap; word-break: break-word; }
+  .aoa-prompt pre .ph { color: #FFC59E; }
+  .aoa-tabs .aoa-prompt { margin-top: 10px; }
+  .aoa-tablist { display: flex; flex-wrap: wrap; gap: 8px; }
+  .aoa-tablist button { font: 600 13.5px/1 'Inter Tight', sans-serif; color: #3A434F; background: rgba(255,255,255,0.72); border: 1px solid rgba(11,18,32,0.1); border-radius: 999px; padding: 9px 14px; cursor: pointer; }
+  .aoa-tablist button:hover { border-color: rgba(47,111,237,0.4); color: #2F6FED; }
+  .aoa-tablist button[aria-selected="true"] { background: #0B1220; border-color: #0B1220; color: #fff; }
+  .aoa-tip { font-size: 15px; line-height: 1.6; color: #3A434F; background: rgba(47,111,237,0.06); border-left: 3px solid #2F6FED; border-radius: 0 12px 12px 0; padding: 12px 16px; }
+  .aoa-tip-warn { background: rgba(255,168,112,0.12); border-left-color: #E2783C; }
+  /* mockups */
+  .aoa-mock { margin: 22px 0 22px; }
+  .aoa-mock figcaption { font-size: 13.5px; color: #7C8696; margin-top: 10px; text-align: center; }
+  .mk-lbl { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A93A1; margin-bottom: 10px; }
+  .mk-lbl.light { color: #9AA5B5; }
+  .mk-win { background: #fff; border: 1px solid rgba(11,18,32,0.08); border-radius: 18px; box-shadow: 0 30px 60px -36px rgba(11,18,32,0.45); overflow: hidden; }
+  .mk-bar { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid rgba(11,18,32,0.06); background: #FBFAF8; }
+  .mk-dots { display: flex; gap: 6px; } .mk-dots i { width: 10px; height: 10px; border-radius: 50%; background: #E3E1DD; }
+  .mk-title { font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 15px; color: #0B1220; flex: 1; }
+  .mk-pill { font: 600 11.5px/1 'Inter Tight', sans-serif; color: #2F6FED; background: rgba(47,111,237,0.1); padding: 6px 10px; border-radius: 999px; }
+  .mk-fx { display: flex; align-items: center; gap: 12px; padding: 9px 16px; border-bottom: 1px solid rgba(11,18,32,0.06); font-size: 13px; }
+  .mk-fx b { color: #5A6473; font-weight: 600; min-width: 22px; } .mk-fx code { font-family: 'JetBrains Mono', monospace; color: #2F6FED; font-size: 12.5px; }
+  .mk-tablewrap { overflow-x: auto; }
+  .mk-sheet { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 560px; }
+  .mk-sheet th { font: 600 12px/1 'Inter Tight', sans-serif; color: #7C8696; text-align: left; padding: 10px 12px; background: #FBFAF8; border-bottom: 1px solid rgba(11,18,32,0.06); }
+  .mk-sheet td { padding: 10px 12px; border-bottom: 1px solid rgba(11,18,32,0.05); color: #1B2430; white-space: nowrap; }
+  .mk-sheet td:first-child, .mk-sheet th:first-child { width: 28px; color: #A4ACB8; font-size: 12px; text-align: center; background: #FBFAF8; }
+  .mk-sheet .n { text-align: right; font-variant-numeric: tabular-nums; }
+  .mk-sheet .tot td { font-weight: 700; border-bottom: 0; }
+  .mk-sheet .sel { outline: 2px solid #2F6FED; outline-offset: -2px; background: rgba(47,111,237,0.05); }
+  .mk-sheet .left { color: #167A43; font-weight: 600; font-size: 12.5px; }
+  .st { display: inline-block; font: 600 12px/1 'Inter Tight', sans-serif; padding: 5px 9px; border-radius: 7px; }
+  .st::after { content: " ▾"; opacity: .6; }
+  .st-g { background: #E3F5EA; color: #167A43; } .st-y { background: #FDF1D3; color: #8A5F00; } .st-b { background: #E6EDFD; color: #2F5BC8; }
+  .mk-board { display: grid; grid-template-columns: 1fr 40px 1.15fr; align-items: center; gap: 12px; background: #fff; border: 1px solid rgba(11,18,32,0.08); border-radius: 18px; padding: 20px; box-shadow: 0 30px 60px -36px rgba(11,18,32,0.45); background-image: radial-gradient(rgba(11,18,32,0.07) 1px, transparent 1px); background-size: 16px 16px; }
+  .mk-notes { display: flex; flex-direction: column; gap: 9px; }
+  .nt { display: block; font-size: 13px; line-height: 1.4; padding: 10px 12px; border-radius: 8px; color: #2B333F; box-shadow: 0 6px 14px -10px rgba(11,18,32,0.35); }
+  .nt-y { background: #FFF1B8; transform: rotate(-1.2deg); } .nt-p { background: #FFD9CC; transform: rotate(0.8deg); } .nt-b { background: #D9E6FF; transform: rotate(-0.6deg); } .nt-g { background: #D6F2E0; transform: rotate(1deg); }
+  .mk-tl { background: #fff; border: 1px solid rgba(11,18,32,0.08); border-radius: 14px; padding: 14px 16px; }
+  .tl-row { display: grid; grid-template-columns: 58px 1fr auto; align-items: center; gap: 10px; padding: 9px 0 9px 14px; border-left: 2px solid rgba(47,111,237,0.25); position: relative; font-size: 13.5px; }
+  .tl-row::before { content: ""; position: absolute; left: -6px; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-radius: 50%; background: #2F6FED; box-shadow: 0 0 0 3px #fff; }
+  .tl-row .d { font: 600 12px/1 'JetBrains Mono', monospace; color: #2F6FED; } .tl-row .t { color: #0B1220; font-weight: 600; }
+  .tl-row .o { font: 600 11.5px/1 'Inter Tight', sans-serif; background: #F1F3F6; color: #3A434F; padding: 5px 8px; border-radius: 999px; }
+  .tl-dec { margin-top: 12px; font-size: 13px; color: #5A6473; background: rgba(230,160,30,0.1); border: 1px dashed rgba(200,140,20,0.45); border-radius: 10px; padding: 9px 12px; }
+  .tl-dec b { display: block; font: 700 11px/1.4 'JetBrains Mono', monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F00; }
+  .mk-meet { display: grid; grid-template-columns: 1fr 1.1fr; gap: 14px; }
+  .mk-call { background: #1B2230; border-radius: 18px; padding: 16px; position: relative; box-shadow: 0 30px 60px -36px rgba(11,18,32,0.6); }
+  .mk-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .mk-tiles span { aspect-ratio: 4/3; border-radius: 12px; background: #2A3242; display: flex; align-items: center; justify-content: center; font: 700 22px/1 'Inter Tight', sans-serif; color: #fff; }
+  .mk-tiles b { width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .mk-tiles span.cl { background: linear-gradient(135deg,#2F6FED,#6A9BFF); font-size: 14px; font-weight: 700; }
+  .mk-toast { margin-top: 12px; background: #fff; color: #0B1220; border-radius: 10px; padding: 9px 12px; font-size: 12.5px; font-weight: 600; }
+  .mk-notesout { background: #fff; border: 1px solid rgba(11,18,32,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: 0 30px 60px -36px rgba(11,18,32,0.45); }
+  .mk-notesout .sum { font-size: 14px; line-height: 1.5; color: #1B2430; margin: 0 0 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(11,18,32,0.07); }
+  .mk-notesout .ai { display: grid; grid-template-columns: 18px 1fr auto; gap: 10px; align-items: center; padding: 7px 0; font-size: 13.5px; }
+  .mk-notesout .cb { width: 16px; height: 16px; border: 2px solid #B7BDC7; border-radius: 5px; }
+  .mk-notesout .t { color: #0B1220; font-weight: 600; } .mk-notesout .o { font-size: 12px; color: #7C8696; white-space: nowrap; }
+  /* flow */
+  .aoa-flow { display: flex; align-items: stretch; gap: 8px; margin: 4px 0 18px; }
+  .aoa-flow > div { flex: 1; background: rgba(255,255,255,0.72); border: 1px solid rgba(11,18,32,0.07); border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 3px; }
+  .aoa-flow .n { width: 24px; height: 24px; border-radius: 50%; background: #2F6FED; color: #fff; font: 700 12px/24px 'Inter Tight', sans-serif; text-align: center; margin-bottom: 6px; }
+  .aoa-flow strong { font-family: 'Inter Tight', sans-serif; font-size: 15px; color: #0B1220; } .aoa-flow > div > span:last-child { font-size: 13px; color: #5A6473; }
+  .aoa-flow i { font-style: normal; align-self: center; color: #2F6FED; font-weight: 700; }
+  /* limits */
+  .aoa-limits { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 12px; }
+  .aoa-limits > div { border-radius: 14px; padding: 16px 18px 6px; border: 1px solid; }
+  .aoa-limits .t { font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+  .aoa-limits ul { margin: 0 0 8px !important; padding-left: 18px !important; font-size: 14.5px; line-height: 1.5; }
+  .aoa-limits li { margin: 0 0 6px !important; }
+  .aoa-limits .soon { background: rgba(230,160,30,0.08); border-color: rgba(200,140,20,0.25); } .aoa-limits .soon .t { color: #8A5F00; }
+  .aoa-limits .no { background: rgba(210,60,60,0.06); border-color: rgba(210,60,60,0.2); } .aoa-limits .no .t { color: #B23434; }
+  .aoa-cta { margin: 44px 0 8px; }
+  .aoa-related { margin-bottom: 30px; }
+  .aoa-prose p.aoa-sources { font-size: 13px; line-height: 1.6; color: #8A93A1; border-top: 1px solid rgba(11,18,32,0.08); padding-top: 18px; }
+  .aoa-sources a { color: #5A6473; }
+  @media (max-width: 640px) {
+    .aoa-trio { grid-template-columns: 1fr; gap: 8px; } .aoa-trio a { display: grid; grid-template-columns: 34px 1fr auto; column-gap: 12px; row-gap: 0; align-items: center; padding: 12px 14px; } .aoa-trio .ic { margin: 0; grid-row: span 2; } .aoa-trio em { margin: 0; grid-column: 3; grid-row: 1 / span 2; } .aoa-trio span:not(.ic) { grid-column: 2; font-size: 13px; }
+    .mk-board { grid-template-columns: 1fr; padding: 14px; } .mk-arrow { transform: rotate(90deg); justify-self: center; }
+    .mk-meet { grid-template-columns: 1fr; }
+    .aoa-flow { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; } .aoa-flow i { display: none; } .aoa-flow > div { padding: 12px; }
+    .aoa-limits { grid-template-columns: 1fr; }
+    .aoa-prompt pre { font-size: 12.5px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings#article",
+      "headline": "How to Use Claude Sheets, Whiteboards & Meetings (2026 Guide)",
+      "description": "A quick, visual guide to Claude Sheets, Whiteboards and Meetings: how to turn them on, what each does, and 15 copy-paste prompts for budgets, quotes, plans and meeting notes.",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "en-AU",
+      "image": "https://www.adon-ai.com.au/assets/og-image.png",
+      "author": {
+        "@id": "https://www.adon-ai.com.au/beau-robards#person"
+      },
+      "publisher": {
+        "@id": "https://www.adon-ai.com.au/#organization"
+      },
+      "mainEntityOfPage": "https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings",
+      "isPartOf": {
+        "@id": "https://www.adon-ai.com.au/#website"
+      },
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Claude Sheets",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, macOS, Windows",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anthropic"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Claude Whiteboards",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, macOS, Windows, iOS, Android",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anthropic"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Claude Meetings",
+          "applicationCategory": "BusinessApplication",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anthropic"
+          }
+        }
+      ],
+      "keywords": "Claude Sheets, Claude Whiteboards, Claude Meetings, Claude prompts, AI spreadsheet, Anthropic, Australian small business",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".aoa-answer"
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.adon-ai.com.au/beau-robards#person",
+      "name": "Beau Robards",
+      "url": "https://www.adon-ai.com.au/beau-robards",
+      "jobTitle": "Facilitator",
+      "image": "https://www.adon-ai.com.au/assets/team-beau.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/beau-robards-6b4b09357/"
+      ],
+      "worksFor": {
+        "@id": "https://www.adon-ai.com.au/#organization"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings#howto",
+      "name": "How to build a Claude Sheet",
+      "description": "Turn on Claude Sheets and build a working spreadsheet from a description and your own numbers.",
+      "totalTime": "PT5M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Check your plan",
+          "text": "Claude Sheets needs a paid Pro, Max, Ultra, Team or Enterprise plan. On Enterprise, an owner switches it on in Organization settings > Artifacts."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Start the sheet",
+          "text": "Ask for a sheet in any chat, or open the Artifacts tab and pick Sheets. You can start from a CSV, an Excel file, a Google Sheet or a blank sheet."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Give it your real numbers",
+          "text": "Say what the sheet is for and paste in your data so Claude builds from your numbers instead of guessing."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Check the formulas",
+          "text": "Formulas stay in the cells, so click any total to see how it was worked out."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Share or export",
+          "text": "Click Share to edit with your team in real time, or export to .xlsx or CSV."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do Claude Sheets and Whiteboards cost extra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No separate price has been announced. They come with paid Claude plans while in beta. They aren't on the Free plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use my existing spreadsheet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Start from a CSV, Excel file or Google Sheet, or paste rows in. You can export back to .xlsx or CSV at any time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Claude Sheets replace Excel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For trackers, budgets and calculators, it can. For pivot tables, macros or very large files, export to .xlsx and use Excel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Claude Meetings record the call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anthropic hasn't said whether it keeps a full recording or transcript. Reports say notes and action items are saved in Claude after the call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why can't I see Sheets or Whiteboards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check you're on a paid plan, then give it a few days and refresh, because the rollout is gradual. On Enterprise, an owner has to switch them on in Organization settings › Artifacts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use them on my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Whiteboards work on mobile. Sheets can be viewed on mobile, but editing is on web and desktop for now."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.adon-ai.com.au/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Resources",
+          "item": "https://www.adon-ai.com.au/resources"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Claude Sheets, Whiteboards & Meetings",
+          "item": "https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div style="max-width:1120px;margin:0 auto;background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="/assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+      </a>
+      <div class="bio-navlinks" style="display:flex;align-items:center;gap:28px">
+        <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
+        <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
+          <a href="/ad-on-group" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <a href="/programs" style="text-decoration:none;color:inherit">Programs</a>
+          <a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="/about" style="text-decoration:none;color:inherit">About</a>
+        </div>
+        <a href="https://adongroup.com.au/contact/" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px">Book a call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="max-width:780px;margin:0 auto;padding:40px 28px 0">
+    <nav aria-label="Breadcrumb" style="font-size:13.5px;color:#7C8696;margin-bottom:22px">
+      <a href="/" style="color:#7C8696;text-decoration:none">Home</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <a href="/resources" style="color:#7C8696;text-decoration:none">Resources</a>
+      <span style="margin:0 8px;color:#B7BDC7">/</span>
+      <span style="color:#3A434F">Claude Sheets, Whiteboards &amp; Meetings</span>
+    </nav>
+
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">&mdash; Step-by-step guide</span>
+    <h1 style="font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-0.04em;font-weight:800;margin:12px 0 16px;color:#0B1220">How to use Claude Sheets, Whiteboards &amp; Meetings</h1>
+    <p style="font-size:18px;line-height:1.6;color:#39424E;margin:0 0 24px">How to turn them on, what each one does, and the prompts to copy.</p>
+
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:26px;border-bottom:1px solid rgba(11,18,32,0.08)">
+      <img src="/assets/team-beau.png" alt="Beau Robards" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%" width="88" height="88">
+      <div style="font-size:14px;line-height:1.4;color:#5A6473">
+        <div>By <a href="/beau-robards" style="color:#0B1220;font-weight:700;text-decoration:none">Beau Robards</a>, Certified Claude Expert</div>
+        <div style="color:#8A93A1">Published <time datetime="2026-11-12">12 November 2026</time> &middot; 7 min read</div>
+      </div>
+    </div>
+
+    <article class="aoa-prose">
+      <div class="aoa-answer">
+        <span class="lbl">The short answer</span>
+        <p><strong>Sheets</strong> builds spreadsheets for you. <strong>Whiteboards</strong> turns a rough plan into a timeline. <strong>Meetings</strong> joins Google Meet and takes the notes. Sheets and Whiteboards launched in beta on <strong>10 November 2026</strong> on paid Claude plans. Meetings is still rolling out.</p>
+      </div>
+
+      <div class="aoa-trio">
+        <a href="#claude-sheets"><span class="ic ic-sheet"></span><strong>Sheets</strong><span>Spreadsheets from a description</span><em class="live">Out now &middot; beta</em></a>
+        <a href="#claude-whiteboards"><span class="ic ic-board"></span><strong>Whiteboards</strong><span>Plans into timelines, docs and decks</span><em class="live">Out now &middot; beta</em></a>
+        <a href="#claude-meetings"><span class="ic ic-meet"></span><strong>Meetings</strong><span>Notes and action items from calls</span><em class="soon">Rolling out</em></a>
+      </div>
+
+      <!-- TURN ON -->
+      <h2 id="turn-on">1. Turn them on</h2>
+      <ol class="aoa-steps">
+        <li><strong>Get a paid plan.</strong> Sheets needs Pro, Max, Ultra, Team or Enterprise. Whiteboards works on any paid plan. They aren't on the Free plan.</li>
+        <li><strong>Open them.</strong> Ask for a sheet or whiteboard in any chat, or pick one from the Artifacts tab. If they're not there yet, wait a few days and refresh. The rollout is gradual.</li>
+        <li><strong>On Enterprise,</strong> an owner switches them on in <strong>Organization settings &rsaquo; Artifacts</strong>. On Team, they're already on.</li>
+      </ol>
+
+      <!-- SHEETS -->
+      <h2 id="claude-sheets">2. Claude Sheets</h2>
+      <p>Describe the sheet and paste in your numbers. Claude builds the tabs, formulas, dropdowns and charts. Your team can then edit it together, with or without Claude.</p>
+
+      <figure class="aoa-mock" aria-label="Illustration of a Claude Sheet hiring budget">
+        <div class="mk-win">
+          <div class="mk-bar"><span class="mk-dots"><i></i><i></i><i></i></span><span class="mk-title">Hiring budget 2027</span><span class="mk-pill">Sheets &middot; beta</span></div>
+          <div class="mk-fx"><b>D7</b><code>=SUM(D2:D6)</code></div>
+          <div class="mk-tablewrap">
+            <table class="mk-sheet">
+              <thead><tr><th></th><th>Role</th><th>Team</th><th>Start</th><th>Cost (incl. super)</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>2</td><td>Senior designer</td><td>Design</td><td>Jan</td><td class="n">$132,160</td><td><span class="st st-g">Hired</span></td></tr>
+                <tr><td>3</td><td>Marketing lead</td><td>Growth</td><td>Feb</td><td class="n">$107,800</td><td><span class="st st-y">Interviewing</span></td></tr>
+                <tr><td>4</td><td>Ops coordinator</td><td>Ops</td><td>Mar</td><td class="n">$67,200</td><td><span class="st st-b">Open</span></td></tr>
+                <tr><td>5</td><td>Sales exec</td><td>Sales</td><td>Mar</td><td class="n">$60,667</td><td><span class="st st-b">Open</span></td></tr>
+                <tr><td>6</td><td>Support rep</td><td>Support</td><td>Apr</td><td class="n">$43,680</td><td><span class="st st-b">Open</span></td></tr>
+                <tr class="tot"><td>7</td><td>Total</td><td></td><td></td><td class="n sel">$411,507</td><td class="left">$38,493 left</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <figcaption>Every total is a real formula you can click and check. Illustration.</figcaption>
+      </figure>
+
+      <div class="aoa-prompt">
+        <div class="aoa-prompt-h"><span class="fn">hiring-budget.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Build a hiring budget for [2027] as a Claude Sheet.
+
+Roles (title, team, start month, salary):
+[Senior designer, Design, Jan, $118,000
+Marketing lead, Growth, Feb, $105,000
+Ops coordinator, Ops, Mar, $72,000
+Sales exec, Sales, Mar, $65,000
+Support rep, Support, Apr, $52,000]
+
+Tabs:
+- Budget: role, team, start month, salary, super at [12%], cost this year (pro-rated from the start month), and a Status dropdown (Open, Interviewing, Hired)
+- Roles: a short description and the must-haves for each role
+- Summary: total cost for the year, cost by team, and a bar chart of cost by team
+
+Use formulas for every total so I can check them. Our budget for the year is [$450,000]: show how much is left, in red if it goes negative.</pre>
+      </div>
+
+      <h3>More sheets to try</h3>
+      <div class="aoa-tabs">
+        <div class="aoa-tablist" role="tablist" aria-label="Sheet prompts">
+          <button type="button" role="tab" aria-selected="true">Cash flow</button>
+          <button type="button" role="tab" aria-selected="false">Quote calculator</button>
+          <button type="button" role="tab" aria-selected="false">Campaign tracker</button>
+          <button type="button" role="tab" aria-selected="false">Content calendar</button>
+          <button type="button" role="tab" aria-selected="false">Clean a list</button>
+          <button type="button" role="tab" aria-selected="false">Budget vs actual</button>
+        </div>
+        <div class="aoa-prompt" role="tabpanel">
+          <div class="aoa-prompt-h"><span class="fn">cash-flow.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Build a 12-month cash flow forecast starting [December 2026]. Monthly income: [list]. Recurring costs: [rent $2,400, software $380, wages $9,500]. Start from a bank balance of [$20,000], show the running balance each month, and highlight any month it drops below [$5,000].</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">quote-calculator.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Build a quote calculator for my [cleaning] business. Inputs: [service type dropdown, size in square metres, hours, extras]. Rates: [paste your rates]. Add GST at 10% and a total, and a second tab listing every quote with the date and customer.</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">campaign-tracker.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Build a campaign tracker for [our December promos]: campaign, owner, channel, start date, end date, budget, spent, and a Status dropdown (Planned, Live, Done). Add a Summary tab with spend against budget by channel and a bar chart. Turn anything over budget red.</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">content-calendar.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Build a content calendar for [December]: date, a Platform dropdown (Instagram, TikTok, LinkedIn), idea, owner, and a Posted checkbox. Add a tab that counts posts per platform with a pie chart.</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">clean-a-list.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>I've imported [our customer list]. Clean it up: fix capitalisation, split full names into first and last name, flag duplicate emails, and add a tab counting customers by [suburb].</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">budget-vs-actual.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Add a tab comparing our budget with what we actually spent each month. Here are the actuals: [paste]. Show the difference in dollars and as a percentage, and turn any overspend red.</pre>
+        </div>
+      </div>
+      <p class="aoa-tip"><strong>Tip:</strong> Give it real numbers. You can start from a CSV, Excel file or Google Sheet, and export back to .xlsx any time.</p>
+
+      <!-- WHITEBOARDS -->
+      <h2 id="claude-whiteboards">3. Claude Whiteboards</h2>
+      <p>Paste a plan the way you'd say it. Claude lays it out as a timeline with owners and dates, then turns it into a doc or a slide deck.</p>
+
+      <figure class="aoa-mock" aria-label="Illustration of rough notes becoming a timeline on a Claude Whiteboard">
+        <div class="mk-board">
+          <div class="mk-notes">
+            <div class="mk-lbl">Your notes</div>
+            <span class="nt nt-y">Promo ads live 27 Nov, Jess books shoot</span>
+            <span class="nt nt-p">Tom emails the list 2 Dec</span>
+            <span class="nt nt-b">New landing page by 8 Dec, Priya</span>
+            <span class="nt nt-g">Budget for paid social?</span>
+          </div>
+          <div class="mk-arrow" aria-hidden="true"><svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M2 12h32m-8-8 8 8-8 8" stroke="#2F6FED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="mk-tl">
+            <div class="mk-lbl">Claude's timeline</div>
+            <div class="tl-row"><span class="d">27 Nov</span><span class="t">Promo ads live</span><span class="o">Jess</span></div>
+            <div class="tl-row"><span class="d">2 Dec</span><span class="t">Email the list</span><span class="o">Tom</span></div>
+            <div class="tl-row"><span class="d">8 Dec</span><span class="t">Landing page live</span><span class="o">Priya</span></div>
+            <div class="tl-dec"><b>Needs a decision</b>Budget for paid social</div>
+          </div>
+        </div>
+        <figcaption>Anything without an owner or a date goes to &ldquo;Needs a decision&rdquo;. Illustration.</figcaption>
+      </figure>
+
+      <div class="aoa-prompt">
+        <div class="aoa-prompt-h"><span class="fn">launch-plan.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Make a whiteboard for our [spring launch]. Here's the plan as we talked it through:
+[Promo ads go live Nov 27, Jess books the shoot. Tom emails the list on Dec 2. Priya has the new landing page live by Dec 8.]
+
+Lay it out as a timeline with each task, its owner and its due date. Put anything without an owner or a date in a "Needs a decision" corner.
+
+When I say it's final, turn it into a one-page doc and a 3-slide deck: the plan, the timeline, and owners and deadlines.</pre>
+      </div>
+
+      <h3>More boards to try</h3>
+      <div class="aoa-tabs">
+        <div class="aoa-tablist" role="tablist" aria-label="Whiteboard prompts">
+          <button type="button" role="tab" aria-selected="true">Team retro</button>
+          <button type="button" role="tab" aria-selected="false">Brainstorm</button>
+          <button type="button" role="tab" aria-selected="false">Process map</button>
+          <button type="button" role="tab" aria-selected="false">Event plan</button>
+          <button type="button" role="tab" aria-selected="false">Content plan</button>
+        </div>
+        <div class="aoa-prompt" role="tabpanel">
+          <div class="aoa-prompt-h"><span class="fn">team-retro.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Make a retro board for [last month] with three areas: what went well, what didn't, what to try next. I'll share it so the team can add notes. When we're done, group the notes by theme and draft action items for each person.</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">brainstorm.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Make a brainstorm board for [ways to get more Google reviews]. Add 10 starter ideas as notes, then group them by effort and impact so we can see the quick wins.</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">process-map.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Map our [new client onboarding] on a whiteboard, from [first enquiry] to [first invoice paid]. Show who does each step and mark where things usually get stuck: [your notes].</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">event-plan.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Plan our [end-of-year party] on a whiteboard: venue, catering, invites, budget. Work back from [12 December] and give each task an owner and a due date.</pre>
+        </div>
+        <div class="aoa-prompt" role="tabpanel" hidden>
+          <div class="aoa-prompt-h"><span class="fn">content-plan.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Lay out next month's content on a whiteboard, week by week: [themes, launches, key dates]. When it's final, turn it into a Claude Sheet with one row per post.</pre>
+        </div>
+      </div>
+      <p class="aoa-tip"><strong>Tip:</strong> Drag a box around part of the board and ask Claude about just that section. Boards also export to Miro, Lucid or Vani by Zoho.</p>
+
+      <!-- MEETINGS -->
+      <h2 id="claude-meetings">4. Claude Meetings</h2>
+      <p>Claude joins your Google Meet call as a visible participant. It drafts the plan while you talk, and leaves notes and action items when you hang up. According to launch reports, it's coming to Team and Enterprise first, and it won't join calls with outside guests unless an admin allows it.</p>
+
+      <figure class="aoa-mock" aria-label="Illustration of Claude in a Google Meet call and the notes it leaves afterwards">
+        <div class="mk-meet">
+          <div class="mk-call">
+            <div class="mk-lbl light">Spring launch sync</div>
+            <div class="mk-tiles"><span><b style="background:#E2725B">S</b></span><span><b style="background:#3FA66B">P</b></span><span><b style="background:#4F7BE8">Y</b></span><span class="cl">Claude</span></div>
+            <div class="mk-toast">Claude joined &middot; taking notes for everyone</div>
+          </div>
+          <div class="mk-notesout">
+            <div class="mk-lbl">After the call</div>
+            <p class="sum">Launch stays on track for 8 Dec. Paid social budget still to decide.</p>
+            <div class="ai"><span class="cb"></span><span class="t">Book the photo shoot</span><span class="o">Jess &middot; 20 Nov</span></div>
+            <div class="ai"><span class="cb"></span><span class="t">Draft the launch email</span><span class="o">Tom &middot; 28 Nov</span></div>
+            <div class="ai"><span class="cb"></span><span class="t">Landing page live</span><span class="o">Priya &middot; 8 Dec</span></div>
+          </div>
+        </div>
+        <figcaption>Claude announces itself, then leaves a summary and action items with owners. Illustration.</figcaption>
+      </figure>
+
+      <p><strong>Don't have it yet?</strong> Paste your notes or transcript after the call and get the same result:</p>
+      <div class="aoa-prompt">
+        <div class="aoa-prompt-h"><span class="fn">after-the-call.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Here are my notes from today's [spring launch sync]:
+[paste notes or transcript]
+
+Write a 3-line summary, a list of action items with an owner and due date for each, and anything we didn't decide. Then make a whiteboard with the timeline.</pre>
+      </div>
+      <p class="aoa-tip aoa-tip-warn"><strong>Before you use it:</strong> tell everyone on the call that Claude is taking notes. Recording rules differ between Australian states and territories, so check the ones that apply to you.</p>
+
+      <!-- TOGETHER -->
+      <h2 id="one-workflow">5. Use all three together</h2>
+      <div class="aoa-flow" aria-label="Workflow: meeting, whiteboard, sheet, doc">
+        <div><span class="n">1</span><strong>Meet</strong><span>Talk it through</span></div>
+        <i aria-hidden="true">&rarr;</i>
+        <div><span class="n">2</span><strong>Whiteboard</strong><span>Map the plan</span></div>
+        <i aria-hidden="true">&rarr;</i>
+        <div><span class="n">3</span><strong>Sheet</strong><span>Track each task</span></div>
+        <i aria-hidden="true">&rarr;</i>
+        <div><span class="n">4</span><strong>Doc</strong><span>Send the summary</span></div>
+      </div>
+      <div class="aoa-prompt">
+        <div class="aoa-prompt-h"><span class="fn">board-to-sheet.txt</span><button type="button" class="aoa-copy">Copy prompt</button></div>
+<pre>Take the timeline on our [spring launch] whiteboard and build a Claude Sheet to track it: one row per task with owner, due date, budget, spent, and a Status dropdown (Not started, In progress, Done). Add a Summary tab with total budget against spent, and highlight anything overdue.
+
+Then write a one-page doc I can send to [our client] summarising the plan and the dates.</pre>
+      </div>
+
+      <!-- LIMITS -->
+      <h2 id="limits">6. What they can't do yet</h2>
+      <div class="aoa-limits">
+        <div class="soon"><div class="t">Not yet</div><ul><li>Pivot tables and filter views</li><li>Find and replace</li><li>PDF export</li><li>Editing sheets on mobile</li><li>Meetings on Zoom or Teams</li></ul></div>
+        <div class="no"><div class="t">Not planned for now</div><ul><li>Macros, VBA or Power Query</li><li>Live data from your apps in a sheet</li><li>More than 100,000 cells per sheet</li></ul></div>
+      </div>
+      <p>Need one of those? Export to .xlsx and finish it in Excel.</p>
+
+      <!-- CTA -->
+      <div class="aoa-cta">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8FB0F5">&mdash; Keep exploring</div>
+        <h2 style="color:#fff;margin:10px 0 10px;font-size:24px">Want your whole team working like this?</h2>
+        <p style="color:#C9D2DE;font-size:15.5px;line-height:1.6;margin:0 0 20px">We train Australian teams to use Claude in the work they already do. See what our programs cover, or keep reading our free guides.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <a href="/programs" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:700;color:#0B1220;background:#fff;padding:13px 22px;border-radius:14px">See our programs <span style="font-size:16px">&rarr;</span></a>
+          <a href="/" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,0.28);padding:12px 20px;border-radius:14px">Visit Ad On AI</a>
+          <a href="/resources" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,0.28);padding:12px 20px;border-radius:14px">All free guides</a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faqs">FAQs</h2>
+      <details class="aoa-faq">
+        <summary>Do Claude Sheets and Whiteboards cost extra?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>No separate price has been announced. They come with paid Claude plans while in beta. They aren't on the Free plan.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Can I use my existing spreadsheet?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Yes. Start from a CSV, Excel file or Google Sheet, or paste rows in. You can export back to .xlsx or CSV at any time.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Does Claude Sheets replace Excel?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>For trackers, budgets and calculators, it can. For pivot tables, macros or very large files, export to .xlsx and use Excel.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Does Claude Meetings record the call?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Anthropic hasn't said whether it keeps a full recording or transcript. Reports say notes and action items are saved in Claude after the call.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Why can't I see Sheets or Whiteboards?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Check you're on a paid plan, then give it a few days and refresh, because the rollout is gradual. On Enterprise, an owner has to switch them on in Organization settings &rsaquo; Artifacts.</div>
+      </details>
+      <details class="aoa-faq">
+        <summary>Can I use them on my phone?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <div>Whiteboards work on mobile. Sheets can be viewed on mobile, but editing is on web and desktop for now.</div>
+      </details>
+
+      <h2>Keep reading</h2>
+      <div class="aoa-related">
+        <a class="aoa-relcard" href="/resources/what-is-claude-cowork">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">Explainer</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">What is Claude Cowork?</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">Claude working through whole tasks in your folders.</div>
+        </a>
+        <a class="aoa-relcard" href="/resources/how-to-write-an-ai-prompt">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#2F6FED;margin-bottom:7px">How-to</div>
+          <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;letter-spacing:-0.02em;color:#0B1220;line-height:1.25">How to write an AI prompt</div>
+          <div style="font-size:13.5px;color:#5A6473;margin-top:6px">The method behind every prompt in this guide.</div>
+        </a>
+      </div>
+
+      <p class="aoa-sources">Illustrations are examples and may not match the real app exactly. Sources: Anthropic (<a href="https://claude.com/resources/articles/sheets-whiteboards-data" target="_blank" rel="noopener">launch post</a>), the <a href="https://support.claude.com/en/articles/18324300-get-started-with-claude-sheets" target="_blank" rel="noopener">Claude Help Center</a>, <a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/" target="_blank" rel="noopener">TechCrunch</a> and <a href="https://www.computerworld.com/article/4247466/anthropic-targets-workplace-collaboration-with-claude-meetings.html" target="_blank" rel="noopener">Computerworld</a>. Checked 12 November 2026.</p>
+    </article>
+
+    <div style="margin:40px 0 0"><a href="/resources" style="display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:14px;font-weight:600;color:#5A6473"><span style="font-size:16px">&larr;</span> All resources</a></div>
+  </main>
+
+  <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA;margin-top:72px">
+    <div style="max-width:1200px;margin:0 auto;padding:56px 28px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px" class="bio-footgrid">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px"><span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block" width="2000" height="2000"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span></a>
+        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses.</p>
+      </div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/programs" style="text-decoration:none;color:inherit">AI Enablement</a><a href="/bpo-program" style="text-decoration:none;color:inherit">BPO AI Program</a><a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/resources" style="text-decoration:none;color:inherit">Resources</a><a href="/about" style="text-decoration:none;color:inherit">About</a><a href="/#faqs" style="text-decoration:none;color:inherit">FAQs</a><a href="/terms" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="mailto:adonai@adongroup.com.au" style="text-decoration:none;color:inherit">adonai@adongroup.com.au</a><span>Australia-wide delivery</span></div></div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI. All rights reserved.</span>
+      <div style="display:flex;align-items:center;gap:10px"><a href="https://www.instagram.com/adonai.australia/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#5A6473"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"></circle></svg></a><a href="https://www.facebook.com/adongroup1/" target="_blank" rel="noopener" aria-label="Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#5A6473"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.7V3.3C16.5 3.2 15.4 3 14.2 3c-2.4 0-4 1.4-4 4.1v2.7H7.5v3.2h2.7v8h3.3z"></path></svg></a></div>
+      <a href="/terms" style="text-decoration:none;color:#0B1220;font-weight:700;font-size:13px">Terms of Use</a>
+    </div>
+  </footer>
+<script>
+(function(){
+  document.querySelectorAll('.aoa-tabs').forEach(function(g){
+    var tabs = g.querySelectorAll('[role=tab]'), panels = g.querySelectorAll('[role=tabpanel]');
+    tabs.forEach(function(t, i){ t.addEventListener('click', function(){
+      tabs.forEach(function(x, j){ x.setAttribute('aria-selected', j === i ? 'true' : 'false'); panels[j].hidden = j !== i; });
+    }); });
+  });
+  var blocks = document.querySelectorAll('.aoa-prompt');
+  blocks.forEach(function(b){
+    var pre = b.querySelector('pre'), btn = b.querySelector('.aoa-copy');
+    var text = pre.textContent;
+    pre.innerHTML = text.replace(/[&<>]/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];}).replace(/\[[^\]]*\]/g, '<span class="ph">$&</span>');
+    btn.setAttribute('aria-label', 'Copy the ' + b.querySelector('.fn').textContent.replace('.txt','').replace(/-/g,' ') + ' prompt');
+    btn.addEventListener('click', function(){
+      var done = function(){ btn.textContent = 'Copied'; btn.classList.add('done'); setTimeout(function(){ btn.textContent = 'Copy prompt'; btn.classList.remove('done'); }, 1800); };
+      if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(done, fallback); } else { fallback(); }
+      function fallback(){ var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch(e){} document.body.removeChild(ta); }
+    });
+  });
+})();
+</script>
+</body>
+</html>

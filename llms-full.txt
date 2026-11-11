@@ -63,6 +63,7 @@ Tool-agnostic explainers and comparisons for Australian SMEs, authored by the te
 - Claude vs ChatGPT for Australian Business (https://www.adon-ai.com.au/resources/claude-vs-chatgpt-for-business): A fair, tool-agnostic comparison by real task types. Both are highly capable; the right one depends on the work.
 - What Is an AI Agent? (+ Agentic AI) (https://www.adon-ai.com.au/resources/what-is-an-ai-agent): An AI agent is given a goal and works out the steps to reach it — choosing actions and using tools, not just answering. Plain English, with an Australian small-business example.
 - What Are Claude Skills? (https://www.adon-ai.com.au/resources/what-are-claude-skills): Claude Skills are reusable packages of instructions that teach Claude to do a specific task your way, so you don't re-explain it every time. What they are and why they matter, with an Australian small-business example.
+- Claude Sheets, Whiteboards & Meetings (https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings): A step-by-step guide to Claude Sheets (spreadsheets built from a description, with visible formulas), Claude Whiteboards (plans turned into timelines, docs and decks) and Claude Meetings (Claude joining Google Meet to take notes). Includes 15 copy-paste prompts for Australian small businesses, what each can't do yet, and FAQs. Published 12 November 2026 by Beau Robards.
 
 ## Company
 
