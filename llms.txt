@@ -23,6 +23,7 @@
 - [Claude vs ChatGPT for Australian Business](https://www.adon-ai.com.au/resources/claude-vs-chatgpt-for-business): A fair, tool-agnostic comparison by real task types, with a simple way to choose.
 - [What Is an AI Agent? (+ Agentic AI)](https://www.adon-ai.com.au/resources/what-is-an-ai-agent): An AI agent is given a goal and works out the steps to reach it — plain English, with an AU small-business example.
 - [What Are Claude Skills?](https://www.adon-ai.com.au/resources/what-are-claude-skills): Reusable packages of instructions that teach Claude to do a specific task your way — what they are and why they matter.
+- [Claude Sheets, Whiteboards & Meetings](https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings): How to turn on and use Claude Sheets, Whiteboards and Meetings, with 15 copy-paste prompts, limits and FAQs (Nov 2026).
 
 ## Full reference
 
