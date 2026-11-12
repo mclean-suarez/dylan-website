@@ -1178,7 +1178,7 @@ html.rv-on .rv.rv-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { html.rv-on .rv { opacity: 1 !important; transform: none !important; transition: none !important; } }
 
 /* ===== "What they walk away with" — Kinso statement + build grid ===== */
-.wa-sec { padding-top: 140px; text-align: center; }
+.wa-sec { padding-top: 120px; text-align: center; }
 .wa-label { display: flex; align-items: center; justify-content: center; gap: 22px; margin: 0 0 44px; }
 .wa-label::before, .wa-label::after { content: ''; height: 1px; width: 180px; }
 .wa-label::before { background: linear-gradient(270deg, rgba(11,18,32,0.16), rgba(11,18,32,0)); }
@@ -1206,7 +1206,7 @@ html.rv-on .rv.rv-in { opacity: 1; transform: none; }
 }
 
 /* ===== "Who we are" — Kinso About layout ===== */
-.ab-sec { max-width: 1080px; margin: 0 auto; padding: 170px 28px 40px; }
+.ab-sec { max-width: 1080px; margin: 0 auto; padding: 90px 28px 20px; }
 .ab-top { text-align: center; }
 .ab-top .wa-label { margin-bottom: 30px; }
 .ab-title { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif; font-size: clamp(32px, 3.4vw, 48px); font-weight: 600; letter-spacing: -0.045em; line-height: 1.05; color: #0B1220; margin: 0 0 30px; }
@@ -1239,7 +1239,7 @@ html.rv-on .rv.rv-in { opacity: 1; transform: none; }
 .tp-bio.is-on { display: block; animation: tpIn .45s cubic-bezier(.2,.7,.2,1) both; }
 @keyframes tpIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @media (max-width: 859px) {
-  .ab-sec { padding: 110px 20px 20px; }
+  .ab-sec { padding: 70px 20px 10px; }
   .ab-btns { flex-direction: column; gap: 12px; }
   .ab-soft, .hh-cta-btn.ab-cta { width: 100%; max-width: 280px; justify-content: center; }
   .ab-founders { grid-template-columns: 1fr; gap: 28px; margin-top: 64px; text-align: center; }
