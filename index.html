@@ -581,7 +581,10 @@
   @keyframes adonOrbit { to { --adonAngle: 360deg; } }
   /* hero product shot (real Academy screenshot, Kinso-style framing) */
   .kd-wrap { padding-top: 34px; }
-  .kd-shot { position: relative; margin: 0 0 0 auto; width: 600px; max-width: 100%; border-radius: 8px; overflow: hidden; background: #F3F3F1; box-shadow: 0 0 0 1px rgba(14,17,22,0.07), 0 2px 6px -2px rgba(14,17,22,0.08), 0 30px 60px -30px rgba(14,17,22,0.30), 0 70px 120px -60px rgba(40,60,90,0.30); }
+  .kd-shot { position: relative; margin: 0 0 0 auto; width: 600px; max-width: 100%; border-radius: 14px; overflow: hidden; padding: 30px 7px 7px; background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(244,245,248,0.88)); -webkit-backdrop-filter: blur(18px) saturate(160%); backdrop-filter: blur(18px) saturate(160%); box-shadow: 0 0 0 1px rgba(255,255,255,0.75) inset, 0 0 0 1px rgba(14,17,22,0.06), 0 2px 6px -2px rgba(14,17,22,0.08), 0 30px 60px -28px rgba(14,17,22,0.32), 0 80px 140px -60px rgba(40,60,90,0.35); }
+  .kd-shot::before { content: ''; position: absolute; top: 11px; left: 14px; width: 46px; height: 9px; background: radial-gradient(circle at 4.5px 4.5px, #FF5F57 4.5px, transparent 5px), radial-gradient(circle at 20.5px 4.5px, #FEBC2E 4.5px, transparent 5px), radial-gradient(circle at 36.5px 4.5px, #28C840 4.5px, transparent 5px); }
+  .kd-shot img { border-radius: 8px; box-shadow: 0 0 0 1px rgba(14,17,22,0.06); }
+  .kd-wrap { margin-top: -36px; }
   .kd-shot img { display: block; width: 100%; height: auto; }
   .kd-n1, .kd-n2 { width: 166px !important; padding: 6px 9px !important; gap: 7px !important; border-radius: 7px !important; z-index: 3; }
   .kd-n1 { top: auto !important; bottom: 84px !important; right: -22px !important; }
