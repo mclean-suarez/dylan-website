@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.adon-ai.com.au/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.adon-ai.com.au/assets/films/train-staff.jpg</video:thumbnail_loc>
+      <video:title>Implementation Lab: describe a task, Claude builds the workflow</video:title>
+      <video:description>A screen recording of the Ad On AI Academy Implementation Lab. A learner describes a repetitive task — turning meeting notes into a summary with action items and owners — clicks Build Workflow, and gets back a ready-to-run "Summarisation Workflow in Claude.ai" with a copy-ready Claude prompt, which they save to their Prompt Bank.</video:description>
+      <video:content_loc>https://www.adon-ai.com.au/assets/films/train-staff.mp4</video:content_loc>
+      <video:duration>17</video:duration>
+      <video:publication_date>2026-11-12</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.adon-ai.com.au/assets/films/module-impact.jpg</video:thumbnail_loc>
+      <video:title>Every module makes an impact: from module to the team report</video:title>
+      <video:description>A screen recording of the Ad On AI Academy. A learner opens Module 6, Plan Your First AI Workflow, works through the workflow proposal checklist, and the team progress report shows the jobs they flagged on day one — chasing overdue invoices, the monthly variance report and the weekly debtor report — now handled by an agent, a workflow and a scheduled job.</video:description>
+      <video:content_loc>https://www.adon-ai.com.au/assets/films/module-impact.mp4</video:content_loc>
+      <video:duration>17</video:duration>
+      <video:publication_date>2026-11-12</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.adon-ai.com.au/assets/films/expert-help.jpg</video:thumbnail_loc>
+      <video:title>Stuck on a step: a 1-on-1 with a Claude Certified trainer</video:title>
+      <video:description>A screen recording of the Ad On AI Academy. A learner writing their Module 6 workflow proposal gets stuck, uses the in-lesson Need help box to book a 1-hour call, accepts the support disclaimer, and works through the proposal with a Claude Certified trainer.</video:description>
+      <video:content_loc>https://www.adon-ai.com.au/assets/films/expert-help.mp4</video:content_loc>
+      <video:duration>19</video:duration>
+      <video:publication_date>2026-11-12</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.adon-ai.com.au/programs</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.adon-ai.com.au/assets/films/module-impact.jpg</video:thumbnail_loc>
+      <video:title>Every module makes an impact: from module to the team report</video:title>
+      <video:description>A screen recording of the Ad On AI Academy. A learner opens Module 6, Plan Your First AI Workflow, works through the workflow proposal checklist, and the team progress report shows the jobs they flagged on day one — chasing overdue invoices, the monthly variance report and the weekly debtor report — now handled by an agent, a workflow and a scheduled job.</video:description>
+      <video:content_loc>https://www.adon-ai.com.au/assets/films/module-impact.mp4</video:content_loc>
+      <video:duration>17</video:duration>
+      <video:publication_date>2026-11-12</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.adon-ai.com.au/assets/films/expert-help.jpg</video:thumbnail_loc>
+      <video:title>Stuck on a step: a 1-on-1 with a Claude Certified trainer</video:title>
+      <video:description>A screen recording of the Ad On AI Academy. A learner writing their Module 6 workflow proposal gets stuck, uses the in-lesson Need help box to book a 1-hour call, accepts the support disclaimer, and works through the proposal with a Claude Certified trainer.</video:description>
+      <video:content_loc>https://www.adon-ai.com.au/assets/films/expert-help.mp4</video:content_loc>
+      <video:duration>19</video:duration>
+      <video:publication_date>2026-11-12</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+</urlset>

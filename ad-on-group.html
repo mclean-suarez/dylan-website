@@ -8,6 +8,10 @@
 <meta name="description" content="Ad On Group is an Australian-owned company since 2008 — divisions across workforce, AI, digital and hold, helping businesses grow with people and technology.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://www.adon-ai.com.au/ad-on-group">
+    <meta name="geo.region" content="AU-QLD">
+    <meta name="geo.placename" content="Burleigh Heads, Gold Coast">
+    <meta name="geo.position" content="-28.1133038;153.4347102">
+    <meta name="ICBM" content="-28.1133038, 153.4347102">
 <meta name="theme-color" content="#2F6FED">
 <meta name="author" content="Ad On AI">
 <!-- Open Graph -->
@@ -17,14 +21,15 @@
 <meta property="og:title" content="Ad On Group | Australian-Owned Since 2008">
 <meta property="og:description" content="Ad On Group is an Australian-owned company since 2008 — divisions across workforce, AI, digital and hold, helping businesses grow with people and technology.">
 <meta property="og:url" content="https://www.adon-ai.com.au/ad-on-group">
-<meta property="og:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<meta property="og:image" content="https://www.adon-ai.com.au/assets/og-group.jpg">
+<meta property="og:image:alt" content="The Ad On Group team">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ad On Group | Australian-Owned Since 2008">
 <meta name="twitter:description" content="Ad On Group is an Australian-owned company since 2008 — divisions across workforce, AI, digital and hold, helping businesses grow with people and technology.">
-<meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-image.png">
+<meta name="twitter:image" content="https://www.adon-ai.com.au/assets/og-group.jpg">
 <!-- Icons & manifest -->
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
@@ -39,85 +44,270 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": [
+        "Organization",
+        "EducationalOrganization"
+      ],
       "@id": "https://www.adon-ai.com.au/#organization",
       "name": "Ad On AI",
-      "url": "https://www.adon-ai.com.au/",
-      "sameAs": [
-        "https://www.facebook.com/adongroup1/",
-        "https://www.instagram.com/adonai.australia/",
-        "https://www.linkedin.com/company/adongroup"
+      "alternateName": [
+        "AdOnAI",
+        "Ad On AI Academy",
+        "Ad On AI by Ad On Group",
+        "Ad On Group AI Training"
       ],
+      "url": "https://www.adon-ai.com.au/",
+      "description": "Ad On AI is the AI training and enablement division of Ad On Group, an Australian-owned company operating since 2008. It trains non-technical staff at Australian businesses to use AI in their everyday work — then to build the automations and AI agents that handle the rest — through a self-paced, 24-module program delivered by Claude Certified Associates.",
+      "slogan": "Certified Claude Experts",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.adon-ai.com.au/assets/adon-logo.png"
+        "url": "https://www.adon-ai.com.au/assets/adon-logo.png",
+        "width": 2000,
+        "height": 2000
       },
       "image": "https://www.adon-ai.com.au/assets/og-image.png",
       "email": "info@adongroup.com.au",
-      "description": "AI training and enablement for Australian teams, delivered by Certified Claude Experts.",
+      "telephone": "+61755861400",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1/44 Township Drive",
+        "addressLocality": "Burleigh Heads",
+        "addressRegion": "QLD",
+        "postalCode": "4219",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -28.1133038,
+        "longitude": 153.4347102
+      },
+      "hasMap": "https://www.google.com/maps/place/Ad+On+Group/@-28.1133038,153.4347102,17z",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ABN",
+        "value": "54 808 983 598"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        {
+          "@type": "City",
+          "name": "Gold Coast"
+        },
+        {
+          "@type": "City",
+          "name": "Brisbane"
+        },
+        {
+          "@type": "City",
+          "name": "Sunshine Coast"
+        },
+        {
+          "@type": "City",
+          "name": "Logan"
+        },
+        {
+          "@type": "City",
+          "name": "Ipswich"
+        },
+        {
+          "@type": "City",
+          "name": "Adelaide"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Northern New South Wales"
+        }
+      ],
+      "foundingDate": "2026",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Burleigh Heads, Queensland, Australia",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gold Coast",
+          "addressRegion": "QLD",
+          "addressCountry": "AU"
+        }
+      },
       "parentOrganization": {
-        "@id": "https://www.adon-ai.com.au/ad-on-group#adongroup"
+        "@id": "https://adongroup.com.au/#organization"
+      },
+      "sameAs": [
+        "https://adongroup.com.au/ad-on-ai/",
+        "https://adongroup.com.au/ai-training/",
+        "https://www.instagram.com/adonai.australia/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "info@adongroup.com.au",
+        "telephone": "+61755861400",
+        "areaServed": "AU",
+        "availableLanguage": "en"
+      },
+      "knowsAbout": [
+        "AI training",
+        "AI training for staff",
+        "AI enablement",
+        "AI adoption",
+        "Generative AI for business",
+        "Claude",
+        "Claude Cowork",
+        "Claude skills",
+        "Prompt engineering",
+        "AI automation",
+        "AI workflow automation",
+        "AI agents",
+        "AI adoption for small and medium businesses",
+        "AI training for BPO and outsourced teams"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Ad On AI programs",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "category": "Paid",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Enablement program",
+              "serviceType": "AI training for staff",
+              "description": "Self-paced AI training for non-technical staff: 24 hands-on modules across the essential skills, automation and AI agents, ending in 20+ working AI builds per learner.",
+              "url": "https://www.adon-ai.com.au/programs",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Australia"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "category": "Paid",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Intermediate",
+              "serviceType": "AI training for staff",
+              "description": "A shorter, six-module program focused on getting Claude working day to day, without AI agents.",
+              "url": "https://www.adon-ai.com.au/programs",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Australia"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "category": "Paid",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BPO AI Program",
+              "serviceType": "AI training for BPO and outsourced teams",
+              "description": "A structured, month-by-month AI training track for BPO and outsourced teams, with monthly skills checks and progress reporting.",
+              "url": "https://www.adon-ai.com.au/programs#bpo",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Australia"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "category": "Subscription",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ongoing support membership",
+              "serviceType": "AI support and community",
+              "description": "One-on-one support each month with Claude Certified Associates (2 hours with AI Enablement, 1 hour with AI Intermediate), weekly AI masterclasses and podcasts, a monthly newsletter and a closed community of learners.",
+              "url": "https://www.adon-ai.com.au/programs#support",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Australia"
+              }
+            }
+          }
+        ]
+      },
+      "member": [
+        {
+          "@id": "https://www.adon-ai.com.au/dylan-bailey#person"
+        },
+        {
+          "@id": "https://www.adon-ai.com.au/beau-robards#person"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "Organization",
+        "ProfessionalService"
+      ],
+      "@id": "https://adongroup.com.au/#organization",
+      "name": "Ad On Group",
+      "url": "https://adongroup.com.au/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://adongroup.com.au/assets/media/2025/07/AdonGroup-logo-WF-Icon_on-white-300x172.jpg"
+      },
+      "description": "Australian-owned since 2008. Ad On Group helps Australian businesses work smarter through offshore staffing, AI training and enablement, digital marketing and on-hold messaging.",
+      "slogan": "Innovative Solutions From an Innovative Company",
+      "foundingDate": "2008",
+      "email": "info@adongroup.com.au",
+      "telephone": "+61755861400",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1/44 Township Drive",
+        "addressLocality": "Burleigh Heads",
+        "addressRegion": "QLD",
+        "postalCode": "4219",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -28.1133038,
+        "longitude": 153.4347102
+      },
+      "hasMap": "https://www.google.com/maps/place/Ad+On+Group/@-28.1133038,153.4347102,17z",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ABN",
+        "value": "54 808 983 598"
       },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
       },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1/44 Township Drive",
-        "addressLocality": "Burleigh Heads",
-        "addressRegion": "QLD",
-        "postalCode": "4219",
-        "addressCountry": "AU"
-      },
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "ABN",
-        "value": "54 808 983 598"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "info@adongroup.com.au",
-        "contactType": "sales",
-        "areaServed": "AU",
-        "availableLanguage": "en"
-      },
-      "telephone": "+61 7 5586 1400"
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.adon-ai.com.au/ad-on-group#adongroup",
-      "name": "Ad On Group",
-      "url": "https://www.adongroup.com.au",
-      "foundingDate": "2008",
-      "description": "Australian-owned business services group operating since 2008, with divisions across workforce, AI, digital and hold.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "223",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1/44 Township Drive",
-        "addressLocality": "Burleigh Heads",
-        "addressRegion": "QLD",
-        "postalCode": "4219",
-        "addressCountry": "AU"
-      },
-      "telephone": "+61 7 5586 1400",
-      "email": "info@adongroup.com.au",
       "sameAs": [
         "https://www.facebook.com/adongroup1/",
+        "https://www.linkedin.com/company/adongroup/",
         "https://www.instagram.com/adongroup/",
-        "https://www.linkedin.com/company/adongroup",
-        "https://www.google.com/maps?cid=6263994047043028785"
+        "https://www.google.com/maps/place/Ad+On+Group/@-28.1133038,153.4347102,17z"
       ],
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "ABN",
-        "value": "54 808 983 598"
+      "subOrganization": [
+        {
+          "@id": "https://www.adon-ai.com.au/#organization"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "reviewCount": 229,
+        "bestRating": 5,
+        "worstRating": 1
       }
     },
     {
@@ -165,6 +355,7 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
 <x-dc>
@@ -176,333 +367,353 @@
 <style>
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { background: radial-gradient(120% 62% at -4% -10%, rgba(255,168,112,0.16), transparent 56%), radial-gradient(115% 64% at 104% -4%, rgba(47,111,237,0.12), transparent 58%), radial-gradient(70% 44% at 60% 6%, rgba(45,212,191,0.06), transparent 60%), radial-gradient(85% 38% at 102% 40%, rgba(47,111,237,0.10), transparent 56%), radial-gradient(85% 36% at -2% 70%, rgba(255,168,112,0.12), transparent 56%), radial-gradient(80% 34% at 50% 100%, rgba(45,212,191,0.10), transparent 60%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; }
+  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.22), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.18), transparent 52%), radial-gradient(85% 38% at 102% 40%, rgba(47,111,237,0.10), transparent 56%), radial-gradient(85% 36% at -2% 70%, rgba(255,168,112,0.12), transparent 56%), radial-gradient(80% 34% at 50% 100%, rgba(45,212,191,0.10), transparent 60%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; }
   h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.045em !important; font-weight: 500 !important; }
-  a { color: #2F6FED; }
-  a:hover { color: #1B54C4; }
+  h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 600; }
+  h2 { color: #0B1220; }
   .nav-prog { position: relative; }
   .nav-menu { opacity: 0; pointer-events: none; transform: translateY(6px); transition: opacity .18s ease, transform .18s ease; }
   .nav-prog:hover .nav-menu, .nav-menu:hover { opacity: 1; pointer-events: auto; transform: none; }
-  @keyframes adonShimmer { from { background-position: 0 0; } to { background-position: -200% 0; } }
-  @keyframes adonMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  @keyframes adonGradShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-  @keyframes adonBorderFlow { to { background-position: 300% 0; } }
+  @keyframes adonFloatA { 0%,100% { transform: translateY(0) rotate(-2.5deg); } 50% { transform: translateY(-12px) rotate(-2.5deg); } }
+  @keyframes adonFloatB { 0%,100% { transform: translateY(0) rotate(2deg); } 50% { transform: translateY(-9px) rotate(2deg); } }
+  @keyframes adonFloatC { 0%,100% { transform: translateY(0) rotate(1deg); } 50% { transform: translateY(-14px) rotate(1deg); } }
+  @keyframes adonPulse { 0%,100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.12); } }
+  @keyframes adonMarquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  @keyframes adonSlide { 0% { opacity: 0; transform: translateX(-22px); } 14% { opacity: 1; transform: none; } 86% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateX(-22px); } }
+  @keyframes adonType { 0% { width: 0; } 55% { width: 38ch; } 90% { width: 38ch; } 100% { width: 0; } }
+  @keyframes adonProg { 0%,12%{width:0} 14%,35%{width:25%} 37%,58%{width:50%} 60%,81%{width:75%} 83%,100%{width:100%} }
+  @keyframes adonD1 { 0%,10%{opacity:0;transform:scale(.5)} 14%,100%{opacity:1;transform:scale(1)} }
+  @keyframes adonD2 { 0%,33%{opacity:0;transform:scale(.5)} 37%,100%{opacity:1;transform:scale(1)} }
+  @keyframes adonD3 { 0%,56%{opacity:0;transform:scale(.5)} 60%,100%{opacity:1;transform:scale(1)} }
+  @keyframes adonD4 { 0%,79%{opacity:0;transform:scale(.5)} 83%,100%{opacity:1;transform:scale(1)} }
+  @keyframes adonCursor {
+    0%{transform:translateY(4px) scale(1);opacity:0}
+    4%{opacity:1} 8%{transform:translateY(4px) scale(1)}
+    12%{transform:translateY(4px) scale(.78)} 16%{transform:translateY(4px) scale(1)}
+    29%{transform:translateY(60px) scale(1)} 35%{transform:translateY(60px) scale(.78)} 39%{transform:translateY(60px) scale(1)}
+    52%{transform:translateY(116px) scale(1)} 58%{transform:translateY(116px) scale(.78)} 62%{transform:translateY(116px) scale(1)}
+    75%{transform:translateY(172px) scale(1)} 81%{transform:translateY(172px) scale(.78)} 85%{transform:translateY(172px) scale(1)}
+    96%{transform:translateY(172px) scale(1);opacity:1} 100%{transform:translateY(4px) scale(1);opacity:0}
+  }
+  @keyframes adonCursor2 {
+    0%{transform:translate(70px,48px) scale(1);opacity:0}
+    3%{opacity:1} 10%{transform:translate(70px,48px) scale(1)}
+    13%{transform:translate(70px,48px) scale(.8)} 16%{transform:translate(70px,48px) scale(1)}
+    28%{transform:translate(214px,48px) scale(1)} 34%{transform:translate(214px,48px) scale(.8)} 37%{transform:translate(214px,48px) scale(1)}
+    49%{transform:translate(70px,150px) scale(1)} 56%{transform:translate(70px,150px) scale(.8)} 59%{transform:translate(70px,150px) scale(1)}
+    71%{transform:translate(214px,150px) scale(1)} 79%{transform:translate(214px,150px) scale(.8)} 82%{transform:translate(214px,150px) scale(1)}
+    96%{transform:translate(214px,150px) scale(1);opacity:1} 100%{transform:translate(70px,48px) scale(1);opacity:0}
+  }
+  @keyframes adonCaret { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+  @keyframes adonHelpPanel { 0%,8% { opacity: 0; transform: scale(0.86) translateY(10px); } 18%,86% { opacity: 1; transform: none; } 96%,100% { opacity: 0; transform: scale(0.86) translateY(10px); } }
+  @keyframes adonTrainer {
+    0%{transform:translate(58px,20px) scale(1);opacity:0}
+    3%{opacity:1} 9%{transform:translate(58px,20px) scale(1)}
+    12%{transform:translate(96px,106px) scale(1)} 15%{transform:translate(96px,106px) scale(.78)} 18%{transform:translate(96px,106px) scale(1)}
+    34%{transform:translate(96px,152px) scale(1)} 37%{transform:translate(96px,152px) scale(.78)} 40%{transform:translate(96px,152px) scale(1)}
+    57%{transform:translate(96px,198px) scale(1)} 60%{transform:translate(96px,198px) scale(.78)} 63%{transform:translate(96px,198px) scale(1)}
+    81%{transform:translate(128px,252px) scale(1)} 84%{transform:translate(128px,252px) scale(.84)} 88%{transform:translate(128px,252px) scale(1)}
+    96%{transform:translate(128px,252px) scale(1);opacity:1} 100%{transform:translate(58px,20px) scale(1);opacity:0}
+  }
+  @keyframes adonGlow { 0%,78%{box-shadow:none;border-color:rgba(11,18,32,0.10)} 84%,96%{box-shadow:0 0 0 3px rgba(47,111,237,0.18), 0 0 18px rgba(47,111,237,0.4);border-color:rgba(47,111,237,0.5)} 100%{box-shadow:none;border-color:rgba(11,18,32,0.10)} }
+  @keyframes adonMsg1 { 0%,8%{opacity:0;transform:translateY(10px)} 16%,100%{opacity:1;transform:translateY(0)} }
+  @keyframes adonTyping { 0%,30%{opacity:0} 35%,46%{opacity:1} 51%,100%{opacity:0} }
+  @keyframes adonMsg2 { 0%,50%{opacity:0;transform:translateY(10px)} 58%,100%{opacity:1;transform:translateY(0)} }
+  @keyframes adonReact { 0%,60%{opacity:0;transform:scale(.6)} 66%,100%{opacity:1;transform:scale(1)} }
+  @keyframes adonToast { 0%,70%{opacity:0;transform:translateY(-16px)} 76%,93%{opacity:1;transform:translateY(0)} 99%,100%{opacity:0;transform:translateY(-16px)} }
+  @keyframes adonDots { 0%,100%{opacity:.3} 50%{opacity:1} }
+  @keyframes adonSceneA { 0%,36%{opacity:1} 42%,96%{opacity:0} 98%,100%{opacity:1} }
+  @keyframes adonSceneB { 0%,38%{opacity:0} 44%,95%{opacity:1} 98%,100%{opacity:0} }
+  @keyframes adonRowSel { 0%,10%{background:transparent} 15%,37%{background:rgba(66,133,244,0.14)} 42%,100%{background:transparent} }
+  @keyframes adonPromptType { 0%,49%{width:0} 63%,74%{width:36ch} 76%,100%{width:0} }
+  @keyframes adonSendPulse { 0%,74%{transform:scale(1)} 76%{transform:scale(.85)} 79%,100%{transform:scale(1)} }
+  @keyframes adonUserBubble { 0%,75%{opacity:0;transform:translateY(8px)} 78%,95%{opacity:1;transform:translateY(0)} 98%,100%{opacity:0} }
+  @keyframes adonThink { 0%,77%{opacity:0;transform:translateY(6px)} 79%,82%{opacity:1;transform:none} 85%,100%{opacity:0} }
+  @keyframes adonR0 { 0%,83%{opacity:0;transform:translateY(5px)} 85%,96%{opacity:1;transform:none} 98%,100%{opacity:0} }
+  @keyframes adonR1 { 0%,85%{opacity:0;transform:translateY(5px)} 87%,96%{opacity:1;transform:none} 98%,100%{opacity:0} }
+  @keyframes adonR2 { 0%,87%{opacity:0;transform:translateY(5px)} 89%,96%{opacity:1;transform:none} 98%,100%{opacity:0} }
+  @keyframes adonR3 { 0%,89%{opacity:0;transform:translateY(5px)} 91%,96%{opacity:1;transform:none} 98%,100%{opacity:0} }
+  @keyframes adonR4 { 0%,91%{opacity:0;transform:translateY(5px)} 93%,96%{opacity:1;transform:none} 98%,100%{opacity:0} }
+  @keyframes adonAppCursor {
+    0%{transform:translate(60px,24px) scale(1);opacity:0}
+    3%{opacity:1}
+    12%{transform:translate(215px,54px) scale(1)}
+    15%{transform:translate(215px,54px) scale(.8)} 18%{transform:translate(215px,54px) scale(1)}
+    36%{transform:translate(215px,54px) scale(1)}
+    45%{transform:translate(130px,286px) scale(1)}
+    48%{transform:translate(130px,286px) scale(.8)} 51%{transform:translate(130px,286px) scale(1)}
+    69%{transform:translate(130px,286px) scale(1)}
+    73%{transform:translate(356px,286px) scale(1)}
+    76%{transform:translate(356px,286px) scale(.85)} 79%{transform:translate(356px,286px) scale(1)}
+    96%{transform:translate(356px,286px) scale(1);opacity:1}
+    100%{transform:translate(60px,24px) scale(1);opacity:0}
+  }
+  @keyframes adonFadeUp { 0% { opacity: 0; transform: translateY(18px); } 16% { opacity: 1; transform: none; } 88% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(18px); } }
+  @keyframes adonGrow { 0% { transform: scaleY(.25); } 50% { transform: scaleY(1); } 100% { transform: scaleY(.25); } }
+  @keyframes adonCheck { 0%,25% { background: #EEF1F6; box-shadow: none; } 40%,80% { background: #2F6FED; box-shadow: 0 0 0 4px rgba(47,111,237,0.16), 0 0 22px rgba(47,111,237,0.55); } 92%,100% { background: #EEF1F6; box-shadow: none; } }
+  @keyframes adonCheckMark { 0%,30% { opacity: 0; } 45%,85% { opacity: 1; } 95%,100% { opacity: 0; } }
+  @keyframes adonShimmer { to { background-position: 200% 0; } }
+  @keyframes adonSpin { to { transform: rotate(360deg); } }
+  @keyframes adonManifestIn { 0% { opacity: 0; transform: translateX(-10px); } 100% { opacity: 1; transform: none; } }
+  @keyframes adonWave { 0% { background-position: 160% 0; } 100% { background-position: -60% 0; } }
+  @media (max-width: 859px) {
+    /* centred two-line hero */
+    .hh-text { text-align: center; }
+    .hh-text h1 { font-size: clamp(31px, 9.4vw, 42px) !important; line-height: 1.02 !important; margin: 0 0 16px !important; }
+    .hh-l1 { font-weight: 800; letter-spacing: -0.045em; }
+    .hh-l2 { font-weight: 500; }
+    .hh-text p { margin: 0 auto 4px !important; max-width: 36ch !important; font-size: 16.5px !important; line-height: 1.5 !important; color: #1F2733 !important; }
+  }
+  @property --adonAngle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+  @keyframes adonOrbit { to { --adonAngle: 360deg; } }
+  /* hero product shot (real Academy screenshot, Kinso-style framing) */
+  .kd-wrap { padding-top: 34px; }
+  .kd-shot { position: relative; margin: 0 0 0 auto; width: 600px; max-width: 100%; border-radius: 8px; overflow: hidden; background: #F3F3F1; box-shadow: 0 0 0 1px rgba(14,17,22,0.07), 0 2px 6px -2px rgba(14,17,22,0.08), 0 30px 60px -30px rgba(14,17,22,0.30), 0 70px 120px -60px rgba(40,60,90,0.30); }
+  .kd-shot img { display: block; width: 100%; height: auto; }
+  .kd-n1, .kd-n2 { width: 166px !important; padding: 6px 9px !important; gap: 7px !important; border-radius: 7px !important; z-index: 3; }
+  .kd-n1 { top: auto !important; bottom: 84px !important; right: -22px !important; }
+  .kd-n2 { top: auto !important; bottom: 12px !important; right: -34px !important; width: 172px !important; }
+  .kd-n1 svg, .kd-n2 svg { width: 18px !important; height: 18px !important; }
+  .kd-n1 div > span:first-child, .kd-n2 div > span:first-child { font-size: 10.5px !important; }
+  .kd-n1 div > span:last-child, .kd-n2 div > span:last-child { font-size: 9.5px !important; }
+  .kd-n1 > span, .kd-n2 > span { font-size: 9px !important; }
+  .kd-mc { top: 12px; right: -26px; padding: 7px 12px 7px 7px; }
+  .kd-mc-ic { width: 26px; height: 26px; }
+  .kd-mc-ic svg { width: 16px; height: 16px; }
+  .kd-mc-t { font-size: 12px; }
+  .kd-mc-s { font-size: 10.5px; }
+  @media (max-width: 859px) {
+    .kd-mc { top: 14px; right: 12px; gap: 6px !important; padding: 5px 9px 5px 5px; border-radius: 9px !important; }
+    .kd-mc-ic { width: 20px; height: 20px; border-radius: 5px !important; }
+    .kd-mc-ic svg { width: 13px; height: 13px; }
+    .kd-mc-t { font-size: 10.5px; }
+    .kd-mc-s { font-size: 9px; }
+  }
+  @media (max-width: 859px) {
+    .kd-wrap { margin: 0 -20px; padding-top: 30px; }
+    .kd-shot { margin: 0 0 0 20px; width: 560px; max-width: none; }
+    .kd-n1, .kd-n2 { display: none !important; }
+  }
+  /* aoa-shared: soft fading grid + slim mobile nav (same on every page) */
+  :root { --grid-mask: radial-gradient(1100px 760px at 50% 0, #000 0%, rgba(0,0,0,0.55) 45%, transparent 100%), radial-gradient(760px 620px at 6% 2300px, rgba(0,0,0,0.38), transparent 72%), radial-gradient(760px 620px at 94% 4300px, rgba(0,0,0,0.32), transparent 72%), radial-gradient(900px 640px at 50% 6600px, rgba(0,0,0,0.28), transparent 72%); }
+  @media (max-width: 859px) {
+    :root { --grid-mask: radial-gradient(520px 640px at 50% 0, #000 0%, rgba(0,0,0,0.5) 50%, transparent 100%), radial-gradient(420px 520px at 0% 2600px, rgba(0,0,0,0.34), transparent 72%), radial-gradient(420px 520px at 100% 5200px, rgba(0,0,0,0.3), transparent 72%), radial-gradient(460px 520px at 50% 8200px, rgba(0,0,0,0.26), transparent 72%); }
+    .hn-nav { top: 10px !important; padding: 0 14px !important; }
+    .hn-bar { border-radius: 16px !important; padding: 7px 8px 7px 14px !important; box-shadow: 0 4px 18px -10px rgba(11,18,32,0.16) !important; }
+    .hn-logo, .hn-logo img { width: 28px !important; height: 28px !important; }
+    .hn-name { font-size: 16.5px !important; }
+    .hn-sub { font-size: 9.5px !important; }
+    .hn-burger { width: 36px !important; height: 36px !important; border-radius: 11px !important; }
+    .hn-cta { padding: 9px 14px !important; font-size: 14px !important; border-radius: 11px !important; }
+  }
 </style>
 </helmet>
 
 <div style="max-width:100%;overflow-x:clip;background:transparent;position:relative">
 
-  <!-- global pixel-grid texture -->
-  <div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(11,18,32,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.05) 1px, transparent 1px);background-size:4px 4px;-webkit-mask-image:radial-gradient(125% 70% at 50% 2%, #000 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.12) 64%, transparent 84%);mask-image:radial-gradient(125% 70% at 50% 2%, #000 0%, rgba(0,0,0,0.45) 38%, rgba(0,0,0,0.12) 64%, transparent 84%)"></div>
+  <!-- global pixel-grid texture (one continuous layer) -->
+  <div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(11,18,32,0.042) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.042) 1px, transparent 1px);background-size:4px 4px;-webkit-mask-image:var(--grid-mask);mask-image:var(--grid-mask)"></div>
 
   <!-- ======================= NAV ======================= -->
-  <nav style="position:sticky;top:16px;z-index:50;padding:0 20px">
+  <nav class="hn-nav" style="position:sticky;top:16px;z-index:50;padding:0 20px">
     <div style="position:relative;max-width:1120px;margin:0 auto">
-    <div style="background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
-      <a href="/#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
-        <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
-        <span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
+    <div class="hn-bar" style="background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+      <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
+        <span class="hn-logo" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
+        <span style="display:flex;flex-direction:column;gap:1px"><span class="hn-name" style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span class="hn-sub" style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
       </a>
       <div style="{{ navDesktopStyle }}">
         <span style="width:1px;height:22px;background:rgba(11,18,32,0.12)"></span>
         <div style="display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500;color:#3A434F">
-          <a href="/ad-on-group" style="text-decoration:none;color:#0B1220;font-weight:700">Ad On Group</a>
-          <div class="nav-prog" style="position:relative">
-            <a href="/programs" style="text-decoration:none;color:inherit;display:inline-flex;align-items:center;gap:5px">Programs<svg viewBox="0 0 12 12" style="width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:round;stroke-linejoin:round"><path d="M2.5 4.5L6 8L9.5 4.5"></path></svg></a>
-            <div class="nav-menu" style="position:absolute;top:100%;left:-16px;padding-top:12px;z-index:60">
-              <div style="width:300px;background:rgba(252,251,250,0.94);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:16px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.28);padding:8px">
-                <a href="/programs" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:12px 14px;border-radius:11px;transition:background .18s ease" style-hover="background:rgba(47,111,237,0.08)">
-                  <span style="font-size:14.5px;font-weight:700;color:#0B1220">AI Enablement</span>
-                  <span style="font-size:12.5px;color:#6B7480;font-weight:500">Our most comprehensive program</span>
-                </a>
-                <a href="/bpo-program" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:12px 14px;border-radius:11px;transition:background .18s ease" style-hover="background:rgba(62,78,197,0.08)">
-                  <span style="font-size:14.5px;font-weight:700;color:#0B1220">BPO AI Program</span>
-                  <span style="font-size:12.5px;color:#6B7480;font-weight:500">For outsourced &amp; BPO teams</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="/ad-on-group" style="text-decoration:none;color:inherit">Ad On Group</a>
+          <a href="/programs" style="text-decoration:none;color:inherit">Our Program</a>
           <a href="/about" style="text-decoration:none;color:inherit">About</a>
+          <a href="/resources" style="text-decoration:none;color:inherit">Resources</a>
         </div>
         <div style="display:flex;align-items:center;gap:12px">
-          <a href="https://adongroup.com.au/contact/" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(11,18,32,0.4)">Book a call</a>
+          <a class="hn-cta" href="https://adongroup.com.au/contact/" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(11,18,32,0.4)">Book a call</a>
         </div>
       </div>
-      <button onClick="{{ toggleNav }}" aria-label="Menu" style="{{ navBurgerStyle }};align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(11,18,32,0.10);background:#fff;cursor:pointer;flex-direction:column;gap:4px">
+      <button class="hn-burger" onClick="{{ toggleNav }}" aria-label="Menu" style="{{ navBurgerStyle }};align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(11,18,32,0.10);background:#fff;cursor:pointer;flex-direction:column;gap:4px">
         <span style="width:16px;height:2px;background:#0B1220;border-radius:2px;display:block"></span>
         <span style="width:16px;height:2px;background:#0B1220;border-radius:2px;display:block"></span>
       </button>
     </div>
     <div style="{{ navPanelStyle }}">
       <a href="/ad-on-group" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Ad On Group</a>
-      <a href="/programs" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">AI Enablement</a>
-      <a href="/bpo-program" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">BPO AI Program</a>
-      <a href="/ongoing-support" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Ongoing Support</a>
+      <a href="/programs" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Our Program</a>
       <a href="/about" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">About</a>
+      <a href="/resources" style="text-decoration:none;color:#0B1220;font-size:15px;font-weight:600;padding:12px 14px;border-radius:12px" style-hover="background:rgba(47,111,237,0.06)">Resources</a>
       <a href="https://adongroup.com.au/contact/" onClick="{{ closeNav }}" style="text-decoration:none;text-align:center;margin-top:6px;font-size:15px;font-weight:700;color:#fff;background:#0B1220;padding:13px 20px;border-radius:12px">Book a call</a>
     </div>
     </div>
   </nav>
 
-  <!-- ======================= HERO ======================= -->
-  <header id="top" style="max-width:1180px;margin:0 auto;padding:{{ heroPad }}">
-    <div style="{{ heroGridStyle }}">
-      <!-- LEFT: text -->
-      <div>
-        <h1 style="font-size:clamp(34px,4.4vw,58px);line-height:1.02;letter-spacing:-0.045em;font-weight:600;margin:0;background:linear-gradient(92deg,#2F6FED,#5A9BFF,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:adonShimmer 5s linear infinite">Innovative solutions from an innovative company.</h1>
-        <p style="font-size:17px;line-height:1.6;color:#4A5462;max-width:520px;margin:22px 0 0">For over 18 years we&rsquo;ve helped Australian businesses work smarter and grow faster.</p>
-        <div style="display:flex;flex-direction:column;gap:13px;margin-top:30px">
-          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">AI training &amp; enablement</span></div>
-          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">Offshore staff</span></div>
-          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">Large-scale staffing</span></div>
-          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">Digital marketing</span></div>
-          <div style="display:flex;align-items:center;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:16.5px;font-weight:600;color:#1F2733">On-hold messages</span></div>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:34px">
-          <a href="https://adongroup.com.au/contact/" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:13px 24px;border-radius:14px;display:inline-flex;align-items:center;gap:8px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 14px 28px -10px rgba(11,18,32,0.4)">Book a call <span style="font-size:16px">&rarr;</span></a>
-        </div>
+  <!-- ======================= AD ON GROUP — HERO ======================= -->
+  <header id="top" class="ak-sec" style="padding-top:100px;padding-bottom:70px">
+    <div class="pg-gh">
+      <div class="ak-text">
+        <div class="ak-label"><span>Ad On Group</span></div>
+        <h1 class="pg-h1" style="margin-left:0;text-align:left;font-size:clamp(38px,4.8vw,66px)">Innovative solutions from an <span class="ak-acc">innovative company.</span></h1>
+        <p class="ak-p" style="font-size:18px">For over 18 years we’ve helped Australian businesses work smarter and grow faster.</p>
+        <div class="pg-tags" style="justify-content:flex-start"><span>AI training &amp; enablement</span><span>Offshore staff</span><span>Large-scale staffing</span><span>Digital marketing</span><span>On-hold messages</span></div>
+        <a href="https://adongroup.com.au/contact/" class="ak-btn" style="margin-top:26px">Book a call <span>→</span></a>
       </div>
-
-      <!-- RIGHT: image composition -->
-      <div style="{{ heroImgWrapStyle }}">
-        <div style="position:absolute;right:-4%;top:2%;width:78%;height:82%;border-radius:40% 44% 46% 42%;background:radial-gradient(circle at 40% 35%, rgba(47,111,237,0.28), rgba(45,212,191,0.16) 62%, transparent 78%);filter:blur(6px);z-index:0"></div>
-        <div data-img-slot="office-main" style="position:relative;z-index:1;aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:linear-gradient(150deg,#DFE9F7,#CBD9EC 60%,#D7E4E0);box-shadow:0 34px 72px -34px rgba(11,18,32,0.5), inset 0 1px 0 rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center">
-          <img loading="lazy" decoding="async" src="assets/group-team.jpg" alt="The Ad On Group team" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" width="1600" height="1067">
-        </div>
-        <div data-img-slot="office-inset" style="position:absolute;z-index:2;left:-14px;bottom:8px;width:44%;aspect-ratio:1/1;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#EDE7F3,#E0D8EC);box-shadow:0 22px 48px -24px rgba(11,18,32,0.5)">
-          <img loading="lazy" decoding="async" src="assets/group-au-office.png" alt="Ad On Group Australia office" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" width="648" height="362">
-        </div>
-        <div style="position:absolute;z-index:3;right:2px;top:16px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 30px -16px rgba(11,18,32,0.35);border-radius:12px;padding:9px 14px" style-after="content:'';position:absolute;inset:0;border-radius:12px;padding:2px;background:linear-gradient(120deg,#2F6FED,#7FD0FF,#2DD4BF,#2F6FED);background-size:200% 100%;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;animation:adonShimmer 4s linear infinite"><span style="font-family:'Inter Tight',sans-serif;font-size:18px;font-weight:800;letter-spacing:-0.02em;color:#0B1220">18</span><span style="font-size:11.5px;font-weight:600;color:#6B7480;line-height:1.15">years<br>in business</span></div>
+      <div class="pg-gh-vis">
+        <div class="pg-gh-main"><img decoding="async" src="assets/group-team.jpg" alt="The Ad On Group team" width="1600" height="1067"></div>
+        <div class="pg-gh-sub"><img loading="lazy" decoding="async" src="assets/group-au-office.png" alt="Ad On Group Australia HQ" width="648" height="362"></div>
+        <div class="ak-glass pg-gh-badge"><b>18</b><small>years in business</small></div>
       </div>
     </div>
   </header>
 
+
+  <!-- ======================= ANSWER-FIRST SUMMARY (AEO) ======================= -->
+  <section class="ak-sec pg-ans-wrap" aria-label="What is Ad On Group?">
+    <div class="pg-ans">
+      <div class="pg-ans-a"><div class="ak-label"><span>The short answer</span></div><h2 class="pg-ans-q">What is Ad On Group?</h2><p>Ad On Group is an Australian business services provider founded in 2008, with offices in Australia, the Philippines and South Africa. Its divisions each solve a problem customers kept raising: Ad On Workforce for offshore staff, Ad On AI for AI training and enablement, Ad On Digital for digital marketing and Ad On Hold for on-hold messages.</p></div>
+      <dl class="pg-ans-f"><div><dt>Founded</dt><dd>2008</dd></div><div><dt>Offices</dt><dd>Australia (headquarters), the Philippines and South Africa</dd></div><div><dt>Divisions</dt><dd>Ad On Workforce, Ad On AI, Ad On Digital, Ad On Hold</dd></div><div><dt>Google rating</dt><dd>4.8 out of 5 from 223 reviews</dd></div></dl>
+    </div>
+  </section>
   <!-- ======================= THE PROBLEM ======================= -->
-  <section style="max-width:1180px;margin:0 auto;padding:64px 28px 36px">
-    <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 24px 60px -30px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:26px;padding:clamp(34px,4vw,60px)">
-      <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase"><span style="width:22px;height:1.5px;background:#2F6FED"></span>The problem</span>
-      <h2 style="font-size:clamp(30px,4vw,52px);line-height:1.02;letter-spacing:-0.04em;font-weight:800;margin:18px 0 0;max-width:640px">Business shouldn&rsquo;t be <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">this hard</span>.</h2>
-      <p style="font-size:17px;line-height:1.6;color:#4A5462;margin:20px 0 0;max-width:440px">But for many business owners, this is exactly what happens &mdash; month after month.</p>
-      <div style="{{ problemGridStyle }};margin:46px 0 0">
-        <div style="display:flex;gap:16px;align-items:flex-start"><span style="flex:none;width:26px;height:26px;border-radius:8px;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 4px 12px -4px rgba(47,111,237,0.6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><p style="font-size:17px;line-height:1.45;font-weight:500;letter-spacing:-0.01em;color:#1F2733;margin:0">You shouldn&rsquo;t have to spend months trying to find great people.</p></div>
-        <div style="display:flex;gap:16px;align-items:flex-start"><span style="flex:none;width:26px;height:26px;border-radius:8px;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 4px 12px -4px rgba(47,111,237,0.6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><p style="font-size:17px;line-height:1.45;font-weight:500;letter-spacing:-0.01em;color:#1F2733;margin:0">You shouldn&rsquo;t have to feel overwhelmed by AI or wonder where to start.</p></div>
-        <div style="display:flex;gap:16px;align-items:flex-start"><span style="flex:none;width:26px;height:26px;border-radius:8px;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 4px 12px -4px rgba(47,111,237,0.6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><p style="font-size:17px;line-height:1.45;font-weight:500;letter-spacing:-0.01em;color:#1F2733;margin:0">You shouldn&rsquo;t have to pay a fortune to build a capable team.</p></div>
-        <div style="display:flex;gap:16px;align-items:flex-start"><span style="flex:none;width:26px;height:26px;border-radius:8px;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 4px 12px -4px rgba(47,111,237,0.6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><p style="font-size:17px;line-height:1.45;font-weight:500;letter-spacing:-0.01em;color:#1F2733;margin:0">You shouldn&rsquo;t have to spend countless hours working out how AI can actually help.</p></div>
+  <section class="ak-sec" style="padding-top:70px" data-reveal="">
+    <div class="ak-wwa" style="align-items:start">
+      <div class="ak-text">
+        <div class="ak-label"><span>The problem</span></div>
+        <h2 class="ak-h2">Business shouldn’t be <span class="ak-acc">this hard.</span></h2>
+        <p class="ak-p">But for many business owners, this is exactly what happens — month after month.</p>
       </div>
-      <div style="height:1px;background:rgba(11,18,32,0.1);margin:40px 0 0"></div>
-      <p style="font-size:19px;line-height:1.5;font-weight:700;letter-spacing:-0.015em;color:#0B1220;margin:28px 0 0">At Ad On Group, we decided that needed to change. <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">So we built the solutions ourselves.</span></p>
+      <div>
+        <ul class="pg-x">
+          <li>You shouldn’t have to spend months trying to find great people.</li>
+          <li>You shouldn’t have to feel overwhelmed by AI or wonder where to start.</li>
+          <li>You shouldn’t have to pay a fortune to build a capable team.</li>
+          <li>You shouldn’t have to spend countless hours working out how AI can actually help.</li>
+        </ul>
+        <p class="pg-x-foot">At Ad On Group, we decided that needed to change. <span class="ak-acc">So we built the solutions ourselves.</span></p>
+      </div>
     </div>
   </section>
 
-  <!-- ======================= OUR MISSION ======================= -->
-  <section style="position:relative;overflow:hidden;margin:0;margin-top:-40px;padding-top:40px;color:#fff;background:linear-gradient(180deg, rgba(11,18,32,0) 0%, rgba(11,18,32,0) 5%, rgba(11,18,32,0.02) 9%, rgba(11,18,32,0.06) 13%, rgba(11,18,32,0.13) 17%, rgba(11,18,32,0.24) 21%, rgba(11,18,32,0.39) 25%, rgba(11,18,32,0.56) 28.5%, rgba(11,18,32,0.72) 31.5%, rgba(11,18,32,0.85) 34.5%, rgba(11,18,32,0.94) 37.5%, rgba(11,18,32,0.99) 40.5%, rgba(11,18,32,1) 43%, rgba(11,18,32,1) 64%, rgba(11,18,32,0.99) 71%, rgba(11,18,32,0.9) 77%, rgba(11,18,32,0.72) 83%, rgba(11,18,32,0.48) 88%, rgba(11,18,32,0.24) 93%, rgba(11,18,32,0.08) 97%, rgba(11,18,32,0) 100%)">
-    <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);background-size:6px 6px;-webkit-mask-image:radial-gradient(120% 80% at 50% 44%, #000 0%, rgba(0,0,0,0.4) 55%, transparent 88%);mask-image:radial-gradient(120% 80% at 50% 44%, #000 0%, rgba(0,0,0,0.4) 55%, transparent 88%);opacity:0.6"></div>
-    <div style="position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:130px 28px 150px;text-align:center">
-      <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#7FB2FF;text-transform:uppercase"><span style="width:22px;height:1.5px;background:#7FB2FF"></span>Our mission</span>
-      <h2 style="font-size:clamp(25px,3.1vw,40px);line-height:1.08;letter-spacing:-0.03em;font-weight:800;margin:16px 0 30px;color:#fff">Customers kept telling us the <span style="background:linear-gradient(92deg,#5A9BFF,#7FE9FF,#5A9BFF);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(127,208,255,0.5));animation:adonShimmer 4.5s linear infinite">same two things</span>.</h2>
-      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
-        <div style="display:inline-flex;align-items:center;gap:11px;background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:13px 22px">
-          <span style="font-family:Georgia,serif;font-size:28px;line-height:0;color:#5A9BFF;opacity:0.6;transform:translateY(4px)">&ldquo;</span>
-          <p style="font-size:15px;line-height:1.3;font-weight:600;letter-spacing:-0.01em;color:#fff;margin:0">Finding great staff is hard.</p>
+  <!-- ======================= MISSION + FLAGSHIP DIVISIONS (dark) ======================= -->
+  <section class="ak-dark" style="margin-top:120px">
+    <div class="ak-dark-in">
+      <div data-reveal="">
+        <div class="ak-label ak-label--d" style="justify-content:flex-start"><span>Our mission</span></div>
+        <p class="ak-statement">Customers kept telling us <span class="ak-glow">the same two things.</span></p>
+        <div class="pg-quotes">
+          <blockquote>“Finding great staff is hard.”</blockquote>
+          <blockquote>“I know AI is important, but I have no idea where to start.”</blockquote>
         </div>
-        <div style="display:inline-flex;align-items:center;gap:11px;background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:13px 22px">
-          <span style="font-family:Georgia,serif;font-size:28px;line-height:0;color:#5A9BFF;opacity:0.6;transform:translateY(4px)">&ldquo;</span>
-          <p style="font-size:15px;line-height:1.3;font-weight:600;letter-spacing:-0.01em;color:#fff;margin:0">I know AI is important, but I have no idea where to start.</p>
-        </div>
+        <p class="ak-p" style="max-width:640px;margin-top:26px">We heard these frustrations over and over again — so we made it our mission to solve both. That mission led to the creation of our two flagship divisions.</p>
       </div>
-      <p style="font-size:16.5px;line-height:1.6;color:rgba(255,255,255,0.72);max-width:660px;margin:34px auto 0">We heard these frustrations over and over again &mdash; so we made it our mission to solve both. That mission led to the creation of our two flagship divisions.</p>
-      <div id="divisions" style="text-align:left;max-width:980px;margin:48px auto 0;{{ divisionsGridStyle }};align-items:stretch">
-      <div style="position:relative;border-radius:25px;padding:1px;background:linear-gradient(145deg,rgba(14,134,176,0.85),rgba(90,196,224,0.35) 45%,rgba(12,106,144,0.7));box-shadow:0 30px 70px -34px rgba(11,40,34,0.5)">
-      <div style="background:#fff;border-radius:24px;overflow:hidden;display:flex;flex-direction:column;height:100%">
-        <div style="position:relative;min-height:184px;box-sizing:border-box;padding:30px 32px 26px;background:linear-gradient(135deg,#0C7BA5 0%,#1596C0 52%,#0E86B0 100%);overflow:hidden">
-          <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);background-size:7px 7px;-webkit-mask-image:radial-gradient(120% 130% at 88% 12%, #000, transparent 72%);mask-image:radial-gradient(120% 130% at 88% 12%, #000, transparent 72%)"></div>
-          
-          <div style="position:relative;display:flex;align-items:center;gap:14px">
-            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.28);display:flex;align-items:center;justify-content:center"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-            <div>
-              <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.78);text-transform:uppercase;font-weight:600">Flagship division</span>
-              <div style="font-size:25px;font-weight:800;letter-spacing:-0.025em;color:#fff;line-height:1.05;margin-top:3px">Ad On Workforce</div>
-            </div>
-          </div>
-          <p style="position:relative;font-size:15px;font-weight:600;color:rgba(255,255,255,0.94);margin:16px 0 0">Great people without the recruitment headaches.</p>
+      <div class="pg-div2" data-reveal="">
+        <div class="pg-div">
+          <small>Flagship division</small>
+          <h3>Ad On Workforce</h3>
+          <p class="pg-div-lede">Great people without the recruitment headaches.</p>
+          <p>Build high-performing teams through dedicated offshore staff who become a genuine extension of your business — admin, customer service, finance, marketing and industry specialists.</p>
+          <ul><li>Scale faster</li><li>Reduce wage costs</li><li>Increase productivity</li><li>Focus on growing your business</li><li>Stop wasting time on recruitment cycles</li></ul>
+          <a href="https://adonworkforce.com.au" target="_blank" rel="noopener" class="ak-btn" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16)">Find out more <span>→</span></a>
         </div>
-        <div style="padding:26px 32px 30px;display:flex;flex-direction:column;flex:1">
-          <p style="font-size:14.5px;line-height:1.6;color:#4A5462;margin:0 0 20px"><span style="display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#0C6A90;text-transform:uppercase;margin:0 0 10px">What we do</span>Build high-performing teams through dedicated offshore staff who become a genuine extension of your business &mdash; admin, customer service, finance, marketing and industry specialists.</p>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 18px;margin-bottom:26px"><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Scale faster</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Reduce wage costs</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Increase productivity</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Focus on growing your business</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(14,134,176,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Stop wasting time on recruitment cycles</span></div></div>
-          <div style="margin-top:auto"><a href="https://adonworkforce.com.au" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;color:#fff;background:#0E86B0;padding:12px 22px;border-radius:13px;transition:transform .2s ease, box-shadow .2s ease" style-hover="transform:translateY(-2px);box-shadow:0 12px 24px -10px #0E86B0">Find out more <span style="font-size:16px">&rarr;</span></a></div>
+        <div class="pg-div pg-div--ai">
+          <small>Flagship division · this site</small>
+          <h3>Ad On AI</h3>
+          <p class="pg-div-lede">From confusion to confidence — in partnership with Anthropic.</p>
+          <p>We help businesses understand, adopt and implement AI safely to improve productivity, efficiency and profitability — and achieve real results rather than just experimenting.</p>
+          <ul><li>AI Enablement</li><li>AI Adoption Programs</li><li>Custom AI Agents</li><li>Workflow Automation</li><li>AI Strategy &amp; Consulting</li><li>Placement of Certified Claude Architects</li></ul>
+          <a href="/programs" class="ak-btn ak-btn--light">Explore the program <span>→</span></a>
         </div>
-      </div>
-      </div>
-      <div style="position:relative;border-radius:25px;padding:1px;background:linear-gradient(145deg,rgba(47,111,237,0.85),rgba(90,155,255,0.35) 45%,rgba(31,84,199,0.7));box-shadow:0 30px 70px -34px rgba(14,30,70,0.5)">
-      <div style="background:#fff;border-radius:24px;overflow:hidden;display:flex;flex-direction:column;height:100%">
-        <div style="position:relative;min-height:184px;box-sizing:border-box;padding:30px 32px 26px;background:linear-gradient(135deg,#2257CC 0%,#2F6FED 52%,#3D7BF5 100%);overflow:hidden">
-          <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);background-size:7px 7px;-webkit-mask-image:radial-gradient(120% 130% at 88% 12%, #000, transparent 72%);mask-image:radial-gradient(120% 130% at 88% 12%, #000, transparent 72%)"></div>
-          <span style="position:absolute;top:22px;right:24px;font-size:10px;font-weight:700;color:#2F6FED;background:rgba(255,255,255,0.94);border-radius:999px;padding:4px 11px;z-index:1">This site</span>
-          <div style="position:relative;display:flex;align-items:center;gap:14px">
-            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:#fff;border:1px solid rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px -4px rgba(0,0,0,0.25)"><img src="assets/logo-claude.svg" alt="Claude" style="width:30px;height:30px;object-fit:contain;display:block"></span>
-            <div>
-              <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.78);text-transform:uppercase;font-weight:600">Flagship division</span>
-              <div style="font-size:25px;font-weight:800;letter-spacing:-0.025em;color:#fff;line-height:1.05;margin-top:3px">Ad On AI</div>
-            </div>
-          </div>
-          <p style="position:relative;font-size:15px;font-weight:600;color:rgba(255,255,255,0.94);margin:16px 0 0">From confusion to confidence — in partnership with Anthropic.</p>
-        </div>
-        <div style="padding:26px 32px 30px;display:flex;flex-direction:column;flex:1">
-          <p style="font-size:14.5px;line-height:1.6;color:#4A5462;margin:0 0 20px"><span style="display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#2F6FED;text-transform:uppercase;margin:0 0 10px">What we do</span>We help businesses understand, adopt and implement AI safely to improve productivity, efficiency and profitability &mdash; and achieve real results rather than just experimenting.</p>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 18px;margin-bottom:26px"><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">AI Enablement</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">AI Adoption Programs</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Custom AI Agents</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Workflow Automation</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">AI Strategy &amp; Consulting</span></div><div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:14px;line-height:1.45;color:#39424E">Placement of Certified Claude Architects</span></div></div>
-          <div style="margin-top:auto"><a href="/programs" style="text-decoration:none;display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;color:#fff;background:#2F6FED;padding:12px 22px;border-radius:13px;transition:transform .2s ease, box-shadow .2s ease" style-hover="transform:translateY(-2px);box-shadow:0 12px 24px -10px #2F6FED">Explore the programs <span style="font-size:16px">&rarr;</span></a></div>
-        </div>
-      </div>
-      </div>
       </div>
     </div>
   </section>
 
   <!-- ======================= THE FULL PICTURE ======================= -->
-  <section style="max-width:1160px;margin:0 auto;padding:36px 28px 28px">
-    <div style="text-align:center;max-width:700px;margin:0 auto 44px">
-      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">The full picture</span>
-      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 12px">Two more ways we make <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">life easier</span>.</h2>
-      <p style="font-size:16px;line-height:1.6;color:#4A5462;margin:0">Once you have the right people and the right technology, you still need customers.</p>
+  <section class="ak-sec" style="padding-top:120px" data-reveal="">
+    <div class="ak-head ak-head--c" style="margin-bottom:46px">
+      <div class="ak-label ak-label--c"><span>The full picture</span></div>
+      <h2 class="ak-h2">Two more ways we make <span class="ak-acc">life easier.</span></h2>
+      <p class="ak-p">Once you have the right people and the right technology, you still need customers.</p>
     </div>
-    <div style="{{ pictureGridStyle }}">
-      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;overflow:hidden;display:flex;flex-direction:column">
-        <div style="position:relative;aspect-ratio:16/7;overflow:hidden;border-bottom:3px solid #3E4EC5;background:radial-gradient(110% 100% at 22% 15%, #6B78E8 0%, #3A46B8 55%, #232C86 100%)"><div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);background-size:7px 7px;-webkit-mask-image:radial-gradient(90% 90% at 30% 20%, #000, transparent 82%);mask-image:radial-gradient(90% 90% at 30% 20%, #000, transparent 82%)"></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 15v-4z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg></div></div>
-        <div style="padding:22px 24px 24px;display:flex;flex-direction:column;flex:1">
-          <div style="font-size:18px;font-weight:800;letter-spacing:-0.02em;color:#0B1220">Ad On Digital</div>
-          <div style="font-size:14px;font-weight:600;color:#3E4EC5;margin:4px 0 12px">Helping businesses get found.</div>
-          <p style="font-size:13.5px;line-height:1.55;color:#4A5462;margin:0 0 16px">Fully managed digital marketing solutions that bring the customers to your door.</p>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px 16px;margin-bottom:20px"><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Website Design</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">SEO</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Google Ads</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Facebook Advertising</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Digital Brochures</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Content &amp; Blogs</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Online Reputation</span></div></div>
-          <div style="margin-top:auto"><a href="https://www.adongroup.com.au" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#3844B0">Find out more <span style="font-size:15px">&rarr;</span></a></div>
-        </div>
+    <div class="pg-vs" style="max-width:1080px">
+      <div class="pg-vs-col pg-vs-col--yes">
+        <div class="pg-vs-h"><span style="background:#0B1220;box-shadow:none">D</span>Ad On Digital</div>
+        <p style="color:#0B1220;font-weight:600;margin-top:12px">Helping businesses get found.</p>
+        <p>Fully managed digital marketing solutions that bring the customers to your door.</p>
+        <div class="pg-tags" style="justify-content:flex-start"><span>Website Design</span><span>SEO</span><span>Google Ads</span><span>Facebook Advertising</span><span>Digital Brochures</span><span>Content &amp; Blogs</span><span>Online Reputation</span></div>
+        <a href="https://adongroup.com.au/" target="_blank" rel="noopener" class="ak-btn ak-btn--soft" style="margin-top:20px">Find out more <span>→</span></a>
       </div>
-      <div style="background:rgba(255,255,255,0.62);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -22px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;overflow:hidden;display:flex;flex-direction:column">
-        <div style="position:relative;aspect-ratio:16/7;overflow:hidden;border-bottom:3px solid #1E6DB8;background:radial-gradient(110% 100% at 22% 15%, #5AA8E8 0%, #2E7FC8 52%, #134A82 100%)"><div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);background-size:7px 7px;-webkit-mask-image:radial-gradient(90% 90% at 30% 20%, #000, transparent 82%);mask-image:radial-gradient(90% 90% at 30% 20%, #000, transparent 82%)"></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg></div></div>
-        <div style="padding:22px 24px 24px;display:flex;flex-direction:column;flex:1">
-          <div style="font-size:18px;font-weight:800;letter-spacing:-0.02em;color:#0B1220">Ad On Hold</div>
-          <div style="font-size:14px;font-weight:600;color:#1E6DB8;margin:4px 0 12px">Every phone call is an opportunity.</div>
-          <p style="font-size:13.5px;line-height:1.55;color:#4A5462;margin:0 0 16px">Turn caller waiting time into a valuable communication and marketing channel.</p>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px 16px;margin-bottom:20px"><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Promote products</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Answer common questions</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Educate customers</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Strengthen your brand</span></div><div style="display:flex;gap:9px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;margin-top:1px;border-radius:50%;background:rgba(47,111,237,0.12);display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span style="font-size:13.5px;line-height:1.5;color:#39424E">Better caller experience</span></div></div>
-          <div style="margin-top:auto"><a href="https://www.adongroup.com.au" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#16528C">Find out more <span style="font-size:15px">&rarr;</span></a></div>
-        </div>
+      <div class="pg-vs-col pg-vs-col--yes">
+        <div class="pg-vs-h"><span style="background:#0B1220;box-shadow:none">H</span>Ad On Hold</div>
+        <p style="color:#0B1220;font-weight:600;margin-top:12px">Every phone call is an opportunity.</p>
+        <p>Turn caller waiting time into a valuable communication and marketing channel.</p>
+        <div class="pg-tags" style="justify-content:flex-start"><span>Promote products</span><span>Answer common questions</span><span>Educate customers</span><span>Strengthen your brand</span><span>Better caller experience</span></div>
+        <a href="https://adongroup.com.au/" target="_blank" rel="noopener" class="ak-btn ak-btn--soft" style="margin-top:20px">Find out more <span>→</span></a>
       </div>
     </div>
   </section>
 
-  <!-- ======================= OFFICE IMAGE BAND ======================= -->
-  <section style="max-width:1200px;margin:0 auto;padding:88px 28px 96px">
-    <div style="{{ officeBandStyle }}">
-      <div style="flex:0 0 auto;text-align:center">
-        <div data-img-slot="band-1" style="position:relative;width:clamp(180px,20vw,280px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:#E7EDF6;border:4px solid #fff;box-shadow:0 26px 54px -26px rgba(11,18,32,0.42)"><img loading="lazy" decoding="async" src="assets/group-capetown.webp" alt="Cape Town, South Africa" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" width="1200" height="800"></div>
-        <div style="font-size:clamp(15px,1.5vw,19px);font-weight:600;letter-spacing:-0.01em;color:#0B1220;margin-top:20px">South Africa</div>
-      </div>
-      <div style="flex:0 0 auto;text-align:center;margin:0 -8px">
-        <div data-img-slot="band-2" style="position:relative;width:clamp(230px,27vw,400px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:#DFE9F7;border:4px solid #fff;box-shadow:0 32px 64px -28px rgba(11,18,32,0.48)"><img loading="lazy" decoding="async" src="assets/group-au-office.png" alt="Ad On Group Australia HQ" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" width="648" height="362"></div>
-        <div style="font-size:clamp(18px,1.9vw,24px);font-weight:700;letter-spacing:-0.02em;color:#0B1220;margin-top:22px">Australia Headquarters</div>
-      </div>
-      <div style="flex:0 0 auto;text-align:center">
-        <div data-img-slot="band-3" style="position:relative;width:clamp(180px,20vw,280px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:#EDE7F3;border:4px solid #fff;box-shadow:0 26px 54px -26px rgba(11,18,32,0.42)"><img loading="lazy" decoding="async" src="assets/group-ph-office.jpg" alt="Ad On Group Philippines office" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" width="1366" height="911"></div>
-        <div style="font-size:clamp(15px,1.5vw,19px);font-weight:600;letter-spacing:-0.01em;color:#0B1220;margin-top:20px">Philippines Office</div>
-      </div>
+  <!-- ======================= OFFICES ======================= -->
+  <section class="ak-sec" style="padding-top:110px" data-reveal="">
+    <div class="pg-offices">
+      <figure><img loading="lazy" decoding="async" src="assets/group-au-office.png" alt="Ad On Group Australia office" width="648" height="362"><figcaption><b>Australia</b>Headquarters</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/group-ph-office.jpg" alt="Ad On Group Philippines office" width="1366" height="911"><figcaption><b>Philippines</b>Office</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/group-capetown.webp" alt="Cape Town, South Africa" width="1200" height="800"><figcaption><b>South Africa</b>Cape Town</figcaption></figure>
     </div>
   </section>
 
   <!-- ======================= THE AD ON DIFFERENCE ======================= -->
-  <section style="max-width:1040px;margin:0 auto;padding:56px 28px 28px">
-    <div style="text-align:center;max-width:780px;margin:0 auto 48px">
-      <span style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase"><span style="width:22px;height:1.5px;background:#2F6FED"></span>The Ad On difference</span>
-      <h2 style="font-size:clamp(25px,3.1vw,40px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:16px 0 0">We&rsquo;re not in the business of selling services. We&rsquo;re in the business of <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">solving problems</span>.</h2>
+  <section class="ak-sec" style="padding-top:110px" data-reveal="">
+    <div class="ak-head" style="margin-bottom:30px;max-width:860px">
+      <div class="ak-label"><span>The Ad On difference</span></div>
+      <h2 class="ak-h2">We’re not in the business of selling services. <span class="ak-acc">We’re in the business of solving problems.</span></h2>
     </div>
-    <div style="display:flex;flex-direction:column;gap:12px;max-width:880px;margin:0 auto">
-      <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -24px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px 28px 24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px"><div style="position:absolute;inset:0 auto 0 0;width:5px;background:#0E86B0"></div><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A93A1;flex:none">When customers struggled to</span><span style="font-size:19px;font-weight:800;letter-spacing:-0.02em;color:#0B1220;flex:1;min-width:180px">find great people</span><span style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:-0.01em;color:#0C6A90;background:rgba(14,134,176,0.1);border:1px solid rgba(14,134,176,0.2);border-radius:999px;padding:8px 16px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0E86B0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>we built Ad On Workforce</span></div>
-      <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -24px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px 28px 24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px"><div style="position:absolute;inset:0 auto 0 0;width:5px;background:#2F6FED"></div><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A93A1;flex:none">When customers struggled to</span><span style="font-size:19px;font-weight:800;letter-spacing:-0.02em;color:#0B1220;flex:1;min-width:180px">understand AI</span><span style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:-0.01em;color:#2F6FED;background:rgba(47,111,237,0.1);border:1px solid rgba(47,111,237,0.2);border-radius:999px;padding:8px 16px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>we built Ad On AI</span></div>
-      <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -24px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px 28px 24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px"><div style="position:absolute;inset:0 auto 0 0;width:5px;background:#3E4EC5"></div><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A93A1;flex:none">When customers struggled to</span><span style="font-size:19px;font-weight:800;letter-spacing:-0.02em;color:#0B1220;flex:1;min-width:180px">attract more customers</span><span style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:-0.01em;color:#3844B0;background:rgba(62,78,197,0.1);border:1px solid rgba(62,78,197,0.2);border-radius:999px;padding:8px 16px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3E4EC5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>we built Ad On Digital</span></div>
-      <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 16px 40px -24px rgba(11,18,32,0.24), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:16px;padding:24px 28px 24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px"><div style="position:absolute;inset:0 auto 0 0;width:5px;background:#1E6DB8"></div><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A93A1;flex:none">When customers struggled to</span><span style="font-size:19px;font-weight:800;letter-spacing:-0.02em;color:#0B1220;flex:1;min-width:180px">create a better caller experience</span><span style="display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:-0.01em;color:#16528C;background:rgba(30,109,184,0.12);border:1px solid rgba(30,109,184,0.24);border-radius:999px;padding:8px 16px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1E6DB8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>we built Ad On Hold</span></div>
+    <div class="pg-diff">
+      <div><small>When customers struggled to</small><b>find great people</b><i>→</i><span>we built <strong>Ad On Workforce</strong></span></div>
+      <div><small>When customers struggled to</small><b>understand AI</b><i>→</i><span>we built <strong class="ak-acc">Ad On AI</strong></span></div>
+      <div><small>When customers struggled to</small><b>attract more customers</b><i>→</i><span>we built <strong>Ad On Digital</strong></span></div>
+      <div><small>When customers struggled to</small><b>create a better caller experience</b><i>→</i><span>we built <strong>Ad On Hold</strong></span></div>
     </div>
-    <p style="text-align:center;font-size:16.5px;line-height:1.6;color:#4A5462;max-width:700px;margin:40px auto 0">Everything we do starts with one question: <strong style="color:#0B1220;font-weight:700">&ldquo;How can we make life easier for our customers?&rdquo;</strong> That&rsquo;s been our mission for more than 18 years.</p>
+    <p class="pg-x-foot" style="max-width:760px">Everything we do starts with one question: <span class="ak-acc">“How can we make life easier for our customers?”</span> That’s been our mission for more than 18 years.</p>
   </section>
 
-  <!-- ======================= HAPPY STAFF WORLDWIDE ======================= -->
-  <section style="max-width:1200px;margin:0 auto;padding:40px 28px 14px">
-    <div style="text-align:center;max-width:780px;margin:0 auto 40px">
-      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">Around the world</span>
-      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 0">We have happy staff and clients around the world.</h2>
+  <!-- ======================= AROUND THE WORLD + PARTNERS ======================= -->
+  <section class="ak-sec" style="padding-top:110px" data-reveal="">
+    <div class="ak-head ak-head--c" style="margin-bottom:34px">
+      <div class="ak-label ak-label--c"><span>Around the world</span></div>
+      <h2 class="ak-h2">We have happy staff and clients <span class="ak-acc">around the world.</span></h2>
     </div>
-    <div style="{{ worldGridStyle }}">
-      <div data-img-slot="world-1" style="position:relative;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:#F6E1EC;box-shadow:0 20px 46px -28px rgba(11,18,32,0.4)"><img src="assets/world-1.jpg" alt="Ad On Group team — International Women's Day" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" width="1200" height="1600"></div>
-      <div data-img-slot="world-2" style="position:relative;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:#DFE9F7;box-shadow:0 20px 46px -28px rgba(11,18,32,0.4)"><img src="assets/world-2.jpg" alt="Ad On Group team" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" width="1200" height="1600"></div>
-      <div data-img-slot="world-3" style="position:relative;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:#DDEEEA;box-shadow:0 20px 46px -28px rgba(11,18,32,0.4)"><img src="assets/world-3.jpg" alt="Ad On Group Philippines team" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" width="1600" height="1067"></div>
+    <div class="pg-world">
+      <img loading="lazy" decoding="async" src="assets/world-1.jpg" alt="Ad On Group team — International Women's Day" width="1200" height="1600">
+      <img loading="lazy" decoding="async" src="assets/world-3.jpg" alt="Ad On Group Philippines team" width="1600" height="1067">
+      <img loading="lazy" decoding="async" src="assets/world-2.jpg" alt="Ad On Group team" width="1200" height="1600">
+    </div>
+    <div class="pg-partners">
+      <span>Our partners</span>
+      <a href="https://www.anthropic.com" target="_blank" rel="noopener"><img loading="lazy" src="assets/partner-anthropic-trim.png" alt="Anthropic"></a>
+      <a href="https://www.google.com" target="_blank" rel="noopener"><img loading="lazy" src="assets/partner-google-trim.png" alt="Google"></a>
+      <a href="https://www.meta.com" target="_blank" rel="noopener"><img loading="lazy" src="assets/partner-meta-trim.png" alt="Meta"></a>
+      <a href="https://www.telstra.com.au" target="_blank" rel="noopener"><img loading="lazy" src="assets/partner-telstra-trim.png" alt="Telstra"></a>
     </div>
   </section>
 
-  <!-- ======================= PARTNERS ======================= -->
-  <section style="max-width:1160px;margin:0 auto;padding:72px 28px 64px;text-align:center">
-    <span style="display:block;font-family:'JetBrains Mono',monospace;font-size:clamp(22px,2.6vw,32px);letter-spacing:0.04em;text-transform:uppercase;margin:0 0 56px;color:#0B1220">Our <span style="background:linear-gradient(92deg,#2F6FED,#56C5E8,#2F6FED);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(47,111,237,0.4));animation:adonShimmer 4.5s linear infinite">partners</span></span>
-    <div style="overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)">
-      <div style="display:flex;align-items:center;gap:110px;width:max-content;animation:adonMarquee 32s linear infinite">
-        <a href="https://www.anthropic.com" target="_blank" rel="noopener" title="Anthropic" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-anthropic-trim.png" alt="Anthropic" style="height:30px;width:auto;object-fit:contain;display:block;flex:none" width="1601" height="192"></a>
-        <a href="https://www.google.com" target="_blank" rel="noopener" title="Google" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-google-trim.png" alt="Google" style="height:44px;width:auto;object-fit:contain;display:block;flex:none" width="313" height="105"></a>
-        <a href="https://www.meta.com" target="_blank" rel="noopener" title="Meta" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-meta-trim.png" alt="Meta" style="height:40px;width:auto;object-fit:contain;display:block;flex:none" width="602" height="121"></a>
-        <a href="https://www.telstra.com.au" target="_blank" rel="noopener" title="Telstra" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-telstra-trim.png" alt="Telstra" style="height:40px;width:auto;object-fit:contain;display:block;flex:none" width="300" height="83"></a>
-        <a href="https://www.anthropic.com" target="_blank" rel="noopener" title="Anthropic" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-anthropic-trim.png" alt="Anthropic" style="height:30px;width:auto;object-fit:contain;display:block;flex:none" width="1601" height="192"></a>
-        <a href="https://www.google.com" target="_blank" rel="noopener" title="Google" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-google-trim.png" alt="Google" style="height:44px;width:auto;object-fit:contain;display:block;flex:none" width="313" height="105"></a>
-        <a href="https://www.meta.com" target="_blank" rel="noopener" title="Meta" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-meta-trim.png" alt="Meta" style="height:40px;width:auto;object-fit:contain;display:block;flex:none" width="602" height="121"></a>
-        <a href="https://www.telstra.com.au" target="_blank" rel="noopener" title="Telstra" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-telstra-trim.png" alt="Telstra" style="height:40px;width:auto;object-fit:contain;display:block;flex:none" width="300" height="83"></a>
-        <a href="https://www.anthropic.com" target="_blank" rel="noopener" title="Anthropic" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-anthropic-trim.png" alt="Anthropic" style="height:30px;width:auto;object-fit:contain;display:block;flex:none" width="1601" height="192"></a>
-        <a href="https://www.google.com" target="_blank" rel="noopener" title="Google" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-google-trim.png" alt="Google" style="height:44px;width:auto;object-fit:contain;display:block;flex:none" width="313" height="105"></a>
-        <a href="https://www.meta.com" target="_blank" rel="noopener" title="Meta" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-meta-trim.png" alt="Meta" style="height:40px;width:auto;object-fit:contain;display:block;flex:none" width="602" height="121"></a>
-        <a href="https://www.telstra.com.au" target="_blank" rel="noopener" title="Telstra" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-telstra-trim.png" alt="Telstra" style="height:40px;width:auto;object-fit:contain;display:block;flex:none" width="300" height="83"></a>
-        <a href="https://www.anthropic.com" target="_blank" rel="noopener" title="Anthropic" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-anthropic-trim.png" alt="Anthropic" style="height:30px;width:auto;object-fit:contain;display:block;flex:none" width="1601" height="192"></a>
-        <a href="https://www.google.com" target="_blank" rel="noopener" title="Google" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-google-trim.png" alt="Google" style="height:44px;width:auto;object-fit:contain;display:block;flex:none" width="313" height="105"></a>
-        <a href="https://www.meta.com" target="_blank" rel="noopener" title="Meta" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-meta-trim.png" alt="Meta" style="height:40px;width:auto;object-fit:contain;display:block;flex:none" width="602" height="121"></a>
-        <a href="https://www.telstra.com.au" target="_blank" rel="noopener" title="Telstra" style="display:inline-flex;text-decoration:none"><img loading="eager" decoding="async" src="assets/partner-telstra-trim.png" alt="Telstra" style="height:40px;width:auto;object-fit:contain;display:block;flex:none" width="300" height="83"></a>
+  <!-- ======================= TESTIMONIALS + CONTACT (dark ending) ======================= -->
+  <section class="ak-dark ak-dark--end" style="margin-top:110px">
+    <div class="ak-dark-in">
+      <div class="pg-rev-h" data-reveal="">
+        <div><div class="ak-label ak-label--d" style="justify-content:flex-start"><span>Testimonials</span></div><h2 class="ak-h2" style="color:#fff">Read what our customers <span class="ak-glow">are saying.</span></h2></div>
+        <div class="pg-rating"><b>4.8</b><div><span class="pg-stars">★★★★★</span><small>Excellent · Google Reviews · 229 reviews</small></div></div>
       </div>
-    </div>
-  </section>
-
-  <!-- ======================= REVIEWS ======================= -->
-  <section style="max-width:1160px;margin:0 auto;padding:28px 28px 28px">
-    <div style="text-align:center;max-width:720px;margin:0 auto 44px">
-      <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">Testimonials</span>
-      <h2 style="font-size:clamp(24px,3vw,38px);line-height:1.1;letter-spacing:-0.03em;font-weight:800;margin:14px 0 22px">Read what our customers are saying.</h2>
-      <div style="display:inline-flex;align-items:center;gap:16px;background:rgba(255,255,255,0.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.85);box-shadow:0 12px 30px -18px rgba(11,18,32,0.24);border-radius:16px;padding:14px 22px">
-        <div style="text-align:left"><div style="font-family:'Inter Tight',sans-serif;font-size:15px;font-weight:800;letter-spacing:0.02em;color:#0B1220;text-transform:uppercase">Excellent</div><div style="display:flex;gap:2px;margin-top:3px">{{ starRow }}</div></div>
-        <span style="width:1px;height:34px;background:rgba(11,18,32,0.1)"></span>
-        <div style="text-align:left;display:flex;align-items:center;gap:9px"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.5 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2-1.9 3.3-4.7 3.3-7.9z"></path><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2v2.8A11 11 0 0 0 12 23z"></path><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2a11 11 0 0 0 0 9.8l3.7-2.8z"></path><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.7l3.1-3.1A11 11 0 0 0 2 7.1l3.7 2.8C6.6 7.3 9.1 5.4 12 5.4z"></path></svg><div><div style="font-size:13px;font-weight:700;color:#0B1220;line-height:1.1">Google Reviews</div><div style="font-size:12px;color:#6B7480"><strong style="color:#0B1220">4.8</strong> out of 5 &middot; 223 reviews</div></div></div>
+      <div class="pg-revs" data-reveal="">
+        <figure><blockquote>I highly recommend Ad On Group to create your website and manage your digital marketing. Their creative team is highly skilled in designing and writing informative blogs and digital brochures, and adept in SEO strategies that have consistently driven traffic and sales. Their cutting-edge approach lets us focus on our business goals.</blockquote><figcaption><span>AD</span><b>A and D Discount Roofing Supplies</b><small>Nov 2025</small></figcaption></figure>
+        <figure><blockquote>Thank you Charlotte, I am extremely happy with the adjustments and your work. It looks fantastic.</blockquote><figcaption><span>GS</span><b>Gayle Slater</b><small>Oct 2025</small></figcaption></figure>
+        <figure><blockquote>What can I say about my experience with Ad On Hold. The lovely young lady who looks after our account, Alaskah, was simply amazing — super patient and understanding. I feel we are treated as a person firstly and a business owner second, certainly not just a number. She is a gem!</blockquote><figcaption><span>TH</span><b>Thérèse Hallett</b><small>Jul 2025</small></figcaption></figure>
       </div>
-    </div>
-    <div style="{{ reviewsWrapStyle }}">
-      <button onClick="{{ prevRev }}" aria-label="Previous reviews" style="{{ reviewNavStyle }};left:0" style-hover="transform:translateY(-50%) scale(1.08);box-shadow:0 12px 26px -12px rgba(11,18,32,0.4)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
-      <div style="{{ reviewsGridStyle }}">
-      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
-        <div style="min-width:0;background:rgba(255,255,255,0.66);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,0.85);box-shadow:0 14px 36px -22px rgba(11,18,32,0.22), inset 0 1px 0 rgba(255,255,255,0.7);border-radius:18px;padding:26px">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
-            <span style="flex:none;width:42px;height:42px;border-radius:50%;background:{{ r.av }};display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#fff;letter-spacing:-0.01em">{{ r.initials }}</span>
-            <div style="flex:1;min-width:0">
-              <div style="font-size:14.5px;font-weight:700;color:#0B1220;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.name }}</div>
-              <div style="display:flex;align-items:center;gap:7px;margin-top:2px"><span style="display:flex;gap:1.5px">{{ starRowSm }}</span><span style="font-size:11.5px;color:#8A93A1">{{ r.date }}</span></div>
-            </div>
-            <svg width="18" height="18" viewBox="0 0 24 24" style="flex:none;opacity:0.9"><path fill="#4285F4" d="M22.5 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2-1.9 3.3-4.7 3.3-7.9z"></path><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2v2.8A11 11 0 0 0 12 23z"></path><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2a11 11 0 0 0 0 9.8l3.7-2.8z"></path><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.7l3.1-3.1A11 11 0 0 0 2 7.1l3.7 2.8C6.6 7.3 9.1 5.4 12 5.4z"></path></svg>
-          </div>
-          <p style="font-size:13.5px;line-height:1.6;color:#414B59;margin:0;display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden">{{ r.text }}</p>
-        </div>
-      </sc-for>
-      </div>
-      <button onClick="{{ nextRev }}" aria-label="Next reviews" style="{{ reviewNavStyle }};right:0" style-hover="transform:translateY(-50%) scale(1.08);box-shadow:0 12px 26px -12px rgba(11,18,32,0.4)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F6FED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
-    </div>
-  </section>
-
-  <!-- ======================= CTA ======================= -->
-  <section id="contact" style="max-width:1200px;margin:0 auto;padding:48px 28px 64px">
-    <div style="position:relative;overflow:hidden;border-radius:24px;padding:64px 40px;text-align:center;background:radial-gradient(120% 150% at 50% -30%, rgba(47,111,237,0.12), transparent 55%), rgba(255,255,255,0.58);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%);border:1px solid rgba(255,255,255,0.9);box-shadow:0 26px 64px -32px rgba(11,18,32,0.26), inset 0 1px 0 rgba(255,255,255,0.8)">
-      <div style="position:absolute;width:300px;height:300px;left:-70px;bottom:-140px;border-radius:50%;background:radial-gradient(circle,rgba(255,168,112,0.30),transparent 70%);pointer-events:none"></div>
-      <div style="position:absolute;width:320px;height:320px;right:-90px;top:-150px;border-radius:50%;background:radial-gradient(circle,rgba(45,212,191,0.22),transparent 70%);pointer-events:none"></div>
-      <div style="position:relative">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.16em;color:#2F6FED;text-transform:uppercase">Get in touch</span>
-        <h2 style="font-size:clamp(24px,2.8vw,38px);line-height:1.05;letter-spacing:-0.035em;font-weight:800;margin:14px 0 14px;color:#0B1220">Contact us to find out more.</h2>
-        <p style="font-size:17px;line-height:1.55;color:#4A5462;max-width:480px;margin:0 auto 30px">Tell us what you&rsquo;re trying to solve and we&rsquo;ll point you to the right division.</p>
-        <a href="#contact" style="text-decoration:none;font-size:16px;font-weight:700;color:#fff;background:#0B1220;padding:15px 30px;border-radius:14px;display:inline-flex;align-items:center;gap:9px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(11,18,32,0.4)">Contact us <span style="font-size:17px">&rarr;</span></a>
+      <div id="contact" class="ak-finale" data-reveal="">
+        <div class="ak-label ak-label--c ak-label--d"><span>Get in touch</span></div>
+        <h2 class="ak-h2" style="color:#fff;font-size:clamp(34px,4.6vw,60px);max-width:780px;margin:0 auto 20px">Contact us to <span class="ak-glow">find out more.</span></h2>
+        <p class="ak-p" style="max-width:520px;margin:0 auto 32px;font-size:17px">Tell us what you’re trying to solve and we’ll point you to the right division.</p>
+        <a href="https://adongroup.com.au/contact/" class="ak-btn ak-btn--light" style="padding:15px 26px;font-size:16px">Contact us <span>→</span></a>
       </div>
     </div>
   </section>
@@ -511,26 +722,25 @@
   <footer style="border-top:1px solid rgba(11,18,32,0.08);background:#FBFBFA">
     <div style="max-width:1200px;margin:0 auto;padding:56px 28px;{{ footerGridStyle }}">
       <div>
-        <a href="/#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px">
+        <a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220;margin-bottom:14px">
           <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:32px;height:32px;object-fit:contain;display:block" width="2000" height="2000"></span>
-          <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span>
+          <span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Ad On AI</span>
         </a>
-        <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">A division of Ad On Group &mdash; practical AI training and enablement for Australian businesses.</p>
+        <p style="font-size:14px;line-height:1.55;color:#333C48;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses. The AI training division of <a href="https://adongroup.com.au/ai-training/" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Ad On Group</a>, Australian-owned since 2008.</p>
       </div>
       <div>
-        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Programs</div>
+        <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Program</div>
         <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
-          <a href="/programs" style="text-decoration:none;color:inherit">AI Enablement</a>
-          <a href="/bpo-program" style="text-decoration:none;color:inherit">BPO AI Program</a>
-          <a href="/ongoing-support" style="text-decoration:none;color:inherit">Ongoing Support</a>
+          <a href="/programs" style="text-decoration:none;color:inherit">Our program</a>
+          <a href="/programs#bpo" style="text-decoration:none;color:inherit">For BPO teams</a><a href="/programs#support" style="text-decoration:none;color:inherit">Ongoing support</a>
         </div>
       </div>
       <div>
         <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div>
         <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
-          <a href="/ad-on-group" style="text-decoration:none;color:inherit">Ad On Group</a>
           <a href="/resources" style="text-decoration:none;color:inherit">Resources</a>
           <a href="/about" style="text-decoration:none;color:inherit">About</a>
+          <a href="/#faqs" style="text-decoration:none;color:inherit">FAQs</a>
           <a href="#contact" style="text-decoration:none;color:inherit">Contact</a>
           <a href="/terms" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a>
         </div>
@@ -539,12 +749,14 @@
         <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div>
         <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
           <a href="mailto:info@adongroup.com.au" style="text-decoration:none;color:inherit">info@adongroup.com.au</a>
+          <a href="tel:+61755861400" style="text-decoration:none;color:inherit">(07) 5586 1400</a>
+          <span>1/44 Township Drive, Burleigh Heads QLD 4219</span>
           <span>Australia-wide delivery</span>
         </div>
       </div>
     </div>
     <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
-      <span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On Group. All rights reserved.</span><div style="display:flex;align-items:center;gap:10px"><a href="https://www.instagram.com/adonai.australia/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#5A6473"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"></circle></svg></a><a href="https://www.facebook.com/adongroup1/" target="_blank" rel="noopener" aria-label="Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#5A6473"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.7V3.3C16.5 3.2 15.4 3 14.2 3c-2.4 0-4 1.4-4 4.1v2.7H7.5v3.2h2.7v8h3.3z"></path></svg></a></div>
+      <span style="font-size:13px;color:#8A93A1">© 2026 Ad On AI, a division of Ad On Group · ABN 54 808 983 598. All rights reserved.</span><div style="display:flex;align-items:center;gap:10px"><a href="https://www.instagram.com/adonai.australia/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#333C48"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"></circle></svg></a><a href="https://www.facebook.com/adongroup1/" target="_blank" rel="noopener" aria-label="Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#333C48"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.7V3.3C16.5 3.2 15.4 3 14.2 3c-2.4 0-4 1.4-4 4.1v2.7H7.5v3.2h2.7v8h3.3z"></path></svg></a></div>
       <div style="display:flex;gap:22px;font-size:13px;color:#8A93A1">
         <a href="#" style="text-decoration:none;color:inherit">Privacy Policy</a>
         <a href="/terms" style="text-decoration:none;color:inherit">Terms of Use</a>
@@ -556,19 +768,18 @@
 
   <template id="__bundler_thumbnail" data-bg-color="#F4F7FC">
     <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-      <rect width="1200" height="800" fill="#F4F7FC"/>
+      <rect width="1200" height="800" fill="#F4F7FC"></rect>
       <g transform="translate(600 400)">
-        <rect x="-190" y="-90" width="170" height="170" rx="24" fill="#14A08C"/>
-        <rect x="20" y="-90" width="170" height="170" rx="24" fill="#2F6FED"/>
-        <rect x="-190" y="10" width="170" height="70" rx="18" fill="#6C5CD6"/>
-        <rect x="20" y="10" width="170" height="70" rx="18" fill="#E0842F"/>
+        <circle cx="-60" cy="-70" r="46" fill="none" stroke="#2F6FED" stroke-width="34"></circle>
+        <path d="M-150 120 a90 90 0 0 1 180 0 v60 h-180 z" fill="#2F6FED"></path>
+        <path d="M120 -150 l22 70 l70 22 l-70 22 l-22 70 l-22 -70 l-70 -22 l70 -22 z" fill="#3FA9E6"></path>
       </g>
     </svg>
-  </template>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#2F6FED&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+  </template></x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#2F6FED&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;animateCards&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
 class Component extends DCLogic {
-  state = { hov: null, rev: 0, isMobile: false, navOpen: false };
+  state = { openFaq: 0, activeFeature: 0, pick: 0, arcTab: 0, isMobile: false, navOpen: false };
+
   componentDidMount() {
     this._onResize = () => {
       const m = window.innerWidth < 860;
@@ -576,12 +787,157 @@ class Component extends DCLogic {
     };
     this._onResize();
     window.addEventListener('resize', this._onResize, { passive: true });
+    this._startFeatTimer = () => { clearInterval(this._featTimer); this._featTimer = setInterval(() => this.setState(s => ({ pick: (s.pick + 1) % 6 })), 5200); };
+    if (document.querySelector('.ak-tour')) this._startFeatTimer();
+    this._startArcTimer = () => { clearInterval(this._arcTimer); this._arcTimer = setInterval(() => this.setState(s => ({ arcTab: (s.arcTab + 1) % 4 })), 11000); };
+    if (document.querySelector('.ak-seg')) this._startArcTimer();
+    // real product films: load + play only while on screen; chapter strip follows the video
+    this._films = [...document.querySelectorAll('[data-film]')].map((el) => ({ el, v: el.querySelector('video'), marks: (el.dataset.times || '0').split(',').map(Number), steps: [...el.querySelectorAll('.ak-steps3 > div')] }));
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this._films.forEach((f) => { f.v.muted = true; f.v.defaultMuted = true; f.v.playsInline = true; f.v.loop = true; f.v.setAttribute('playsinline', ''); f.v.setAttribute('muted', ''); });
+    if (window.IntersectionObserver) {
+      this._filmIO = new IntersectionObserver((es) => es.forEach((e) => {
+        const f = this._films.find((x) => x.el === e.target); if (!f) return;
+        if (e.isIntersecting && !reduce) { if (f.v.preload !== 'auto') { f.v.preload = 'auto'; } const p = f.v.play(); if (p && p.catch) p.catch(() => {}); }
+        else f.v.pause();
+      }), { threshold: 0.35 });
+      this._films.forEach((f) => this._filmIO.observe(f.el));
+    }
+    const tick = () => {
+      this._films.forEach((f) => {
+        const d = f.v.duration || 0, t = f.v.currentTime || 0, m = f.marks;
+        f.steps.forEach((st, k) => {
+          const a = m[k], b = k + 1 < m.length ? m[k + 1] : d;
+          const p = d ? Math.max(0, Math.min(1, (t - a) / Math.max(0.01, b - a))) : 0;
+          const bar = st.querySelector('b'); if (bar) bar.style.width = (p * 100).toFixed(2) + '%';
+          if (t >= a && t < b) st.setAttribute('data-on', ''); else st.removeAttribute('data-on');
+        });
+      });
+      this._filmRAF = requestAnimationFrame(tick);
+    };
+    this._filmRAF = requestAnimationFrame(tick);
+    this._fitVids = () => document.querySelectorAll('.ak-vid').forEach((el) => { const w = el.clientWidth; if (w) el.style.setProperty('--s', (w / 560).toFixed(4)); });
+    if (window.ResizeObserver) { this._vidRO = new ResizeObserver(() => this._fitVids()); requestAnimationFrame(() => document.querySelectorAll('.ak-vid').forEach((el) => this._vidRO.observe(el))); }
+    requestAnimationFrame(() => this._fitVids());
+    window.addEventListener('resize', this._fitVids, { passive: true });
+    this._countUp = () => {
+      document.querySelectorAll('[data-statnum]').forEach((el) => {
+        if (el._counted) return;
+        const m = (el.textContent || '').trim().match(/^(\d+)(.*)$/);
+        if (!m) return;
+        el._counted = true;
+        const target = parseInt(m[1], 10), suffix = m[2], dur = 1300, start = performance.now();
+        const step = (t) => {
+          const p = Math.min(1, (t - start) / dur), eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * eased) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+    };
+    this._statObs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) this._countUp(); });
+    }, { threshold: 0.5 });
+    requestAnimationFrame(() => {
+      document.querySelectorAll('[data-statnum]').forEach((el) => this._statObs.observe(el));
+    });
+    this._onScroll = () => {
+      const vh = window.innerHeight;
+      const blocks = document.querySelectorAll('[data-feat-block]');
+      if (blocks.length) {
+        const mid = vh * 0.42;
+        let active = 0;
+        blocks.forEach((b, i) => { if (b.getBoundingClientRect().top <= mid) active = i; });
+        if (active !== this.state.activeFeature) this.setState({ activeFeature: active });
+      }
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+    requestAnimationFrame(() => this._onScroll());
+    setTimeout(() => this._onScroll(), 200);
+    requestAnimationFrame(() => {
+      document.querySelectorAll('[data-benefit-row]').forEach((row) => {
+        const num = row.querySelector('[data-benefit-num]');
+        const bar = row.querySelector('[data-benefit-bar]');
+        const d = row.dataset;
+        row.addEventListener('mouseenter', () => {
+          row.style.background = 'linear-gradient(90deg,' + d.benefitTint + ',transparent)';
+          row.style.paddingLeft = '18px';
+          if (num) { num.style.color = d.benefitColor; num.style.webkitTextStroke = '0px transparent'; }
+          if (bar) bar.style.transform = 'scaleY(1)';
+        });
+        row.addEventListener('mouseleave', () => {
+          row.style.background = 'transparent';
+          row.style.paddingLeft = '0px';
+          if (num) { num.style.color = 'transparent'; num.style.webkitTextStroke = '1.5px ' + d.benefitStroke; }
+          if (bar) bar.style.transform = 'scaleY(0)';
+        });
+      });
+    });
   }
   componentWillUnmount() {
+    if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
     if (this._onResize) window.removeEventListener('resize', this._onResize);
+    clearInterval(this._featTimer);
+    clearInterval(this._arcTimer);
+    if (this._filmIO) this._filmIO.disconnect();
+    cancelAnimationFrame(this._filmRAF);
+    if (this._vidRO) this._vidRO.disconnect();
+    if (this._fitVids) window.removeEventListener('resize', this._fitVids);
+    if (this._statObs) this._statObs.disconnect();
   }
+
   renderVals() {
     const accent = this.props.accent ?? '#2F6FED';
+    const animate = this.props.animateCards ?? true;
+    const af = this.state.activeFeature;
+    const ic = (style) => style;
+    const pick = this.state.pick;
+    const arcTab = this.state.arcTab;
+    const arcSet = (i) => { this.setState({ arcTab: i }); if (this._startArcTimer) this._startArcTimer(); };
+    const setPick = (i) => { this.setState({ pick: i }); if (this._startFeatTimer) this._startFeatTimer(); };
+    const featMeta = [
+      { t: 'Guided modules', d: '24 structured modules, grounded in your team\u2019s real tasks.', ink: '#2F6FED', tile: 'background:linear-gradient(150deg,#EAF1FF,#D4E4FF);border:1px solid rgba(47,111,237,0.18)', path: 'M2 7L10 3.5L18 7L10 10.5Z M5 8.6V12.6C5 12.6 7 14 10 14C13 14 15 12.6 15 12.6V8.6 M18 7V10.5' },
+      { t: 'Curated tool library', d: 'We filter the hype \u2014 they master only what\u2019s useful for their role.', ink: '#14A08C', tile: 'background:linear-gradient(150deg,#E4F6F3,#CCEDE6);border:1px solid rgba(20,160,140,0.18)', path: 'M3.5 6.5H10.5L13 9V16.5H3.5Z M10.5 6.5V9H13 M6.5 3.5H13L16.5 6.5 M16.5 6.5V13.5' },
+      { t: 'Implementation Lab', d: 'Stuck? It walks them through applying AI to their exact task.', ink: '#6C5CD6', tile: 'background:linear-gradient(150deg,#ECEAFB,#DBD6F6);border:1px solid rgba(108,92,214,0.18)', path: 'M8 3H12 M8 3V8.5L4.5 14.5C4 15.4 4.6 16.5 5.7 16.5H14.3C15.4 16.5 16 15.4 15.5 14.5L12 8.5V3 M6.6 11.5H13.4' },
+      { t: 'Knowledge checks', d: 'Each month they show what they learned and how they applied it.', ink: '#E07A3F', tile: 'background:linear-gradient(150deg,#FDEFE6,#FADDCB);border:1px solid rgba(224,122,63,0.20)', path: 'M5.5 3.5H14.5V16.5L10 13.8L5.5 16.5Z M7.6 8.2L9.2 9.8L12.4 6.6' },
+      { t: 'Progress reporting', d: 'A clear monthly read on what\u2019s been learned and applied.', ink: '#1F8AD9', tile: 'background:linear-gradient(150deg,#E6F4FF,#CFE8FE);border:1px solid rgba(31,138,217,0.18)', path: 'M3.5 16.5V3.5 M3.5 16.5H16.5 M6 12.5L9.3 9L11.6 11.3L16 6.2 M16 6.2H12.6 M16 6.2V9.6' },
+      { t: 'Learning Academy access', d: 'The whole academy in one place, kept current as the tools change, with lifetime access.', ink: '#2F4FA0', tile: 'background:linear-gradient(150deg,#EAEFFA,#D6E0F4);border:1px solid rgba(47,79,160,0.18)', path: 'M6 9V6.5A4 4 0 0 1 14 6.5V9 M4.5 9H15.5V16.5H4.5Z M10 12V14' },
+    ];
+    const feats = featMeta.map((f, i) => ({
+      t: f.t, d: f.d, ink: f.ink, tile: f.tile, path: f.path, num: '0' + (i + 1),
+      active: i === pick,
+      onClick: () => setPick(i),
+      rowBg: i === pick ? '#FFFFFF' : 'transparent',
+      rowShadow: i === pick ? 'inset 0 1px 0 #fff, 0 16px 34px -22px rgba(20,40,80,0.38)' : 'none',
+      rowBorder: i === pick ? 'rgba(11,18,32,0.07)' : 'transparent',
+      titleColor: i === pick ? '#0B1220' : '#5A6473',
+      barScale: i === pick ? 'scaleY(1)' : 'scaleY(0)',
+      dotScale: i === pick ? 'scale(1.4)' : 'scale(1)',
+    }));
+
+    const faqData = [
+      { q: 'Can I cancel?', a: 'Yes, you can cancel your membership any time. That ends your one-on-one support and community access. You keep lifetime access to the Learning Academy.' },
+      { q: 'How do I know they\u2019re actually doing it?', a: 'Every module includes a test or practical project. They can\u2019t progress without completing it, and you\u2019re notified if they stall.' },
+      { q: 'How long do they have to finish?', a: 'They can go as fast or slow as you want, and every module is open from day one. There\u2019s no deadline, and they keep lifetime access to the Learning Academy, so they can come back to any module whenever they need it.' },
+      { q: 'How fast will I see results?', a: 'Most people start using AI in their daily work from the first module \u2014 you\u2019ll notice the difference before you read a report.' },
+      { q: 'Can new staff join mid-program?', a: 'Yes. New intake starts every month at level 1.' },
+      { q: 'What if we don\u2019t use Claude?', a: 'The skills are tool-agnostic by design \u2014 they carry across to ChatGPT, Copilot, Gemini, Grok and whatever comes next.' },
+      { q: 'Can I add more staff later?', a: 'Yes. Monthly intake is limited so each person gets proper support \u2014 it\u2019s best to plan ahead, as some months have a waiting list.' },
+      { q: 'Is there support after the program?', a: 'Yes \u2014 with a membership, they get one-on-one support, webinars, podcasts, masterclasses & newsletters, designed to keep your team current as AI moves. Membership is separate from the program fee.' },
+    ];
+    const faqs = faqData.map((f, i) => {
+      const open = this.state.openFaq === i;
+      return {
+        q: f.q, a: f.a, open,
+        sign: open ? '\u2212' : '+',
+        iconBg: open ? accent : 'rgba(255,255,255,0.04)',
+        iconColor: open ? '#ffffff' : '#E8ECF2',
+        toggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i })),
+      };
+    });
+
+    const R = (id, path) => (window.__resources && window.__resources[id]) || path;
     const isMobile = this.state.isMobile;
     const navOpen = this.state.navOpen;
     const toggleNav = () => this.setState(s => ({ navOpen: !s.navOpen }));
@@ -590,78 +946,164 @@ class Component extends DCLogic {
     const navDesktopStyle = isMobile ? 'display:none' : 'display:flex;align-items:center;gap:28px';
     const navBurgerStyle = isMobile ? 'display:inline-flex' : 'display:none';
     const navPanelStyle = (isMobile && navOpen)
-      ? 'display:flex;flex-direction:column;gap:4px;position:absolute;top:100%;left:0;right:0;margin-top:10px;background:rgba(252,251,250,0.98);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:20px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.3);padding:10px;z-index:60'
+      ? 'display:flex;flex-direction:column;gap:4px;position:absolute;top:100%;left:0;right:0;margin-top:10px;background:rgba(252,251,250,0.98);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:14px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.3);padding:10px;z-index:60'
       : 'display:none';
+
+    const heroGridStyle = isMobile
+      ? 'display:grid;grid-template-columns:1fr;gap:36px;align-items:start'
+      : 'display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start';
+    const heroPad = isMobile ? '52px 20px 36px' : '112px 28px 64px';
+    const approachPad = isMobile ? '210px 20px 40px' : '230px 28px 56px';
+
+    const featGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr' : 'display:grid;grid-template-columns:1fr 1fr;gap:72px';
+    const wrapContentsStyle = isMobile ? 'display:contents' : '';
+    const stickyWrapStyle = isMobile ? 'display:contents' : 'position:sticky;top:108px';
+    const visualsWrapStyle = isMobile ? 'display:contents' : 'position:relative;height:412px';
+    const tbStyle = (i) => isMobile
+      ? ('order:' + (2 * i + 1) + ';display:flex;flex-direction:column;justify-content:flex-start;margin-bottom:28px;min-width:0')
+      : 'min-height:56vh;display:flex;flex-direction:column;justify-content:center';
+    const visStyle = (i, o, t, z) => isMobile
+      ? ('order:' + (2 * i + 2) + ';position:relative;height:340px;opacity:1;transform:none;margin-bottom:28px;min-width:0')
+      : ('position:absolute;inset:0;transition:opacity .5s ease, transform .5s ease;opacity:' + o + ';transform:' + t + ';z-index:' + z);
 
     const stackCols = (desktop, gap, mobileGap) => isMobile
       ? ('display:grid;grid-template-columns:1fr;gap:' + (mobileGap != null ? mobileGap : gap))
       : ('display:grid;grid-template-columns:' + desktop + ';gap:' + gap);
-    const heroGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:36px;align-items:start' : 'display:grid;grid-template-columns:1.02fr 0.98fr;gap:60px;align-items:center';
-    const heroImgWrapStyle = isMobile ? 'position:relative;padding:14px 8px 30px 14px;max-width:360px;margin:0 auto' : 'position:relative;padding:14px 8px 30px 14px;transform:translate(26px,-20px) scale(0.88);transform-origin:top right';
-    const heroPad = isMobile ? '132px 20px 40px' : '92px 28px 44px';
-    const problemGridStyle = stackCols('1fr 1fr', '22px 56px', '16px');
-    const divisionsGridStyle = stackCols('1fr 1fr', '24px');
-    const pictureGridStyle = stackCols('1fr 1fr', '18px');
-    const officeBandStyle = isMobile ? 'display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:24px' : 'display:flex;justify-content:center;align-items:center;gap:clamp(8px,2.5vw,40px)';
-    const worldGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr 1fr;gap:12px' : 'display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px';
-    const reviewsWrapStyle = isMobile ? 'position:relative;padding:0' : 'position:relative;padding:0 60px';
-    const reviewsGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:16px' : 'display:grid;grid-template-columns:repeat(3,1fr);gap:18px';
-    const reviewNavStyle = isMobile ? 'display:none' : 'position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid rgba(11,18,32,0.1);background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 22px -12px rgba(11,18,32,0.3);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .18s ease, box-shadow .18s ease';
+    const arcGridStyle = stackCols('repeat(4,1fr)', '0', '32px');
+    const arcLineStyle = isMobile ? 'display:none' : 'position:absolute;left:0;right:0;top:23px;height:2px;background:linear-gradient(90deg,rgba(47,111,237,0.35),rgba(47,111,237,0.35) 75%,rgba(11,18,32,0.25))';
+    const arcItemStyle = isMobile ? 'position:relative;padding:0 0 8px 0' : 'position:relative;padding:0 26px 0 0';
+    const benefitGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;row-gap:8px' : 'display:grid;grid-template-columns:1fr 1fr;column-gap:48px';
+    const includedGridStyle = stackCols('1.1fr 0.9fr', '48px', '36px');
+    const walkAwayGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:32px;align-items:start' : 'display:grid;grid-template-columns:0.82fr 1.18fr;gap:56px;align-items:center';
+    const statsGridStyle = stackCols('repeat(4,1fr)', '24px', '28px');
+    const aboutGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:32px;align-items:start' : 'display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center';
+    const teamGridStyle = isMobile ? 'display:grid;grid-template-columns:repeat(2,1fr);gap:14px' : 'display:grid;grid-template-columns:repeat(3,1fr);gap:14px';
+    const supportGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr' : 'display:grid;grid-template-columns:repeat(3,1fr)';
+    const supportCardBorder = isMobile ? 'border-bottom:1px solid rgba(11,18,32,0.08)' : 'border-right:1px solid rgba(11,18,32,0.08)';
     const footerGridStyle = isMobile ? 'display:grid;grid-template-columns:1fr;gap:28px' : 'display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px';
-    const hov = this.state.hov;
-    const perView = 3;
-    const split = {
-      hoverW: () => this.setState({ hov: 'W' }),
-      hoverA: () => this.setState({ hov: 'A' }),
-      unhover: () => this.setState({ hov: null }),
-      flexW: hov === 'W' ? 1.95 : hov === 'A' ? 0.75 : 1,
-      flexA: hov === 'A' ? 1.95 : hov === 'W' ? 0.75 : 1,
-      openW: hov === 'W' ? '340px' : '0px',
-      openA: hov === 'A' ? '340px' : '0px',
-      opW: hov === 'W' ? 1 : 0,
-      opA: hov === 'A' ? 1 : 0,
-    };
-    const star = (c, s) => React.createElement('svg', { width: s, height: s, viewBox: '0 0 24 24', style: { display: 'block' } },
-      React.createElement('path', { fill: c, d: 'M12 2l2.9 6.1 6.6.8-4.9 4.5 1.3 6.6L12 17.3 6.1 20l1.3-6.6L2.5 8.9l6.6-.8z' }));
-    const starRow = [1,2,3,4,5].map((i) => React.createElement('span', { key: i }, star('#FBB400', 15)));
-    const starRowSm = [1,2,3,4,5].map((i) => React.createElement('span', { key: i }, star('#FBB400', 12)));
-    const reviewsAll = [
-        { name: 'A and D Discount Roofing Supplies', initials: 'AD', av: '#2F6FED', date: 'Nov 2025', text: 'I highly recommend Ad On Group to create your website and manage your digital marketing. Their creative team is highly skilled in designing and writing informative blogs and digital brochures, and adept in SEO strategies that have consistently driven traffic and sales. Their cutting-edge approach lets us focus on our business goals.' },
-        { name: 'Gayle Slater', initials: 'GS', av: '#14A08C', date: 'Oct 2025', text: 'Thank you Charlotte, I am extremely happy with the adjustments and your work. It looks fantastic.' },
-        { name: 'Th\u00e9r\u00e8se Hallett', initials: 'TH', av: '#6C5CD6', date: 'Jul 2025', text: 'What can I say about my experience with Ad On Hold. The lovely young lady who looks after our account, Alaskah, was simply amazing \u2014 super patient and understanding. I feel we are treated as a person firstly and a business owner second, certainly not just a number. She is a gem!' },
-        { name: 'Ashar Rees', initials: 'AR', av: '#E0842F', date: 'Jul 2025', text: 'Great team, very professional, great results. Highly recommended.' },
-        { name: 'John Milios', initials: 'JM', av: '#2F6FED', date: 'Apr 2025', text: 'Great team to work with \u2014 professional, easy, friendly, can\u2019t do enough for us. Recommend Ad On Group for all your business needs. A++' },
-        { name: 'John Martin', initials: 'JM', av: '#14A08C', date: 'Jan 2025', text: 'Happy to sing praises for Ad On Group! We\u2019ve been a customer for quite a few years and recently had our website revamped by their team \u2014 a painless process with terrific results. Alaskah was a treasure to deal with.' },
-        { name: 'Ashmore City Medical Centre', initials: 'AC', av: '#6C5CD6', date: 'Sep 2024', text: 'The flow of the changes to the script is simple and easy. They keep up to date with the changes required and remind me to update. Excellent service \u2014 would highly recommend.' },
-    ];
-    const maxStart = Math.max(0, reviewsAll.length - perView);
-    const rev = Math.min(this.state.rev, maxStart);
-    const visibleReviews = reviewsAll.slice(rev, rev + perView);
-    const prevRev = () => this.setState({ rev: Math.max(0, rev - 1) });
-    const nextRev = () => this.setState({ rev: Math.min(maxStart, rev + 1) });
+
     return {
       accent,
       isMobile, navOpen, toggleNav, closeNav,
       navDesktopStyle, navBurgerStyle, navPanelStyle,
-      heroGridStyle, heroImgWrapStyle, heroPad,
-      problemGridStyle, divisionsGridStyle, pictureGridStyle, officeBandStyle, worldGridStyle,
-      reviewsWrapStyle, reviewsGridStyle, reviewNavStyle, footerGridStyle,
-      ...split,
-      starRow,
-      starRowSm,
-      promises: [
-        { n: '01', t: 'We will always provide you value for money.' },
-        { n: '02', t: 'We will always put you first.' },
-        { n: '03', t: 'We will always provide you with an innovative solution.' },
-        { n: '04', t: 'Our people will be amazing to deal with.' },
-        { n: '05', t: 'You will always deal with a person.' },
-        { n: '06', t: 'We treat people as we would want to be treated.' },
+      heroGridStyle, heroPad, approachPad,
+      featGridStyle, wrapContentsStyle, stickyWrapStyle, visualsWrapStyle,
+      arcGridStyle, arcLineStyle, arcItemStyle, benefitGridStyle, includedGridStyle, walkAwayGridStyle,
+      statsGridStyle, aboutGridStyle, teamGridStyle, supportGridStyle, supportCardBorder, footerGridStyle,
+      tb0Style: tbStyle(0), tb1Style: tbStyle(1), tb2Style: tbStyle(2), tb3Style: tbStyle(3),
+      team: [
+        { name: 'Dylan Bailey', role: 'Facilitator', photo: R('teamDylan','assets/team-dylan.png'), cert: true, av: '#DAD6DE' },
+        { name: 'Beau Robards', role: 'Facilitator', photo: R('teamBeau','assets/team-beau.png'), cert: true, av: '#D3D5D8' },
+        { name: 'Taryn Boxer', role: 'Chief Operating Officer', photo: R('teamTaryn','assets/team-taryn.jpg'), cert: false, av: '#E4E2E0' },
+        { name: 'Ben Ragless', role: 'Business Development', photo: R('teamBen','assets/team-ben.jpg'), cert: false, av: '#D9DBDD' },
+        { name: 'Leah Barnes', role: 'Training Coordinator', photo: R('teamLeah','assets/team-leah.jpg'), cert: false, av: '#EDE9E6' },
+        { name: 'Tracy Malone', role: 'Training Coordinator', photo: R('teamTracy','assets/team-tracy.jpg'), cert: false, av: '#EDEBEA' },
       ],
-      reviews: visibleReviews,
-      prevRev,
-      nextRev,
-      revAtStart: rev <= 0,
-      revAtEnd: rev >= maxStart,
+      pick, feats,
+      arcIs0: arcTab === 0, arcIs1: arcTab === 1, arcIs2: arcTab === 2, arcIs3: arcTab === 3,
+      arcInd: 'translateX(' + (arcTab * 100) + '%)',
+      arcSet0: () => arcSet(0), arcSet1: () => arcSet(1), arcSet2: () => arcSet(2), arcSet3: () => arcSet(3),
+      arcC0: arcTab === 0 ? '#0B1220' : '#6B7482', arcC1: arcTab === 1 ? '#0B1220' : '#6B7482', arcC2: arcTab === 2 ? '#0B1220' : '#6B7482', arcC3: arcTab === 3 ? '#0B1220' : '#6B7482',
+      fop0: pick === 0 ? 1 : 0, fop1: pick === 1 ? 1 : 0, fop2: pick === 2 ? 1 : 0, fop3: pick === 3 ? 1 : 0, fop4: pick === 4 ? 1 : 0, fop5: pick === 5 ? 1 : 0,
+      fz0: pick === 0 ? 2 : 1, fz1: pick === 1 ? 2 : 1, fz2: pick === 2 ? 2 : 1, fz3: pick === 3 ? 2 : 1, fz4: pick === 4 ? 2 : 1, fz5: pick === 5 ? 2 : 1,
+      animA: animate ? 'adonFloatA 5.5s ease-in-out infinite' : 'none',
+      animB: animate ? 'adonFloatB 6.2s ease-in-out infinite' : 'none',
+      animC: animate ? 'adonFloatC 5s ease-in-out infinite' : 'none',
+      o0: af === 0 ? 1 : 0, o1: af === 1 ? 1 : 0, o2: af === 2 ? 1 : 0, o3: af === 3 ? 1 : 0,
+      t0: af === 0 ? 'translateY(0)' : 'translateY(20px)',
+      t1: af === 1 ? 'translateY(0)' : 'translateY(20px)',
+      t2: af === 2 ? 'translateY(0)' : 'translateY(20px)',
+      t3: af === 3 ? 'translateY(0)' : 'translateY(20px)',
+      z0: af === 0 ? 3 : 1, z1: af === 1 ? 3 : 1, z2: af === 2 ? 3 : 1, z3: af === 3 ? 3 : 1,
+      v0Style: visStyle(0, af === 0 ? 1 : 0, af === 0 ? 'translateY(0)' : 'translateY(20px)', af === 0 ? 3 : 1),
+      v1Style: visStyle(1, af === 1 ? 1 : 0, af === 1 ? 'translateY(0)' : 'translateY(20px)', af === 1 ? 3 : 1),
+      v2Style: visStyle(2, af === 2 ? 1 : 0, af === 2 ? 'translateY(0)' : 'translateY(20px)', af === 2 ? 3 : 1),
+      v3Style: visStyle(3, af === 3 ? 1 : 0, af === 3 ? 'translateY(0)' : 'translateY(20px)', af === 3 ? 3 : 1),
+      channels: ['Gmail', 'Slack', 'WhatsApp', 'Instagram', 'LinkedIn', 'Microsoft Teams'],
+      toolLogos: [
+        { n: 'ChatGPT', img: 'assets/logo-chatgpt.png' },
+        { n: 'Claude', img: 'assets/logo-claude.svg' },
+        { n: 'Copilot', img: 'assets/logo-copilot.png' },
+        { n: 'Gemini', img: 'assets/logo-gemini.png' },
+        { n: 'Perplexity', img: 'assets/logo-perplexity.webp' },
+      ],
+      tools: ['ChatGPT', 'Claude', 'Copilot', 'Gemini', 'Perplexity'],
+      platforms: [
+        { i: '\u273A', c: '#10A37F' },
+        { i: '\u2726', c: '#D97757' },
+        { i: '\u2756', c: accent },
+        { i: '\u2727', c: '#2DD4BF' },
+      ],
+      navItems: [
+        { label: 'Dashboard', ic: 'width:12px;height:12px;border:1.6px solid #8A93A1;border-radius:3px', lc: '#3A434F', bg: 'transparent' },
+        { label: 'Prompt Bank & AI Diary', ic: 'width:10px;height:12px;border:1.6px solid #8A93A1;border-radius:2px', lc: '#3A434F', bg: 'transparent' },
+        { label: 'Module Library', ic: 'width:12px;height:12px;border:1.6px solid ' + accent + ';border-radius:2px', lc: accent, bg: 'rgba(47,111,237,0.09)' },
+        { label: 'Implementation Lab', ic: 'width:12px;height:12px;border:1.6px solid #8A93A1;border-radius:50%', lc: '#3A434F', bg: 'transparent' },
+        { label: 'AI Tools & Connectors', ic: 'width:11px;height:11px;border:1.6px solid #8A93A1;transform:rotate(45deg)', lc: '#3A434F', bg: 'transparent' },
+        { label: 'Webinars & Videos', ic: 'width:12px;height:12px;border:1.6px solid #8A93A1;border-radius:3px', lc: '#3A434F', bg: 'transparent' },
+      ],
+      modules: [
+        { tag: 'FOUNDATIONS \u00b7 WK 1', title: 'AI Basics & Safe Use', desc: 'What AI actually is and what\u2019s safe to put in.', status: 'Locked', sc: '#9AA6B6', sIcon: 'width:7px;height:6px;border:1.5px solid #9AA6B6;border-radius:1px' },
+        { tag: 'CONTEXT \u00b7 WK 1', title: 'Giving AI the Right Background', desc: 'Give AI just what it needs, one job per chat.', status: 'Locked', sc: '#9AA6B6', sIcon: 'width:7px;height:6px;border:1.5px solid #9AA6B6;border-radius:1px' },
+        { tag: 'PROMPTING \u00b7 WK 2', title: 'Better Prompts, Fewer Mistakes', desc: 'Get AI to write your best prompts for you.', status: 'Open', sc: accent, sIcon: 'width:7px;height:7px;border-radius:50%;background:' + accent },
+        { tag: 'MEMORY \u00b7 WK 2', title: 'Set It Up Once, Reuse It Forever', desc: 'Let AI remember preferences and projects.', status: 'Locked', sc: '#9AA6B6', sIcon: 'width:7px;height:6px;border:1.5px solid #9AA6B6;border-radius:1px' },
+      ],
+      inbox: [
+        { init: 'PN', name: 'Priya Nair', snip: 'Re: Prompting workshop agenda', time: '9:24', bg: 'rgba(47,111,237,0.07)', av: 'linear-gradient(135deg,#F7CDB6 0%,#D88E6B 100%)', plat: 'M', pc: '#EA4335' },
+        { init: 'MK', name: 'Marketing team', snip: '3 new prompts shared to the library', time: '8:50', bg: 'transparent', av: 'linear-gradient(135deg,#AEDBD0 0%,#5DAE9E 100%)', plat: 'S', pc: '#4A154B' },
+        { init: 'AI', name: 'AI Coach', snip: 'Your weekly summary is ready', time: 'Tue', bg: 'transparent', av: 'linear-gradient(135deg,#2A3550 0%,#0B1220 100%)', plat: 'W', pc: '#25D366' },
+        { init: 'JL', name: 'James Lee', snip: 'Completed Safe & Compliant Use', time: 'Mon', bg: 'transparent', av: 'linear-gradient(135deg,#CFC6F0 0%,#897BD6 100%)', plat: 'T', pc: '#5059C9' },
+        { init: 'OP', name: 'Ops channel', snip: 'Can we book a refresher session?', time: 'Mon', bg: 'transparent', av: 'linear-gradient(135deg,#F6D2B5 0%,#E0A065 100%)', plat: 'M', pc: '#0F73D8' },
+      ],
+      agenda: [
+        { n: '1', t: 'Where AI fits your real tasks' },
+        { n: '2', t: 'Prompt patterns that work' },
+        { n: '3', t: 'Reviewing & fact-checking output' },
+        { n: '4', t: 'Doing it safely with client data' },
+      ],
+      timeline: [
+        { n: '1', w: 'WEEK 1\u20132', t: 'Discovery & customisation', d: '0s', circle: 'background:' + accent + ';color:#fff' },
+        { n: '2', w: 'WEEK 3\u20134', t: 'Core team training', d: '0.4s', circle: 'background:' + accent + ';color:#fff' },
+        { n: '3', w: 'WEEK 5\u20136', t: 'Department rollouts', d: '0.8s', circle: 'background:rgba(47,111,237,0.14);color:' + accent + ';box-shadow:0 0 0 3px rgba(47,111,237,0.16)' },
+        { n: '4', w: 'WEEK 7\u20138', t: 'Broad adoption & support', d: '1.2s', circle: 'background:#EEF1F6;color:#9AA6B6' },
+      ],
+      bars: [
+        { h: '34%', c: '#E3E9F6', d: '0s' }, { h: '46%', c: '#E3E9F6', d: '0.12s' }, { h: '40%', c: '#E3E9F6', d: '0.24s' },
+        { h: '58%', c: '#C9D8F8', d: '0.36s' }, { h: '66%', c: '#C9D8F8', d: '0.48s' }, { h: '78%', c: accent, d: '0.6s' },
+        { h: '88%', c: accent, d: '0.72s' }, { h: '100%', c: accent, d: '0.84s' },
+      ],
+      features: [
+        { t: 'Guided modules', d: '24 structured modules, grounded in your team\u2019s real tasks.', tile: 'background:linear-gradient(150deg,#EAF1FF,#D4E4FF);border:1px solid rgba(47,111,237,0.18)', ink: '#2F6FED', path: 'M2 7L10 3.5L18 7L10 10.5Z M5 8.6V12.6C5 12.6 7 14 10 14C13 14 15 12.6 15 12.6V8.6 M18 7V10.5' },
+        { t: 'Curated tool library', d: 'We filter the hype \u2014 they master only what\u2019s useful for their role.', tile: 'background:linear-gradient(150deg,#E4F6F3,#CCEDE6);border:1px solid rgba(20,160,140,0.18)', ink: '#14A08C', path: 'M3.5 6.5H10.5L13 9V16.5H3.5Z M10.5 6.5V9H13 M6.5 3.5H13L16.5 6.5 M16.5 6.5V13.5' },
+        { t: 'Implementation Lab', d: 'Stuck? It walks them through applying AI to their exact task.', tile: 'background:linear-gradient(150deg,#ECEAFB,#DBD6F6);border:1px solid rgba(108,92,214,0.18)', ink: '#6C5CD6', path: 'M8 3H12 M8 3V8.5L4.5 14.5C4 15.4 4.6 16.5 5.7 16.5H14.3C15.4 16.5 16 15.4 15.5 14.5L12 8.5V3 M6.6 11.5H13.4' },
+        { t: 'Knowledge checks', d: 'Each month they show what they learned and how they applied it.', tile: 'background:linear-gradient(150deg,#FDEFE6,#FADDCB);border:1px solid rgba(224,122,63,0.20)', ink: '#E07A3F', path: 'M5.5 3.5H14.5V16.5L10 13.8L5.5 16.5Z M7.6 8.2L9.2 9.8L12.4 6.6' },
+        { t: 'Progress reporting', d: 'A clear monthly read on what\u2019s been learned and applied.', tile: 'background:linear-gradient(150deg,#E6F4FF,#CFE8FE);border:1px solid rgba(31,138,217,0.18)', ink: '#1F8AD9', path: 'M3.5 16.5V3.5 M3.5 16.5H16.5 M6 12.5L9.3 9L11.6 11.3L16 6.2 M16 6.2H12.6 M16 6.2V9.6' },
+        { t: 'Learning Academy access', d: 'The whole academy in one place, kept current as the tools change, with lifetime access.', tile: 'background:linear-gradient(150deg,#EAEFFA,#D6E0F4);border:1px solid rgba(47,79,160,0.18)', ink: '#2F4FA0', path: 'M6 9V6.5A4 4 0 0 1 14 6.5V9 M4.5 9H15.5V16.5H4.5Z M10 12V14' },
+      ],
+      testimonials: [
+        { quote: 'Within a month our admin team was doing in two hours what used to take a day. I noticed the difference before the first report even landed.', name: 'Sarah Whitfield', role: 'Managing Director, Brightwater Group', initials: 'SW', av: 'linear-gradient(135deg,#F7CDB6,#D88E6B)' },
+        { quote: 'They didn\u2019t hand us a course and disappear. Our people actually use this every day now \u2014 and they built the automations themselves.', name: 'James Okafor', role: 'Operations Manager, Meridian Partners', initials: 'JO', av: 'linear-gradient(135deg,#AEDBD0,#5DAE9E)' },
+        { quote: 'By month three our team had built their own automations for the jobs that used to eat their afternoons. It paid for itself almost immediately.', name: 'Priya Nair', role: 'Founder, Coastline Services', initials: 'PN', av: 'linear-gradient(135deg,#CFC6F0,#897BD6)' },
+      ],
+      builds: [
+        { n: '5\u20136', t: 'reusable prompt packs covering their main tasks', d: '0s' },
+        { n: '1', t: 'AI-powered workflow, end to end', d: '0.07s' },
+        { n: '3', t: 'multimodal AI-powered tasks', d: '0.14s' },
+        { n: '3', t: 'custom skills built', d: '0.21s' },
+        { n: '1', t: 'meta skill built', d: '0.28s' },
+        { n: '2', t: 'cross-tool AI-powered workflows', d: '0.35s' },
+        { n: '1', t: 'Claude Cowork automation', d: '0.42s' },
+        { n: '1', t: 'Claude-in-Chrome automation', d: '0.49s' },
+        { n: '3', t: 'AI agents', d: '0.56s' },
+        { n: '1', t: 'agentic AI orchestrator agent', d: '0.63s' },
+      ],
+      stats: [
+        { n: '80+', l: 'staff already trained in AI', wd: '0s' },
+        { n: '20+', l: 'working AI builds per learner', wd: '0.18s' },
+        { n: '12 hrs', l: 'saved per person each week', wd: '0.36s' },
+        { n: '3 mths', l: 'to deployed AI agents', wd: '0.54s' },
+      ],
+      faqs,
     };
   }
 }

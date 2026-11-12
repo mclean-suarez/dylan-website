@@ -1,70 +1,231 @@
 # Ad On AI — Full Reference for AI Answer Engines
 
-> Ad On AI runs AI training and enablement programs for Australian small-to-medium businesses (SMEs). There are two self-paced programs, AI Enablement and AI Intermediate. AI Enablement, the most comprehensive, takes non-technical staff from their first prompts to reusable skills, automations and deployed AI agents that do real chunks of their day-to-day job. Delivered by Certified Claude Experts. Ad On AI is a division of Ad On Group, an Australian-owned company operating since 2008. Skills taught are tool-agnostic and carry across to ChatGPT, Copilot, Gemini, Grok and Claude.
+> Ad On AI trains non-technical staff at Australian small and medium businesses (SMEs) to use AI in the work they already do — then to build the automations and AI agents that handle the rest. Its self-paced program of 24 hands-on modules ends with every learner holding 20+ working AI builds for their own job, supported by Claude Certified Experts. Ad On AI is a division of Ad On Group, an Australian business services provider operating since 2008 in Australia, the Philippines and South Africa. Skills are tool-agnostic: Claude is the worked example, and they carry across to ChatGPT, Copilot, Gemini and Grok.
 
-- Website: https://www.adon-ai.com.au
-- Contact: info@adongroup.com.au · (07) 5586 1400
-- Address: 1/44 Township Drive, Burleigh Heads QLD 4219, Australia
-- Parent company: Ad On Group (Australian-owned since 2008)
-- ABN: 54 808 983 598
-- Market: Australia
-- Key people: Dylan Bailey (Facilitator, Certified Claude Expert), Beau Robards (Facilitator, Certified Claude Expert)
-- Monthly free webinars on the 1st of each month (online), covering practical AI for Australian SMEs
+Website: https://www.adon-ai.com.au · Program: https://www.adon-ai.com.au/programs · Updated: 12 November 2026
 
-## AI Enablement Program (most comprehensive)
+## Key facts
 
-The core offering: a managed, self-paced program of 24 modules — not a video library — for non-technical SME staff in roles like finance, operations, marketing, admin and customer service. No technical background is required.
+- Audience: non-technical staff at Australian SMEs — finance, operations, marketing, admin, customer service, sales and EA/VA roles. No technical background needed.
+- Format: online and self-paced, in the Ad On AI Academy (AI is built into the platform). Every module is open from day one.
+- Length: 24 modules, under 24 hours of self-guided learning; the program includes lifetime access to the Learning Academy.
+- Outcome: 20+ working AI builds per learner, plus a documented record of hours reclaimed and work now handled automatically.
+- Accountability: every module includes a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls. Leadership gets a monthly progress report.
+- Support: hands-on, 1-on-1 help from Claude Certified Experts when someone gets stuck (email a trainer or book a 1-hour call from inside any lesson).
+- Published results: 80+ Ad On Group staff trained in AI; 40+ Australian businesses trained; Ad On AI reports 12 hours saved per person each week and deployed AI agents within 3 months.
+- Facilitators: Dylan Bailey and Beau Robards, both Claude Certified (Anthropic certifications).
+- Contact: info@adongroup.com.au · (07) 5586 1400 · 1/44 Township Drive, Burleigh Heads QLD 4219, Australia · ABN 54 808 983 598
 
-- Duration: self-paced. Every module is open from day one; the program includes 4 months of Learning Academy access, and access continues with a membership.
-- Structure: three topics — the essential skills (modules 1–8), automation (9–16) and AI agents (17–24).
-- Accountability: every module includes a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls.
-- Outcome per learner: 20+ working AI builds tied to their own job — reusable prompt packs, custom skills, automations, end-to-end workflows and deployed AI agents — plus a record of hours reclaimed.
-- Tool-agnostic: the skills carry across to ChatGPT, Copilot, Gemini, Grok and other tools; Claude is the worked example.
-- After the program: a monthly membership (separate from the program fee) adds two hours of one-on-one support a month, a monthly live AI trends webinar and the community, and gives ongoing Learning Academy access.
+## The AI Enablement program
 
-## AI Intermediate
+A managed, self-paced program — not a video library. Every month runs on the same rhythm: guided learning, real application, and a clear read on progress.
 
-A shorter, six-module program for people who are short on time, focused on getting Claude working day to day. Learners build each thing once — Claude set up to know them, a workspace for repeat work, a workflow on their own tools, a Claude skill and a Cowork task — and it stops at scheduled tasks, without AI agents. A membership adds one hour of one-on-one support a month and the community.
+- AI built into the platform: help and answers are one click away on any lesson or task in the Academy.
+- Self-paced modules: worked through around the learner's normal workload.
+- Applied to their role: every module ends in a real deliverable built on the tasks they actually do — not a quiz.
+- Hands-on support: when someone gets stuck, a trainer steps in and builds the fix with them.
+- Monthly progress report: a clear read for leadership on what each person learned and applied.
+- Ongoing support with membership: one-on-one support, a monthly trends webinar and a community, separate from the program fee.
 
-## BPO AI Program (separate product)
+### Curriculum (24 modules)
 
-Structured AI enablement built specifically for BPO providers and outsourced/offshore teams. Runs on a monthly cycle across 3 months, taking each person from novice to advanced AI user. Each month covers orientation and possibilities, prompt mastery, applying AI to real workflows, and role-specific training. Support continues after month three to keep momentum.
+**Topic 1 — The essential skills (Modules 1–8)** — Outcome: A reusable master prompt, a Claude Project set up for their main work, and a working start-to-finish workflow for a real recurring task.
+1. AI Basics and Safe Use
+2. Giving AI the Right Background
+3. Better Prompts, Fewer Mistakes
+4. Memory & Context
+5. Connecting AI to Your Email and Files
+6. Plan Your First AI Workflow
+7. Build Your First Workflow
+8. Make It Reliable
 
-## Ongoing Support (membership)
+**Topic 2 — Automation (Modules 9–16)** — Outcome: Their own starter library of skills for their role, a tested Claude Cowork automation, and a job running on a schedule.
+9. Ready-Made AI Skills
+10. Build Your Own Skills
+11. Your AI Toolkit
+12. How Automation Works
+13. Your First Hands-Free Job
+14. Hand Over Bigger Jobs
+15. Put Your Jobs on a Schedule
+16. AI in Your Browser, Safely
 
-A monthly membership, separate from the program fee, that keeps teams current as AI moves — one-on-one support each month (1 hour with AI Intermediate, 2 hours with AI Enablement), tool masterclasses (recorded and kept), business-application podcasts, a monthly newsletter and a peer network. AI Enablement members also get a monthly live AI trends webinar. Learning Academy access continues for as long as the membership is active.
+**Topic 3 — AI agents (Modules 17–24)** — Outcome: A team of reliable agents working as one system, a clear map of how it all fits, and a record of the time it gives back.
+17. Do You Need an Agent?
+18. Plan Your Agent
+19. Get Set Up to Build
+20. Build and Launch Your Agent
+21. Make Your Agent Better
+22. Make It Safe, Then Build Another
+23. Build a Team of Agents
+24. Run It All and Measure the Results
 
-## Common questions
+Full curriculum (PDF): https://adongroup.com.au/assets/ai-training-curriculum.pdf
 
-Q: How fast will staff see results?
-A: Most people start using AI in their daily work from the first module — you'll notice the difference before you read a report.
+Modules are updated as AI moves, so the program never teaches outdated AI.
 
-Q: Do the skills only work with Claude?
-A: No. They are tool-agnostic and carry across to ChatGPT, Copilot, Gemini, Grok and whatever comes next.
+### Roles covered
 
-Q: How is progress tracked?
-A: Every module has a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls.
+Admin & operations, marketing, finance & accounts, EA/VA support, customer service and sales — and mapped to each client's team.
 
-Q: Can new staff join mid-program, or can I add more staff later?
-A: Yes. New intake starts every month at level 1. Monthly intake is limited so each person gets proper support, so it's best to plan ahead.
+### What every learner builds (minimum)
 
-Q: Is there support after the program?
-A: Yes — with a membership, which is separate from the program fee: one-on-one support, webinars, podcasts, masterclasses and newsletters, and ongoing Learning Academy access.
+- Skills and knowledge taught in the program, learned once and applied forever
+- 5–6 ready-made prompts for their main tasks
+- 3 AI skills built around their job
+- 3 AI tasks using images, docs and screenshots
+- 3 workflows AI runs start to finish
+- 3 AI agents doing real work
+- 1 lead agent running the others
+- 1 job running on a schedule
+- 1 browser job handed over to AI
+- 1 skill that builds new skills
+
+## For BPO and outsourced teams
+
+A structured program that starts with foundational skills and progresses month by month toward advanced use, with monthly knowledge and skills checks, progress reporting and hands-on implementation support.
+
+Monthly cycle (repeats each month): guided sessions (1–2 hrs/month) → self-paced modules (3–4 hrs/month) → end-of-month skills and knowledge check → application to a real task in their role → progress report to leadership → hands-on support as needed.
+
+Progression: Month 1 — orientation and possibilities; Month 2 — prompt mastery; Month 3 — applying AI to their workflow; Month 4 and beyond — role-specific training, grouped by role.
+
+Outcomes: understand where AI is useful; competent in a range of AI tools; useful results from AI in daily tasks; prompting with more control and consistency; applying AI inside their own workflow; measurable productivity improvement.
+
+## Ongoing support (membership)
+
+A separate monthly fee on top of the program. It covers support time and the community. Learning Academy access is lifetime and comes with the program.
+
+- One-on-one support: 1 hour a month with AI Intermediate, 2 hours a month with AI Enablement.
+- Monthly AI trends webinar (AI Enablement members) and new weekly AI masterclasses — all recorded and kept in the Academy.
+- Weekly business-application podcasts, a monthly newsletter and a closed community of other learners for questions, sharing and show-and-tell.
+- Free live webinars on the 1st of every month, online at 12:30pm AEST, open to any team.
+
+## What learners say (Google reviews of Ad On Group, 4.8 from 229)
+
+- Amy Fennell (Sep 2026): "I've just finished the Ad On AI training course, and it's made a big difference in how I work. The techniques covered have cut down a lot of the repetitive, manual work in my day."
+- Georgia Harding (Aug 2026): "Working with Ad On Group and Claude we were able to build a co work automation to assess our FB and Insta campaigns to see whats working and whats not."
+- Victoria (Aug 2026): "My client is happy with the increased productivity and they enjoy reading through the monthly progress report they receive. Highly recommended!"
+
+## Frequently asked questions
+
+Q: How long is the AI Enablement program?
+A: Every module is open from day one and they learn at their own pace, around their work. There’s no deadline, and they keep lifetime access to the Learning Academy, so they can come back to any module whenever they need it.
+
+Q: Who is the program designed for?
+A: Non-technical staff at Australian small-to-medium businesses — roles like finance, operations, marketing, admin and customer service. No technical background is required.
+
+Q: What will each staff member be able to do by the end?
+A: Every learner finishes with 20+ working AI builds tied to their own job — reusable prompt packs, custom skills, automations, end-to-end workflows and deployed AI agents — plus a record of the hours reclaimed.
+
+Q: Is this just a video course?
+A: No. It's a managed program, not a video library. Every module includes a test or practical project; learners can't progress without completing it, and managers are notified if someone stalls.
+
+Q: Does it only work with Claude?
+A: No. The skills are tool-agnostic by design and carry across to ChatGPT, Copilot, Gemini, Grok and whatever comes next. Claude is used as the worked example.
+
+Q: What happens after they finish the modules?
+A: They can add a membership for ongoing support — two hours of one-on-one support a month, a monthly trends webinar, masterclasses, podcasts and a newsletter — to keep skills current as AI moves. Membership is separate from the program fee.
+
+Q: Is there a shorter program?
+A: Yes. AI Intermediate is six modules focused on getting Claude working day to day, for people who are short on time. It builds each thing once and stops at scheduled tasks, without AI agents. Book a call and we’ll help you choose.
+
+Q: Who is the BPO AI Program for?
+A: It's built specifically for BPO providers and outsourced teams who want to turn their people into confident, productive AI users. It's a separate product from our main SME program.
+
+Q: How is the program structured?
+A: It runs on a monthly cycle across three months, taking each person from novice to advanced AI user with structured, role-relevant training.
+
+Q: What does each month cover?
+A: The cycle moves through orientation and possibilities, prompt mastery, applying AI to your actual workflow, and role-specific training — so the skills map to the work your people already do.
+
+Q: How is this different from the standard program?
+A: The BPO AI Program is tailored to outsourced and offshore teams and the way they work, rather than the in-house SME staff the main AI Enablement program is built for.
+
+Q: What happens after month three?
+A: There's support to keep the momentum going after the program, so your team keeps building on what they've learnt rather than losing it.
+
+Q: What is Ongoing Support?
+A: It's what your Ad On AI membership gives you: the piece that keeps your team sharp as AI keeps moving — one-on-one support each month, weekly AI masterclasses, weekly business-application podcasts, a newsletter and a closed community of other learners, plus a monthly trends webinar with AI Enablement.
+
+Q: Is Ongoing Support included in the program?
+A: No. It comes with your membership, which is a separate monthly fee on top of the program fee. Learning Academy access is lifetime either way.
+
+Q: What's actually included?
+A: One-on-one support each month (1 hour with AI Intermediate, 2 hours with AI Enablement), weekly AI masterclasses (recorded and kept), weekly business-application podcasts, a monthly newsletter and a closed community of other learners for questions and sharing. AI Enablement members also get the monthly live AI trends webinar.
+
+Q: Why would my team need it?
+A: AI changes fast. Ongoing Support keeps your people current after the program so the skills they built keep pace with new tools and capabilities.
 
 Q: Can I cancel?
-A: Yes, the membership can be cancelled any time. That ends one-on-one support, community and ongoing academy access.
+A: Yes, you can cancel your membership any time. That ends your one-on-one support and community access. You keep lifetime access to the Learning Academy.
 
-## Resources (plain-English AI guides)
+Q: How do I know they’re actually doing it?
+A: Every module includes a test or practical project. They can’t progress without completing it, and you’re notified if they stall.
 
-Tool-agnostic explainers and comparisons for Australian SMEs, authored by the team's Certified Claude Experts (Dylan Bailey, Beau Robards). Hub: https://www.adon-ai.com.au/resources
+Q: How long do they have to finish?
+A: They can go as fast or slow as you want, and every module is open from day one. There’s no deadline, and they keep lifetime access to the Learning Academy, so they can come back to any module whenever they need it.
 
-- AI Automation vs AI Workflow (https://www.adon-ai.com.au/resources/ai-automation-vs-ai-workflow): AI automation follows fixed rules; an AI workflow lets AI make judgement calls. Covers the plain-English difference and when to use each, with Australian small-business examples.
-- AI Training vs Learning AI Yourself (https://www.adon-ai.com.au/resources/ai-training-vs-learning-ai-yourself): An honest comparison of self-teaching versus structured training — weighing cost, speed, consistency and accountability for Australian small businesses.
-- Claude vs ChatGPT for Australian Business (https://www.adon-ai.com.au/resources/claude-vs-chatgpt-for-business): A fair, tool-agnostic comparison by real task types. Both are highly capable; the right one depends on the work.
-- What Is an AI Agent? (+ Agentic AI) (https://www.adon-ai.com.au/resources/what-is-an-ai-agent): An AI agent is given a goal and works out the steps to reach it — choosing actions and using tools, not just answering. Plain English, with an Australian small-business example.
-- What Are Claude Skills? (https://www.adon-ai.com.au/resources/what-are-claude-skills): Claude Skills are reusable packages of instructions that teach Claude to do a specific task your way, so you don't re-explain it every time. What they are and why they matter, with an Australian small-business example.
-- Claude Sheets, Whiteboards & Meetings (https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings): A step-by-step guide to Claude Sheets (spreadsheets built from a description, with visible formulas), Claude Whiteboards (plans turned into timelines, docs and decks) and Claude Meetings (Claude joining Google Meet to take notes). Includes 15 copy-paste prompts for Australian small businesses, what each can't do yet, and FAQs. Published 12 November 2026 by Beau Robards.
+Q: How fast will I see results?
+A: Most people start using AI in their daily work from the first module — you’ll notice the difference before you read a report.
+
+Q: Can new staff join mid-program?
+A: Yes. New intake starts every month at level 1.
+
+Q: What if we don’t use Claude?
+A: The skills are tool-agnostic by design — they carry across to ChatGPT, Copilot, Gemini, Grok and whatever comes next.
+
+Q: Can I add more staff later?
+A: Yes. Monthly intake is limited so each person gets proper support — it’s best to plan ahead, as some months have a waiting list.
+
+Q: Is there support after the program?
+A: Yes — with a membership, they get one-on-one support, webinars, podcasts, masterclasses & newsletters, designed to keep your team current as AI moves. Membership is separate from the program fee.
+
+## Same organisation: Ad On AI and Ad On Group
+
+Ad On AI (https://www.adon-ai.com.au) is the AI training and enablement division of Ad On Group (https://adongroup.com.au). They are the same business, not separate companies. The same program is described on Ad On Group's own site at https://adongroup.com.au/ai-training/ and https://adongroup.com.au/ad-on-ai/.
+
+- Parent company: Ad On Group, Australian-owned since 2008
+- ABN: 54 808 983 598 (shared)
+- Address: 1/44 Township Drive, Burleigh Heads QLD 4219, Australia (shared head office)
+- Phone: (07) 5586 1400 · Email: info@adongroup.com.au (shared)
+- Google rating (Ad On Group): 4.8 out of 5 from 229 reviews
+- Team (Claude Certified Associates): Dylan Bailey (Facilitator), Beau Robards (Facilitator), Taryn Boxer (Chief Operating Officer), Ben Ragless (Business Development), Leah Barnes (Training Coordinator), Tracy Malone (Training Coordinator)
+- Also known as: AdOnAI, Ad On AI Academy, Ad On AI by Ad On Group, Ad On Group AI Training
+- Profiles: https://www.instagram.com/adonai.australia/ · https://www.linkedin.com/company/adongroup/ · https://www.facebook.com/adongroup1/
 
 ## Company
 
-Ad On AI is a division of Ad On Group, an Australian business services provider operating since 2008, with divisions across workforce, AI, digital and hold. Ad On AI's team includes Certified Claude Experts. The enablement program was first built to train Ad On Group's own staff, then offered externally after the internal version proved effective.
+Ad On AI is a division of Ad On Group, an Australian business services provider founded in 2008, with offices in Australia (headquarters, Burleigh Heads QLD), the Philippines and South Africa. Ad On Group's divisions: Ad On Workforce (dedicated offshore staff), Ad On AI (AI training and enablement), Ad On Digital (digital marketing) and Ad On Hold (on-hold messages). Partners include Anthropic, Google, Meta and Telstra; Google rating 4.8 out of 5 from 229 reviews. The enablement program was first built to train Ad On Group's own staff in AI, and was opened to other Australian SMEs in 2026 after the internal version proved effective.
+
+## Resources
+
+Plain-English, tool-agnostic guides by Claude Certified Experts (Dylan Bailey, Beau Robards). Hub: https://www.adon-ai.com.au/resources
+
+- AI Agent Examples for Small Business (Real, Practical Uses) (https://www.adon-ai.com.au/resources/ai-agent-examples-for-small-business): Practical AI agent examples for small business — from triaging enquiries to chasing invoices — with a simple rule for which tasks to trust an agent with. Written for non-technical Australian teams.
+- AI Agent vs Chatbot: What's the Difference? (https://www.adon-ai.com.au/resources/ai-agent-vs-chatbot): A chatbot answers the question you ask. An AI agent is given a goal and works out the steps itself. The plain-English difference, a comparison table, and when a business needs each.
+- AI Automation Examples for Small Business (Real, Practical Uses) (https://www.adon-ai.com.au/resources/ai-automation-examples-for-small-business): Practical AI automation examples for small business — from invoice reconciliation to scheduled reporting — with a simple rule for which repetitive jobs to automate first.
+- AI Automation vs AI Workflow: The Plain-English Difference (https://www.adon-ai.com.au/resources/ai-automation-vs-ai-workflow): AI automation follows fixed rules; an AI workflow lets AI make judgement calls. Here's the plain-English difference, with Australian small-business examples of when to use each.
+- AI for Finance Teams: Real Tasks for Australian SMEs (https://www.adon-ai.com.au/resources/ai-for-finance-teams): Practical, high-value AI uses for finance teams at Australian small businesses — variance commentary, invoice chasing, reconciliation prep and supplier comparisons, not generic email drafting.
+- AI Hallucinations: Why AI Gets Things Wrong (and How to Check) (https://www.adon-ai.com.au/resources/ai-hallucinations): An AI hallucination is when AI states something false as if it's true, because it predicts plausible language rather than looking up facts. Why it happens, what it looks like, and a simple habit to catch it.
+- 10 AI Prompts for Finance Teams (Free Download) (https://www.adon-ai.com.au/resources/ai-prompts-for-finance-teams): Ten ready-to-use AI prompts for Australian SME finance teams — variance commentary, invoice chasing, reconciliation prep, supplier comparisons and more. Free PDF download.
+- AI Training vs Learning AI Yourself: Which Is Right for Your Team? (https://www.adon-ai.com.au/resources/ai-training-vs-learning-ai-yourself): Should your team learn AI on their own or through structured training? An honest look at the trade-offs — cost, speed, consistency and accountability — for Australian small businesses.
+- Best AI Tools for Australian Small Business (2026) (https://www.adon-ai.com.au/resources/best-ai-tools-for-australian-small-business): A short, honest shortlist of AI tools that genuinely help Australian small businesses — matched to real tasks, not a 30-tool listicle. Which to pick based on the software you already use.
+- ChatGPT vs Copilot vs Gemini vs Claude: Which for Business? (https://www.adon-ai.com.au/resources/chatgpt-vs-copilot-vs-gemini): A plain-English comparison of ChatGPT, Copilot, Gemini and Claude for Australian businesses — by what each is best at and which fits the tools you already use.
+- How to Use Claude Sheets, Whiteboards & Meetings (2026 Guide) (https://www.adon-ai.com.au/resources/claude-sheets-whiteboards-meetings): A quick, visual guide to Claude Sheets, Whiteboards and Meetings: how to turn them on, what each does, and 15 copy-paste prompts for budgets, quotes, plans and meeting notes.
+- Claude vs ChatGPT for Australian Business: An Honest Comparison (https://www.adon-ai.com.au/resources/claude-vs-chatgpt-for-business): Claude vs ChatGPT for Australian small businesses — a fair, tool-agnostic comparison by real task types, with a simple way to choose. Both are highly capable; the right one depends on your work.
+- How to Write an AI Prompt That Actually Works (Step by Step) (https://www.adon-ai.com.au/resources/how-to-write-an-ai-prompt): How to write a good AI prompt: give it context, a role, a clear task and a format, then add an example. A simple step-by-step that turns vague asks into reliable results — no tech skills needed.
+- What Are Claude Skills? A Plain-English Guide for Business (https://www.adon-ai.com.au/resources/what-are-claude-skills): Claude Skills are reusable packages of instructions that teach Claude to do a specific task your way — so you don't re-explain it every time. What they are, why they matter, with an Australian small-business example.
+- What Is an AI Agent? A Plain-English Guide (+ Agentic AI) (https://www.adon-ai.com.au/resources/what-is-an-ai-agent): An AI agent is given a goal and works out the steps to reach it — choosing actions and using tools, not just answering. Here's what that means in plain English, with an Australian small-business example.
+- What Is an LLM (Large Language Model)? Explained Simply (https://www.adon-ai.com.au/resources/what-is-an-llm): An LLM is the AI technology behind tools like ChatGPT and Claude — trained on huge amounts of text to predict and generate language. What that means in plain English, and why it's sometimes confidently wrong.
+- What Is Claude Cowork? A Plain-English Guide for Business (https://www.adon-ai.com.au/resources/what-is-claude-cowork): Claude Cowork is Anthropic's AI coworker — it reads, edits and creates files in folders you allow, and runs whole tasks unattended. What it actually does, and a real small-business example.
+- What Is Claude in Chrome? Browser Automation Explained (https://www.adon-ai.com.au/resources/what-is-claude-in-chrome): Claude for Chrome is a browser extension that lets Claude navigate, click and fill forms on your behalf. What it actually does, the safety guardrails, and a real small-business example.
+- What Is Prompt Engineering? A Plain-English Guide for Business (https://www.adon-ai.com.au/resources/what-is-prompt-engineering): Prompt engineering is writing clear, well-structured instructions so AI produces useful, reliable work. What it means in plain English — and why your non-technical staff can learn it.
+- What Is RAG (Retrieval-Augmented Generation)? Explained Simply (https://www.adon-ai.com.au/resources/what-is-rag): RAG is when AI looks up your own documents before answering, instead of relying only on what it learned in training. What that means in plain English, and why it makes AI answers more trustworthy.
+- AI Glossary: Plain-English Definitions for Business (https://www.adon-ai.com.au/resources/glossary): A plain-English AI glossary — short, jargon-free definitions of the terms Australian businesses run into, from AI agents and LLMs to prompts, RAG and hallucination, each with a real-world example.
+- What Is a Context Window? Explained Simply (https://www.adon-ai.com.au/resources/glossary/context-window): A context window is the amount of text an AI can hold in mind at once — your conversation, anything pasted in, and its own replies. What happens when you go past it, and why it matters.
+- What Is Fine-Tuning in AI? A Plain-English Guide (https://www.adon-ai.com.au/resources/glossary/fine-tuning): Fine-tuning is further training an existing AI model on extra examples so it gets better at a specific style or task. How it differs from a prompt or a skill, and why most businesses don't need it.
+- What Is MCP (Model Context Protocol)? Explained Simply (https://www.adon-ai.com.au/resources/glossary/mcp): MCP is an open standard, introduced by Anthropic, for connecting AI assistants to outside tools and data sources in a consistent way. What it means for a small business, in plain English.
+- What Is Multimodal AI? A Plain-English Guide (https://www.adon-ai.com.au/resources/glossary/multimodal): Multimodal AI can work with more than just text — images, audio, and sometimes documents or video — not only read and write words. What that unlocks for everyday business use.
+- What Is an Orchestrator Agent? Explained Simply (https://www.adon-ai.com.au/resources/glossary/orchestrator-agent): An orchestrator agent is an AI agent whose job is to coordinate other agents or steps — breaking a big goal into parts and pulling the results together. The project manager of a multi-agent setup.
+- What Is a Prompt? A Plain-English Definition (https://www.adon-ai.com.au/resources/glossary/prompt): A prompt is the instruction or question you give an AI. Everything you type to get a response is a prompt — and the clearer and more specific it is, the better the result.
+- What Is a Token in AI? Explained Simply (https://www.adon-ai.com.au/resources/glossary/token): A token is the small chunk of text an AI reads and generates — roughly a word or a piece of a word. Why usage, limits and cost are often measured in tokens.
+- AI Readiness Quiz for Australian Small Business (https://www.adon-ai.com.au/tools/ai-readiness-quiz): A free 2-minute AI readiness quiz for Australian small businesses. Answer 8 questions to see where your team stands and get tailored next steps — no email required, nothing sent anywhere.
