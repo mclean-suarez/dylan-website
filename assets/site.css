@@ -1306,3 +1306,5 @@ header.ak-sec .ak-p, header.ak-tour .ak-p, #top .ak-p, .pg-gh .ak-p, .pg-gh-main
 /* fact lists, facts and small caps labels: same sans font as the rest (no monospace) */
 .pg-ans-f dt, .pg-facts small, .ak-kv small, .pg-dl-h, .pg-fqg-h, .ak-mods-h, .ak-tag, .pg-cal-h span, .pg-sub-h small, .pg-list small, .pg-cycle small, .pg-months small { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif !important; letter-spacing: 0.06em !important; }
 .pg-ans-f dt { font-weight: 600; color: #8A93A1; }
+/* keep hero content painted immediately (fast LCP): heroes slide in but never start invisible */
+html.rv-on header .rv, html.rv-on #top .rv, html.rv-on .sk-hero .rv, html.rv-on .sk-hero.rv { opacity: 1 !important; }
