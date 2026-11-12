@@ -1112,3 +1112,10 @@ details.ak-fq[open] { border-color: rgba(143,182,255,0.3); }
 /* first tab shows by default even if the page runtime drops the radio's checked attribute */
 .pg-fqt:not(:has(input:checked)) .pg-fqg--1 { display: block; }
 .pg-fqt:not(:has(input:checked)) .pg-fqt-bar label[for="fqt1"] { background: #fff; color: #0B1220; }
+
+/* Kinso-style nav on every page: links sit next to the logo, CTA far right, wider bar */
+@media (min-width: 761px) {
+  .hn-bar[style*="max-width:1120px"] { max-width: 1240px !important; }
+  .bio-navlinks { flex: 1; margin-left: 28px; }
+  .bio-navlinks > .hn-cta { margin-left: auto; }
+}
