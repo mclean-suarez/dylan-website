@@ -1253,3 +1253,53 @@ html.rv-on .rv.rv-in { opacity: 1; transform: none; }
   .tp-av { width: 48px; height: 48px; }
   .tp-av.is-on { width: 62px; height: 62px; }
 }
+
+/* =====================================================================
+   SITE-WIDE STANDARD (matches the homepage): white page, Kinso-style hero
+   backdrop, glowing pill labels, black headings, grey body text, pill buttons
+   ===================================================================== */
+body { background: #fff !important; }
+/* retire the old page-wide checker texture (homepage already uses .hb-* layers) */
+[style*="var(--grid-mask)"] { display: none !important; }
+body:not(:has(.hb-color)) { position: relative; }
+body:not(:has(.hb-color))::before, body:not(:has(.hb-color))::after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 1180px; inset: 0 0 auto 0; z-index: -1; pointer-events: none; display: block; }
+body:not(:has(.hb-color))::before {
+  background:
+    radial-gradient(64% 74% at -8% 42%, rgba(242,140,100,0.55), rgba(247,185,158,0.26) 40%, rgba(255,255,255,0) 74%),
+    radial-gradient(58% 72% at 108% 36%, rgba(120,168,234,0.52), rgba(170,204,240,0.22) 42%, rgba(255,255,255,0) 74%),
+    radial-gradient(34% 34% at 102% 2%, rgba(150,206,214,0.30), rgba(255,255,255,0) 70%),
+    radial-gradient(30% 30% at -2% 0%, rgba(250,190,160,0.30), rgba(255,255,255,0) 70%) !important;
+  background-size: auto !important; -webkit-mask-image: linear-gradient(180deg, #000 0, #000 50%, transparent 88%) !important; mask-image: linear-gradient(180deg, #000 0, #000 50%, transparent 88%) !important; }
+body:not(:has(.hb-color))::after {
+  background-image: linear-gradient(rgba(11,18,32,0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.055) 1px, transparent 1px); background-size: 6px 6px;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,0.45) 18%, transparent 36%, transparent 64%, rgba(0,0,0,0.45) 82%, #000 100%), linear-gradient(180deg, #000 0, #000 40%, transparent 82%); -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,0.45) 18%, transparent 36%, transparent 64%, rgba(0,0,0,0.45) 82%, #000 100%), linear-gradient(180deg, #000 0, #000 40%, transparent 82%); mask-composite: intersect; }
+@media (max-width: 859px) {
+  body:not(:has(.hb-color))::before, body:not(:has(.hb-color))::after { height: 1000px; }
+  body:not(:has(.hb-color))::before { opacity: .6; }
+  body:not(:has(.hb-color))::after { opacity: .7; }
+}
+
+/* labels: same pill + glowing gradient text as the homepage (dark-section labels keep their own look) */
+.ak-label:not(.ak-label--d) > span { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif !important; font-size: 13px !important; font-weight: 600 !important; letter-spacing: 0.06em !important; line-height: 1 !important; padding: 9px 16px !important; border: 1px solid rgba(11,18,32,0.12) !important; box-shadow: none !important; border-radius: 999px !important;
+  background-image: linear-gradient(90deg, #2F6FED, #12A4DE, #7C5CF2, #EE7A4C, #2F6FED), linear-gradient(#fff, #fff) !important; background-size: 400% 100%, 100% 100% !important; -webkit-background-clip: text, padding-box !important; background-clip: text, padding-box !important; color: transparent !important; -webkit-text-fill-color: transparent; animation: akHueL 12s linear infinite; }
+@keyframes akHueL { to { background-position: 400% 0, 0 0; } }
+.ak-label:not(.ak-label--d)::before { background: linear-gradient(270deg, rgba(11,18,32,0.16), rgba(11,18,32,0)); }
+.ak-label:not(.ak-label--d)::after { background: linear-gradient(90deg, rgba(11,18,32,0.16), rgba(11,18,32,0)); }
+@media (max-width: 859px) { .ak-label:not(.ak-label--d) > span { font-size: 11.5px !important; padding: 8px 13px !important; } }
+
+/* headings: plain black, Kinso weight (the dark band and page heroes keep their accents) */
+.ak-sec .ak-h2 .ak-acc, .pg-band .ak-h2 .ak-acc { color: inherit; }
+.aoa-prose h2, .aoa-prose h3 { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif; font-weight: 600 !important; letter-spacing: -0.035em; }
+.ak-h2, .pg-h3 { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif; font-weight: 500; letter-spacing: -0.04em; }
+/* body text: Kinso grey */
+.ak-sec .ak-p, .pg-band .ak-p, .pg-lead { color: #6B7280; }
+/* buttons: pills */
+.ak-btn { border-radius: 999px !important; padding: 12px 22px; font-weight: 600; }
+/* small tags and "short answer" labels on content pages: same font + glow as the labels */
+.aoa-tag, .aoa-answer .lbl, .aoa-relcard > div:first-child { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif !important; font-weight: 600 !important; letter-spacing: 0.07em !important; text-transform: uppercase;
+  background-image: linear-gradient(90deg, #2F6FED, #12A4DE, #7C5CF2, #EE7A4C, #2F6FED) !important; background-size: 400% 100% !important; -webkit-background-clip: text !important; background-clip: text !important; color: transparent !important; -webkit-text-fill-color: transparent; animation: akHue 12s linear infinite; }
+/* content-page titles: same weight as the homepage headings */
+body:not(:has(x-dc)) main h1 { font-weight: 600 !important; letter-spacing: -0.045em !important; }
+/* page-hero intro text stays near-black like the homepage hero (section text below is grey) */
+header.ak-sec .ak-p, header.ak-tour .ak-p, #top .ak-p, .pg-gh .ak-p, .pg-gh-main .ak-p { color: #1B2430 !important; }
