@@ -1119,3 +1119,9 @@ details.ak-fq[open] { border-color: rgba(143,182,255,0.3); }
   .bio-navlinks { flex: 1; margin-left: 28px; }
   .bio-navlinks > .hn-cta { margin-left: auto; }
 }
+/* Kinso-style nav shape: soft rounded rectangle (not a pill), roomier, pill CTA with chevron */
+@media (min-width: 761px) {
+  .hn-bar { border-radius: 18px !important; padding: 13px 14px 13px 24px !important; background: rgba(255,255,255,0.62) !important; box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset, 0 10px 30px -16px rgba(11,18,32,0.18) !important; }
+  .hn-cta { border-radius: 999px !important; padding: 11px 22px !important; display: inline-flex !important; align-items: center; }
+  .hn-cta::after { content: '›'; margin-left: 9px; font-size: 18px; line-height: 1; margin-top: -2px; }
+}
