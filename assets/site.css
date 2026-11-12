@@ -1127,3 +1127,30 @@ details.ak-fq[open] { border-color: rgba(143,182,255,0.3); }
   .hn-name { font-size: 17.5px !important; }
   .hn-cta::after { content: '›'; margin-left: 9px; font-size: 18px; line-height: 1; margin-top: -2px; }
 }
+
+/* ===== Kinso-style feature rows (homepage #programs) ===== */
+.kf-sec .ak-row { align-items: center; }
+.kf-sec .ak-row + .kf-label { margin-top: 150px; }
+.kf-label { display: flex; align-items: center; gap: 0; margin: 0 0 64px; }
+.kf-label span { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #3A434F; background: #fff; border: 1px solid rgba(11,18,32,0.12); border-radius: 999px; padding: 8px 16px; white-space: nowrap; }
+.kf-label::after, .kf-label--r::before { content: ''; height: 1px; width: 220px; background: linear-gradient(90deg, rgba(11,18,32,0.16), rgba(11,18,32,0)); }
+.kf-label--l::after { margin-left: 22px; }
+.kf-label--r { justify-content: flex-end; }
+.kf-label--r::after { display: none; }
+.kf-label--r::before { margin-right: 22px; background: linear-gradient(270deg, rgba(11,18,32,0.16), rgba(11,18,32,0)); }
+.kf-h { font-size: clamp(30px, 3.2vw, 44px) !important; line-height: 1.06 !important; letter-spacing: -0.04em !important; font-weight: 500 !important; color: #0B1220 !important; margin: 0 0 22px !important; }
+.kf-p { font-size: 18.5px !important; line-height: 1.45 !important; color: #6B7280 !important; letter-spacing: -0.012em; margin: 0 0 16px !important; max-width: 470px; }
+.kf-stage { border: 0 !important; box-shadow: none !important; border-radius: 6px !important; padding: 44px 0 44px 44px !important; overflow: hidden; }
+.kf-stage .ak-mac { border-radius: 12px 0 0 12px; margin-right: -2px; }
+.kf-sec .ak-row--flip .kf-stage { padding: 44px 44px 44px 0 !important; }
+.kf-sec .ak-row--flip .kf-stage .ak-mac { border-radius: 0 12px 12px 0; margin-left: -2px; margin-right: 0; }
+@media (max-width: 859px) {
+  .kf-sec .ak-row + .kf-label { margin-top: 96px; }
+  .kf-label, .kf-label--r { justify-content: center; margin-bottom: 30px; }
+  .kf-label::before, .kf-label::after { content: ''; display: block !important; width: 48px; margin: 0 14px; height: 1px; background: rgba(11,18,32,0.14); }
+  .kf-label span { font-size: 11.5px; padding: 7px 13px; }
+  .kf-h { font-size: clamp(27px, 7.6vw, 34px) !important; }
+  .kf-p { font-size: 16.5px !important; margin-left: auto !important; margin-right: auto !important; }
+  .kf-stage, .kf-sec .ak-row--flip .kf-stage { padding: 22px 0 22px 22px !important; }
+  .kf-sec .ak-row--flip .kf-stage .ak-mac { border-radius: 12px 0 0 12px; margin-left: 0; margin-right: -2px; }
+}
