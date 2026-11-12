@@ -480,7 +480,7 @@
 <style>
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { background: radial-gradient(120% 60% at -2% -8%, rgba(255,168,112,0.22), transparent 50%), radial-gradient(110% 60% at 104% -2%, rgba(47,111,237,0.18), transparent 52%), radial-gradient(85% 38% at 102% 40%, rgba(47,111,237,0.10), transparent 56%), radial-gradient(85% 36% at -2% 70%, rgba(255,168,112,0.12), transparent 56%), radial-gradient(80% 34% at 50% 100%, rgba(45,212,191,0.10), transparent 60%), linear-gradient(180deg, #FBF6F2 0%, #FAFAFE 32%, #F6FAFE 62%, #F2F5FB 100%); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; }
+  body { background: #fff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #0B1220; letter-spacing: -0.011em; }
   h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.045em !important; font-weight: 500 !important; }
   h1, h2, h3 { font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: -0.03em; font-weight: 600; }
   h2 { color: #0B1220; }
@@ -627,8 +627,30 @@
   .hh-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 18px 36px -14px rgba(11,18,32,0.6); }
   .hh-cta-btn span { font-size: 18px; line-height: 1; margin-top: -2px; }
   @media (max-width: 859px) { .hh-logos { padding-top: 96px !important; } .hh-cta { padding-top: 44px !important; } .hh-cta-btn { min-width: 0; width: 100%; max-width: 280px; } }
-  .pg-whitefade { position: absolute; left: 0; right: 0; top: 860px; bottom: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,0) 0px, rgba(255,255,255,0.85) 260px, #fff 420px); }
-  @media (max-width: 859px) { .pg-whitefade { top: 700px; } }
+  /* ===== Kinso-style hero backdrop ===== */
+  .hb-color, .hb-grid { position: absolute; left: 0; right: 0; top: 0; height: 1180px; z-index: -1; pointer-events: none; }
+  .hb-color { background:
+      radial-gradient(64% 74% at -8% 42%, rgba(242,140,100,0.62), rgba(247,185,158,0.30) 40%, rgba(255,255,255,0) 74%),
+      radial-gradient(58% 72% at 108% 36%, rgba(120,168,234,0.58), rgba(170,204,240,0.26) 42%, rgba(255,255,255,0) 74%),
+      radial-gradient(34% 34% at 102% 2%, rgba(150,206,214,0.30), rgba(255,255,255,0) 70%),
+      radial-gradient(30% 30% at -2% 0%, rgba(250,190,160,0.30), rgba(255,255,255,0) 70%);
+    -webkit-mask-image: linear-gradient(180deg, #000 0, #000 58%, transparent 92%); mask-image: linear-gradient(180deg, #000 0, #000 58%, transparent 92%); }
+  .hb-grid { background-image: linear-gradient(rgba(11,18,32,0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.055) 1px, transparent 1px); background-size: 6px 6px;
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,0.45) 18%, transparent 36%, transparent 64%, rgba(0,0,0,0.45) 82%, #000 100%), linear-gradient(180deg, #000 0, #000 45%, transparent 85%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,0.45) 18%, transparent 36%, transparent 64%, rgba(0,0,0,0.45) 82%, #000 100%), linear-gradient(180deg, #000 0, #000 45%, transparent 85%);
+    mask-composite: intersect; }
+  /* headline like Kinso: heavy first line, regular second */
+  .hh-l1 { font-weight: 700 !important; letter-spacing: -0.05em; }
+  .hh-l2 { font-weight: 400 !important; letter-spacing: -0.045em; }
+  @media (max-width: 859px) {
+    .hb-color, .hb-grid { height: 1060px; }
+    .hb-color { opacity: 0.6; background:
+      radial-gradient(70% 48% at -12% 30%, rgba(244,150,112,0.45), rgba(255,255,255,0) 72%),
+      radial-gradient(70% 48% at 112% 26%, rgba(132,176,236,0.42), rgba(255,255,255,0) 72%);
+      -webkit-mask-image: linear-gradient(180deg, #000 0, #000 45%, transparent 82%); mask-image: linear-gradient(180deg, #000 0, #000 45%, transparent 82%); }
+    .hb-grid { opacity: 0.7; -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 26%, transparent 74%, #000 100%), linear-gradient(180deg, #000 0, transparent 70%); mask-image: linear-gradient(90deg, #000 0%, transparent 26%, transparent 74%, #000 100%), linear-gradient(180deg, #000 0, transparent 70%); }
+  }
   /* aoa-shared: soft fading grid + slim mobile nav (same on every page) */
   :root { --grid-mask: radial-gradient(1100px 760px at 50% 0, #000 0%, rgba(0,0,0,0.55) 45%, transparent 100%), radial-gradient(760px 620px at 6% 2300px, rgba(0,0,0,0.38), transparent 72%), radial-gradient(760px 620px at 94% 4300px, rgba(0,0,0,0.32), transparent 72%), radial-gradient(900px 640px at 50% 6600px, rgba(0,0,0,0.28), transparent 72%); }
   @media (max-width: 859px) {
@@ -646,10 +668,9 @@
 
 <div style="max-width:100%;overflow-x:clip;background:transparent;position:relative">
 
-  <!-- fade the page colour to white from the client logos down (top stays vibrant) -->
-  <div class="pg-whitefade" aria-hidden="true"></div>
-  <!-- global pixel-grid texture (one continuous layer) -->
-  <div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(11,18,32,0.042) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.042) 1px, transparent 1px);background-size:4px 4px;-webkit-mask-image:var(--grid-mask);mask-image:var(--grid-mask)"></div>
+  <!-- hero backdrop (Kinso-style): soft colour + fine grid at the left and right edges, clear white centre, fading out below the hero -->
+  <div class="hb-color" aria-hidden="true"></div>
+  <div class="hb-grid" aria-hidden="true"></div>
 
   <!-- ======================= NAV ======================= -->
   <nav class="hn-nav" style="position:sticky;top:16px;z-index:50;padding:0 20px">
