@@ -1154,3 +1154,24 @@ details.ak-fq[open] { border-color: rgba(143,182,255,0.3); }
   .kf-stage, .kf-sec .ak-row--flip .kf-stage { padding: 22px 0 22px 22px !important; }
   .kf-sec .ak-row--flip .kf-stage .ak-mac { border-radius: 12px 0 0 12px; margin-left: 0; margin-right: -2px; }
 }
+
+/* glowing multicolour words for light backgrounds (same motion as .ak-glow in the dark band) */
+.ak-glow-l { font-style: normal; background: linear-gradient(90deg, #2F6FED, #12A4DE, #7C5CF2, #EE7A4C, #2F6FED); background-size: 400% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; animation: akHue 12s linear infinite; filter: drop-shadow(0 0 14px rgba(47,111,237,0.18)); }
+.kf-label span .ak-glow-l { font-weight: 600; }
+
+/* smaller, Kinso-sized feature graphics */
+.kf-sec .ak-row--film, .kf-sec .ak-row--film.ak-row--flip { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 96px; }
+.kf-sec .kf-stage { width: 100%; max-width: 540px; justify-self: end; padding: 34px 0 34px 34px !important; }
+.kf-sec .ak-row--flip .kf-stage { justify-self: start; padding: 34px 34px 34px 0 !important; }
+.kf-sec .ak-text { max-width: 480px; }
+@media (max-width: 859px) {
+  .kf-sec .ak-row--film, .kf-sec .ak-row--film.ak-row--flip { grid-template-columns: 1fr; gap: 28px; }
+  .kf-sec .kf-stage, .kf-sec .ak-row--flip .kf-stage { max-width: 440px; justify-self: center; padding: 20px 0 20px 20px !important; }
+  .kf-sec .ak-text { max-width: none; }
+}
+
+/* ===== site-wide scroll reveal (assets/reveal.js adds .rv-on only when JS runs, so content is always visible without it) ===== */
+html.rv-on .rv { opacity: 0; transform: translate3d(0, 26px, 0); transition: opacity .95s cubic-bezier(.2,.65,.2,1), transform .95s cubic-bezier(.2,.65,.2,1); transition-delay: var(--rv-d, 0s); }
+html.rv-on .rv.rv-img { transform: translate3d(0, 34px, 0) scale(.975); }
+html.rv-on .rv.rv-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { html.rv-on .rv { opacity: 1 !important; transform: none !important; transition: none !important; } }
