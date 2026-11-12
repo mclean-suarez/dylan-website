@@ -8,7 +8,7 @@
     '[data-reveal]',
     /* homepage + main pages */
     '#top .hh-text > *', '#top .kd-wrap', '.hh-cta > *', '.hh-logos > *',
-    '.kf-label', '.wa-label', '.wa-h', '.wa-p', '.wa-grid > *', '.wa-foot', '.ak-row > *', '.ak-head', '.ak-strip', '.ak-dark-in > *', '.ak-faq > *', '.ak-finale',
+    '.kf-label', '.ab-top > *', '.ab-ftx', '.ab-fimg', '.ab-label', '.ab-team', '.tp', '.ab-humans', '.wa-btn', '.wa-label', '.wa-h', '.wa-p', '.wa-grid > *', '.wa-foot', '.ak-row > *', '.ak-head', '.ak-strip', '.ak-dark-in > *', '.ak-faq > *', '.ak-finale',
     '.pg-ans', '.pg-sub', '.pg-two > *', '.pg-member', '.pg-cal', '.pg-guides', '.pg-incl', '.pg-revs > *', '.pg-rev-h',
     /* articles, hub, bios, legal */
     'main > nav[aria-label="Breadcrumb"] ~ *', '.aoa-prose > *', '.aoa-grid > *', '.aoa-related > *',
@@ -16,7 +16,7 @@
     '.sk-hero > *', '.sk-stats', '.sk-pick', '.sk-head', '.sk-grid > *', '.sk-signs-h', '.sk-signs > *', '.sk-sechead', '.sk-install > *', '.sk-check', '.sk-safe'
   ].join(',');
   var SKIP = '.hn-nav, nav.hn-nav *, .kd-stack, [style*="position:sticky"], .pg-sticky';
-  var IMG = '.ak-stage, .kd-wrap, .sk-shelf, .sk-card, .sk-grid > .sk-card, .pg-guides';
+  var IMG = '.ab-fimg, .ab-team, .ak-stage, .kd-wrap, .sk-shelf, .sk-card, .sk-grid > .sk-card, .pg-guides';
 
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
@@ -60,4 +60,29 @@
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
   window.addEventListener('beforeprint', function () { document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('rv-in'); }); });
+})();
+
+/* Team picker (Who we are): hover or tap an avatar to see that person; gently cycles until someone interacts. */
+(function () {
+  function init() {
+    var root = document.querySelector('.tp'); if (!root || root.dataset.tpReady) return; root.dataset.tpReady = '1';
+    var avs = root.querySelectorAll('.tp-av'), bios = root.querySelectorAll('.tp-bio'), i = 0, timer = null, touched = false;
+    function show(k) {
+      avs.forEach(function (a, n) { var on = a.dataset.tp === k; a.classList.toggle('is-on', on); a.setAttribute('aria-pressed', on ? 'true' : 'false'); if (on) i = n; });
+      bios.forEach(function (b) { var on = b.dataset.tp === k; b.classList.toggle('is-on', on); b.style.display = on ? 'block' : 'none'; });
+    }
+    avs.forEach(function (a) {
+      a.addEventListener('click', function () { touched = true; clearInterval(timer); show(a.dataset.tp); });
+      a.addEventListener('mouseenter', function () { touched = true; clearInterval(timer); show(a.dataset.tp); });
+    });
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { es.forEach(function (e) {
+        clearInterval(timer);
+        if (e.isIntersecting && !touched) timer = setInterval(function () { show(avs[(i + 1) % avs.length].dataset.tp); }, 4500);
+      }); }, { threshold: 0.4 }).observe(root);
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+  setTimeout(init, 800); setTimeout(init, 2500);
 })();
