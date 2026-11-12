@@ -8,7 +8,7 @@
     '[data-reveal]',
     /* homepage + main pages */
     '#top .hh-text > *', '#top .kd-wrap', '.hh-cta > *', '.hh-logos > *',
-    '.kf-label', '.ak-row > *', '.ak-head', '.ak-strip', '.ak-dark-in > *', '.ak-faq > *', '.ak-finale',
+    '.kf-label', '.wa-label', '.wa-h', '.wa-p', '.wa-grid > *', '.wa-foot', '.ak-row > *', '.ak-head', '.ak-strip', '.ak-dark-in > *', '.ak-faq > *', '.ak-finale',
     '.pg-ans', '.pg-sub', '.pg-two > *', '.pg-member', '.pg-cal', '.pg-guides', '.pg-incl', '.pg-revs > *', '.pg-rev-h',
     /* articles, hub, bios, legal */
     'main > nav[aria-label="Breadcrumb"] ~ *', '.aoa-prose > *', '.aoa-grid > *', '.aoa-related > *',

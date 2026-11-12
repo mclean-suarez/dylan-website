@@ -1121,7 +1121,7 @@ details.ak-fq[open] { border-color: rgba(143,182,255,0.3); }
 }
 /* Kinso-style nav shape: soft rounded rectangle (not a pill), roomier, pill CTA with chevron */
 @media (min-width: 761px) {
-  .hn-bar { border-radius: 16px !important; padding: 10px 10px 10px 22px !important; background: rgba(255,255,255,0.62) !important; box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset, 0 10px 30px -16px rgba(11,18,32,0.18) !important; }
+  .hn-bar { border-radius: 16px !important; padding: 10px 10px 10px 22px !important; background: rgba(255,255,255,0.58) !important; -webkit-backdrop-filter: blur(22px) saturate(180%) !important; backdrop-filter: blur(22px) saturate(180%) !important; border: 1px solid rgba(11,18,32,0.06) !important; box-shadow: 0 10px 30px -18px rgba(11,18,32,0.22) !important; }
   .hn-cta { border-radius: 999px !important; padding: 10px 20px !important; font-size: 15px !important; display: inline-flex !important; align-items: center; }
   .hn-logo, .hn-logo img { width: 30px !important; height: 30px !important; }
   .hn-name { font-size: 17.5px !important; }
@@ -1175,3 +1175,31 @@ html.rv-on .rv { opacity: 0; transform: translate3d(0, 26px, 0); transition: opa
 html.rv-on .rv.rv-img { transform: translate3d(0, 34px, 0) scale(.975); }
 html.rv-on .rv.rv-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { html.rv-on .rv { opacity: 1 !important; transform: none !important; transition: none !important; } }
+
+/* ===== "What they walk away with" — Kinso statement + build grid ===== */
+.wa-sec { padding-top: 140px; text-align: center; }
+.wa-label { display: flex; align-items: center; justify-content: center; gap: 22px; margin: 0 0 44px; }
+.wa-label::before, .wa-label::after { content: ''; height: 1px; width: 180px; }
+.wa-label::before { background: linear-gradient(270deg, rgba(11,18,32,0.16), rgba(11,18,32,0)); }
+.wa-label::after { background: linear-gradient(90deg, rgba(11,18,32,0.16), rgba(11,18,32,0)); }
+.wa-label span { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; background: #fff; border: 1px solid rgba(11,18,32,0.12); border-radius: 999px; padding: 8px 16px; }
+.wa-h { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.08; letter-spacing: -0.04em; font-weight: 500; color: #0B1220; max-width: 860px; margin: 0 auto 22px; }
+.wa-p { font-size: 18.5px; line-height: 1.5; color: #6B7280; letter-spacing: -0.012em; max-width: 640px; margin: 0 auto 56px; }
+.wa-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 1000px; margin: 0 auto; text-align: left; }
+.wa-card { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 14px; align-items: center; padding: 18px 18px; border-radius: 16px; background: rgba(255,255,255,0.75); border: 1px solid rgba(11,18,32,0.07); box-shadow: 0 1px 2px rgba(11,18,32,0.03), 0 14px 30px -26px rgba(11,18,32,0.35); transition: transform .3s ease, box-shadow .3s ease; }
+.wa-card:hover { transform: translateY(-2px); box-shadow: 0 1px 2px rgba(11,18,32,0.03), 0 20px 36px -24px rgba(11,18,32,0.4); }
+.wa-ic { width: 40px; height: 40px; border-radius: 11px; display: flex; align-items: center; justify-content: center; color: var(--c); background: color-mix(in srgb, var(--c) 10%, #fff); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--c) 18%, transparent); }
+.wa-tx b { display: block; font-family: 'Inter Tight', 'Helvetica Neue', sans-serif; font-size: 16.5px; font-weight: 600; letter-spacing: -0.02em; color: #0B1220; line-height: 1.25; }
+.wa-tx b em { font-style: normal; color: #2F6FED; }
+.wa-tx small { display: block; font-size: 13.5px; color: #6B7280; margin-top: 2px; line-height: 1.4; }
+.wa-foot { font-size: 14px; color: #7C8696; margin: 26px 0 0; }
+@media (max-width: 859px) {
+  .wa-sec { padding-top: 100px; }
+  .wa-label { gap: 14px; margin-bottom: 30px; }
+  .wa-label::before, .wa-label::after { width: 48px; }
+  .wa-label span { font-size: 11.5px; padding: 7px 13px; }
+  .wa-h { font-size: clamp(27px, 7.4vw, 34px); }
+  .wa-p { font-size: 16.5px; margin-bottom: 36px; }
+  .wa-grid { grid-template-columns: 1fr; gap: 8px; }
+  .wa-card { padding: 14px 16px; }
+}
