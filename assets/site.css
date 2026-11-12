@@ -1303,3 +1303,6 @@ body:not(:has(.hb-color))::after {
 body:not(:has(x-dc)) main h1 { font-weight: 600 !important; letter-spacing: -0.045em !important; }
 /* page-hero intro text stays near-black like the homepage hero (section text below is grey) */
 header.ak-sec .ak-p, header.ak-tour .ak-p, #top .ak-p, .pg-gh .ak-p, .pg-gh-main .ak-p { color: #1B2430 !important; }
+/* fact lists, facts and small caps labels: same sans font as the rest (no monospace) */
+.pg-ans-f dt, .pg-facts small, .ak-kv small, .pg-dl-h, .pg-fqg-h, .ak-mods-h, .ak-tag, .pg-cal-h span, .pg-sub-h small, .pg-list small, .pg-cycle small, .pg-months small { font-family: 'Inter Tight', 'Helvetica Neue', sans-serif !important; letter-spacing: 0.06em !important; }
+.pg-ans-f dt { font-weight: 600; color: #8A93A1; }
