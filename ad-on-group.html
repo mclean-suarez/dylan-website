@@ -126,7 +126,31 @@
         },
         {
           "@type": "City",
+          "name": "Sydney"
+        },
+        {
+          "@type": "City",
+          "name": "Melbourne"
+        },
+        {
+          "@type": "City",
+          "name": "Perth"
+        },
+        {
+          "@type": "City",
           "name": "Adelaide"
+        },
+        {
+          "@type": "City",
+          "name": "Canberra"
+        },
+        {
+          "@type": "City",
+          "name": "Hobart"
+        },
+        {
+          "@type": "City",
+          "name": "Darwin"
         },
         {
           "@type": "AdministrativeArea",
@@ -174,7 +198,13 @@
         "AI workflow automation",
         "AI agents",
         "AI adoption for small and medium businesses",
-        "AI training for BPO and outsourced teams"
+        "AI training for BPO and outsourced teams",
+        "AI training in Australia",
+        "Corporate AI training",
+        "AI upskilling for employees",
+        "AI courses for business",
+        "Staff AI training online",
+        "Responsible AI use at work"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -516,7 +546,7 @@
 
   <!-- ======================= NAV ======================= -->
   <nav class="hn-nav" style="position:sticky;top:16px;z-index:50;padding:0 20px">
-    <div style="position:relative;max-width:1120px;margin:0 auto">
+    <div style="position:relative;max-width:1240px;margin:0 auto">
     <div class="hn-bar" style="background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
       <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
         <span class="hn-logo" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
@@ -530,7 +560,7 @@
           <a href="/about" style="text-decoration:none;color:inherit">About</a>
           <a href="/resources" style="text-decoration:none;color:inherit">Resources</a>
         </div>
-        <div style="display:flex;align-items:center;gap:12px">
+        <div style="display:flex;align-items:center;gap:12px;margin-left:auto">
           <a class="hn-cta" href="https://adongroup.com.au/contact/" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px;transition:transform .22s ease, box-shadow .22s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(11,18,32,0.4)">Book a call</a>
         </div>
       </div>
@@ -732,7 +762,7 @@
         <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Program</div>
         <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F">
           <a href="/programs" style="text-decoration:none;color:inherit">Our program</a>
-          <a href="/programs#bpo" style="text-decoration:none;color:inherit">For BPO teams</a><a href="/programs#support" style="text-decoration:none;color:inherit">Ongoing support</a>
+          <a href="/programs#bpo" style="text-decoration:none;color:inherit">For BPO teams</a><a href="/programs#support" style="text-decoration:none;color:inherit">Ongoing support</a><a href="/ai-training-australia" style="text-decoration:none;color:inherit">Who we train</a><a href="/ai-training-faq" style="text-decoration:none;color:inherit">AI training FAQ</a>
         </div>
       </div>
       <div>
@@ -943,7 +973,7 @@ class Component extends DCLogic {
     const toggleNav = () => this.setState(s => ({ navOpen: !s.navOpen }));
     const closeNav = () => this.setState({ navOpen: false });
 
-    const navDesktopStyle = isMobile ? 'display:none' : 'display:flex;align-items:center;gap:28px';
+    const navDesktopStyle = isMobile ? 'display:none' : 'display:flex;align-items:center;gap:28px;flex:1;margin-left:28px';
     const navBurgerStyle = isMobile ? 'display:inline-flex' : 'display:none';
     const navPanelStyle = (isMobile && navOpen)
       ? 'display:flex;flex-direction:column;gap:4px;position:absolute;top:100%;left:0;right:0;margin-top:10px;background:rgba(252,251,250,0.98);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.08);border-radius:14px;box-shadow:0 18px 44px -18px rgba(11,18,32,0.3);padding:10px;z-index:60'
@@ -1108,5 +1138,6 @@ class Component extends DCLogic {
   }
 }
 </script>
+<script src="/assets/reveal.js" defer></script>
 </body>
 </html>
