@@ -81,6 +81,17 @@
   .faq-toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
   .faq-toc a { font-size: 14px; font-weight: 600; color: #3A434F; text-decoration: none; background: rgba(255,255,255,0.75); border: 1px solid rgba(11,18,32,0.08); border-radius: 999px; padding: 7px 14px; }
   .faq-toc a:hover { color: #0B1220; border-color: rgba(11,18,32,0.18); }
+  @media (max-width: 640px){
+    .aoa-tablewrap:has(.pv) { overflow: visible; }
+    table.pv, table.pv tbody, table.pv tr, table.pv th, table.pv td { display: block; width: 100%; min-width: 0 !important; }
+    table.pv thead { display: none; }
+    table.pv tr { padding: 14px 16px; border-bottom: 1px solid rgba(11,18,32,0.07); }
+    table.pv tr:last-child { border-bottom: 0; }
+    table.pv th, table.pv td { padding: 0 !important; border: 0 !important; background: none !important; }
+    table.pv th { font-size: 16px; margin-bottom: 6px; width: auto !important; max-width: none !important; }
+    table.pv td { font-size: 14px; line-height: 1.5; margin-top: 4px; }
+    table.pv td::before { content: attr(data-label) ": "; font-weight: 700; color: #0B1220; }
+  }
   @media (max-width: 640px){ .wt-grid, .wt-states { grid-template-columns: minmax(0,1fr); } .faq-toc { gap: 6px; } .faq-toc a { font-size: 13px; padding: 6px 12px; } }
   @media (max-width: 640px){ .aoa-related{grid-template-columns:1fr} }
   @media (max-width: 760px) { .bio-navlinks > div:first-of-type, .bio-navlinks > span { display: none !important; } .bio-footgrid { grid-template-columns: 1fr 1fr !important; } }
@@ -176,14 +187,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Australian businesses usually get help from one of three kinds of provider: AI consultancies and developers that build systems for you, large consulting firms for enterprise-wide programs, and training-led providers that teach your own staff to build and run AI with expert support. Ad On AI, the AI division of Gold Coast-based Ad On Group, is a training-led provider: each learner builds and deploys their own automations and AI agents with hands-on implementation support."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does AI implementation cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends on the approach. Custom builds by a consultancy are usually priced per project and can run from thousands to hundreds of thousands of dollars. Training-led implementation is usually priced per person or per team, with optional ongoing support. Compare cost per outcome: what will be running, and how many hours it saves."
           }
         },
         {
@@ -749,10 +752,6 @@
       <details class="aoa-faq">
         <summary>Who helps businesses implement AI in Australia?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
         <div>Australian businesses usually get help from one of three kinds of provider: AI consultancies and developers that build systems for you, large consulting firms for enterprise-wide programs, and training-led providers that teach your own staff to build and run AI with expert support. Ad On AI, the AI division of Gold Coast-based Ad On Group, is a training-led provider: each learner builds and deploys their own automations and AI agents with hands-on implementation support.</div>
-      </details>
-      <details class="aoa-faq">
-        <summary>How much does AI implementation cost?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>It depends on the approach. Custom builds by a consultancy are usually priced per project and can run from thousands to hundreds of thousands of dollars. Training-led implementation is usually priced per person or per team, with optional ongoing support. Compare cost per outcome: what will be running, and how many hours it saves.</div>
       </details>
       <details class="aoa-faq">
         <summary>Can small businesses implement AI without a developer?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>

@@ -81,6 +81,17 @@
   .faq-toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
   .faq-toc a { font-size: 14px; font-weight: 600; color: #3A434F; text-decoration: none; background: rgba(255,255,255,0.75); border: 1px solid rgba(11,18,32,0.08); border-radius: 999px; padding: 7px 14px; }
   .faq-toc a:hover { color: #0B1220; border-color: rgba(11,18,32,0.18); }
+  @media (max-width: 640px){
+    .aoa-tablewrap:has(.pv) { overflow: visible; }
+    table.pv, table.pv tbody, table.pv tr, table.pv th, table.pv td { display: block; width: 100%; min-width: 0 !important; }
+    table.pv thead { display: none; }
+    table.pv tr { padding: 14px 16px; border-bottom: 1px solid rgba(11,18,32,0.07); }
+    table.pv tr:last-child { border-bottom: 0; }
+    table.pv th, table.pv td { padding: 0 !important; border: 0 !important; background: none !important; }
+    table.pv th { font-size: 16px; margin-bottom: 6px; width: auto !important; max-width: none !important; }
+    table.pv td { font-size: 14px; line-height: 1.5; margin-top: 4px; }
+    table.pv td::before { content: attr(data-label) ": "; font-weight: 700; color: #0B1220; }
+  }
   @media (max-width: 640px){ .wt-grid, .wt-states { grid-template-columns: minmax(0,1fr); } .faq-toc { gap: 6px; } .faq-toc a { font-size: 13px; padding: 6px 12px; } }
   @media (max-width: 640px){ .aoa-related{grid-template-columns:1fr} }
   @media (max-width: 760px) { .bio-navlinks > div:first-of-type, .bio-navlinks > span { display: none !important; } .bio-footgrid { grid-template-columns: 1fr 1fr !important; } }
@@ -165,7 +176,7 @@
           "name": "What is the difference between AI consulting and AI training?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "AI consulting gets experts to plan or build AI systems for you, usually priced per project. AI training teaches your own staff to use AI and build their own workflows, automations and agents, usually priced per person or team. Consulting suits custom and complex systems; training suits everyday work across every team."
+            "text": "AI consulting gets experts to plan or build AI systems for you. AI training teaches your own staff to use AI and build their own workflows, automations and agents. Consulting suits custom and complex systems; training suits everyday work across every team."
           }
         },
         {
@@ -182,14 +193,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "It is worth it when staff finish it and use AI in their real work afterwards. Look for training built for non-technical people, practice on your own tasks, coverage of automation and AI agents, progress tracking and ongoing support. Measure it by hours saved and tasks automated, not attendance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which is cheaper, AI consulting or AI training?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Training usually costs less per result for everyday work, because one program can lift a whole team and the skills keep paying off. Consulting can be better value for a single complex system that your team could not build. Compare cost per outcome, not the headline price."
           }
         },
         {
@@ -632,7 +635,6 @@
           <tbody>
             <tr><th scope="row">What you get</th><td>Strategy, roadmaps, custom builds and integrations</td><td>Staff who can use AI and build their own workflows and agents</td></tr>
             <tr><th scope="row">Who does the work</th><td>The consultant</td><td>Your team, with expert support</td></tr>
-            <tr><th scope="row">Typical pricing</th><td>Per project or day rate</td><td>Per person or per team, sometimes with a support membership</td></tr>
             <tr><th scope="row">Speed to first result</th><td>Depends on the project scope</td><td>Often within the first weeks, on real tasks</td></tr>
             <tr><th scope="row">After it ends</th><td>You may need them back to change or extend things</td><td>Your people keep improving and adding automations</td></tr>
             <tr><th scope="row">Best for</th><td>Complex, technical or one-off systems</td><td>Day-to-day work across finance, ops, marketing, sales, admin and service</td></tr>
@@ -680,7 +682,7 @@
       <h2 id="faqs">Frequently asked questions</h2>
       <details class="aoa-faq">
         <summary>What is the difference between AI consulting and AI training?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>AI consulting gets experts to plan or build AI systems for you, usually priced per project. AI training teaches your own staff to use AI and build their own workflows, automations and agents, usually priced per person or team. Consulting suits custom and complex systems; training suits everyday work across every team.</div>
+        <div>AI consulting gets experts to plan or build AI systems for you. AI training teaches your own staff to use AI and build their own workflows, automations and agents. Consulting suits custom and complex systems; training suits everyday work across every team.</div>
       </details>
       <details class="aoa-faq">
         <summary>Do small businesses need an AI consultant?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
@@ -689,10 +691,6 @@
       <details class="aoa-faq">
         <summary>Is AI training worth it for a business?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
         <div>It is worth it when staff finish it and use AI in their real work afterwards. Look for training built for non-technical people, practice on your own tasks, coverage of automation and AI agents, progress tracking and ongoing support. Measure it by hours saved and tasks automated, not attendance.</div>
-      </details>
-      <details class="aoa-faq">
-        <summary>Which is cheaper, AI consulting or AI training?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
-        <div>Training usually costs less per result for everyday work, because one program can lift a whole team and the skills keep paying off. Consulting can be better value for a single complex system that your team could not build. Compare cost per outcome, not the headline price.</div>
       </details>
       <details class="aoa-faq">
         <summary>Can a training company help implement AI?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></summary>
