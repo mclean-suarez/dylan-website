@@ -808,6 +808,21 @@
   .hh-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 18px 36px -14px rgba(11,18,32,0.6); }
   .hh-cta-btn span { font-size: 18px; line-height: 1; margin-top: -2px; }
   @media (max-width: 859px) { .hh-logos { padding-top: 44px !important; } .hh-cta { padding-top: 44px !important; } .hh-cta-btn { min-width: 0; width: 100%; max-width: 280px; } }
+  /* hero actions: CTA + proof line inside the hero (first screen on every device) */
+  .hh-act { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-top: 32px; }
+  .hh-act .hh-proof { margin: 0 !important; max-width: none !important; font-size: 15px !important; line-height: 1.4 !important; font-weight: 500; letter-spacing: -0.015em; color: #4A5361 !important; }
+  .hh-text h1 { font-size: clamp(34px, 4.1vw, 58px) !important; line-height: 1 !important; margin-bottom: 22px !important; }
+  /* entrance: headline, text, actions, then the product shot */
+  @keyframes hhIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+  .hh-text h1, .hh-lede, .hh-act, .kd-wrap { animation: hhIn .9s cubic-bezier(.22,1,.36,1) both; }
+  .hh-lede { animation-delay: .12s; } .hh-act { animation-delay: .24s; } .kd-wrap { animation-delay: .34s; }
+  @media (prefers-reduced-motion: reduce) { .hh-text h1, .hh-lede, .hh-act, .kd-wrap { animation: none; } }
+  @media (max-width: 859px) {
+    .hh-text h1 { font-size: clamp(29px, 8.6vw, 38px) !important; line-height: 1.02 !important; margin: 0 0 16px !important; }
+    .hh-act { align-items: center; gap: 14px; margin-top: 24px; }
+    .hh-act .hh-cta-btn { width: 100%; max-width: 280px; }
+    .hh-act .hh-proof { max-width: 30ch !important; margin: 0 auto !important; font-size: 14.5px !important; }
+  }
   /* ===== Kinso-style hero backdrop ===== */
   .hb-color, .hb-grid { position: absolute; left: 0; right: 0; top: 0; height: 1180px; z-index: -1; pointer-events: none; }
   .hb-color { background:
@@ -895,6 +910,10 @@
       <p class="hh-lede" style="font-size:19px;line-height:1.38;color:#0B1220;max-width:450px;margin:0;font-weight:400;letter-spacing:-0.015em">
         We train your staff to use AI in the work they already do, then to build the automations and agents that handle the rest. Save time and money, and scale without adding headcount.
       </p>
+      <div class="hh-act">
+        <a href="https://adongroup.com.au/contact/" class="hh-cta-btn">Book a call <span aria-hidden="true">›</span></a>
+        <p class="hh-proof">We’ve trained over <span style="background: linear-gradient(92deg, rgb(47, 111, 237), rgb(127, 208, 255), rgb(47, 111, 237)) 0% 0% / 220% 100% text; color: transparent; animation: 4.5s linear 0s infinite normal none running adonShimmer;">40</span> Australian businesses just like yours to use AI.</p>
+      </div>
     </div>
 
     <!-- HERO VISUAL: Academy app window + notification cards -->
@@ -926,11 +945,6 @@
     </div>
   </header>
 
-  <!-- ======================= HERO CTA (Kinso-style) ======================= -->
-  <section class="hh-cta" style="text-align:center;padding:84px 20px 0">
-    <p style="font-size:clamp(17px,1.5vw,19px);font-weight:500;color:#0B1220;letter-spacing:-0.02em;line-height:1.35;margin:0 0 16px">We’ve trained over <span style="background: linear-gradient(92deg, rgb(47, 111, 237), rgb(127, 208, 255), rgb(47, 111, 237)) 0% 0% / 220% 100% text; color: transparent; animation: 4.5s linear 0s infinite normal none running adonShimmer;">40</span> Australian businesses just like yours to use AI.</p>
-    <a href="https://adongroup.com.au/contact/" class="hh-cta-btn">Book a call <span aria-hidden="true">›</span></a>
-  </section>
 
   <!-- ======================= BUSINESSES STRIP (marquee) ======================= -->
   <section class="hh-logos" style="padding:64px 0 10px;overflow:hidden" aria-label="Businesses we’ve worked with">
