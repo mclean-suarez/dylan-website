@@ -86,3 +86,50 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
   setTimeout(init, 800); setTimeout(init, 2500);
 })();
+
+/* Sitewide phone menu (pages with the static nav). Delegated on document so it keeps
+   working after the page runtime re-draws the body. Pages with their own runtime menu
+   (burger with an onClick) are left alone. */
+(function () {
+  var h = document.documentElement;
+  function burger() { return document.querySelector('.hn-burger[data-hn]'); }
+  function set(open) {
+    h.classList.toggle('hn-open', open);
+    var b = burger(); if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target : e.target.parentElement;
+    if (!t) return;
+    var b = t.closest('.hn-burger[data-hn]');
+    if (b) { set(!h.classList.contains('hn-open')); return; }
+    if (h.classList.contains('hn-open') && (!t.closest('.hn-nav') || t.closest('.hn-panel a'))) set(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && h.classList.contains('hn-open')) { set(false); var b = burger(); if (b) b.focus(); }
+  });
+  window.addEventListener('resize', function () { if (window.innerWidth > 859 && h.classList.contains('hn-open')) set(false); });
+})();
+
+/* Reading progress bar on long reads (any page with an .aoa-prose article). */
+(function () {
+  var bar, ticking = false;
+  function ensure() {
+    if (!document.querySelector('.aoa-prose')) return null;
+    if (!bar || !document.body.contains(bar)) {
+      bar = document.querySelector('.rd-progress');
+      if (!bar) { bar = document.createElement('div'); bar.className = 'rd-progress'; bar.setAttribute('aria-hidden', 'true'); document.body.appendChild(bar); }
+    }
+    return bar;
+  }
+  function update() {
+    ticking = false;
+    var b = ensure(); if (!b) return;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    b.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0) + ')';
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', update); else update();
+  setTimeout(update, 900); setTimeout(update, 2600);
+})();

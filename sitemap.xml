@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://www.adon-ai.com.au/resources</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -215,6 +215,12 @@
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.adon-ai.com.au/resources/claude-adobe-photoshop-acrobat</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.adon-ai.com.au/resources/claude-prompt-master</loc>
