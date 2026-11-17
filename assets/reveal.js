@@ -86,3 +86,26 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
   setTimeout(init, 800); setTimeout(init, 2500);
 })();
+
+/* Sitewide phone menu (pages with the static nav). Delegated on document so it keeps
+   working after the page runtime re-draws the body. Pages with their own runtime menu
+   (burger with an onClick) are left alone. */
+(function () {
+  var h = document.documentElement;
+  function burger() { return document.querySelector('.hn-burger[data-hn]'); }
+  function set(open) {
+    h.classList.toggle('hn-open', open);
+    var b = burger(); if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target : e.target.parentElement;
+    if (!t) return;
+    var b = t.closest('.hn-burger[data-hn]');
+    if (b) { set(!h.classList.contains('hn-open')); return; }
+    if (h.classList.contains('hn-open') && (!t.closest('.hn-nav') || t.closest('.hn-panel a'))) set(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && h.classList.contains('hn-open')) { set(false); var b = burger(); if (b) b.focus(); }
+  });
+  window.addEventListener('resize', function () { if (window.innerWidth > 859 && h.classList.contains('hn-open')) set(false); });
+})();

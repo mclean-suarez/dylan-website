@@ -581,11 +581,12 @@
   body { position: relative; }
   body::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: linear-gradient(rgba(11,18,32,0.042) 1px, transparent 1px), linear-gradient(90deg, rgba(11,18,32,0.042) 1px, transparent 1px); background-size: 4px 4px; -webkit-mask-image: var(--grid-mask); mask-image: var(--grid-mask); }
 </style>
-<link rel="stylesheet" href="/assets/site.css?v=20261113">
+<link rel="stylesheet" href="/assets/site.css?v=20261118">
 </head>
 <body>
-  <nav class="hn-nav" style="position:sticky;top:16px;z-index:50;padding:0 20px">
-    <div class="hn-bar" style="max-width:1120px;margin:0 auto;background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
+  <nav class="hn-nav" aria-label="Main" style="position:sticky;top:16px;z-index:50;padding:0 20px">
+    <div class="hn-wrap" style="position:relative;max-width:1240px;margin:0 auto">
+    <div class="hn-bar" style="background:rgba(252,251,250,0.70);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(11,18,32,0.06);border-radius:999px;box-shadow:0 6px 26px -12px rgba(11,18,32,0.14);padding:11px 14px 11px 22px;display:flex;align-items:center;justify-content:space-between">
       <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B1220">
         <span class="hn-logo" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px"><img src="/assets/adon-logo.png" alt="Ad On AI" style="width:34px;height:34px;object-fit:contain;display:block" width="2000" height="2000"></span>
         <span style="display:flex;flex-direction:column;gap:1px"><span class="hn-name" style="font-weight:800;font-size:19px;letter-spacing:-0.02em;line-height:1">Ad On AI</span><span class="hn-sub" style="display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#7C8696"><img src="/assets/logo-claude.svg" alt="Claude" style="width:12px;height:12px;object-fit:contain;display:block">Certified Claude Experts</span></span>
@@ -599,6 +600,14 @@
         </div>
         <a class="hn-cta" href="https://adongroup.com.au/contact/" style="text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#0B1220;padding:11px 20px;border-radius:14px">Book a call</a>
       </div>
+      <button class="hn-burger" data-hn type="button" aria-label="Menu" aria-expanded="false" aria-controls="hn-panel"><span></span><span></span></button>
+    </div>
+    <div class="hn-panel" id="hn-panel">
+      <a href="/ad-on-group">Ad On Group</a>
+      <a href="/programs">Our Program</a>
+      <a href="/about">About</a>
+      <a class="hn-panel-cta" href="https://adongroup.com.au/contact/">Book a call</a>
+    </div>
     </div>
   </nav>
 
@@ -722,13 +731,13 @@
         <p style="font-size:14px;line-height:1.55;color:#5A6473;max-width:280px;margin:0">Practical AI training and enablement for Australian businesses. The AI training division of <a href="https://adongroup.com.au/ai-training/" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Ad On Group</a>, Australian-owned since 2008.</p>
       </div>
       <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Program</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/programs" style="text-decoration:none;color:inherit">Our program</a><a href="/programs#bpo" style="text-decoration:none;color:inherit">For BPO teams</a><a href="/programs#support" style="text-decoration:none;color:inherit">Ongoing support</a><a href="/ai-training-australia" style="text-decoration:none;color:inherit">Who we train</a><a href="/ai-training-faq" style="text-decoration:none;color:inherit">AI training FAQ</a><a href="/ai-implementation-australia" style="text-decoration:none;color:inherit">AI implementation</a></div></div>
-      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/resources" style="text-decoration:none;color:inherit">Resources</a><a href="/about" style="text-decoration:none;color:inherit">About</a><a href="/#faqs" style="text-decoration:none;color:inherit">FAQs</a><a href="/terms" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a></div></div>
+      <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Company</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="/resources" style="text-decoration:none;color:inherit">Resources</a><a href="/about" style="text-decoration:none;color:inherit">About</a><a href="/#faqs" style="text-decoration:none;color:inherit">FAQs</a><a href="/#contact" style="text-decoration:none;color:inherit">Contact</a><a href="/#contact" style="text-decoration:none;color:inherit">Contact</a><a href="/#contact" style="text-decoration:none;color:inherit">Contact</a><a href="/terms" style="text-decoration:none;color:inherit">Terms &amp; Conditions</a></div></div>
       <div><div style="font-size:12px;font-weight:700;letter-spacing:0.06em;color:#8A93A1;text-transform:uppercase;margin-bottom:14px">Get in touch</div><div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:#3A434F"><a href="mailto:info@adongroup.com.au" style="text-decoration:none;color:inherit">info@adongroup.com.au</a><a href="tel:+61755861400" style="text-decoration:none;color:inherit">(07) 5586 1400</a>
           <span>1/44 Township Drive, Burleigh Heads QLD 4219</span>
           <span>Australia-wide delivery</span></div></div>
     </div>
     <div style="max-width:1200px;margin:0 auto;padding:22px 28px;border-top:1px solid rgba(11,18,32,0.07);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px"><span style="font-size:13px;color:#8A93A1">&copy; 2026 Ad On AI, a division of Ad On Group · ABN 54 808 983 598. All rights reserved.</span><div style="display:flex;align-items:center;gap:10px"><a href="https://www.instagram.com/adonai.australia/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#5A6473"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"></circle></svg></a><a href="https://www.facebook.com/adongroup1/" target="_blank" rel="noopener" aria-label="Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(11,18,32,0.05);border:1px solid rgba(11,18,32,0.08);color:#5A6473"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.7V3.3C16.5 3.2 15.4 3 14.2 3c-2.4 0-4 1.4-4 4.1v2.7H7.5v3.2h2.7v8h3.3z"></path></svg></a></div><a href="/terms" style="text-decoration:none;color:#0B1220;font-weight:700;font-size:13px">Terms of Use</a></div>
   </footer>
-<script src="/assets/reveal.js?v=20261113" defer></script>
+<script src="/assets/reveal.js?v=20261118" defer></script>
 </body>
 </html>

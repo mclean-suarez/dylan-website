@@ -1114,13 +1114,13 @@ details.ak-fq[open] { border-color: rgba(143,182,255,0.3); }
 .pg-fqt:not(:has(input:checked)) .pg-fqt-bar label[for="fqt1"] { background: #fff; color: #0B1220; }
 
 /* Kinso-style nav on every page: links sit next to the logo, CTA far right, wider bar */
-@media (min-width: 761px) {
+@media (min-width: 860px) {
   .hn-bar[style*="max-width:1120px"] { max-width: 1240px !important; }
   .bio-navlinks { flex: 1; margin-left: 28px; }
   .bio-navlinks > .hn-cta { margin-left: auto; }
 }
 /* Kinso-style nav shape: soft rounded rectangle (not a pill), roomier, pill CTA with chevron */
-@media (min-width: 761px) {
+@media (min-width: 860px) {
   .hn-bar { border-radius: 16px !important; padding: 10px 10px 10px 22px !important; background: rgba(255,255,255,0.42) !important; -webkit-backdrop-filter: blur(28px) saturate(200%) !important; backdrop-filter: blur(28px) saturate(200%) !important; border: 1px solid rgba(11,18,32,0.06) !important; box-shadow: 0 10px 30px -18px rgba(11,18,32,0.22) !important; }
   .hn-bar a:not(.hn-cta), .bio-navlinks a:not(.hn-cta) { color: #0B1220 !important; }
   .hn-cta { border-radius: 999px !important; padding: 10px 20px !important; font-size: 15px !important; display: inline-flex !important; align-items: center; }
@@ -1308,3 +1308,21 @@ header.ak-sec .ak-p, header.ak-tour .ak-p, #top .ak-p, .pg-gh .ak-p, .pg-gh-main
 .pg-ans-f dt { font-weight: 600; color: #8A93A1; }
 /* keep hero content painted immediately (fast LCP): heroes slide in but never start invisible */
 html.rv-on header .rv, html.rv-on #top .rv, html.rv-on .sk-hero .rv, html.rv-on .sk-hero.rv { opacity: 1 !important; }
+
+/* ===== Sitewide nav: the same menu on every page, with the homepage's phone menu ===== */
+.hn-burger { display: none; align-items: center; justify-content: center; flex-direction: column; gap: 4px; width: 38px; height: 38px; padding: 0; border-radius: 50%; border: 1px solid rgba(11,18,32,0.10); background: #fff; cursor: pointer; }
+.hn-burger span { width: 16px; height: 2px; background: #0B1220; border-radius: 2px; display: block; transition: transform .25s cubic-bezier(.4,0,.2,1); }
+html.hn-open .hn-burger[data-hn] span:first-child { transform: translateY(3px) rotate(45deg); }
+html.hn-open .hn-burger[data-hn] span:last-child { transform: translateY(-3px) rotate(-45deg); }
+.hn-panel { display: none; }
+@media (max-width: 859px) {
+  .bio-navlinks { display: none !important; }
+  .hn-burger { display: inline-flex; }
+  html.hn-open .hn-panel { display: flex; flex-direction: column; gap: 4px; position: absolute; top: 100%; left: 0; right: 0; margin-top: 10px; background: rgba(252,251,250,0.98); -webkit-backdrop-filter: blur(20px) saturate(150%); backdrop-filter: blur(20px) saturate(150%); border: 1px solid rgba(11,18,32,0.08); border-radius: 14px; box-shadow: 0 18px 44px -18px rgba(11,18,32,0.3); padding: 10px; z-index: 60; }
+  .hn-panel a { text-decoration: none; color: #0B1220; font-size: 15px; font-weight: 600; padding: 12px 14px; border-radius: 12px; }
+  .hn-panel a:hover { background: rgba(47,111,237,0.06); }
+  .hn-panel a.hn-panel-cta { text-align: center; margin-top: 6px; font-weight: 700; color: #fff; background: #0B1220; padding: 13px 20px; }
+  .hn-panel a.hn-panel-cta:hover { background: #1B2536; }
+}
+/* the standard footer stacks into one column on phones, the same as the homepage */
+@media (max-width: 859px) { .bio-footgrid { grid-template-columns: 1fr !important; gap: 28px !important; } }
