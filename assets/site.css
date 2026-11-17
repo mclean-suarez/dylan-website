@@ -1326,3 +1326,25 @@ html.hn-open .hn-burger[data-hn] span:last-child { transform: translateY(-3px) r
 }
 /* the standard footer stacks into one column on phones, the same as the homepage */
 @media (max-width: 859px) { .bio-footgrid { grid-template-columns: 1fr !important; gap: 28px !important; } }
+
+/* ===== Sitewide craft pass (MotionSites rubric): polish every page shares ===== */
+::selection { background: rgba(47,111,237,0.22); }
+h1, h2, h3 { text-wrap: balance; }
+.aoa-prose p, .aoa-prose li, .aoa-answer p, .aoa-faq > div { text-wrap: pretty; }
+a:focus-visible, button:focus-visible, summary:focus-visible, [role="tab"]:focus-visible { outline: 2px solid #2F6FED; outline-offset: 3px; border-radius: 8px; }
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 96px; }
+/* press feedback on every primary action */
+.hn-cta, .hn-panel-cta, .aoa-cta a, .aoa-copy, .aoa-tablist button { transition: transform .2s cubic-bezier(.4,0,.2,1), box-shadow .2s cubic-bezier(.4,0,.2,1), background-color .15s ease; }
+.hn-cta:active, .hn-panel-cta:active, .ak-btn:active, .aoa-cta a:active, .aoa-copy:active, .aoa-tablist button:active { transform: scale(.97); }
+@media (hover: hover) {
+  .hn-cta:hover { transform: translateY(-1px); box-shadow: 0 10px 22px -8px rgba(11,18,32,0.4); }
+  .aoa-cta a:hover { transform: translateY(-2px); }
+}
+/* reading progress on long reads (added by reveal.js on pages with an article) */
+.rd-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, #2F6FED, #6A9BFF); z-index: 100; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hn-cta, .hn-panel-cta, .aoa-cta a, .aoa-copy, .aoa-tablist button { transition: none; }
+  .hn-cta:hover, .aoa-cta a:hover { transform: none; }
+}

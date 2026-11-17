@@ -109,3 +109,27 @@
   });
   window.addEventListener('resize', function () { if (window.innerWidth > 859 && h.classList.contains('hn-open')) set(false); });
 })();
+
+/* Reading progress bar on long reads (any page with an .aoa-prose article). */
+(function () {
+  var bar, ticking = false;
+  function ensure() {
+    if (!document.querySelector('.aoa-prose')) return null;
+    if (!bar || !document.body.contains(bar)) {
+      bar = document.querySelector('.rd-progress');
+      if (!bar) { bar = document.createElement('div'); bar.className = 'rd-progress'; bar.setAttribute('aria-hidden', 'true'); document.body.appendChild(bar); }
+    }
+    return bar;
+  }
+  function update() {
+    ticking = false;
+    var b = ensure(); if (!b) return;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    b.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0) + ')';
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', update); else update();
+  setTimeout(update, 900); setTimeout(update, 2600);
+})();
