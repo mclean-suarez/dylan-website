@@ -812,6 +812,16 @@
   .hh-act { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-top: 32px; }
   .hh-act .hh-proof { margin: 0 !important; max-width: none !important; font-size: 15px !important; line-height: 1.4 !important; font-weight: 500; letter-spacing: -0.015em; color: #4A5361 !important; }
   .hh-text h1 { font-size: clamp(34px, 4.1vw, 58px) !important; line-height: 1 !important; margin-bottom: 22px !important; }
+  .hh-btns { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+  .hh-primary { min-width: 0; padding: 7px 7px 7px 24px; gap: 14px; transition: transform .25s cubic-bezier(.4,0,.2,1), box-shadow .25s cubic-bezier(.4,0,.2,1); }
+  .hh-primary i { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #fff; color: #0B1220; transition: transform .25s cubic-bezier(.4,0,.2,1); }
+  .hh-primary:hover i { transform: translateX(3px); }
+  .hh-primary:active { transform: scale(.97); }
+  .hh-primary:focus-visible, .hh-ghost:focus-visible { outline: 2px solid #2F6FED; outline-offset: 3px; }
+  .hh-ghost { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; color: #0B1220; text-decoration: none; padding: 10px 2px; border-radius: 8px; }
+  .hh-ghost span { transition: transform .25s cubic-bezier(.4,0,.2,1); }
+  .hh-ghost:hover span { transform: translateX(3px); }
+  .hh-ghost:hover { color: #2F6FED; }
   /* entrance: headline, text, actions, then the product shot */
   @keyframes hhIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
   .hh-text h1, .hh-lede, .hh-act, .kd-wrap { animation: hhIn .9s cubic-bezier(.22,1,.36,1) both; }
@@ -820,7 +830,10 @@
   @media (max-width: 859px) {
     .hh-text h1 { font-size: clamp(29px, 8.6vw, 38px) !important; line-height: 1.02 !important; margin: 0 0 16px !important; }
     .hh-act { align-items: center; gap: 14px; margin-top: 24px; }
-    .hh-act .hh-cta-btn { width: 100%; max-width: 280px; }
+    .hh-btns { flex-direction: column; gap: 6px; width: 100%; }
+    .hh-act .hh-primary { width: 100%; max-width: 300px; justify-content: center; position: relative; padding: 7px 48px; }
+    .hh-act .hh-primary i { position: absolute; right: 7px; top: 50%; margin-top: -17px; }
+    .hh-act .hh-primary { min-height: 50px; box-sizing: border-box; }
     .hh-act .hh-proof { max-width: 30ch !important; margin: 0 auto !important; font-size: 14.5px !important; }
   }
   /* ===== Kinso-style hero backdrop ===== */
@@ -907,11 +920,14 @@
       <h1 style="font-size:clamp(30px,3.4vw,46px);line-height:1.02;letter-spacing:-0.045em;font-weight:500;margin:0 0 20px;color:#0B1220">
         <span class="hh-l1">Get your team doing</span><br><span class="hh-l2" style="color:#2F6FED">more with AI.</span>
       </h1>
-      <p class="hh-lede" style="font-size:19px;line-height:1.38;color:#0B1220;max-width:450px;margin:0;font-weight:400;letter-spacing:-0.015em">
+      <p class="hh-lede" style="font-size:19px;line-height:1.42;color:#3A4352;max-width:450px;margin:0;font-weight:400;letter-spacing:-0.015em">
         We train your staff to use AI in the work they already do, then to build the automations and agents that handle the rest. Save time and money, and scale without adding headcount.
       </p>
       <div class="hh-act">
-        <a href="https://adongroup.com.au/contact/" class="hh-cta-btn">Book a call <span aria-hidden="true">›</span></a>
+        <div class="hh-btns">
+          <a href="https://adongroup.com.au/contact/" class="hh-cta-btn hh-primary">Book a call <i aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+          <a href="/programs" class="hh-ghost">See our program <span aria-hidden="true">→</span></a>
+        </div>
         <p class="hh-proof">We’ve trained over <span style="background: linear-gradient(92deg, rgb(47, 111, 237), rgb(127, 208, 255), rgb(47, 111, 237)) 0% 0% / 220% 100% text; color: transparent; animation: 4.5s linear 0s infinite normal none running adonShimmer;">40</span> Australian businesses just like yours to use AI.</p>
       </div>
     </div>
