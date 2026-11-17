@@ -836,6 +836,30 @@
     .hh-act .hh-primary { min-height: 50px; box-sizing: border-box; }
     .hh-act .hh-proof { max-width: 30ch !important; margin: 0 auto !important; font-size: 14.5px !important; }
   }
+  /* ===== homepage polish (MotionSites craft pass) ===== */
+  ::selection { background: rgba(47,111,237,0.22); }
+  h1, h2, h3 { text-wrap: balance; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #2F6FED; outline-offset: 3px; border-radius: 8px; }
+  /* client logo strip: one calm tone, colour on hover */
+  .hh-logos img { filter: grayscale(1) contrast(1.05); opacity: .55; transition: filter .3s cubic-bezier(.4,0,.2,1), opacity .3s cubic-bezier(.4,0,.2,1); }
+  .hh-logos img:hover { filter: none; opacity: 1; }
+  .hh-logos:hover [style*="adonMarquee"] { animation-play-state: paused !important; }
+  /* walk-away: the 20+ number carries the section */
+  .wa-split { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 64px; align-items: center; max-width: 1140px; margin: 0 auto; text-align: left; padding-left: 28px; padding-right: 28px; }
+  .wa-split .wa-label { justify-content: flex-start; margin-bottom: 30px; }
+  .wa-split .wa-label::before { display: none; }
+  .wa-split .wa-h, .wa-split .wa-p { margin-left: 0; margin-right: 0; }
+  .wa-split .wa-h { max-width: 620px; }
+  .wa-split .wa-p { max-width: 540px; }
+  .wa-num { font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: clamp(140px, 16vw, 236px); line-height: .8; letter-spacing: -0.075em; color: #0B1220; text-align: center; font-variant-numeric: tabular-nums; }
+  .wa-num span { color: #2F6FED; font-weight: 400; }
+  @media (max-width: 859px) {
+    .wa-split { grid-template-columns: 1fr; gap: 26px; text-align: center; padding-left: 20px; padding-right: 20px; }
+    .wa-split .wa-label { justify-content: center; }
+    .wa-split .wa-label::before { display: block; }
+    .wa-split .wa-h, .wa-split .wa-p { margin-left: auto; margin-right: auto; }
+    .wa-num { font-size: clamp(120px, 38vw, 170px); }
+  }
   /* ===== Kinso-style hero backdrop ===== */
   .hb-color, .hb-grid { position: absolute; left: 0; right: 0; top: 0; height: 1180px; z-index: -1; pointer-events: none; }
   .hb-color { background:
@@ -1142,11 +1166,14 @@
 
 
   <!-- ======================= WHAT THEY WALK AWAY WITH (Kinso-style statement + build grid) ======================= -->
-  <section class="ak-sec wa-sec" id="walk-away">
+  <section class="ak-sec wa-sec wa-split" id="walk-away">
+    <div class="wa-num" aria-hidden="true">20<span>+</span></div>
+    <div class="wa-body">
     <div class="wa-label"><span><em class="ak-glow-l">What they walk away with</em></span></div>
     <h2 class="wa-h">Every staff member finishes with 20+ working AI builds for their own job.</h2>
     <p class="wa-p" style="margin-bottom:30px">This isn’t theory they forget by Friday. Each person you enrol personally builds and deploys prompt packs, Claude skills, automations and AI agents, all tied to their real role.</p>
     <a href="/programs#walk-away-with" class="hh-cta-btn wa-btn">See our full program <span aria-hidden="true">›</span></a>
+    </div>
   </section>
 
   <!-- ======================= WHO WE ARE (Kinso About layout) ======================= -->
