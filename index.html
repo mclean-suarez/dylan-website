@@ -808,6 +808,58 @@
   .hh-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 18px 36px -14px rgba(11,18,32,0.6); }
   .hh-cta-btn span { font-size: 18px; line-height: 1; margin-top: -2px; }
   @media (max-width: 859px) { .hh-logos { padding-top: 44px !important; } .hh-cta { padding-top: 44px !important; } .hh-cta-btn { min-width: 0; width: 100%; max-width: 280px; } }
+  /* hero actions: CTA + proof line inside the hero (first screen on every device) */
+  .hh-act { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-top: 32px; }
+  .hh-act .hh-proof { margin: 0 !important; max-width: none !important; font-size: 15px !important; line-height: 1.4 !important; font-weight: 500; letter-spacing: -0.015em; color: #4A5361 !important; }
+  .hh-text h1 { font-size: clamp(34px, 4.1vw, 58px) !important; line-height: 1 !important; margin-bottom: 22px !important; }
+  .hh-btns { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+  .hh-primary { min-width: 0; padding: 7px 7px 7px 24px; gap: 14px; transition: transform .25s cubic-bezier(.4,0,.2,1), box-shadow .25s cubic-bezier(.4,0,.2,1); }
+  .hh-primary i { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #fff; color: #0B1220; transition: transform .25s cubic-bezier(.4,0,.2,1); }
+  .hh-primary:hover i { transform: translateX(3px); }
+  .hh-primary:active { transform: scale(.97); }
+  .hh-primary:focus-visible, .hh-ghost:focus-visible { outline: 2px solid #2F6FED; outline-offset: 3px; }
+  .hh-ghost { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; color: #0B1220; text-decoration: none; padding: 10px 2px; border-radius: 8px; }
+  .hh-ghost span { transition: transform .25s cubic-bezier(.4,0,.2,1); }
+  .hh-ghost:hover span { transform: translateX(3px); }
+  .hh-ghost:hover { color: #2F6FED; }
+  /* entrance: headline, text, actions, then the product shot */
+  @keyframes hhIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+  .hh-text h1, .hh-lede, .hh-act, .kd-wrap { animation: hhIn .9s cubic-bezier(.22,1,.36,1) both; }
+  .hh-lede { animation-delay: .12s; } .hh-act { animation-delay: .24s; } .kd-wrap { animation-delay: .34s; }
+  @media (prefers-reduced-motion: reduce) { .hh-text h1, .hh-lede, .hh-act, .kd-wrap { animation: none; } }
+  @media (max-width: 859px) {
+    .hh-text h1 { font-size: clamp(29px, 8.6vw, 38px) !important; line-height: 1.02 !important; margin: 0 0 16px !important; }
+    .hh-act { align-items: center; gap: 14px; margin-top: 24px; }
+    .hh-btns { flex-direction: column; gap: 6px; width: 100%; }
+    .hh-act .hh-primary { width: 100%; max-width: 300px; justify-content: center; position: relative; padding: 7px 48px; }
+    .hh-act .hh-primary i { position: absolute; right: 7px; top: 50%; margin-top: -17px; }
+    .hh-act .hh-primary { min-height: 50px; box-sizing: border-box; }
+    .hh-act .hh-proof { max-width: 30ch !important; margin: 0 auto !important; font-size: 14.5px !important; }
+  }
+  /* ===== homepage polish (MotionSites craft pass) ===== */
+  ::selection { background: rgba(47,111,237,0.22); }
+  h1, h2, h3 { text-wrap: balance; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #2F6FED; outline-offset: 3px; border-radius: 8px; }
+  /* client logo strip: one calm tone, colour on hover */
+  .hh-logos img { filter: grayscale(1) contrast(1.05); opacity: .55; transition: filter .3s cubic-bezier(.4,0,.2,1), opacity .3s cubic-bezier(.4,0,.2,1); }
+  .hh-logos img:hover { filter: none; opacity: 1; }
+  .hh-logos:hover [style*="adonMarquee"] { animation-play-state: paused !important; }
+  /* walk-away: the 20+ number carries the section */
+  .wa-split { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 64px; align-items: center; max-width: 1140px; margin: 0 auto; text-align: left; padding-left: 28px; padding-right: 28px; }
+  .wa-split .wa-label { justify-content: flex-start; margin-bottom: 30px; }
+  .wa-split .wa-label::before { display: none; }
+  .wa-split .wa-h, .wa-split .wa-p { margin-left: 0; margin-right: 0; }
+  .wa-split .wa-h { max-width: 620px; }
+  .wa-split .wa-p { max-width: 540px; }
+  .wa-num { font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: clamp(140px, 16vw, 236px); line-height: .8; letter-spacing: -0.075em; color: #0B1220; text-align: center; font-variant-numeric: tabular-nums; }
+  .wa-num span { color: #2F6FED; font-weight: 400; }
+  @media (max-width: 859px) {
+    .wa-split { grid-template-columns: 1fr; gap: 26px; text-align: center; padding-left: 20px; padding-right: 20px; }
+    .wa-split .wa-label { justify-content: center; }
+    .wa-split .wa-label::before { display: block; }
+    .wa-split .wa-h, .wa-split .wa-p { margin-left: auto; margin-right: auto; }
+    .wa-num { font-size: clamp(120px, 38vw, 170px); }
+  }
   /* ===== Kinso-style hero backdrop ===== */
   .hb-color, .hb-grid { position: absolute; left: 0; right: 0; top: 0; height: 1180px; z-index: -1; pointer-events: none; }
   .hb-color { background:
@@ -892,9 +944,16 @@
       <h1 style="font-size:clamp(30px,3.4vw,46px);line-height:1.02;letter-spacing:-0.045em;font-weight:500;margin:0 0 20px;color:#0B1220">
         <span class="hh-l1">Get your team doing</span><br><span class="hh-l2" style="color:#2F6FED">more with AI.</span>
       </h1>
-      <p class="hh-lede" style="font-size:19px;line-height:1.38;color:#0B1220;max-width:450px;margin:0;font-weight:400;letter-spacing:-0.015em">
+      <p class="hh-lede" style="font-size:19px;line-height:1.42;color:#3A4352;max-width:450px;margin:0;font-weight:400;letter-spacing:-0.015em">
         We train your staff to use AI in the work they already do, then to build the automations and agents that handle the rest. Save time and money, and scale without adding headcount.
       </p>
+      <div class="hh-act">
+        <div class="hh-btns">
+          <a href="https://adongroup.com.au/contact/" class="hh-cta-btn hh-primary">Book a call <i aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+          <a href="/programs" class="hh-ghost">See our program <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="hh-proof">We’ve trained over <span style="background: linear-gradient(92deg, rgb(47, 111, 237), rgb(127, 208, 255), rgb(47, 111, 237)) 0% 0% / 220% 100% text; color: transparent; animation: 4.5s linear 0s infinite normal none running adonShimmer;">40</span> Australian businesses just like yours to use AI.</p>
+      </div>
     </div>
 
     <!-- HERO VISUAL: Academy app window + notification cards -->
@@ -926,11 +985,6 @@
     </div>
   </header>
 
-  <!-- ======================= HERO CTA (Kinso-style) ======================= -->
-  <section class="hh-cta" style="text-align:center;padding:84px 20px 0">
-    <p style="font-size:clamp(17px,1.5vw,19px);font-weight:500;color:#0B1220;letter-spacing:-0.02em;line-height:1.35;margin:0 0 16px">We’ve trained over <span style="background: linear-gradient(92deg, rgb(47, 111, 237), rgb(127, 208, 255), rgb(47, 111, 237)) 0% 0% / 220% 100% text; color: transparent; animation: 4.5s linear 0s infinite normal none running adonShimmer;">40</span> Australian businesses just like yours to use AI.</p>
-    <a href="https://adongroup.com.au/contact/" class="hh-cta-btn">Book a call <span aria-hidden="true">›</span></a>
-  </section>
 
   <!-- ======================= BUSINESSES STRIP (marquee) ======================= -->
   <section class="hh-logos" style="padding:64px 0 10px;overflow:hidden" aria-label="Businesses we’ve worked with">
@@ -1112,11 +1166,14 @@
 
 
   <!-- ======================= WHAT THEY WALK AWAY WITH (Kinso-style statement + build grid) ======================= -->
-  <section class="ak-sec wa-sec" id="walk-away">
+  <section class="ak-sec wa-sec wa-split" id="walk-away">
+    <div class="wa-num" aria-hidden="true">20<span>+</span></div>
+    <div class="wa-body">
     <div class="wa-label"><span><em class="ak-glow-l">What they walk away with</em></span></div>
     <h2 class="wa-h">Every staff member finishes with 20+ working AI builds for their own job.</h2>
     <p class="wa-p" style="margin-bottom:30px">This isn’t theory they forget by Friday. Each person you enrol personally builds and deploys prompt packs, Claude skills, automations and AI agents, all tied to their real role.</p>
     <a href="/programs#walk-away-with" class="hh-cta-btn wa-btn">See our full program <span aria-hidden="true">›</span></a>
+    </div>
   </section>
 
   <!-- ======================= WHO WE ARE (Kinso About layout) ======================= -->
